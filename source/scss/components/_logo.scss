@@ -1,0 +1,87 @@
+//////////////////////////////
+// Logo Component Extendable Classes
+//////////////////////////////
+%logo-lockup {
+  text-align: center;
+  color: $primary;
+  font-family: $font-display;
+  font-size: 2em;
+  font-weight: 800;
+  padding: .5em;
+  &:before {
+    content: "S";
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+    font-weight: 400;
+    font-family: uikitregular;
+    display: block;
+    font-size: 2em;
+    margin: 0 0 0 0;
+  }
+}
+
+%logo-lockup-dark {
+  @extend %logo-lockup;
+  -webkit-font-smoothing: antialiased;
+  // @include dark-background;
+  // background-image: image-url('header.svg');
+  @include background-size(cover);
+  background-position: center;
+  // color: $secondary;
+}
+
+%logo-icon {
+  display: inline-block;
+  font-family: uikitregular;
+  font-size: 4em;
+  // color: $primary;
+  padding: .25em;
+  margin: .25em;
+  width: 1em;
+  height: 1em;
+  @include box-sizing(content-box);
+  line-height: 1;
+  border-radius: .75em;
+}
+
+%logo-icon-dark {
+  @extend %logo-icon;
+  -webkit-font-smoothing: antialiased;
+  // @include dark-background;
+  // color: $secondary;
+  // @include box-shadow(0 0 0 .05em rgba($secondary, .5));
+}
+
+//////////////////////////////
+// Logo Component Styles
+//////////////////////////////
+.logo {
+  font-family: uikitregular;
+  list-style: none;
+  padding: 0 0 2em 0;
+  color: $primary;
+  li {
+    text-align: center;
+    line-height: 1;
+    font-size: 10em;
+    // @include breakpoint($medium) {
+    //   font-size: 20em;
+    // }
+  }
+}
+
+.logo-lockup {
+  @extend %logo-lockup;
+  &.dark {
+    @extend %logo-lockup-dark;
+    // border-radius: $radius;
+  }
+}
+
+.logo-icon {
+  @extend %logo-icon;
+  &.dark {
+    @extend %logo-icon-dark;
+  }
+}

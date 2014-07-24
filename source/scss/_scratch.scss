@@ -1,0 +1,73 @@
+///////////////////////////////////////////
+// SCRATCH STYLES - REMEMBER TO REFACTOR!
+///////////////////////////////////////////
+
+.header {
+  // * {
+  //   outline: 1px solid red;
+  // }
+  position: relative;
+  background: {
+    color: $cs-primary;
+    image: url(../../images/manhattan-zeldman.jpg);
+    repeat: no-repeat;
+    size: contain;
+  }
+  max-width: 100%;
+  border-bottom: 0.5em solid $cs-primary;
+  .logo-nav {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    text-align: center;
+  }
+  .logo-lockup {
+    background: {
+      image: none;
+    }
+    color: $cs-primary !important;
+    font: {
+      size: 4em;
+      family: $landmark-inline;
+      weight: 500;
+    }
+    text: {
+      shadow: none;
+      transform: uppercase;
+    }
+    padding: 0;
+    &:before {
+      line-height: 1em;
+      @include transform2d(translateY(0.125em));
+    }
+  }
+  h2 {
+    background: {
+      color: $cs-primary;
+    }
+    color: $white;
+    font: {
+      size: 2em;
+      family: $landmark-regular;
+    }
+  }
+}
+
+.rhombus-grid {
+  width: 100%;
+  opacity: 0.6;
+  mix-blend-mode: multiply;
+  // position: fixed;
+}
+
+
+$rhombus-skew: -10deg;
+$rhombus-skew-reset: $rhombus-skew * -1;
+.rhombus {
+  @include transform2d(skewX($rhombus-skew));
+}
+.rhombus-reset {
+  @include transform2d(skewX($rhombus-skew-reset));
+
+}
