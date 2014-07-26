@@ -89,13 +89,13 @@
 		{ }
 	],
 	"brand_colors" : [
-		{"label": "black"},
-		{"label": "white"},
-		{"label": "gray"},
-		{"label": "cs-primary"},
-		{"label": "primary"},
-		{"label": "secondary"},
-		{"label": "tertiary"},
-		{"label": "quadrary"}
+		{"label": "color--primary"},
+		{"label": "color--secondary"},
+		{"label": "color--tertiary"},
+		{"label": "color--quadrary"},
+		{"label": "color--quintary"},
+		{"label": "color--black"},
+		{"label": "color--gray"},
+		{"label": "color--white"}
 	]
 }

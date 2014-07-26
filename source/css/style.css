@@ -174,6 +174,22 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
 /* line 85, ../scss/components/_button.scss */
 .call-to-action:active { background-color: #676767; }
 
+/* line 1, ../scss/components/_header.scss */
+body.manhattan { position: relative; width: 100%; background-image: url(../../images/manhattan-zeldman-1800x756.jpg); background-repeat: no-repeat; background-size: contain; }
+
+/* line 9, ../scss/components/_header.scss */
+.header { background-color: rgba(255, 255, 255, 0.75); position: relative; height: 0; padding-top: 42%; width: 100%; margin-bottom: 15%; }
+/* line 58, ../../../../../../.rvm/gems/ruby-2.1.1/gems/toolkit-2.5.0/stylesheets/toolkit/_intrinsic-ratio.scss */
+.header > * { display: block; position: absolute; width: 100% !important; height: 100% !important; top: 0; margin: 0; padding: 0; }
+/* line 13, ../scss/components/_header.scss */
+.header .logo-nav { text-align: center; }
+/* line 16, ../scss/components/_header.scss */
+.header .logo-lockup { background-image: none; color: #c6538c !important; font-size: 4em; font-family: "Landmark Inline A", "Landmark Inline B"; font-weight: 500; text-shadow: none; text-transform: uppercase; padding: 0; }
+/* line 31, ../scss/components/_header.scss */
+.header .logo-lockup:before { line-height: 1em; -moz-transform: translateY(0.125em); -ms-transform: translateY(0.125em); -webkit-transform: translateY(0.125em); transform: translateY(0.125em); }
+/* line 36, ../scss/components/_header.scss */
+.header h2 { background-color: #c6538c; color: white; font-size: 2em; font-family: "Landmark Regular A", "Landmark Regular B"; position: relative; width: 50%; left: 50%; -moz-transform: skewX(-10deg) translateX(-50%); -ms-transform: skewX(-10deg) translateX(-50%); -webkit-transform: skewX(-10deg) translateX(-50%); transform: skewX(-10deg) translateX(-50%); }
+
 /* line 9, ../scss/components/_list.scss */
 .inline-list { list-style-type: none; }
 /* line 6, ../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/typography/lists/_inline-list.scss */
@@ -185,7 +201,7 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
 .no-bullets li, .sg-swatch li { list-style-image: none; list-style-type: none; margin-left: 0; }
 
 /* line 4, ../scss/components/_logo.scss */
-.logo-lockup.dark, .logo-lockup { text-align: center; color: #d300e6; font-family: "Surveyor SSm swash A", "Surveyor SSm swash B"; font-size: 2em; font-weight: 800; padding: .5em; }
+.logo-lockup.dark, .logo-lockup { text-align: center; color: #d3639e; font-family: "Surveyor SSm swash A", "Surveyor SSm swash B"; font-size: 2em; font-weight: 800; padding: .5em; }
 /* line 11, ../scss/components/_logo.scss */
 .logo-lockup.dark:before, .logo-lockup:before { content: "S"; position: relative; pointer-events: none; z-index: 1; font-weight: 400; font-family: uikitregular; display: block; font-size: 2em; margin: 0 0 0 0; }
 
@@ -199,7 +215,7 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
 .logo-icon.dark { -webkit-font-smoothing: antialiased; }
 
 /* line 59, ../scss/components/_logo.scss */
-.logo { font-family: uikitregular; list-style: none; padding: 0 0 2em 0; color: #d300e6; }
+.logo { font-family: uikitregular; list-style: none; padding: 0 0 2em 0; color: #d3639e; }
 /* line 64, ../scss/components/_logo.scss */
 .logo li { text-align: center; line-height: 1; font-size: 10em; }
 
@@ -221,22 +237,34 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
 /* line 42, ../scss/components/_pager.scss */
 .pager-first, .pager-previous, .pager-item, .pager-next, .pager-last { display: inline; margin: 0; padding: 0.2em 0.5em; text-transform: uppercase; }
 
+/* line 1, ../scss/components/_rhombus.scss */
+.rhombus { -moz-transform: skewX(-10deg); -ms-transform: skewX(-10deg); -webkit-transform: skewX(-10deg); transform: skewX(-10deg); }
+
+/* line 4, ../scss/components/_rhombus.scss */
+.rhombus-reset { -moz-transform: skewX(10deg); -ms-transform: skewX(10deg); -webkit-transform: skewX(10deg); transform: skewX(10deg); }
+
+/* line 10, ../scss/components/_rhombus.scss */
+.rhombus-grid-wrapper { opacity: 0.6; mix-blend-mode: screen; position: fixed; width: 100%; top: 0; }
+
+/* line 17, ../scss/components/_rhombus.scss */
+.rhombus-grid { max-width: 100%; }
+
 /* line 4, ../scss/patternlab/_colors.scss */
-.sg-swatch.black { background-color: black; }
+.sg-swatch.color--black { background-color: black; }
 /* line 5, ../scss/patternlab/_colors.scss */
-.sg-swatch.white { background-color: white; }
+.sg-swatch.color--white { background-color: white; }
 /* line 6, ../scss/patternlab/_colors.scss */
-.sg-swatch.gray { background-color: #7f7f7f; }
+.sg-swatch.color--gray { background-color: #7f7f7f; }
 /* line 7, ../scss/patternlab/_colors.scss */
-.sg-swatch.cs-primary { background-color: #ea00ff; }
+.sg-swatch.color--primary { background-color: #d3639e; }
 /* line 8, ../scss/patternlab/_colors.scss */
-.sg-swatch.primary { background-color: #d300e6; }
+.sg-swatch.color--secondary { background-color: #933b69; }
 /* line 9, ../scss/patternlab/_colors.scss */
-.sg-swatch.secondary { background-color: #ff006a; }
+.sg-swatch.color--tertiary { background-color: #7acbcc; }
 /* line 10, ../scss/patternlab/_colors.scss */
-.sg-swatch.tertiary { background-color: #510059; }
+.sg-swatch.color--quadrary { background-color: #78a0a5; }
 /* line 11, ../scss/patternlab/_colors.scss */
-.sg-swatch.quadrary { background-color: #241b3e; }
+.sg-swatch.color--quintary { background-color: #ead880; }
 
 /* line 14, ../scss/patternlab/_colors.scss */
 .sg-label { white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
@@ -300,35 +328,7 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
   .st-images { width: 44.44444%; float: right; margin-left: 0; margin-right: 0; clear: right; }
   /* line 15, ../scss/patternlab/_style-tile.scss */
   .st-adjectives { width: 44.44444%; float: right; margin-left: 0; margin-right: 0; clear: right; } }
-/* line 8, ../scss/_scratch.scss */
-body.manhattan { position: relative; width: 100%; background-image: url(../../images/manhattan-zeldman-1800x756.jpg); background-repeat: no-repeat; background-size: contain; }
-
-/* line 16, ../scss/_scratch.scss */
-.header { background-color: rgba(0, 0, 0, 0.2); position: relative; height: 0; padding-top: 42%; width: 100%; margin-bottom: 15%; }
-/* line 58, ../../../../../../.rvm/gems/ruby-2.1.1/gems/toolkit-2.5.0/stylesheets/toolkit/_intrinsic-ratio.scss */
-.header > * { display: block; position: absolute; width: 100% !important; height: 100% !important; top: 0; margin: 0; padding: 0; }
-/* line 20, ../scss/_scratch.scss */
-.header .logo-nav { text-align: center; }
-/* line 23, ../scss/_scratch.scss */
-.header .logo-lockup { background-image: none; color: #ea00ff !important; font-size: 4em; font-family: "Landmark Inline A", "Landmark Inline B"; font-weight: 500; text-shadow: none; text-transform: uppercase; padding: 0; }
-/* line 38, ../scss/_scratch.scss */
-.header .logo-lockup:before { line-height: 1em; -moz-transform: translateY(0.125em); -ms-transform: translateY(0.125em); -webkit-transform: translateY(0.125em); transform: translateY(0.125em); }
-/* line 43, ../scss/_scratch.scss */
-.header h2 { background-color: #ea00ff; color: white; font-size: 2em; font-family: "Landmark Regular A", "Landmark Regular B"; position: relative; width: 50%; left: 50%; -moz-transform: skewX(-10deg) translateX(-50%); -ms-transform: skewX(-10deg) translateX(-50%); -webkit-transform: skewX(-10deg) translateX(-50%); transform: skewX(-10deg) translateX(-50%); }
-
-/* line 59, ../scss/_scratch.scss */
-.rhombus-grid-wrapper { opacity: 0.6; mix-blend-mode: screen; position: fixed; width: 100%; top: 0; }
-
-/* line 66, ../scss/_scratch.scss */
-.rhombus-grid { max-width: 100%; }
-
-/* line 72, ../scss/_scratch.scss */
-.rhombus { -moz-transform: skewX(-10deg); -ms-transform: skewX(-10deg); -webkit-transform: skewX(-10deg); transform: skewX(-10deg); }
-
-/* line 75, ../scss/_scratch.scss */
-.rhombus-reset { -moz-transform: skewX(10deg); -ms-transform: skewX(10deg); -webkit-transform: skewX(10deg); transform: skewX(10deg); }
-
-/* line 80, ../scss/_scratch.scss */
+/* line 6, ../scss/_scratch.scss */
 .content-scratch-wrapper { position: relative; background-color: rgba(255, 255, 255, 0.9); }
 
 /*# sourceMappingURL=style.css.map */

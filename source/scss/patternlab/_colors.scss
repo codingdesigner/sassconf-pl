@@ -1,14 +1,14 @@
 // COLORS
 .sg-swatch {
   @extend %no-bullets;
-  &.black { background-color: $black; }
-  &.white { background-color: $white; }
-  &.gray { background-color: $gray; }
-  &.cs-primary { background-color: $cs-primary; }
-  &.primary { background-color: $primary; }
-  &.secondary { background-color: $secondary; }
-  &.tertiary { background-color: $tertiary; }
-  &.quadrary { background-color: $quadrary; }
+  &.color--black {      background-color: $color--black; }
+  &.color--white {      background-color: $color--white; }
+  &.color--gray {       background-color: $color--gray; }
+  &.color--primary {    background-color: $color--primary; }
+  &.color--secondary {  background-color: $color--secondary; }
+  &.color--tertiary {   background-color: $color--tertiary; }
+  &.color--quadrary {   background-color: $color--quadrary; }
+  &.color--quintary {   background-color: $color--quintary; }
 }
 
 .sg-label {

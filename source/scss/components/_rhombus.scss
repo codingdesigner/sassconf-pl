@@ -1,0 +1,19 @@
+.rhombus {
+  @include transform2d(skewX($rhombus-skew));
+}
+.rhombus-reset {
+  @include transform2d(skewX($rhombus-skew-reset));
+
+}
+
+
+.rhombus-grid-wrapper {
+  opacity: 0.6;
+  mix-blend-mode: screen;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.rhombus-grid {
+  max-width: 100%;
+}

@@ -3,7 +3,7 @@
 //////////////////////////////
 %logo-lockup {
   text-align: center;
-  color: $primary;
+  color: $color--primary;
   font-family: $font-display;
   font-size: 2em;
   font-weight: 800;
@@ -35,7 +35,7 @@
   display: inline-block;
   font-family: uikitregular;
   font-size: 4em;
-  // color: $primary;
+  // color: $color--primary;
   padding: .25em;
   margin: .25em;
   width: 1em;
@@ -60,7 +60,7 @@
   font-family: uikitregular;
   list-style: none;
   padding: 0 0 2em 0;
-  color: $primary;
+  color: $color--primary;
   li {
     text-align: center;
     line-height: 1;

@@ -1,0 +1,50 @@
+body.manhattan {
+  position: relative;
+  width: 100%;
+  background-image: url(../../images/manhattan-zeldman-1800x756.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header {
+  background-color: rgba(white, 0.75);
+  @include intrinsic-ratio(1800/756, 100%);
+  margin-bottom: 15%;
+  .logo-nav {
+    text-align: center;
+  }
+  .logo-lockup {
+    background: {
+      image: none;
+    }
+    color: $cs-primary !important;
+    font: {
+      size: 4em;
+      family: $landmark-inline;
+      weight: 500;
+    }
+    text: {
+      shadow: none;
+      transform: uppercase;
+    }
+    padding: 0;
+    &:before {
+      line-height: 1em;
+      @include transform2d(translateY(0.125em));
+    }
+  }
+  h2 {
+    background: {
+      color: $cs-primary;
+    }
+    color: $color--white;
+    font: {
+      size: 2em;
+      family: $landmark-regular;
+    }
+    position: relative;
+    width: 50%;
+    left: 50%;
+    @include transform2d(skewX($rhombus-skew) translateX(-50%));
+  }
+}

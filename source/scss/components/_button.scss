@@ -130,7 +130,7 @@ $button-text-color-default: false !default;
 %button {
   @include button-base(true);
   @include button-size-normal(true);
-  @include button-colors($gray, $extend: true);
+  @include button-colors($color--gray, $extend: true);
 }
 %button-warning {
   @extend %warning;
