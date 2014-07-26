@@ -222,34 +222,34 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
 .pager-first, .pager-previous, .pager-item, .pager-next, .pager-last { display: inline; margin: 0; padding: 0.2em 0.5em; text-transform: uppercase; }
 
 /* line 8, ../scss/_scratch.scss */
-body { position: relative; width: 100%; /* height: 544px; */ background-image: url(../../images/manhattan-zeldman-1800x756.jpg); background-repeat: no-repeat; background-size: contain; }
+body.manhattan { position: relative; width: 100%; background-image: url(../../images/manhattan-zeldman-1800x756.jpg); background-repeat: no-repeat; background-size: contain; }
 
-/* line 17, ../scss/_scratch.scss */
+/* line 16, ../scss/_scratch.scss */
 .header { background-color: rgba(0, 0, 0, 0.2); position: relative; height: 0; padding-top: 42%; width: 100%; margin-bottom: 15%; }
 /* line 58, ../../../../../../.rvm/gems/ruby-2.1.1/gems/toolkit-2.5.0/stylesheets/toolkit/_intrinsic-ratio.scss */
 .header > * { display: block; position: absolute; width: 100% !important; height: 100% !important; top: 0; margin: 0; padding: 0; }
-/* line 46, ../scss/_scratch.scss */
+/* line 20, ../scss/_scratch.scss */
 .header .logo-nav { text-align: center; }
-/* line 56, ../scss/_scratch.scss */
+/* line 23, ../scss/_scratch.scss */
 .header .logo-lockup { background-image: none; color: #ea00ff !important; font-size: 4em; font-family: "Landmark Inline A", "Landmark Inline B"; font-weight: 500; text-shadow: none; text-transform: uppercase; padding: 0; }
-/* line 71, ../scss/_scratch.scss */
+/* line 38, ../scss/_scratch.scss */
 .header .logo-lockup:before { line-height: 1em; -moz-transform: translateY(0.125em); -ms-transform: translateY(0.125em); -webkit-transform: translateY(0.125em); transform: translateY(0.125em); }
-/* line 76, ../scss/_scratch.scss */
+/* line 43, ../scss/_scratch.scss */
 .header h2 { background-color: #ea00ff; color: white; font-size: 2em; font-family: "Landmark Regular A", "Landmark Regular B"; position: relative; width: 50%; left: 50%; -moz-transform: skewX(-10deg) translateX(-50%); -ms-transform: skewX(-10deg) translateX(-50%); -webkit-transform: skewX(-10deg) translateX(-50%); transform: skewX(-10deg) translateX(-50%); }
 
-/* line 92, ../scss/_scratch.scss */
+/* line 59, ../scss/_scratch.scss */
 .rhombus-grid-wrapper { opacity: 0.6; mix-blend-mode: screen; position: fixed; width: 100%; top: 0; }
 
-/* line 99, ../scss/_scratch.scss */
+/* line 66, ../scss/_scratch.scss */
 .rhombus-grid { max-width: 100%; }
 
-/* line 105, ../scss/_scratch.scss */
+/* line 72, ../scss/_scratch.scss */
 .rhombus { -moz-transform: skewX(-10deg); -ms-transform: skewX(-10deg); -webkit-transform: skewX(-10deg); transform: skewX(-10deg); }
 
-/* line 108, ../scss/_scratch.scss */
+/* line 75, ../scss/_scratch.scss */
 .rhombus-reset { -moz-transform: skewX(10deg); -ms-transform: skewX(10deg); -webkit-transform: skewX(10deg); transform: skewX(10deg); }
 
-/* line 113, ../scss/_scratch.scss */
+/* line 80, ../scss/_scratch.scss */
 .content-scratch-wrapper { position: relative; background-color: rgba(255, 255, 255, 0.9); }
 
 /* line 30, ../scss/patternlab/_patternlab.scss */
