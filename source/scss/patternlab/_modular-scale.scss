@@ -1,0 +1,14 @@
+// MODULAR SCALE
+.sg-ms {
+  li {
+    white-space: nowrap;
+    @for $i from 0 through 11 {
+      &:nth-of-type(#{$i + 1}) {
+        font-size: ms($i);
+        &:before {
+          content: "ms-#{$i}: ";
+        }
+      }
+    }
+  }
+}

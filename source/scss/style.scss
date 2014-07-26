@@ -32,14 +32,6 @@ $browser-minimum-versions: (
         "global/extends/*",
         "elements/*",
         "components/*",
-        "layouts/*";
-
-
-
-//////////////////////////////
-// Scratch Styles
-@import "scratch";
-
-//////////////////////////////
-// Patternlab Styles
-@import "patternlab/*";
+        "layouts/*",
+        "patternlab/*",
+        "scratch";

@@ -221,6 +221,85 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
 /* line 42, ../scss/components/_pager.scss */
 .pager-first, .pager-previous, .pager-item, .pager-next, .pager-last { display: inline; margin: 0; padding: 0.2em 0.5em; text-transform: uppercase; }
 
+/* line 4, ../scss/patternlab/_colors.scss */
+.sg-swatch.black { background-color: black; }
+/* line 5, ../scss/patternlab/_colors.scss */
+.sg-swatch.white { background-color: white; }
+/* line 6, ../scss/patternlab/_colors.scss */
+.sg-swatch.gray { background-color: #7f7f7f; }
+/* line 7, ../scss/patternlab/_colors.scss */
+.sg-swatch.cs-primary { background-color: #ea00ff; }
+/* line 8, ../scss/patternlab/_colors.scss */
+.sg-swatch.primary { background-color: #d300e6; }
+/* line 9, ../scss/patternlab/_colors.scss */
+.sg-swatch.secondary { background-color: #ff006a; }
+/* line 10, ../scss/patternlab/_colors.scss */
+.sg-swatch.tertiary { background-color: #510059; }
+/* line 11, ../scss/patternlab/_colors.scss */
+.sg-swatch.quadrary { background-color: #241b3e; }
+
+/* line 14, ../scss/patternlab/_colors.scss */
+.sg-label { white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
+
+/* line 3, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li { white-space: nowrap; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(1) { font-size: 16px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(1):before { content: "ms-0: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(2) { font-size: 18.5625px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(2):before { content: "ms-1: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(3) { font-size: 21.33333px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(3):before { content: "ms-2: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(4) { font-size: 24.75px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(4):before { content: "ms-3: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(5) { font-size: 28.44444px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(5):before { content: "ms-4: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(6) { font-size: 33.0px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(6):before { content: "ms-5: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(7) { font-size: 37.92593px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(7):before { content: "ms-6: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(8) { font-size: 44px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(8):before { content: "ms-7: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(9) { font-size: 50.5679px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(9):before { content: "ms-8: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(10) { font-size: 58.66667px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(10):before { content: "ms-9: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(11) { font-size: 67.42387px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(11):before { content: "ms-10: "; }
+/* line 6, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(12) { font-size: 78.22222px; }
+/* line 8, ../scss/patternlab/_modular-scale.scss */
+.sg-ms li:nth-of-type(12):before { content: "ms-11: "; }
+
+@media (min-width: 32em) { /* line 6, ../scss/patternlab/_style-tile.scss */
+  #st-main { width: 44.44444%; float: left; margin-right: -100%; margin-left: 0; clear: none; }
+  /* line 9, ../scss/patternlab/_style-tile.scss */
+  .st-colors { width: 44.44444%; float: right; margin-left: 0; margin-right: 0; clear: right; }
+  /* line 12, ../scss/patternlab/_style-tile.scss */
+  .st-images { width: 44.44444%; float: right; margin-left: 0; margin-right: 0; clear: right; }
+  /* line 15, ../scss/patternlab/_style-tile.scss */
+  .st-adjectives { width: 44.44444%; float: right; margin-left: 0; margin-right: 0; clear: right; } }
 /* line 8, ../scss/_scratch.scss */
 body.manhattan { position: relative; width: 100%; background-image: url(../../images/manhattan-zeldman-1800x756.jpg); background-repeat: no-repeat; background-size: contain; }
 
@@ -251,42 +330,5 @@ body.manhattan { position: relative; width: 100%; background-image: url(../../im
 
 /* line 80, ../scss/_scratch.scss */
 .content-scratch-wrapper { position: relative; background-color: rgba(255, 255, 255, 0.9); }
-
-/* line 30, ../scss/patternlab/_patternlab.scss */
-.sg-label { white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
-
-/* line 50, ../scss/patternlab/_patternlab.scss */
-.sg-ms li { white-space: nowrap; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-0 { font-size: 16px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-1 { font-size: 18.5625px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-2 { font-size: 21.33333px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-3 { font-size: 24.75px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-4 { font-size: 28.44444px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-5 { font-size: 33.0px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-6 { font-size: 37.92593px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-7 { font-size: 44px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-8 { font-size: 50.5679px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-9 { font-size: 58.66667px; }
-/* line 54, ../scss/patternlab/_patternlab.scss */
-.sg-ms .ms-10 { font-size: 67.42387px; }
-
-@media (min-width: 32em) { /* line 6, ../scss/patternlab/_style-tile.scss */
-  #st-main { width: 44.44444%; float: left; margin-right: -100%; margin-left: 0; clear: none; }
-  /* line 9, ../scss/patternlab/_style-tile.scss */
-  .st-colors { width: 44.44444%; float: right; margin-left: 0; margin-right: 0; clear: right; }
-  /* line 12, ../scss/patternlab/_style-tile.scss */
-  .st-images { width: 44.44444%; float: right; margin-left: 0; margin-right: 0; clear: right; }
-  /* line 15, ../scss/patternlab/_style-tile.scss */
-  .st-adjectives { width: 44.44444%; float: right; margin-left: 0; margin-right: 0; clear: right; } }
 
 /*# sourceMappingURL=style.css.map */

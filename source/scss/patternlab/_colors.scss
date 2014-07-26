@@ -1,0 +1,16 @@
+// COLORS
+.sg-swatch {
+  @extend %no-bullets;
+  &.black { background-color: $black; }
+  &.white { background-color: $white; }
+  &.gray { background-color: $gray; }
+  &.cs-primary { background-color: $cs-primary; }
+  &.primary { background-color: $primary; }
+  &.secondary { background-color: $secondary; }
+  &.tertiary { background-color: $tertiary; }
+  &.quadrary { background-color: $quadrary; }
+}
+
+.sg-label {
+  @include ellipsis();
+}

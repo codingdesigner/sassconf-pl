@@ -14,7 +14,7 @@
 		"icon-comment",
 		"icon-shopping-cart",
 		"icon-envelope",
-		"icon-mobile-phone"		
+		"icon-mobile-phone"
 	],
 	"img": {
 		"logo": {
@@ -87,5 +87,15 @@
 		{ },
 		{ },
 		{ }
+	],
+	"brand_colors" : [
+		{"label": "black"},
+		{"label": "white"},
+		{"label": "gray"},
+		{"label": "cs-primary"},
+		{"label": "primary"},
+		{"label": "secondary"},
+		{"label": "tertiary"},
+		{"label": "quadrary"}
 	]
 }
