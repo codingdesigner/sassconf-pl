@@ -5,52 +5,19 @@
 $rhombus-skew: -10deg;
 $rhombus-skew-reset: $rhombus-skew * -1;
 
-body {
+body.manhattan {
   position: relative;
   width: 100%;
-  /* height: 544px; */
   background-image: url(../../images/manhattan-zeldman-1800x756.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .header {
-  // * {
-  //   outline: 1px solid red;
-  // }
   background-color: rgba(black, 0.2);
-  // @include intrinsic-ratio-ratio(16/9, 100%, top);
   @include intrinsic-ratio(1800/756, 100%);
   margin-bottom: 15%;
-  // position: relative;
-  // width: 100%;
-  // height: 544px;
-  // background: {
-  //   // color: $cs-primary;
-  //   image: url(../../images/manhattan-zeldman-1800x756.jpg);
-  //   repeat: no-repeat;
-  //   size: contain;
-  // }
-  // .header-bg {
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 544px;
-  //   background: {
-  //     // color: $cs-primary;
-  //     image: url(../../images/manhattan-zeldman-1800x756.jpg);
-  //     repeat: no-repeat;
-  //     size: contain;
-  //   }
-  //   // border-bottom: 0.5em solid $cs-primary;
-  // }
   .logo-nav {
-    // display: none;
-    // position: absolute;
-    // position: relative;
-    // left: 50%;
-    // width: 100%;
-    // height: 544px;
-    // @include transform2d(translateX(-50%));
     text-align: center;
   }
   .logo-lockup {
