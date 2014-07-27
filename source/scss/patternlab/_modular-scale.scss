@@ -1,7 +1,8 @@
 // MODULAR SCALE
 .sg-ms {
+  white-space: nowrap;
+  overflow: hidden;
   li {
-    white-space: nowrap;
     @for $i from 0 through 11 {
       &:nth-of-type(#{$i + 1}) {
         font-size: ms($i);

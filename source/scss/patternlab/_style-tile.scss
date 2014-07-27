@@ -12,6 +12,9 @@ $st-two-gtr: 0.25;
     .st-images {
       @include grid-span(1, 2, $options: ('clear': right));
     }
+    .st-fonts {
+      @include grid-span(1, 2, $options: ('clear': right));
+    }
     .st-adjectives {
       @include grid-span(1, 2, $options: ('clear': right));
     }

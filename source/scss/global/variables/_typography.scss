@@ -2,30 +2,26 @@
 // Typography
 //////////////////////////////
 
-// $archer: 'Archer SSm A', 'Archer SSm B', serif;
+$archer: 'Archer SSm A', 'Archer SSm B', serif;
 // $archer-sc: 'Archer SSm small caps A', 'Archer SSm small caps B', serif;
-// $whitney: 'Whitney SSm A', 'Whitney SSm B', sans-serif;
-// $whitney-sc: 'Whitney SSm small caps A', 'Whitney SSm small caps B', sans-serif;
-$landmark-dimensional: 'Landmark Dimensional A', 'Landmark Dimensional B';
+// $landmark-dimensional: 'Landmark Dimensional A', 'Landmark Dimensional B';
 $landmark-inline: 'Landmark Inline A', 'Landmark Inline B';
-$landmark-shadow: 'Landmark Shadow A', 'Landmark Shadow B';
+// $landmark-shadow: 'Landmark Shadow A', 'Landmark Shadow B';
 $landmark-regular: 'Landmark Regular A', 'Landmark Regular B';
-$surveyor-regular: 'Surveyor SSm A', 'Surveyor SSm B';
-$surveyor-swash: 'Surveyor SSm swash A', 'Surveyor SSm swash B';
 
 //////////////////////
 // Default font stacks
 $font-sans: sans-serif;
-$font-serifs: serif;
-$font-slab: serif;
+$font-serifs: $archer, serif;
+$font-slab: $archer, serif;
 $font-mono: 'Source Code Pro', monospace;
 //////////////////////
 
 //////////////////////
 // General font variables
-$font-body: $font-sans;
-$font-headline: $surveyor-regular;
-$font-display: $surveyor-swash;
+$font-body: $font-serifs;
+$font-headline: $landmark-regular;
+$font-display: $landmark-inline;
 $font-logo: $font-slab;
 $font-amp: $font-slab;
 //////////////////////
@@ -35,9 +31,10 @@ $font-amp: $font-slab;
 //
 // Values used to determine modular scale values
 // http://modularscale.com/
-$ms-ratio: $fourth;
+// $ms-ratio: $major-third;
+$ms-ratio: $major-third $golden;
 // $ms-base: 1em 2.75em;
-$ms-base: 16px 44px;
+$ms-base: 16px;
 ////////////////////////////
 
 //////////////////////
@@ -52,8 +49,8 @@ $base-line-height: unitless($base-line-em);
 // Headings
 // create a list of heading sizes, H1 - H6
 // default example uses modular scale
-$heading-sizes       : em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1)) em(ms(1)) em(ms(1));
-$heading-line-heights: unitless(em($base-line-px * 1.5, ms(4))) unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) unitless(em($base-line-px, ms(1))) unitless(em($base-line-px, ms(1)));
+$heading-sizes       : em(ms(6)) em(ms(5)) em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1));
+$heading-line-heights: unitless(em($base-line-px * 1.5, ms(6))) unitless(em($base-line-px * 1.5, ms(5))) unitless(em($base-line-px * 1.25, ms(4))) unitless(em($base-line-px, ms(3))) unitless(em($base-line-px, ms(2))) unitless(em($base-line-px, ms(1)));
 
 $heading-sizes-small       : em(ms(3)) em(ms(2)) em(ms(1)) em(ms(0)) em(ms(0)) em(ms(0));
 $heading-line-heights-small: unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) false false false;

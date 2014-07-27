@@ -1,10 +1,10 @@
 // COLORS
-$color--black              : #000000;
-$color--white              : #FFFFFF;
-// $orange             : #CCCCCC;
-$color--gray               : mix($color--black, $color--white);
-// $cs-primary         : #EA00FF;
-$cs-primary         : #C6538C;
+$color--black  : tint(black, 5%);
+$color--white  : #FFFFFF;
+// $orange     : #CCCCCC;
+$color--gray   : mix($color--black, $color--white);
+// $cs-primary : #EA00FF;
+$cs-primary    : #C6538C;
 
 //////////////////////////////
 // derived colors
@@ -33,29 +33,29 @@ $cs-primary         : #C6538C;
 //   to build us awesome color guides.
 //////////////////////////////
 // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
-$cs-scheme:             triad;
+$cs-scheme            : triad;
 // Options: mono, complement, triad, tetrad, analogic, accented-analogic
-$cs-hue-offset:         55;
+$cs-hue-offset        : 55;
 // Options: 0-100;
-$cs-brightness-offset:  0;
+$cs-brightness-offset : 0;
 // Options: 0-100;
-$cs-color-model:        ryb;
+$cs-color-model       : ryb;
 // Options: rgb, ryb
 $cs-harmonize-mode    : screen;
 $cs-harmonize-color   : $cs-primary;
 $cs-harmonize-amount  : 30%;
 
-$color--primary:   cs-primary();
-$color--secondary: adjust-color(cs-quadrary(), $lightness: -20%, $saturation: -50%);
-$color--tertiary:  cs-secondary();
-$color--quadrary:  adjust-color(cs-secondary(), $lightness: -10%, $saturation: -20%);
-$color--quintary:  adjust-color(cs-tertiary(), $lightness: 10%, $saturation: 20%);
+$color--primary   :   cs-primary();
+$color--secondary : adjust-color(cs-quadrary(), $lightness: -20%, $saturation: -50%);
+$color--tertiary  :  cs-secondary();
+$color--quadrary  :  adjust-color(cs-secondary(), $lightness: -10%, $saturation: -20%);
+$color--quintary  :  adjust-color(cs-tertiary(), $lightness: 10%, $saturation: 20%);
 // harmonize
-$color--primary:   cs-harmonize($color--primary);
-$color--secondary: cs-harmonize($color--secondary);
-$color--tertiary:  cs-harmonize($color--tertiary);
-$color--quadrary:  cs-harmonize($color--quadrary);
-$color--quintary:  cs-harmonize($color--quintary);
+$color--primary   :   cs-harmonize($color--primary);
+$color--secondary : cs-harmonize($color--secondary);
+$color--tertiary  :  cs-harmonize($color--tertiary);
+$color--quadrary  :  cs-harmonize($color--quadrary);
+$color--quintary  :  cs-harmonize($color--quintary);
 
 // @include cs-test(
 //   $color--primary
@@ -67,50 +67,50 @@ $color--quintary:  cs-harmonize($color--quintary);
 
 //////////////////////////////
 // Color Scheme Colors
-$primary-tints      : tint-stack( $color--gray);
-$primary-shades     : shade-stack($color--gray);
-$secondary-tints    : tint-stack( $color--gray);
-$secondary-shades   : shade-stack($color--gray);
-$tertiary-tints     : tint-stack( $color--gray);
-$tertiary-shades    : shade-stack($color--gray);
-$quaternary-tints   : tint-stack( $color--gray);
-$quaternary-shades  : shade-stack($color--gray);
-$black-tints        : tint-stack( $color--gray);
-$color--white-shades: shade-stack($color--gray);
+$primary-tints       : tint-stack( $color--gray);
+$primary-shades      : shade-stack($color--gray);
+$secondary-tints     : tint-stack( $color--gray);
+$secondary-shades    : shade-stack($color--gray);
+$tertiary-tints      : tint-stack( $color--gray);
+$tertiary-shades     : shade-stack($color--gray);
+$quaternary-tints    : tint-stack( $color--gray);
+$quaternary-shades   : shade-stack($color--gray);
+$black-tints         : tint-stack( $color--gray);
+$color--white-shades : shade-stack($color--gray);
 //////////////////////////////
 
 //////////////////////////////
 // Background Colors
 //////////////////////////////
-$cs-background:   $color--white;
-$cs-border-color: $color--black;
+$cs-background   :   $color--white;
+$cs-border-color : $color--black;
 
 // link colors
-$cs-link-normal:             $color--gray;
-$cs-link-hover:              $color--gray;
-$cs-link-active:             $color--gray;
-$cs-link-visited:            $color--gray;
-$cs-link-focus:              $color--gray;
-$cs-link-background-normal:  $color--gray;
-$cs-link-background-hover:   $color--gray;
-$cs-link-background-active:  $color--gray;
-$cs-link-background-visited: $color--gray;
-$cs-link-background-focus:   $color--gray;
-$cs-link-background-bkg:     $cs-background;
+$cs-link-normal             : $color--tertiary;
+$cs-link-hover              : $color--quadrary;
+$cs-link-active             : $color--quadrary;
+$cs-link-visited            : $color--tertiary;
+$cs-link-focus              : $color--quadrary;
+$cs-link-background-normal  : $color--quadrary;
+$cs-link-background-hover   : $color--tertiary;
+$cs-link-background-active  : $color--tertiary;
+$cs-link-background-visited : $color--quadrary;
+$cs-link-background-focus   : $color--tertiary;
+$cs-link-background-bkg     : $cs-background;
 
 
 //////////////////////////////
 // Text Colors
 //////////////////////////////
-$cs-text-dark:  $color--gray;
-$cs-text-light: $color--gray;
-$cs-text:       $cs-text-dark;
+$cs-text-dark  : $color--black;
+$cs-text-light : $color--white;
+$cs-text       : $cs-text-dark;
 
 
 //////////////////////////////
 // Border Colors
 //////////////////////////////
-$cs-border: $color--gray;
+$cs-border : $color--gray;
 
 //////////////////////////////
 // Status Colors
@@ -123,9 +123,9 @@ $cs-status-error   : nth($primary-tints, 5);
 // Component defaults
 //////////////////////////////
 // Buttons
-$cs-button-color-default: $color--gray;
+$cs-button-color-default    : $color--gray;
 //////////////////////////////
 // Messages
-$cs-message-text-color-default: nth($secondary-tints, 3);
-$cs-message-bkg-color-default: $cs-status-status;
+$cs-message-text-color-default : nth($secondary-tints, 3);
+$cs-message-bkg-color-default  : $cs-status-status;
 //////////////////////////////
