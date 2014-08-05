@@ -6,10 +6,17 @@ body.manhattan {
   background-size: contain;
 }
 
+$bp--logo-full: 750px;
+$bp--logo-med: 580px;
+
 .header {
-  background-color: rgba(white, 0.75);
+  // background-color: rgba(white, 0.75);
+  // background-color: rgba($color--black, 0.75);
   @include intrinsic-ratio(1800/756, 100%);
   margin-bottom: 15%;
+  // @supports(mix-blend-mode: lighten) {
+  //   background-color: transparent;
+  // }
   .logo-nav {
     text-align: center;
   }
@@ -19,7 +26,7 @@ body.manhattan {
     }
     color: $cs-primary !important;
     font: {
-      size: 4em;
+      size: 29em;
       family: $landmark-inline;
       weight: 500;
     }
@@ -32,6 +39,30 @@ body.manhattan {
       line-height: 1em;
       @include transform2d(translateY(0.125em));
     }
+    @include breakpoint($bp--logo-med) {
+      font: {
+        size: 3em;
+      }
+    }
+    @include breakpoint($bp--logo-full) {
+      font: {
+        size: 4em;
+      }
+    }
+    .rhombus-left {
+      // background: hsla(1, 0%, 0%, 0.31);
+      // background: rgba($color--black, 0.3);
+      background: $color--secondary;
+      line-height: 1;
+      margin-top: 0.5em;
+      width: 50%;
+      position: relative;
+      left: 50%;
+      // -webkit-transform: translateX(-50%) skewX(-10deg);
+      @include transform2d(translateX(-50%) skewX(10deg));
+      color: $color--white;
+      text-align: center;
+    }
   }
   h2 {
     background: {
@@ -42,9 +73,12 @@ body.manhattan {
       size: 2em;
       family: $landmark-regular;
     }
+    line-height: 64px;
     position: relative;
     width: 50%;
     left: 50%;
     @include transform2d(skewX($rhombus-skew) translateX(-50%));
   }
 }
+
+

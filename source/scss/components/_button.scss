@@ -140,7 +140,7 @@ $button-text-color-default: false !default;
 %button-big {
   @include button-base(true);
   @include button-size-large(true);
-  @include button-colors(nth($quaternary-tints, 6), $extend: true);
+  @include button-colors(nth($quadrary-tints, 6), $extend: true);
 }
 %button-cta {
   @include button-base(true);

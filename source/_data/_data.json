@@ -97,5 +97,12 @@
 		{"label": "color--black"},
 		{"label": "color--gray"},
 		{"label": "color--white"}
+	],
+	"brand_color_stacks" : [
+		{"label": "color--primary"},
+		{"label": "color--secondary"},
+		{"label": "color--tertiary"},
+		{"label": "color--quadrary"},
+		{"label": "color--quintary"}
 	]
 }

@@ -5,14 +5,24 @@
   @include transform2d(skewX($rhombus-skew-reset));
 
 }
+.rhombus-left {
+  @include transform2d(skewX($rhombus-skew-reset));
+}
+.rhombus-left-reset {
+  @include transform2d(skewX($rhombus-skew));
+
+}
 
 
 .rhombus-grid-wrapper {
-  opacity: 0.6;
-  mix-blend-mode: screen;
   position: fixed;
   width: 100%;
   top: 0;
+  opacity: 0.6;
+  @supports(mix-blend-mode: lighten) {
+    opacity: 1;
+    mix-blend-mode: lighten;
+  }
 }
 .rhombus-grid {
   max-width: 100%;

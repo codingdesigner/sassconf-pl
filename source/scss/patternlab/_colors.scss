@@ -14,3 +14,48 @@
 .sg-label {
   @include ellipsis();
 }
+
+.sg-colors-stack {
+  &.stack-color--primary {
+    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($primary-tints, $i); } }
+    }
+    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($primary-shades, $i); } }
+    }
+  }
+}
+
+.sg-colors-stack {
+  &.stack-color--secondary {
+    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($secondary-tints, $i); } }
+    }
+    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($secondary-shades, $i); } }
+    }
+  }
+}
+
+.sg-colors-stack {
+  &.stack-color--tertiary {
+    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($tertiary-tints, $i); } }
+    }
+    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($tertiary-shades, $i); } }
+    }
+  }
+}
+
+.sg-colors-stack {
+  &.stack-color--quadrary {
+    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($quadrary-tints, $i); } }
+    }
+    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($quadrary-shades, $i); } }
+    }
+  }
+}
+
+.sg-colors-stack {
+  &.stack-color--quintary {
+    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($quintary-tints, $i); } }
+    }
+    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($quintary-shades, $i); } }
+    }
+  }
+}

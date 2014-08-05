@@ -67,22 +67,24 @@ $color--quintary  :  cs-harmonize($color--quintary);
 
 //////////////////////////////
 // Color Scheme Colors
-$primary-tints       : tint-stack( $color--gray);
-$primary-shades      : shade-stack($color--gray);
-$secondary-tints     : tint-stack( $color--gray);
-$secondary-shades    : shade-stack($color--gray);
-$tertiary-tints      : tint-stack( $color--gray);
-$tertiary-shades     : shade-stack($color--gray);
-$quaternary-tints    : tint-stack( $color--gray);
-$quaternary-shades   : shade-stack($color--gray);
-$black-tints         : tint-stack( $color--gray);
+$primary-tints       : tint-stack( $color--primary);
+$primary-shades      : shade-stack($color--primary);
+$secondary-tints     : tint-stack( $color--secondary);
+$secondary-shades    : shade-stack($color--secondary);
+$tertiary-tints      : tint-stack( $color--tertiary);
+$tertiary-shades     : shade-stack($color--tertiary);
+$quadrary-tints      : tint-stack( $color--quadrary);
+$quadrary-shades     : shade-stack($color--quadrary);
+$quintary-tints      : tint-stack( $color--quintary);
+$quintary-shades     : shade-stack($color--quintary);
+$color--black-tints  : tint-stack( $color--gray);
 $color--white-shades : shade-stack($color--gray);
 //////////////////////////////
 
 //////////////////////////////
 // Background Colors
 //////////////////////////////
-$cs-background   :   $color--white;
+$cs-background   : $color--white;
 $cs-border-color : $color--black;
 
 // link colors
@@ -115,7 +117,7 @@ $cs-border : $color--gray;
 //////////////////////////////
 // Status Colors
 //////////////////////////////
-$cs-status-status  : nth($quaternary-tints, 4);
+$cs-status-status  : nth($quadrary-tints, 4);
 $cs-status-warning : nth($secondary-tints, 6);
 $cs-status-error   : nth($primary-tints, 5);
 
