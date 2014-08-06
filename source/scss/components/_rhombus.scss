@@ -19,9 +19,9 @@
   width: 100%;
   top: 0;
   opacity: 0.6;
-  @supports(mix-blend-mode: lighten) {
+  @supports(mix-blend-mode: color-dodge) {
     opacity: 1;
-    mix-blend-mode: lighten;
+    mix-blend-mode: color-dodge;
   }
 }
 .rhombus-grid {

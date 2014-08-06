@@ -183,24 +183,38 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
 /* line 1, ../scss/components/_header.scss */
 body.manhattan { position: relative; width: 100%; background-image: url(../../images/manhattan-zeldman-1800x756.jpg); background-repeat: no-repeat; background-size: contain; }
 
-/* line 12, ../scss/components/_header.scss */
+/* line 14, ../scss/components/_header.scss */
 .header { position: relative; height: 0; padding-top: 42%; width: 100%; margin-bottom: 15%; }
 /* line 58, ../../../../../../.rvm/gems/ruby-2.1.1/gems/toolkit-2.5.2/stylesheets/toolkit/_intrinsic-ratio.scss */
 .header > * { display: block; position: absolute; width: 100% !important; height: 100% !important; top: 0; margin: 0; padding: 0; }
-/* line 20, ../scss/components/_header.scss */
+/* line 22, ../scss/components/_header.scss */
 .header .logo-nav { text-align: center; }
-/* line 23, ../scss/components/_header.scss */
-.header .logo-lockup { background-image: none; color: #c6538c !important; font-size: 29em; font-family: "Landmark Inline A", "Landmark Inline B"; font-weight: 500; text-shadow: none; text-transform: uppercase; padding: 0; }
-/* line 38, ../scss/components/_header.scss */
+/* line 25, ../scss/components/_header.scss */
+.header .logo-lockup { background-image: none; color: #c6538c !important; font-size: 2em; font-family: "Landmark Inline A", "Landmark Inline B"; font-weight: 500; text-shadow: none; text-transform: uppercase; padding: 0; }
+/* line 40, ../scss/components/_header.scss */
 .header .logo-lockup:before { line-height: 1em; -moz-transform: translateY(0.125em); -ms-transform: translateY(0.125em); -webkit-transform: translateY(0.125em); transform: translateY(0.125em); }
-@media (min-width: 36.25em) { /* line 23, ../scss/components/_header.scss */
+@media (max-width: 36.8125em) { /* line 40, ../scss/components/_header.scss */
+  .header .logo-lockup:before { position: absolute; color: white; left: 13%; top: 18px; } }
+@media (min-width: 36.875em) { /* line 25, ../scss/components/_header.scss */
   .header .logo-lockup { font-size: 3em; } }
-@media (min-width: 46.875em) { /* line 23, ../scss/components/_header.scss */
+@media (min-width: 46.875em) { /* line 25, ../scss/components/_header.scss */
   .header .logo-lockup { font-size: 4em; } }
-/* line 52, ../scss/components/_header.scss */
-.header .logo-lockup .rhombus-left { background: #933b69; line-height: 1; margin-top: 0.5em; width: 50%; position: relative; left: 50%; -moz-transform: translateX(-50%) skewX(10deg); -ms-transform: translateX(-50%) skewX(10deg); -webkit-transform: translateX(-50%) skewX(10deg); transform: translateX(-50%) skewX(10deg); color: white; text-align: center; }
-/* line 67, ../scss/components/_header.scss */
-.header h2 { background-color: #c6538c; color: white; font-size: 2em; font-family: "Landmark Regular A", "Landmark Regular B"; line-height: 64px; position: relative; width: 50%; left: 50%; -moz-transform: skewX(-10deg) translateX(-50%); -ms-transform: skewX(-10deg) translateX(-50%); -webkit-transform: skewX(-10deg) translateX(-50%); transform: skewX(-10deg) translateX(-50%); }
+/* line 60, ../scss/components/_header.scss */
+.header .logo-lockup .rhombus-left { background: #933b69; line-height: 1.3; margin-top: 0.5em; position: relative; color: white; text-align: center; width: 80%; left: 50%; -moz-transform: translateX(-50%) skewX(10deg); -ms-transform: translateX(-50%) skewX(10deg); -webkit-transform: translateX(-50%) skewX(10deg); transform: translateX(-50%) skewX(10deg); }
+@media (max-width: 36.8125em) { /* line 60, ../scss/components/_header.scss */
+  .header .logo-lockup .rhombus-left { text-align: left; padding-left: 80px; } }
+@media (min-width: 36.875em) { /* line 60, ../scss/components/_header.scss */
+  .header .logo-lockup .rhombus-left { width: 50%; } }
+@media (min-width: 46.875em) { /* line 60, ../scss/components/_header.scss */
+  .header .logo-lockup .rhombus-left { line-height: 1; } }
+/* line 85, ../scss/components/_header.scss */
+.header h2 { background-color: #c6538c; color: white; font-size: 1.5em; font-family: "Landmark Regular A", "Landmark Regular B"; line-height: 1.3; line-height: 1.729; position: relative; width: 80%; left: 50%; -moz-transform: skewX(-10deg) translateX(-50%); -ms-transform: skewX(-10deg) translateX(-50%); -webkit-transform: skewX(-10deg) translateX(-50%); transform: skewX(-10deg) translateX(-50%); }
+@media (max-width: 23.75em) { /* line 85, ../scss/components/_header.scss */
+  .header h2 { font-size: 1.1em; line-height: 2.305555556; } }
+@media (max-width: 36.8125em) { /* line 85, ../scss/components/_header.scss */
+  .header h2 { text-align: left; padding-left: 80px; } }
+@media (min-width: 36.875em) { /* line 85, ../scss/components/_header.scss */
+  .header h2 { font-size: 2em; width: 50%; line-height: 2; } }
 
 /* line 9, ../scss/components/_list.scss */
 .inline-list { list-style-type: none; }
@@ -263,8 +277,8 @@ body.manhattan { position: relative; width: 100%; background-image: url(../../im
 
 /* line 17, ../scss/components/_rhombus.scss */
 .rhombus-grid-wrapper { position: fixed; width: 100%; top: 0; opacity: 0.6; }
-@supports (mix-blend-mode: lighten) { /* line 17, ../scss/components/_rhombus.scss */
-  .rhombus-grid-wrapper { opacity: 1; mix-blend-mode: lighten; } }
+@supports (mix-blend-mode: color-dodge) { /* line 17, ../scss/components/_rhombus.scss */
+  .rhombus-grid-wrapper { opacity: 1; mix-blend-mode: color-dodge; } }
 
 /* line 27, ../scss/components/_rhombus.scss */
 .rhombus-grid { max-width: 100%; }
