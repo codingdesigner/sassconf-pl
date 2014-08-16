@@ -3,12 +3,34 @@
 	<head>
 		<title>{{ title }}</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
 
-		<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+		<!-- Mobile  Meta -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="width">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="{{ base_path }}images/ico/favicon.ico">
+
+		<!-- bower:css -->
+		<!-- endbower -->
+
+		<!-- bower css components not auto-injected via wiredep -->
+
+    <!-- Stylesheets -->
+		<link rel="stylesheet" href="{{ base_path }}css/style.css?{{ cacheBuster }}" media="all" />
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css" />
-		<script src="../../js/eq.min.js?{{ cacheBuster }}"></script>
-		<script src="../../js/modernizr.js"></script>
+
+		<!-- bower:js -->
+		<!-- endbower -->
+
+		<!--[if lt IE 9]>
+		<script src="{{ base_path}}bower_components/html5shiv/dist/html5shiv.js"></script>
+		<script src="{{ base_path}}bower_components/respond/dest/respond.src.js"></script>
+		<script src="{{ base_path}}bower_components/selectivizr/selectivizr.js"></script>
+		<![endif]-->
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		{% pattern-lab-head %}
