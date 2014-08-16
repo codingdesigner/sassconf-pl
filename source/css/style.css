@@ -1,84 +1,1022 @@
-/*
-Syntax error: List index is 5 but list is only 1 item long for `nth'
-        on line 86 of /Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/global/variables/_colors.scss
-        from line 2 of /Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/global/variables/*
-        from line 26 of /Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/style.scss
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/global/variables/_colors.scss:86
-/Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/global/variables/*:2
-/Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/style.scss:26
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/script/tree/funcall.rb:303:in `reformat_argument_error'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/script/tree/funcall.rb:146:in `rescue in _perform'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/script/tree/funcall.rb:123:in `_perform'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:438:in `visit_variable'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `block (2 levels) in visit_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `map'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `block in visit_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:88:in `block in with_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:88:in `with_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `block (2 levels) in visit_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `map'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `block in visit_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:88:in `block in with_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:88:in `with_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/engine.rb:371:in `_render_with_sourcemap'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/engine.rb:291:in `render_with_sourcemap'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `each'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/lib/compass/sass_compiler.rb:40:in `compile!'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/lib/compass/commands/update_project.rb:49:in `perform'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/lib/compass/commands/base.rb:18:in `execute'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/bin/compass:30:in `block in <top (required)>'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/bin/compass:44:in `call'
-/Users/mason/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0/bin/compass:44:in `<top (required)>'
-/Users/mason/.rvm/gems/ruby-2.1.1/bin/compass:23:in `load'
-/Users/mason/.rvm/gems/ruby-2.1.1/bin/compass:23:in `<main>'
-/Users/mason/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
-/Users/mason/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: List index is 5 but list is only 1 item long for `nth'\A         on line 86 of /Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/global/variables/_colors.scss\A         from line 2 of /Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/global/variables/*\A         from line 26 of /Users/mason/www/sassconf/2014_design/sassconf-pl/source/scss/style.scss"; }
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'uikitregular';
+  src: url('../fonts/uikit.eot');
+  src: url('../fonts/uikit.eot?#iefix') format("embedded-opentype"), url('../fonts/uikit.woff') format("woff"), url('../fonts/uikit.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Type Scale
+   ========================================================================== */
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color], select, textarea {
+  max-width: 100%;
+}
+
+code {
+  font-family: "Source Code Pro", monospace;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.font-family-archer {
+  font-family: "Archer SSm A", "Archer SSm B", serif;
+}
+
+.font-family-landmark-regular {
+  font-family: "Landmark Regular A", "Landmark Regular B";
+}
+
+.font-family-landmark-inline {
+  font-family: "Landmark Inline A", "Landmark Inline B";
+}
+
+body {
+  font-family: "Archer SSm A", "Archer SSm B", serif, serif;
+  color: #0c0c0c;
+  background: #ebf7f7;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-font-feature-settings: "liga","dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga","dlig";
+  -ms-font-feature-settings: "liga","dlig";
+  -o-font-feature-settings: "liga","dlig";
+  font-feature-settings: "liga","dlig";
+}
+
+body[data-menu-position='open'] {
+  border-left: none;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color], select, textarea {
+  margin-top: 0;
+  margin-bottom: 1.625em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  height: 2.4375em;
+  border-width: 1px;
+  border-color: #858585;
+  font-size: 16px;
+  font-family: "Archer SSm A", "Archer SSm B", serif, serif;
+}
+
+textarea {
+  height: 10.5625em;
+}
+
+label {
+  margin-right: 0.5em;
+  vertical-align: top;
+  line-height: 2.4375em;
+  cursor: pointer;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+}
+
+legend {
+  padding: 0 1em;
+  white-space: nowrap;
+}
+
+fieldset {
+  border-style: dashed;
+}
+
+.base--STYLED h1, .base--STYLED h2, .base--STYLED h3, .base--STYLED h4, .base--STYLED h5, .base--STYLED h6 {
+  font-family: "Landmark Regular A", "Landmark Regular B";
+  font-weight: normal;
+}
+
+.base--STYLED h1 {
+  font-size: 2.61803em;
+  line-height: 0.93104;
+  margin-bottom: 0.62069em;
+}
+
+.base--STYLED h2 {
+  font-size: 2.44141em;
+  line-height: 0.9984;
+  margin-bottom: 0.6656em;
+}
+
+.base--STYLED h3 {
+  font-size: 1.95313em;
+  line-height: 1.04;
+  margin-bottom: 0.832em;
+}
+
+.base--STYLED h4 {
+  font-size: 1.61803em;
+  line-height: 1.00431;
+}
+
+.base--STYLED h5 {
+  font-size: 1.5625em;
+  line-height: 1.04;
+}
+
+.base--STYLED h6 {
+  font-size: 1.25em;
+  line-height: 1.3;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.625;
+  overflow-x: hidden;
+}
+
+a:not(.button) {
+  color: #7acbcb;
+}
+a:not(.button):visited {
+  color: #7acbcb;
+}
+a:not(.button):focus {
+  color: #789fa4;
+}
+a:not(.button):hover {
+  color: #789fa4;
+}
+a:not(.button):active {
+  color: #789fa4;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: #ebf7f7 -1px 1px 0, #ebf7f7 0 1px 0, #ebf7f7 1px 1px 0;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM3ODlmYTQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmY3ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(50%, #789fa4), color-stop(100%, #ebf7f7));
+  background-image: -moz-linear-gradient(bottom, #789fa4 1px, #ebf7f7 2px);
+  background-image: -webkit-linear-gradient(bottom, #789fa4 1px, #ebf7f7 2px);
+  background-image: linear-gradient(to top, #789fa4 1px, #ebf7f7 2px);
+}
+a:visited {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM3ODlmYTQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmY3ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(50%, #789fa4), color-stop(100%, #ebf7f7));
+  background-image: -moz-linear-gradient(bottom, #789fa4 1px, #ebf7f7 2px);
+  background-image: -webkit-linear-gradient(bottom, #789fa4 1px, #ebf7f7 2px);
+  background-image: linear-gradient(to top, #789fa4 1px, #ebf7f7 2px);
+}
+a:focus {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM3YWNiY2IiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmY3ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(50%, #7acbcb), color-stop(100%, #ebf7f7));
+  background-image: -moz-linear-gradient(bottom, #7acbcb 1px, #ebf7f7 2px);
+  background-image: -webkit-linear-gradient(bottom, #7acbcb 1px, #ebf7f7 2px);
+  background-image: linear-gradient(to top, #7acbcb 1px, #ebf7f7 2px);
+}
+a:hover {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM3YWNiY2IiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmY3ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(50%, #7acbcb), color-stop(100%, #ebf7f7));
+  background-image: -moz-linear-gradient(bottom, #7acbcb 1px, #ebf7f7 2px);
+  background-image: -webkit-linear-gradient(bottom, #7acbcb 1px, #ebf7f7 2px);
+  background-image: linear-gradient(to top, #7acbcb 1px, #ebf7f7 2px);
+}
+a:active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM3YWNiY2IiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmY3ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(50%, #7acbcb), color-stop(100%, #ebf7f7));
+  background-image: -moz-linear-gradient(bottom, #7acbcb 1px, #ebf7f7 2px);
+  background-image: -webkit-linear-gradient(bottom, #7acbcb 1px, #ebf7f7 2px);
+  background-image: linear-gradient(to top, #7acbcb 1px, #ebf7f7 2px);
+}
+
+p {
+  margin-bottom: 1.625em;
+}
+
+.field-intro p {
+  font-size: 1.25em;
+  line-height: 1.625;
+  margin-bottom: 2.03125em;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  border-bottom: 1px solid #858585;
+}
+
+th {
+  font-weight: bold;
+}
+
+.a11y--element-invisible, .element-invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.a11y--element-focusable {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.a11y--element-focusable:active, .a11y--element-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+button, input[type='submit'], input[type='reset'], input[type='button'], .big-button, .call-to-action {
+  display: inline-block;
+  border-radius: 0.25em;
+  border: none;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+button, input[type='submit'], input[type='reset'], input[type='button'], .call-to-action {
+  padding: 0.2em 0.5em;
+  font-size: 0.9em;
+  line-height: 1.25;
+}
+
+.big-button {
+  padding: 0.5em 0.75em;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+button, input[type='submit'], input[type='reset'], input[type='button'] {
+  color: white;
+  background-color: #acacac;
+}
+button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover {
+  background-color: #bebebe;
+}
+button:active, input[type='submit']:active, input[type='reset']:active, input[type='button']:active {
+  background-color: #dddddd;
+}
+
+.big-button.warning:hover {
+  background-color: #e0c9d6;
+}
+.big-button.warning:active {
+  background-color: #f4ebf0;
+}
+
+.big-button {
+  color: #0c0c0c;
+  background-color: #abc3c3;
+}
+.big-button:hover {
+  background-color: #d5e0e0;
+}
+.big-button:active {
+  background-color: #f1f5f5;
+}
+
+.call-to-action {
+  color: white;
+  background-color: #341827;
+}
+.call-to-action:hover {
+  background-color: #50273d;
+}
+.call-to-action:active {
+  background-color: #954b74;
+}
+
+body.manhattan {
+  position: relative;
+}
+
+.photo-wrapper {
+  position: relative;
+  width: 100%;
+  background-image: url(../../images/manhattan-zeldman-1800x756.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header .photo-wrapper {
+  -webkit-filter: blur(5px) contrast(150%) saturate(150%);
+}
+
+.header {
+  position: relative;
+  height: 0;
+  padding-top: 42%;
+  width: 100%;
+  margin-bottom: 15%;
+}
+.header > * {
+  display: block;
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+.header .logo-nav {
+  text-align: center;
+  position: fixed;
+}
+.header .logo-lockup {
+  background-image: none;
+  color: #c6538c !important;
+  font-size: 2em;
+  font-family: "Landmark Inline A", "Landmark Inline B";
+  font-weight: 500;
+  text-shadow: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+.header .logo-lockup:before {
+  line-height: 1em;
+  -moz-transform: translateY(0.125em);
+  -ms-transform: translateY(0.125em);
+  -webkit-transform: translateY(0.125em);
+  transform: translateY(0.125em);
+}
+@media (max-width: 36.8125em) {
+  .header .logo-lockup:before {
+    position: absolute;
+    color: white;
+    left: 13%;
+    top: 18px;
+  }
+}
+@media (min-width: 36.875em) {
+  .header .logo-lockup {
+    font-size: 3em;
+  }
+}
+@media (min-width: 46.875em) {
+  .header .logo-lockup {
+    font-size: 4em;
+  }
+}
+.header .logo-lockup .rhombus-left {
+  background: #933b6a;
+  line-height: 1.3;
+  margin-top: 0.5em;
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 80%;
+  left: 50%;
+  -moz-transform: translateX(-50%) skewX(10deg);
+  -ms-transform: translateX(-50%) skewX(10deg);
+  -webkit-transform: translateX(-50%) skewX(10deg);
+  transform: translateX(-50%) skewX(10deg);
+}
+@media (max-width: 36.8125em) {
+  .header .logo-lockup .rhombus-left {
+    text-align: left;
+    padding-left: 80px;
+  }
+}
+@media (min-width: 36.875em) {
+  .header .logo-lockup .rhombus-left {
+    width: 50%;
+  }
+}
+@media (min-width: 46.875em) {
+  .header .logo-lockup .rhombus-left {
+    line-height: 1;
+  }
+}
+.header h2 {
+  background-color: #c6538c;
+  color: white;
+  font-size: 1.5em;
+  font-family: "Landmark Regular A", "Landmark Regular B";
+  line-height: 1.3;
+  line-height: 1.729;
+  position: relative;
+  width: 80%;
+  left: 50%;
+  -moz-transform: skewX(-10deg) translateX(-50%);
+  -ms-transform: skewX(-10deg) translateX(-50%);
+  -webkit-transform: skewX(-10deg) translateX(-50%);
+  transform: skewX(-10deg) translateX(-50%);
+}
+@media (max-width: 23.75em) {
+  .header h2 {
+    font-size: 1.1em;
+    line-height: 2.305555556;
+  }
+}
+@media (max-width: 36.8125em) {
+  .header h2 {
+    text-align: left;
+    padding-left: 80px;
+  }
+}
+@media (min-width: 36.875em) {
+  .header h2 {
+    font-size: 2em;
+    width: 50%;
+    line-height: 2;
+  }
+}
+
+.inline-list {
+  list-style-type: none;
+}
+.inline-list, .inline-list li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.no-bullets, .sg-swatch {
+  list-style: none;
+}
+.no-bullets li, .sg-swatch li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.logo-lockup.dark, .logo-lockup {
+  text-align: center;
+  color: #d3639e;
+  font-family: "Landmark Inline A", "Landmark Inline B";
+  font-size: 2em;
+  font-weight: 800;
+  padding: .5em;
+}
+.logo-lockup.dark:before, .logo-lockup:before {
+  content: "S";
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+  font-weight: 400;
+  font-family: uikitregular;
+  display: block;
+  font-size: 2em;
+  margin: 0 0 0 0;
+}
+
+.logo-lockup.dark {
+  -webkit-font-smoothing: antialiased;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-icon.dark, .logo-icon {
+  display: inline-block;
+  font-family: uikitregular;
+  font-size: 4em;
+  padding: .25em;
+  margin: .25em;
+  width: 1em;
+  height: 1em;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  line-height: 1;
+  border-radius: .75em;
+}
+
+.logo-icon.dark {
+  -webkit-font-smoothing: antialiased;
+}
+
+.logo {
+  font-family: uikitregular;
+  list-style: none;
+  padding: 0 0 2em 0;
+  color: #d3639e;
+}
+.logo li {
+  text-align: center;
+  line-height: 1;
+  font-size: 10em;
+}
+
+.message {
+  padding: 0.2em 0.5em;
+  border-style: solid;
+  border-width: .15em;
+  border-radius: .25em;
+}
+
+.message, .message.status {
+  color: #0c0c0c;
+  background-color: #a5bebf;
+  border-color: #7da0a4;
+}
+
+.big-button.warning, .message.warning {
+  color: #0c0c0c;
+  background-color: #d8baca;
+  border-color: #be8da7;
+}
+
+.message.error {
+  color: #0c0c0c;
+  background-color: #e5adca;
+  border-color: #d477a7;
+}
+
+.pager {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pager-first, .pager-previous, .pager-item, .pager-next, .pager-last {
+  display: inline;
+  margin: 0;
+  padding: 0.2em 0.5em;
+  text-transform: uppercase;
+}
+
+.rhombus {
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.rhombus-reset {
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  -webkit-transform: skewX(10deg);
+  transform: skewX(10deg);
+}
+
+.rhombus-left {
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  -webkit-transform: skewX(10deg);
+  transform: skewX(10deg);
+}
+
+.rhombus-left-reset {
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.rhombus-grid-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  opacity: 0.6;
+}
+@supports (mix-blend-mode: color-dodge) {
+  .rhombus-grid-wrapper {
+    opacity: 1;
+    mix-blend-mode: color-dodge;
+    mix-blend-mode: screen;
+  }
+}
+
+.rhombus-grid {
+  max-width: 100%;
+}
+
+.sg-swatch.color--black {
+  background-color: #0c0c0c;
+}
+.sg-swatch.color--white {
+  background-color: white;
+}
+.sg-swatch.color--gray {
+  background-color: #858585;
+}
+.sg-swatch.color--primary {
+  background-color: #d3639e;
+}
+.sg-swatch.color--secondary {
+  background-color: #933b6a;
+}
+.sg-swatch.color--tertiary {
+  background-color: #7acbcb;
+}
+.sg-swatch.color--quadrary {
+  background-color: #789fa4;
+}
+.sg-swatch.color--quintary {
+  background-color: #ead87f;
+}
+
+.sg-label {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.sg-colors-stack.stack-color--primary.tints .tint-1 {
+  background-color: #d3639e;
+}
+.sg-colors-stack.stack-color--primary.tints .tint-2 {
+  background-color: #de8ab6;
+}
+.sg-colors-stack.stack-color--primary.tints .tint-3 {
+  background-color: #e9b1ce;
+}
+.sg-colors-stack.stack-color--primary.tints .tint-4 {
+  background-color: #f4d8e6;
+}
+.sg-colors-stack.stack-color--primary.tints .tint-5 {
+  background-color: #f8e7f0;
+}
+.sg-colors-stack.stack-color--primary.tints .tint-6 {
+  background-color: #faeff5;
+}
+.sg-colors-stack.stack-color--primary.shades .shade-1 {
+  background-color: #d3639e;
+}
+.sg-colors-stack.stack-color--primary.shades .shade-2 {
+  background-color: #9e4a76;
+}
+.sg-colors-stack.stack-color--primary.shades .shade-3 {
+  background-color: #69314f;
+}
+.sg-colors-stack.stack-color--primary.shades .shade-4 {
+  background-color: #341827;
+}
+.sg-colors-stack.stack-color--primary.shades .shade-5 {
+  background-color: #1f0e17;
+}
+.sg-colors-stack.stack-color--primary.shades .shade-6 {
+  background-color: #15090f;
+}
+
+.sg-colors-stack.stack-color--secondary.tints .tint-1 {
+  background-color: #933b6a;
+}
+.sg-colors-stack.stack-color--secondary.tints .tint-2 {
+  background-color: #ae6c8f;
+}
+.sg-colors-stack.stack-color--secondary.tints .tint-3 {
+  background-color: #c99db4;
+}
+.sg-colors-stack.stack-color--secondary.tints .tint-4 {
+  background-color: #e4ced9;
+}
+.sg-colors-stack.stack-color--secondary.tints .tint-5 {
+  background-color: #eee1e8;
+}
+.sg-colors-stack.stack-color--secondary.tints .tint-6 {
+  background-color: #f4ebf0;
+}
+.sg-colors-stack.stack-color--secondary.shades .shade-1 {
+  background-color: #933b6a;
+}
+.sg-colors-stack.stack-color--secondary.shades .shade-2 {
+  background-color: #6e2c4f;
+}
+.sg-colors-stack.stack-color--secondary.shades .shade-3 {
+  background-color: #491d35;
+}
+.sg-colors-stack.stack-color--secondary.shades .shade-4 {
+  background-color: #240e1a;
+}
+.sg-colors-stack.stack-color--secondary.shades .shade-5 {
+  background-color: #16080f;
+}
+.sg-colors-stack.stack-color--secondary.shades .shade-6 {
+  background-color: #0e050a;
+}
+
+.sg-colors-stack.stack-color--tertiary.tints .tint-1 {
+  background-color: #7acbcb;
+}
+.sg-colors-stack.stack-color--tertiary.tints .tint-2 {
+  background-color: #9bd8d8;
+}
+.sg-colors-stack.stack-color--tertiary.tints .tint-3 {
+  background-color: #bce5e5;
+}
+.sg-colors-stack.stack-color--tertiary.tints .tint-4 {
+  background-color: #ddf2f2;
+}
+.sg-colors-stack.stack-color--tertiary.tints .tint-5 {
+  background-color: #ebf7f7;
+}
+.sg-colors-stack.stack-color--tertiary.tints .tint-6 {
+  background-color: #f1f9f9;
+}
+.sg-colors-stack.stack-color--tertiary.shades .shade-1 {
+  background-color: #7acbcb;
+}
+.sg-colors-stack.stack-color--tertiary.shades .shade-2 {
+  background-color: #5b9898;
+}
+.sg-colors-stack.stack-color--tertiary.shades .shade-3 {
+  background-color: #3d6565;
+}
+.sg-colors-stack.stack-color--tertiary.shades .shade-4 {
+  background-color: #1e3232;
+}
+.sg-colors-stack.stack-color--tertiary.shades .shade-5 {
+  background-color: #121e1e;
+}
+.sg-colors-stack.stack-color--tertiary.shades .shade-6 {
+  background-color: #0c1414;
+}
+
+.sg-colors-stack.stack-color--quadrary.tints .tint-1 {
+  background-color: #789fa4;
+}
+.sg-colors-stack.stack-color--quadrary.tints .tint-2 {
+  background-color: #99b7ba;
+}
+.sg-colors-stack.stack-color--quadrary.tints .tint-3 {
+  background-color: #bbcfd1;
+}
+.sg-colors-stack.stack-color--quadrary.tints .tint-4 {
+  background-color: #dde7e8;
+}
+.sg-colors-stack.stack-color--quadrary.tints .tint-5 {
+  background-color: #eaf0f1;
+}
+.sg-colors-stack.stack-color--quadrary.tints .tint-6 {
+  background-color: #f1f5f5;
+}
+.sg-colors-stack.stack-color--quadrary.shades .shade-1 {
+  background-color: #789fa4;
+}
+.sg-colors-stack.stack-color--quadrary.shades .shade-2 {
+  background-color: #5a777b;
+}
+.sg-colors-stack.stack-color--quadrary.shades .shade-3 {
+  background-color: #3c4f52;
+}
+.sg-colors-stack.stack-color--quadrary.shades .shade-4 {
+  background-color: #1e2729;
+}
+.sg-colors-stack.stack-color--quadrary.shades .shade-5 {
+  background-color: #121718;
+}
+.sg-colors-stack.stack-color--quadrary.shades .shade-6 {
+  background-color: #0b0f10;
+}
+
+.sg-colors-stack.stack-color--quintary.tints .tint-1 {
+  background-color: #ead87f;
+}
+.sg-colors-stack.stack-color--quintary.tints .tint-2 {
+  background-color: #efe19f;
+}
+.sg-colors-stack.stack-color--quintary.tints .tint-3 {
+  background-color: #f4ebbf;
+}
+.sg-colors-stack.stack-color--quintary.tints .tint-4 {
+  background-color: #f9f5df;
+}
+.sg-colors-stack.stack-color--quintary.tints .tint-5 {
+  background-color: #fbf9eb;
+}
+.sg-colors-stack.stack-color--quintary.tints .tint-6 {
+  background-color: #fcfbf2;
+}
+.sg-colors-stack.stack-color--quintary.shades .shade-1 {
+  background-color: #ead87f;
+}
+.sg-colors-stack.stack-color--quintary.shades .shade-2 {
+  background-color: #afa25f;
+}
+.sg-colors-stack.stack-color--quintary.shades .shade-3 {
+  background-color: #756c3f;
+}
+.sg-colors-stack.stack-color--quintary.shades .shade-4 {
+  background-color: #3a361f;
+}
+.sg-colors-stack.stack-color--quintary.shades .shade-5 {
+  background-color: #232013;
+}
+.sg-colors-stack.stack-color--quintary.shades .shade-6 {
+  background-color: #17150c;
+}
+
+.sg-fonts {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.sg-ms {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sg-ms li:nth-of-type(1) {
+  font-size: 16px;
+}
+.sg-ms li:nth-of-type(1):before {
+  content: "ms-0: ";
+}
+.sg-ms li:nth-of-type(2) {
+  font-size: 20px;
+}
+.sg-ms li:nth-of-type(2):before {
+  content: "ms-1: ";
+}
+.sg-ms li:nth-of-type(3) {
+  font-size: 25px;
+}
+.sg-ms li:nth-of-type(3):before {
+  content: "ms-2: ";
+}
+.sg-ms li:nth-of-type(4) {
+  font-size: 25.88854px;
+}
+.sg-ms li:nth-of-type(4):before {
+  content: "ms-3: ";
+}
+.sg-ms li:nth-of-type(5) {
+  font-size: 31.25px;
+}
+.sg-ms li:nth-of-type(5):before {
+  content: "ms-4: ";
+}
+.sg-ms li:nth-of-type(6) {
+  font-size: 39.0625px;
+}
+.sg-ms li:nth-of-type(6):before {
+  content: "ms-5: ";
+}
+.sg-ms li:nth-of-type(7) {
+  font-size: 41.88854px;
+}
+.sg-ms li:nth-of-type(7):before {
+  content: "ms-6: ";
+}
+.sg-ms li:nth-of-type(8) {
+  font-size: 48.82813px;
+}
+.sg-ms li:nth-of-type(8):before {
+  content: "ms-7: ";
+}
+.sg-ms li:nth-of-type(9) {
+  font-size: 61.03516px;
+}
+.sg-ms li:nth-of-type(9):before {
+  content: "ms-8: ";
+}
+.sg-ms li:nth-of-type(10) {
+  font-size: 67.77709px;
+}
+.sg-ms li:nth-of-type(10):before {
+  content: "ms-9: ";
+}
+.sg-ms li:nth-of-type(11) {
+  font-size: 76.29395px;
+}
+.sg-ms li:nth-of-type(11):before {
+  content: "ms-10: ";
+}
+.sg-ms li:nth-of-type(12) {
+  font-size: 95.36743px;
+}
+.sg-ms li:nth-of-type(12):before {
+  content: "ms-11: ";
+}
+
+@media (min-width: 32em) {
+  #st-main {
+    width: 44.44444%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+
+  .st-colors {
+    width: 44.44444%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
+  }
+
+  .st-images {
+    width: 44.44444%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
+  }
+
+  .st-fonts {
+    width: 44.44444%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
+  }
+
+  .st-adjectives {
+    width: 44.44444%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
+  }
+}
+.content-scratch-wrapper {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+[id="content"] {
+  position: relative;
+  background-color: #ebf7f7;
+  z-index: 2;
+}
+[id="content"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*# sourceMappingURL=style.css.map */

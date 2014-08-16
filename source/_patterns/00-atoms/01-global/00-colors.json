@@ -6,7 +6,7 @@
     },
     {
       "name": "$color--white",
-      "value": "#FFFFFF"
+      "value": "hsl(0, 0%, 100%)"
     },
     {
       "name": "$color--primary",
