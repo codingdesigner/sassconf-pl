@@ -10,3 +10,4 @@
 # Node #
 ###################
 node_modules
+.idea

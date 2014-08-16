@@ -85,6 +85,7 @@ $color--white-shades : shade-stack($color--gray);
 // Background Colors
 //////////////////////////////
 $cs-background   : $color--white;
+$cs-background   : nth($tertiary-tints, 5);
 $cs-border-color : $color--black;
 
 // link colors

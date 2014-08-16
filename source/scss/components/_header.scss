@@ -1,9 +1,20 @@
 body.manhattan {
   position: relative;
+}
+
+.photo-wrapper {
+  position: relative;
   width: 100%;
   background-image: url(../../images/manhattan-zeldman-1800x756.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+.header {
+//  &:hover {
+    .photo-wrapper {
+      -webkit-filter: blur(5px) contrast(150%) saturate(150%);
+//    }
+  }
 }
 
 $bp--logo-full: 750px;

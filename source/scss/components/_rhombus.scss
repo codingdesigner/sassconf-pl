@@ -22,6 +22,7 @@
   @supports(mix-blend-mode: color-dodge) {
     opacity: 1;
     mix-blend-mode: color-dodge;
+    mix-blend-mode: screen;
   }
 }
 .rhombus-grid {
