@@ -1,8 +1,12 @@
 <ul class="sg-colors">
-  {{#brand_colors}}
-  <li>
-    <span class="sg-swatch rhombus {{label}}"></span>
-    <span class="sg-label rhombus">${{label}}</span>
-  </li>
-  {{/brand_colors}}
+  {{#colors}}
+    <li>
+      <div class="sg-swatch" style="background: {{value}};"></div>
+      <div class="sg-info">
+        <h6>{{value}}</h6>
+        Sass Variable: <br>
+        {{name}}
+      </div>
+    </li>
+  {{/colors}}
 </ul>

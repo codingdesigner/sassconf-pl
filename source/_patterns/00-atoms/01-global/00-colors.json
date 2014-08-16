@@ -1,0 +1,20 @@
+{
+  "colors": [
+    {
+      "name": "$color--black",
+      "value": "tint(black, 5%)"
+    },
+    {
+      "name": "$color--white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "$color--primary",
+      "value": "cs-primary()"
+    },
+    {
+      "name": "$color--tertiary",
+      "value": "cs-secondary()"
+    }
+  ]
+}

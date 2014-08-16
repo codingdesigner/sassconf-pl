@@ -25,15 +25,11 @@ $zi-menu: 1;
 $zi-content: 2;
 //////////////////////
 
-//////////////////////////////
-// Breakpoint
-//
-// Settings for Breakpoint
-$breakpoint-to-ems: true;
-$breakpoint-no-query-fallbacks: true;
-// $bp-small-type         : max-width 500px;
-$hidpi                 : min-resolution 2dppx;
-//////////////////////////////
+//////////////////////
+// TRANSITIONS
+$default-transition-duration: .3s;
+$default-transition-function: ease-in;
+//////////////////////
 
 //////////////////////
 // SINGULARITY GRIDS

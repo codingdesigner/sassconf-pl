@@ -1,0 +1,38 @@
+//////////////////////////////
+// Breakpoint
+//
+// Settings for Breakpoint
+//////////////////////////////
+
+// Breakpoint Configuration
+// docs: https://github.com/Team-Sass/breakpoint/wiki
+
+$breakpoint-no-query-fallbacks: true; // Breakpoint will output fallback selectors in this stylesheet
+$breakpoint-to-ems: true; // Breakpoint will convert all media queries to use EMs rather than PX
+
+// // sign posts
+// $width-small   : 480px;
+// $width-medium  : 640px;
+// $width-large   : 768px;
+// $width-xlarge  : 1024px;
+// $width-xxlarge : 1280px; // design max-width
+
+// $bp-small-type         : max-width 500px;
+$hidpi                 : min-resolution 2dppx;
+
+// // Breakpoint variables are prefixed with "$bp--"
+// // Mobile-first queries
+// $bp--small-up  : $width-small;
+// $bp--medium-up : $width-medium;
+// $bp--large-up  : $width-large;
+// $bp--xlarge-up : $width-xlarge;
+
+// // Fenced queries
+// $bp--xsmall    : max-width $width-small - 1;
+// $bp--small     : $width-small $width-medium - 1;
+// $bp--medium    : $width-medium $width-large;
+// $bp--large     : $width-large + 1 $width-xlarge - 1;
+
+// // Mobile-last queries (USE SPARINGLY)
+// $bp--small-down: max-width $width-medium - 1;
+

@@ -2,7 +2,8 @@
 	"title" : "SassConf 2014",
 	"currentYear" : "2014",
 	"htmlClass": "sassconf-2014",
-	"bodyClass": "body",
+	"bodyClass": "",
+	"base_path": "/",
 	"colors": ["ff9000","3bc2ed","949494"],
 	"icons": [
 		"icon-search",

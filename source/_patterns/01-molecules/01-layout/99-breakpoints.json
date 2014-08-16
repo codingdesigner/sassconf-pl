@@ -1,0 +1,16 @@
+{
+  "breakpoints": [
+    {
+      "name": "$breakpoint-no-query-fallbacks",
+      "value": "true // Breakpoint will output fallback selectors in this stylesheet"
+    },
+    {
+      "name": "$breakpoint-to-ems",
+      "value": "true // Breakpoint will convert all media queries to use EMs rather than PX"
+    },
+    {
+      "name": "$hidpi",
+      "value": "min-resolution 2dppx"
+    }
+  ]
+}

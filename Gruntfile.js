@@ -255,7 +255,7 @@ module.exports = function(grunt) {
           'regex': "^\\$default-tra.*"
         },
         src: "source/scss/global/variables/_settings.scss",
-        dest: "source/_patterns/00-atoms/01-global/03-animations.json"
+        dest: "source/_patterns/00-atoms/01-global/04-animations.json"
       }
     },
 

@@ -1,0 +1,12 @@
+{
+  "animations": [
+    {
+      "name": "$default-transition-duration",
+      "value": ".3s"
+    },
+    {
+      "name": "$default-transition-function",
+      "value": "ease-in"
+    }
+  ]
+}

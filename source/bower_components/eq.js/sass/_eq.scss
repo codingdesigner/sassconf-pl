@@ -1,0 +1,5 @@
+@mixin eq($state) {
+  &[data-eq-state="#{$state}"] {
+    @content;
+  }
+}

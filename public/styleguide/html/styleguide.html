@@ -3,12 +3,38 @@
 	<head>
 		<title>SassConf 2014</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
 
-		<link rel="stylesheet" href="../../css/style.css?1407276367" media="all" />
+		<!-- Mobile  Meta -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="width">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="/images/ico/favicon.ico">
+
+		<!-- bower:css -->
+		<!-- endbower -->
+
+		<!-- bower css components not auto-injected via wiredep -->
+
+    <!-- Stylesheets -->
+		<link rel="stylesheet" href="/css/style.css?0" media="all" />
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css" />
-		<script src="../../js/eq.min.js?1407276367"></script>
-		<script src="../../js/modernizr.js"></script>
+
+		<!-- bower:js -->
+		<script src="/bower_components/modernizr/modernizr.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.js"></script>
+		<script src="/bower_components/eq.js/dist/eq.min.js"></script>
+		<script src="/bower_components/skrollr/src/skrollr.js"></script>
+		<!-- endbower -->
+
+		<!--[if lt IE 9]>
+		<script src="/bower_components/html5shiv/dist/html5shiv.js"></script>
+		<script src="/bower_components/respond/dest/respond.src.js"></script>
+		<script src="/bower_components/selectivizr/selectivizr.js"></script>
+		<![endif]-->
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -18,14 +44,14 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1407276367" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1407276367" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
 		
 
 		<!-- End Pattern Lab -->
 
 	</head>
-	<body class="body">
+	<body class="">
 		
 		<!-- View All Patterns in a Pattern Sub-Type -->
 		<div class="sg-main" role="main">
@@ -36,38 +62,38 @@
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-01-global-00-colors/00-atoms-01-global-00-colors.html" class="patternLink" data-patternpartial="atoms-colors">Colors</a></h2>
 						<div class="sg-pattern-body">
 							<ul class="sg-colors">
-  <li>
-    <span class="sg-swatch rhombus color--primary"></span>
-    <span class="sg-label rhombus">$color--primary</span>
-  </li>
-  <li>
-    <span class="sg-swatch rhombus color--secondary"></span>
-    <span class="sg-label rhombus">$color--secondary</span>
-  </li>
-  <li>
-    <span class="sg-swatch rhombus color--tertiary"></span>
-    <span class="sg-label rhombus">$color--tertiary</span>
-  </li>
-  <li>
-    <span class="sg-swatch rhombus color--quadrary"></span>
-    <span class="sg-label rhombus">$color--quadrary</span>
-  </li>
-  <li>
-    <span class="sg-swatch rhombus color--quintary"></span>
-    <span class="sg-label rhombus">$color--quintary</span>
-  </li>
-  <li>
-    <span class="sg-swatch rhombus color--black"></span>
-    <span class="sg-label rhombus">$color--black</span>
-  </li>
-  <li>
-    <span class="sg-swatch rhombus color--gray"></span>
-    <span class="sg-label rhombus">$color--gray</span>
-  </li>
-  <li>
-    <span class="sg-swatch rhombus color--white"></span>
-    <span class="sg-label rhombus">$color--white</span>
-  </li>
+    <li>
+      <div class="sg-swatch" style="background: tint(black, 5%);"></div>
+      <div class="sg-info">
+        <h6>tint(black, 5%)</h6>
+        Sass Variable: <br>
+        $color--black
+      </div>
+    </li>
+    <li>
+      <div class="sg-swatch" style="background: #FFFFFF;"></div>
+      <div class="sg-info">
+        <h6>#FFFFFF</h6>
+        Sass Variable: <br>
+        $color--white
+      </div>
+    </li>
+    <li>
+      <div class="sg-swatch" style="background: cs-primary();"></div>
+      <div class="sg-info">
+        <h6>cs-primary()</h6>
+        Sass Variable: <br>
+        $color--primary
+      </div>
+    </li>
+    <li>
+      <div class="sg-swatch" style="background: cs-secondary();"></div>
+      <div class="sg-info">
+        <h6>cs-secondary()</h6>
+        Sass Variable: <br>
+        $color--tertiary
+      </div>
+    </li>
 </ul>
 
 							<div class="sg-code" style="display: none">
@@ -75,38 +101,38 @@
 								<pre class="sg-code-html">
 									<code>
 										&lt;ul class=&quot;sg-colors&quot;&gt;
-  &lt;li&gt;
-    &lt;span class=&quot;sg-swatch rhombus color--primary&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--primary&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;span class=&quot;sg-swatch rhombus color--secondary&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--secondary&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;span class=&quot;sg-swatch rhombus color--tertiary&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--tertiary&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;span class=&quot;sg-swatch rhombus color--quadrary&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--quadrary&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;span class=&quot;sg-swatch rhombus color--quintary&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--quintary&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;span class=&quot;sg-swatch rhombus color--black&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--black&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;span class=&quot;sg-swatch rhombus color--gray&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--gray&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;span class=&quot;sg-swatch rhombus color--white&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--white&lt;/span&gt;
-  &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class=&quot;sg-swatch&quot; style=&quot;background: tint(black, 5%);&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;sg-info&quot;&gt;
+        &lt;h6&gt;tint(black, 5%)&lt;/h6&gt;
+        Sass Variable: &lt;br&gt;
+        $color--black
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class=&quot;sg-swatch&quot; style=&quot;background: #FFFFFF;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;sg-info&quot;&gt;
+        &lt;h6&gt;#FFFFFF&lt;/h6&gt;
+        Sass Variable: &lt;br&gt;
+        $color--white
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class=&quot;sg-swatch&quot; style=&quot;background: cs-primary();&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;sg-info&quot;&gt;
+        &lt;h6&gt;cs-primary()&lt;/h6&gt;
+        Sass Variable: &lt;br&gt;
+        $color--primary
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class=&quot;sg-swatch&quot; style=&quot;background: cs-secondary();&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;sg-info&quot;&gt;
+        &lt;h6&gt;cs-secondary()&lt;/h6&gt;
+        Sass Variable: &lt;br&gt;
+        $color--tertiary
+      &lt;/div&gt;
+    &lt;/li&gt;
 &lt;/ul&gt;
 
 									</code>
@@ -298,6 +324,88 @@
 							</div>
 						</div>
 					</div>
+					<div id="atoms-colors" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-01-global-01-colors/00-atoms-01-global-01-colors.html" class="patternLink" data-patternpartial="atoms-colors">Colors</a></h2>
+						<div class="sg-pattern-body">
+							<ul class="sg-colors">
+  <li>
+    <span class="sg-swatch rhombus color--primary"></span>
+    <span class="sg-label rhombus">$color--primary</span>
+  </li>
+  <li>
+    <span class="sg-swatch rhombus color--secondary"></span>
+    <span class="sg-label rhombus">$color--secondary</span>
+  </li>
+  <li>
+    <span class="sg-swatch rhombus color--tertiary"></span>
+    <span class="sg-label rhombus">$color--tertiary</span>
+  </li>
+  <li>
+    <span class="sg-swatch rhombus color--quadrary"></span>
+    <span class="sg-label rhombus">$color--quadrary</span>
+  </li>
+  <li>
+    <span class="sg-swatch rhombus color--quintary"></span>
+    <span class="sg-label rhombus">$color--quintary</span>
+  </li>
+  <li>
+    <span class="sg-swatch rhombus color--black"></span>
+    <span class="sg-label rhombus">$color--black</span>
+  </li>
+  <li>
+    <span class="sg-swatch rhombus color--gray"></span>
+    <span class="sg-label rhombus">$color--gray</span>
+  </li>
+  <li>
+    <span class="sg-swatch rhombus color--white"></span>
+    <span class="sg-label rhombus">$color--white</span>
+  </li>
+</ul>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;ul class=&quot;sg-colors&quot;&gt;
+  &lt;li&gt;
+    &lt;span class=&quot;sg-swatch rhombus color--primary&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--primary&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class=&quot;sg-swatch rhombus color--secondary&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--secondary&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class=&quot;sg-swatch rhombus color--tertiary&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--tertiary&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class=&quot;sg-swatch rhombus color--quadrary&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--quadrary&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class=&quot;sg-swatch rhombus color--quintary&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--quintary&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class=&quot;sg-swatch rhombus color--black&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--black&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class=&quot;sg-swatch rhombus color--gray&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--gray&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class=&quot;sg-swatch rhombus color--white&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sg-label rhombus&quot;&gt;$color--white&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="atoms-fonts" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-01-global-02-fonts/00-atoms-01-global-02-fonts.html" class="patternLink" data-patternpartial="atoms-fonts">Fonts</a></h2>
 						<div class="sg-pattern-body">
@@ -343,16 +451,16 @@
 						<div class="sg-pattern-body">
 							<ol class="sg-ms">
     <li>Bacon ipsum dolor sit amet spare rib</li>
-    <li>Nesciunt sunt cillum keytar Pitchfork</li>
-    <li>Lorizzle pimpin' dolizzle sit amet I</li>
-    <li>Carrot cake fruitcake dessert apple</li>
-    <li>Webtwo ipsum dolor sit amet, eskobo</li>
     <li>Now that we know who you are, I know</li>
-    <li>Cauliflower cheese cream cheese baby</li>
     <li>The swallow may fly south with the sun</li>
+    <li>Carrot cake fruitcake dessert apple</li>
     <li>All right. Well, take care of yourself, Han</li>
-    <li>Blog meme masthead DocumentCloud Fou</li>
+    <li>Veggies sunt bona vobis, proinde vos</li>
+    <li>Cauliflower cheese cream cheese baby</li>
     <li>Hong Kong Phooey, number one super g</li>
+    <li>Blog meme masthead DocumentCloud Fou</li>
+    <li>Webtwo ipsum dolor sit amet, eskobo</li>
+    <li>Lorizzle pimpin' dolizzle sit amet I</li>
 </ol>
 
 							<div class="sg-code" style="display: none">
@@ -361,17 +469,47 @@
 									<code>
 										&lt;ol class=&quot;sg-ms&quot;&gt;
     &lt;li&gt;Bacon ipsum dolor sit amet spare rib&lt;/li&gt;
-    &lt;li&gt;Nesciunt sunt cillum keytar Pitchfork&lt;/li&gt;
-    &lt;li&gt;Lorizzle pimpin' dolizzle sit amet I&lt;/li&gt;
-    &lt;li&gt;Carrot cake fruitcake dessert apple&lt;/li&gt;
-    &lt;li&gt;Webtwo ipsum dolor sit amet, eskobo&lt;/li&gt;
     &lt;li&gt;Now that we know who you are, I know&lt;/li&gt;
-    &lt;li&gt;Cauliflower cheese cream cheese baby&lt;/li&gt;
     &lt;li&gt;The swallow may fly south with the sun&lt;/li&gt;
+    &lt;li&gt;Carrot cake fruitcake dessert apple&lt;/li&gt;
     &lt;li&gt;All right. Well, take care of yourself, Han&lt;/li&gt;
-    &lt;li&gt;Blog meme masthead DocumentCloud Fou&lt;/li&gt;
+    &lt;li&gt;Veggies sunt bona vobis, proinde vos&lt;/li&gt;
+    &lt;li&gt;Cauliflower cheese cream cheese baby&lt;/li&gt;
     &lt;li&gt;Hong Kong Phooey, number one super g&lt;/li&gt;
+    &lt;li&gt;Blog meme masthead DocumentCloud Fou&lt;/li&gt;
+    &lt;li&gt;Webtwo ipsum dolor sit amet, eskobo&lt;/li&gt;
+    &lt;li&gt;Lorizzle pimpin' dolizzle sit amet I&lt;/li&gt;
 &lt;/ol&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-animations" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-01-global-04-animations/00-atoms-01-global-04-animations.html" class="patternLink" data-patternpartial="atoms-animations">Animations</a></h2>
+						<div class="sg-pattern-body">
+							<!--<div class="demo-animate animate-fade"><strong>Fade:</strong> Duration: 0.3s Easing: ease-out (Hover to see effect)</div>-->
+
+<!--<div class="demo-animate animate-move"><div class="demo-shape"></div><strong>Movement:</strong> Duration: 0.8s  Easing: ease-in-out; (Hover to see effect)</div>-->
+
+<ul>
+    <li>$default-transition-duration: .3s</li>
+    <li>$default-transition-function: ease-in</li>
+</ul>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;!--&lt;div class=&quot;demo-animate animate-fade&quot;&gt;&lt;strong&gt;Fade:&lt;/strong&gt; Duration: 0.3s Easing: ease-out (Hover to see effect)&lt;/div&gt;--&gt;
+
+&lt;!--&lt;div class=&quot;demo-animate animate-move&quot;&gt;&lt;div class=&quot;demo-shape&quot;&gt;&lt;/div&gt;&lt;strong&gt;Movement:&lt;/strong&gt; Duration: 0.8s  Easing: ease-in-out; (Hover to see effect)&lt;/div&gt;--&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;$default-transition-duration: .3s&lt;/li&gt;
+    &lt;li&gt;$default-transition-function: ease-in&lt;/li&gt;
+&lt;/ul&gt;
 
 									</code>
 								</pre>
@@ -1240,8 +1378,40 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="molecules-breakpoints" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-01-layout-99-breakpoints/01-molecules-01-layout-99-breakpoints.html" class="patternLink" data-patternpartial="molecules-breakpoints">Breakpoints</a></h2>
+						<div class="sg-pattern-body">
+							  <p>Name: $breakpoint-no-query-fallbacks <br/>
+  Value: true // Breakpoint will output fallback selectors in this stylesheet</p>
+  <hr style="width: 0; width: true // Breakpoint will output fallback selectors in this stylesheet"/>
+  <p>Name: $breakpoint-to-ems <br/>
+  Value: true // Breakpoint will convert all media queries to use EMs rather than PX</p>
+  <hr style="width: 0; width: true // Breakpoint will convert all media queries to use EMs rather than PX"/>
+  <p>Name: $hidpi <br/>
+  Value: min-resolution 2dppx</p>
+  <hr style="width: 0; width: min-resolution 2dppx"/>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										  &lt;p&gt;Name: $breakpoint-no-query-fallbacks &lt;br/&gt;
+  Value: true // Breakpoint will output fallback selectors in this stylesheet&lt;/p&gt;
+  &lt;hr style=&quot;width: 0; width: true // Breakpoint will output fallback selectors in this stylesheet&quot;/&gt;
+  &lt;p&gt;Name: $breakpoint-to-ems &lt;br/&gt;
+  Value: true // Breakpoint will convert all media queries to use EMs rather than PX&lt;/p&gt;
+  &lt;hr style=&quot;width: 0; width: true // Breakpoint will convert all media queries to use EMs rather than PX&quot;/&gt;
+  &lt;p&gt;Name: $hidpi &lt;br/&gt;
+  Value: min-resolution 2dppx&lt;/p&gt;
+  &lt;hr style=&quot;width: 0; width: min-resolution 2dppx&quot;/&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="molecules-primary-nav" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-01-navigation-00-primary-nav/01-molecules-01-navigation-00-primary-nav.html" class="patternLink" data-patternpartial="molecules-primary-nav">Primary Nav</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-02-navigation-00-primary-nav/01-molecules-02-navigation-00-primary-nav.html" class="patternLink" data-patternpartial="molecules-primary-nav">Primary Nav</a></h2>
 						<div class="sg-pattern-body">
 							<nav class="m-main-nav">
   <label class="menu-button"><input type="checkbox">
@@ -1275,7 +1445,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-logo" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-02-logo-00-logo/01-molecules-02-logo-00-logo.html" class="patternLink" data-patternpartial="molecules-logo">Logo</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-03-logo-00-logo/01-molecules-03-logo-00-logo.html" class="patternLink" data-patternpartial="molecules-logo">Logo</a></h2>
 						<div class="sg-pattern-body">
 							<h2 id="logo">logo</h2>
 
@@ -1323,7 +1493,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-standout" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-03-text-00-standout/01-molecules-03-text-00-standout.html" class="patternLink" data-patternpartial="molecules-standout">Standout</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-text-00-standout/01-molecules-04-text-00-standout.html" class="patternLink" data-patternpartial="molecules-standout">Standout</a></h2>
 						<div class="sg-pattern-body">
 							<section class="standout vision">
   <h1>
@@ -1349,7 +1519,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-page-title" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-03-text-01-page-title/01-molecules-03-text-01-page-title.html" class="patternLink" data-patternpartial="molecules-page-title">Page Title</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-text-01-page-title/01-molecules-04-text-01-page-title.html" class="patternLink" data-patternpartial="molecules-page-title">Page Title</a></h2>
 						<div class="sg-pattern-body">
 							<h1 class="overview__page-title">2014 Speakers</h1>
 
@@ -1365,7 +1535,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-section-title" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-03-text-02-section-title/01-molecules-03-text-02-section-title.html" class="patternLink" data-patternpartial="molecules-section-title">Section Title</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-text-02-section-title/01-molecules-04-text-02-section-title.html" class="patternLink" data-patternpartial="molecules-section-title">Section Title</a></h2>
 						<div class="sg-pattern-body">
 							<h2 class="overview__section-title">2014 Keynotes</h2>
 
@@ -1381,7 +1551,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-sizzle" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-media-00-sizzle/01-molecules-04-media-00-sizzle.html" class="patternLink" data-patternpartial="molecules-sizzle">Sizzle</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-media-00-sizzle/01-molecules-05-media-00-sizzle.html" class="patternLink" data-patternpartial="molecules-sizzle">Sizzle</a></h2>
 						<div class="sg-pattern-body">
 							<div class="sizzle" id="sizzle">
   <iframe src="//player.vimeo.com/video/90602247?title=0&amp;byline=0&amp;portrait=0&amp;color=ff006a&amp;autoplay=0&amp;loop=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
@@ -1401,7 +1571,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-map" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-media-01-map/01-molecules-04-media-01-map.html" class="patternLink" data-patternpartial="molecules-map">Map</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-media-01-map/01-molecules-05-media-01-map.html" class="patternLink" data-patternpartial="molecules-map">Map</a></h2>
 						<div class="sg-pattern-body">
 							<div class="venue-map">
   <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=scholastic+auditorium&amp;fb=1&amp;gl=us&amp;hq=scholastic+auditorium&amp;hnear=0x89c24fa5d33f083b:0xc80b8f06e177fe62,New+York,+NY&amp;cid=0,0,5745950823002065201&amp;ll=40.723993,-73.998302&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"></iframe>
@@ -1421,7 +1591,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-review" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-blocks-00-review/01-molecules-05-blocks-00-review.html" class="patternLink" data-patternpartial="molecules-review">Review</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-06-blocks-00-review/01-molecules-06-blocks-00-review.html" class="patternLink" data-patternpartial="molecules-review">Review</a></h2>
 						<div class="sg-pattern-body">
 							<div class="review-item">
   <img src=" /lib/img/speakers/chriseppstein.jpg" alt="Chris Eppsteins twitter profile picture">
@@ -1449,7 +1619,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-keynote" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-06-sessions-00-keynote/01-molecules-06-sessions-00-keynote.html" class="patternLink" data-patternpartial="molecules-keynote">Keynote</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-sessions-00-keynote/01-molecules-07-sessions-00-keynote.html" class="patternLink" data-patternpartial="molecules-keynote">Keynote</a></h2>
 						<div class="sg-pattern-body">
 							<li class="session keynote">
   <div class="images">
@@ -1479,7 +1649,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-talk" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-06-sessions-01-talk/01-molecules-06-sessions-01-talk.html" class="patternLink" data-patternpartial="molecules-talk">Talk</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-sessions-01-talk/01-molecules-07-sessions-01-talk.html" class="patternLink" data-patternpartial="molecules-talk">Talk</a></h2>
 						<div class="sg-pattern-body">
 							<li class="session talk">
   <div class="title">
@@ -1537,7 +1707,7 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 					<div id="molecules-workshop" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-06-sessions-02-workshop/01-molecules-06-sessions-02-workshop.html" class="patternLink" data-patternpartial="molecules-workshop">Workshop</a></h2>
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-sessions-02-workshop/01-molecules-07-sessions-02-workshop.html" class="patternLink" data-patternpartial="molecules-workshop">Workshop</a></h2>
 						<div class="sg-pattern-body">
 							<li class="session workshop">
   <div class="title">
@@ -1674,7 +1844,7 @@ p q r s t u v w x y z { | } ~
 									<div class="sg-code-contains">
 										This pattern contains: 
 											<a href="../../patterns/00-atoms-04-images-00-logo/00-atoms-04-images-00-logo.html"><code>atoms-logo</code></a>
-											<a href="../../patterns/01-molecules-01-navigation-00-primary-nav/01-molecules-01-navigation-00-primary-nav.html"><code>molecules-primary-nav</code></a>
+											<a href="../../patterns/01-molecules-02-navigation-00-primary-nav/01-molecules-02-navigation-00-primary-nav.html"><code>molecules-primary-nav</code></a>
 											<a href="../../patterns/01-molecules-00-forms-00-search/01-molecules-00-forms-00-search.html"><code>molecules-search</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
@@ -1799,6 +1969,7 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<div class="body scratch-header">
   <header class="header" >
+    <div class="photo-wrapper"></div>
     <div class="rhombus-grid-wrapper layer" data-depth="0.2">
       <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
         <defs>
@@ -1863,6 +2034,7 @@ p q r s t u v w x y z { | } ~
 									<code>
 										&lt;div class=&quot;body scratch-header&quot;&gt;
   &lt;header class=&quot;header&quot; &gt;
+    &lt;div class=&quot;photo-wrapper&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;rhombus-grid-wrapper layer&quot; data-depth=&quot;0.2&quot;&gt;
       &lt;svg class=&quot;rhombus-grid&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 1000 420&quot; enable-background=&quot;new 0 0 1000 420&quot; xml:space=&quot;preserve&quot; preserveAspectRatio=&quot;xMinYMin meet&quot;&gt;
         &lt;defs&gt;
@@ -2174,7 +2346,7 @@ p q r s t u v w x y z { | } ~
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
 										This pattern contains: 
-											<a href="../../patterns/01-molecules-05-blocks-00-review/01-molecules-05-blocks-00-review.html"><code>molecules-review</code></a>
+											<a href="../../patterns/01-molecules-06-blocks-00-review/01-molecules-06-blocks-00-review.html"><code>molecules-review</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
@@ -2255,11 +2427,11 @@ p q r s t u v w x y z { | } ~
 		</script>
 		
 
-		<script src="../../js/global.js"></script>
-    <script src="../../js/jquery.lettering-0.6.1.min.js"></script>
-    <script src="../../js/jquery.parallax.min.js"></script>
-    <script src="../../js/widowtamer-min.js"></script>
-    <script src="../../js/main.js"></script>
+		<script src="/js/global.js"></script>
+    <script src="/js/jquery.lettering-0.6.1.min.js"></script>
+    <script src="/js/jquery.parallax.min.js"></script>
+    <script src="/js/widowtamer-min.js"></script>
+    <script src="/js/main.js"></script>
 
 
 
@@ -2296,10 +2468,10 @@ p q r s t u v w x y z { | } ~
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1407276367">
+	<script id="pl-js-polyfill-insert-0">
 		(function() {
 			if (self != top) {
-				var cb = '1407276367';
+				var cb = '0';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -2308,10 +2480,10 @@ p q r s t u v w x y z { | } ~
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1407276367">
+	<script id="pl-js-insert-0">
 		(function() {
 			if (self != top) {
-				var cb = '1407276367';
+				var cb = '0';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
