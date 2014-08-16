@@ -8,9 +8,9 @@
 
 //////////////////////////////
 // HTML Element Default Variables
-$html-font-size:   em(nth($base-font-size, 1)) !default;
+$html-font-size: em(nth($base-font-size, 1)) !default;
 $html-line-height: $base-line-height !default;
-$html-extend:      true !default;
+$html-extend: true !default;
 //////////////////////////////
 
 @mixin html-base($font-size: $html-font-size, $line-height: $html-line-height, $extend: $html-extend) {
@@ -18,13 +18,10 @@ $html-extend:      true !default;
     font-size: $font-size;
     line-height: $line-height;
     overflow-x: hidden;
-  }
-  @else {
+  } @else {
     @extend %html-base;
   }
 }
-
-
 
 //////////////////////////////
 // HTML Element Extendable Classes
@@ -33,7 +30,6 @@ $html-extend:      true !default;
 %html-base {
   @include html-base($extend: false);
 }
-
 
 //////////////////////////////
 // HTML Element Styles

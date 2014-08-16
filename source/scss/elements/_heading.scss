@@ -2,7 +2,6 @@
 // Heading element
 //////////////////////////////
 
-
 //////////////////////////////
 // Header Element Mixins
 //////////////////////////////
@@ -16,8 +15,7 @@ $heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1) !default;
 @mixin heading-base($extend: $heading-base-extend) {
   @if $extend {
     @extend %heading-base-extend;
-  }
-  @else {
+  } @else {
     font: {
       family: $font-headline;
       weight: normal;
@@ -93,7 +91,6 @@ $heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1) !default;
   //   @include heading-size(nth($heading-sizes-small, 6), nth($heading-line-heights-small, 6));
   // }
 }
-
 
 //////////////////////////////
 // Heading Element Styles

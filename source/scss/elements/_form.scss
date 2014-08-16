@@ -20,8 +20,7 @@ $form-fieldset-extend: true !default;
 @mixin form-box($extend: $form-box-extend) {
   @if $extend {
     @extend %form-box-extend;
-  }
-  @else {
+  } @else {
     @extend %constrain-to-parent;
     margin-top: 0;
     margin-bottom: em($base-line-height);
@@ -41,8 +40,7 @@ $form-fieldset-extend: true !default;
   }
   @if $extend {
     @extend %form-text-area-extend;
-  }
-  @else {
+  } @else {
     height: $form-text-area-height;
   }
 }
@@ -50,8 +48,7 @@ $form-fieldset-extend: true !default;
 @mixin form-label($extend: $form-label-extend) {
   @if $extend {
     @extend %form-label-extend;
-  }
-  @else {
+  } @else {
     margin-right: 0.5em;
     vertical-align: top;
     line-height: em($base-line-height) / em($base-font-size) * 1.5em;
@@ -62,8 +59,7 @@ $form-fieldset-extend: true !default;
 @mixin form-check-radio($extend: $form-check-radio-extend) {
   @if $extend {
     @extend %form-check-radio-extend;
-  }
-  @else {
+  } @else {
     margin-right: 0.25em;
     margin-left: 0.25em;
   }
@@ -72,8 +68,7 @@ $form-fieldset-extend: true !default;
 @mixin form-legend($extend: $form-legend-extend) {
   @if $extend {
     @extend %form-legend-extend;
-  }
-  @else {
+  } @else {
     padding: 0 1em;
     white-space: nowrap;
   }
@@ -82,13 +77,10 @@ $form-fieldset-extend: true !default;
 @mixin form-fieldset($extend: $form-fieldset-extend) {
   @if $extend {
     @extend %form-fieldset-extend;
-  }
-  @else {
+  } @else {
     border-style: dashed;
   }
 }
-
-
 
 //////////////////////////////
 // Form Element Extendable Classes
@@ -121,9 +113,6 @@ $form-fieldset-extend: true !default;
 %form-fieldset-extend {
   @include form-fieldset(false);
 }
-
-
-
 
 //////////////////////////////
 // Form Element Styles

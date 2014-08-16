@@ -1,6 +1,6 @@
 /*!
-  * domready (c) Dustin Diaz 2014 - License MIT
-  */
+ * domready (c) Dustin Diaz 2014 - License MIT
+ */
 !function (name, definition) {
 
   if (typeof module != 'undefined') module.exports = definition()
@@ -9,17 +9,14 @@
 
 }('domready', function () {
 
-  var fns = [], listener
-    , doc = document
-    , domContentLoaded = 'DOMContentLoaded'
-    , loaded = /^loaded|^c/.test(doc.readyState)
+  var fns = [], listener, doc = document, domContentLoaded = 'DOMContentLoaded', loaded = /^loaded|^c/.test(doc.readyState)
 
   if (!loaded)
-  doc.addEventListener(domContentLoaded, listener = function () {
-    doc.removeEventListener(domContentLoaded, listener)
-    loaded = 1
-    while (listener = fns.shift()) listener()
-  })
+    doc.addEventListener(domContentLoaded, listener = function () {
+      doc.removeEventListener(domContentLoaded, listener)
+      loaded = 1
+      while (listener = fns.shift()) listener()
+    })
 
   return function (fn) {
     loaded ? fn() : fns.push(fn)

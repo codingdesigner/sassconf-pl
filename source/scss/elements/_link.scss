@@ -28,8 +28,7 @@ $unset-background-links-extend: true;
 @mixin set-link-colors($link-normal: $link-normal-default, $link-hover: $link-hover-default, $link-active: $link-active-default, $link-visited: $link-visited-default, $link-focus: $link-focus-default, $extend: $links-extend) {
   @if $extend {
     @extend %link-colors-extend;
-  }
-  @else {
+  } @else {
     &:not(.button) {
       @include link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus);
     }
@@ -39,8 +38,7 @@ $unset-background-links-extend: true;
 @mixin set-background-links($link-background-normal: $link-background-normal-default, $link-background-hover: $link-background-hover-default, $link-background-active: $link-background-active-default, $link-background-visited: $link-background-visited-default, $link-background-focus: $link-background-focus-default, $link-background-size: $link-background-size-default, $bkg: $link-background-bkg-default, $extend: $set-background-links-default) {
   @if $extend {
     @extend %link-background-extend;
-  }
-  @else {
+  } @else {
     text-decoration: none;
     @include text-shadow($bkg -1px 1px 0, $bkg 0 1px 0, $bkg 1px 1px 0);
     @include background-image(linear-gradient(to top, $link-background-normal $link-background-size, $bkg ($link-background-size + 1)));
@@ -62,8 +60,7 @@ $unset-background-links-extend: true;
 @mixin unset-background-links($extend: $unset-background-links-extend) {
   @if $extend {
     @extend %link-unset-background-extend;
-  }
-  @else {
+  } @else {
     text-decoration: none;
     @include text-shadow(none);
     @include background-image(none);
@@ -85,7 +82,6 @@ $unset-background-links-extend: true;
     }
   }
 }
-
 
 //////////////////////////////
 // Link Element Extendable Classes

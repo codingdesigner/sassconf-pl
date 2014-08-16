@@ -14,11 +14,11 @@
 
 //////////////////////////////
 // Body Element Default Variables
-$body-font-stack:        $font-body !default;
-$body-text-color:        $cs-text !default;
-$body-background-color:  $cs-background !default;
-$body-enable-ligatures:  true !default;
-$body-extend:            true !default;
+$body-font-stack: $font-body !default;
+$body-text-color: $cs-text !default;
+$body-background-color: $cs-background !default;
+$body-enable-ligatures: true !default;
+$body-extend: true !default;
 //////////////////////////////
 
 @mixin body-base($font: $body-font-stack, $color: $body-text-color, $background: $body-background-color, $ligatures: $body-enable-ligatures, $extend: $body-extend) {
@@ -31,17 +31,14 @@ $body-extend:            true !default;
     @if $ligatures {
       @include enable-ligatures();
     }
-  }
-  @else {
+  } @else {
     @extend %body-base;
   }
 }
 
-
 //////////////////////////////
 // Body Element Extendable Classes
 //////////////////////////////
-
 
 %body-base {
   @include body-base($extend: false);

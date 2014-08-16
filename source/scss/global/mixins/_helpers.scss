@@ -1,8 +1,7 @@
 @mixin readable-text($color) {
   @if cs-is-dark($color) {
     color: $cs-text-light;
-  }
-  @else {
+  } @else {
     color: $cs-text-dark;
   }
 }
@@ -10,7 +9,12 @@
 //////////////////////////////
 // Keyframe Animation for the Logo
 @mixin animate($name) {
-  @-webkit-keyframes #{$name} { @content; }
-  @-moz-keyframes #{$name} { @content; }
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
 }
+
 //////////////////////////////

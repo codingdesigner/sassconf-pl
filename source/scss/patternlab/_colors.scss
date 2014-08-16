@@ -1,14 +1,30 @@
 // COLORS
 .sg-swatch {
   @extend %no-bullets;
-  &.color--black {      background-color: $color--black; }
-  &.color--white {      background-color: $color--white; }
-  &.color--gray {       background-color: $color--gray; }
-  &.color--primary {    background-color: $color--primary; }
-  &.color--secondary {  background-color: $color--secondary; }
-  &.color--tertiary {   background-color: $color--tertiary; }
-  &.color--quadrary {   background-color: $color--quadrary; }
-  &.color--quintary {   background-color: $color--quintary; }
+  &.color--black {
+    background-color: $color--black;
+  }
+  &.color--white {
+    background-color: $color--white;
+  }
+  &.color--gray {
+    background-color: $color--gray;
+  }
+  &.color--primary {
+    background-color: $color--primary;
+  }
+  &.color--secondary {
+    background-color: $color--secondary;
+  }
+  &.color--tertiary {
+    background-color: $color--tertiary;
+  }
+  &.color--quadrary {
+    background-color: $color--quadrary;
+  }
+  &.color--quintary {
+    background-color: $color--quintary;
+  }
 }
 
 .sg-label {
@@ -17,45 +33,95 @@
 
 .sg-colors-stack {
   &.stack-color--primary {
-    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($primary-tints, $i); } }
+    &.tints {
+      @for $i from 1 through 6 {
+        .tint-#{$i} {
+          background-color: nth($primary-tints, $i);
+        }
+      }
     }
-    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($primary-shades, $i); } }
+    &.shades {
+      @for $i from 1 through 6 {
+        .shade-#{$i} {
+          background-color: nth($primary-shades, $i);
+        }
+      }
     }
   }
 }
 
 .sg-colors-stack {
   &.stack-color--secondary {
-    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($secondary-tints, $i); } }
+    &.tints {
+      @for $i from 1 through 6 {
+        .tint-#{$i} {
+          background-color: nth($secondary-tints, $i);
+        }
+      }
     }
-    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($secondary-shades, $i); } }
+    &.shades {
+      @for $i from 1 through 6 {
+        .shade-#{$i} {
+          background-color: nth($secondary-shades, $i);
+        }
+      }
     }
   }
 }
 
 .sg-colors-stack {
   &.stack-color--tertiary {
-    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($tertiary-tints, $i); } }
+    &.tints {
+      @for $i from 1 through 6 {
+        .tint-#{$i} {
+          background-color: nth($tertiary-tints, $i);
+        }
+      }
     }
-    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($tertiary-shades, $i); } }
+    &.shades {
+      @for $i from 1 through 6 {
+        .shade-#{$i} {
+          background-color: nth($tertiary-shades, $i);
+        }
+      }
     }
   }
 }
 
 .sg-colors-stack {
   &.stack-color--quadrary {
-    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($quadrary-tints, $i); } }
+    &.tints {
+      @for $i from 1 through 6 {
+        .tint-#{$i} {
+          background-color: nth($quadrary-tints, $i);
+        }
+      }
     }
-    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($quadrary-shades, $i); } }
+    &.shades {
+      @for $i from 1 through 6 {
+        .shade-#{$i} {
+          background-color: nth($quadrary-shades, $i);
+        }
+      }
     }
   }
 }
 
 .sg-colors-stack {
   &.stack-color--quintary {
-    &.tints { @for $i from 1 through 6 { .tint-#{$i} { background-color: nth($quintary-tints, $i); } }
+    &.tints {
+      @for $i from 1 through 6 {
+        .tint-#{$i} {
+          background-color: nth($quintary-tints, $i);
+        }
+      }
     }
-    &.shades { @for $i from 1 through 6 { .shade-#{$i} { background-color: nth($quintary-shades, $i); } }
+    &.shades {
+      @for $i from 1 through 6 {
+        .shade-#{$i} {
+          background-color: nth($quintary-shades, $i);
+        }
+      }
     }
   }
 }

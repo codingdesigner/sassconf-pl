@@ -17,15 +17,13 @@ $vs-borderstyle-default: solid !default;
   }
   @if $extend {
     @extend %vertical-separation;
-  }
-  @else {
+  } @else {
     @include clearfix;
     @if $vs-divide {
       border-bottom: $vs-divide $vs-borderstyle $vs-bordercolor;
       margin-bottom: $vs-margin * 0.5;
       padding-bottom: $vs-margin * 0.5 - $vs-divide;
-    }
-    @else {
+    } @else {
       margin-bottom: $vs-margin * 0.5;
       padding-bottom: $vs-margin * 0.5;
       border-bottom: none;
@@ -37,7 +35,6 @@ $vs-borderstyle-default: solid !default;
     }
   }
 }
-
 
 //////////////////////////////
 // Baseline Component Extendable Classes
@@ -54,7 +51,6 @@ $vs-borderstyle-default: solid !default;
 %vertical-separation-small {
   @include vertical-separation($vs-margin: em($base-line-height * 0.5));
 }
-
 
 //////////////////////////////
 // Baseline Component

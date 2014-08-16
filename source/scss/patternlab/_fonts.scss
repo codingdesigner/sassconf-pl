@@ -17,6 +17,14 @@
   line-height: 1.2;
 }
 
-.font-family-archer { @extend %font-family-archer; }
-.font-family-landmark-regular { @extend %font-family-landmark-regular; }
-.font-family-landmark-inline { @extend %font-family-landmark-inline; }
+.font-family-archer {
+  @extend %font-family-archer;
+}
+
+.font-family-landmark-regular {
+  @extend %font-family-landmark-regular;
+}
+
+.font-family-landmark-inline {
+  @extend %font-family-landmark-inline;
+}

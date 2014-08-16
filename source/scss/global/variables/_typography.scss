@@ -39,9 +39,10 @@ $ms-base: 16px;
 
 //////////////////////
 // Font size and line-height
-$base-font-size  : ms(0); // 16px
-$base-line-px    : 26px;
-$base-line-em    : em($base-line-px);
+$base-font-size: ms(0);
+// 16px
+$base-line-px: 26px;
+$base-line-em: em($base-line-px);
 $base-line-height: unitless($base-line-em);
 //////////////////////
 
@@ -49,9 +50,9 @@ $base-line-height: unitless($base-line-em);
 // Headings
 // create a list of heading sizes, H1 - H6
 // default example uses modular scale
-$heading-sizes       : em(ms(6)) em(ms(5)) em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1));
+$heading-sizes: em(ms(6)) em(ms(5)) em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1));
 $heading-line-heights: unitless(em($base-line-px * 1.5, ms(6))) unitless(em($base-line-px * 1.5, ms(5))) unitless(em($base-line-px * 1.25, ms(4))) unitless(em($base-line-px, ms(3))) unitless(em($base-line-px, ms(2))) unitless(em($base-line-px, ms(1)));
 
-$heading-sizes-small       : em(ms(3)) em(ms(2)) em(ms(1)) em(ms(0)) em(ms(0)) em(ms(0));
+$heading-sizes-small: em(ms(3)) em(ms(2)) em(ms(1)) em(ms(0)) em(ms(0)) em(ms(0));
 $heading-line-heights-small: unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) false false false;
 //////////////////////

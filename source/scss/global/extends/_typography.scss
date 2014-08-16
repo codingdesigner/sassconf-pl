@@ -52,11 +52,17 @@
   font-style: italic;
 }
 
+%font-family-archer {
+  font-family: $archer;
+}
 
-%font-family-archer { font-family: $archer; }
-%font-family-landmark-regular { font-family: $landmark-regular; }
-%font-family-landmark-inline { font-family: $landmark-inline; }
+%font-family-landmark-regular {
+  font-family: $landmark-regular;
+}
 
+%font-family-landmark-inline {
+  font-family: $landmark-inline;
+}
 
 // %font-surveyor {
 //   font-family: $surveyor-regular;

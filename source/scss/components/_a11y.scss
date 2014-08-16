@@ -12,12 +12,10 @@ $a11y-focusable-default: false !default;
   @if $extend {
     @if $a11y-focusable {
       @extend %a11y-hidden-focusable-extend;
-    }
-    @else {
+    } @else {
       @extend %a11y-hidden-base-extend;
     }
-  }
-  @else {
+  } @else {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -53,7 +51,6 @@ $a11y-focusable-default: false !default;
 %a11y-hidden-focusable-extend {
   @include a11y-hidden($a11y-focusable: true, $extend: false);
 }
-
 
 //////////////////////////////
 // Accessibility Component

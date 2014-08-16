@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   require('time-grunt')(grunt); // shows how long grunt tasks take ~ https://github.com/sindresorhus/time-grunt
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -100,8 +100,8 @@ module.exports = function(grunt) {
       },
       icons: {
         files: [
-        'source/images/icons/src/**/*',
-        'source/images/icons/templates/*'
+          'source/images/icons/src/**/*',
+          'source/images/icons/templates/*'
         ],
         tasks: ['create_font_icons']
       },
@@ -326,7 +326,7 @@ module.exports = function(grunt) {
 //    });
 
   grunt.registerTask('plcb', 'pattern_lab_component_builder');
-  grunt.registerTask('cleanup_font_icon_build', 'Renaming some stuff', function() {
+  grunt.registerTask('cleanup_font_icon_build', 'Renaming some stuff', function () {
     grunt.file.copy('source/_patterns/00-atoms/05-images/icons.html', 'source/_patterns/00-atoms/05-images/icons.mustache');
     grunt.file.delete('source/_patterns/00-atoms/05-images/icons.html');
   });

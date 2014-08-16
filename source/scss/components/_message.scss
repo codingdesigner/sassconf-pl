@@ -8,14 +8,14 @@ $message-base-extend: true !default;
 $message-colors-extend: true !default;
 $message-color-adjust: 10% !default;
 $message-text-color-default: $cs-message-text-color-default !default;
-$message-bkg-color-default: $cs-message-bkg-color-default !default; // false
+$message-bkg-color-default: $cs-message-bkg-color-default !default;
+// false
 //////////////////////////////
 
 @mixin message-base($extend: $message-base-extend) {
   @if $extend {
     @extend %message-base-extend;
-  }
-  @else {
+  } @else {
     padding: 0.2em 0.5em;
     border: {
       style: solid;
@@ -25,22 +25,20 @@ $message-bkg-color-default: $cs-message-bkg-color-default !default; // false
   }
 }
 
-@mixin message-colors($message-color: $message-bkg-color-default, $message-adjust: $message-color-adjust,  $extend: $message-colors-extend) {
+@mixin message-colors($message-color: $message-bkg-color-default, $message-adjust: $message-color-adjust, $extend: $message-colors-extend) {
   @if ($message-color != $message-bkg-color-default) {
     $extend: false;
   }
   @if $extend {
     @extend %message-colors-extend;
-  }
-  @else {
+  } @else {
     @include readable-text($message-color);
 
     @if cs-is-dark($message-color) {
       background-color: blend-screen($message-color, adjust-color($message-color, $lightness: $message-adjust * -1));
 
       border-color: blend-screen($message-color, adjust-color($message-color, $lightness: $message-adjust * -2.5));
-    }
-    @else {
+    } @else {
       background-color: blend-multiply($message-color, adjust-color($message-color, $lightness: $message-adjust * -1));
 
       border-color: blend-multiply($message-color, adjust-color($message-color, $lightness: $message-adjust * -2.5));
@@ -48,13 +46,13 @@ $message-bkg-color-default: $cs-message-bkg-color-default !default; // false
   }
 }
 
-
 //////////////////////////////
 // Message Component Extendable Classes
 //////////////////////////////
 %message-base-extend {
   @include message-base(false);
 }
+
 %message-colors-extend {
   @include message-colors($cs-status-status, $extend: false);
 }
@@ -63,16 +61,18 @@ $message-bkg-color-default: $cs-message-bkg-color-default !default; // false
   @extend %message-base-extend;
   @extend %message-colors-extend;
 }
+
 %status {
   @include message-colors($cs-status-status);
 }
+
 %warning {
   @include message-colors($cs-status-warning);
 }
+
 %error {
   @include message-colors($cs-status-error);
 }
-
 
 //////////////////////////////
 // Message Component

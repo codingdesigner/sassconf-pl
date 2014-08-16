@@ -8,15 +8,14 @@
 
 //////////////////////////////
 // p Element Default Variables
-$p-line-height:  $base-line-height !default;
-$p-extend:       true !default;
+$p-line-height: $base-line-height !default;
+$p-extend: true !default;
 //////////////////////////////
 
 @mixin p-base($line-height: $p-line-height, $extend: $p-extend) {
   @if not ($extend) {
     margin-bottom: em($line-height);
-  }
-  @else {
+  } @else {
     @extend %p-base;
   }
 }
@@ -26,8 +25,6 @@ $p-extend:       true !default;
   line-height: $line-height / ($base-font-size * unitless($size));
   margin-bottom: em($line-height);
 }
-
-
 
 //////////////////////////////
 // p Element Extendable Classes
@@ -40,7 +37,6 @@ $p-extend:       true !default;
 %p-intro {
   @include p-adjust(em(ms(1)), $base-line-px * 1.25);
 }
-
 
 //////////////////////////////
 // p Element Styles

@@ -11,8 +11,7 @@ $pager-item-extend: true !default;
 @mixin pager-container($extend: $pager-container-extend) {
   @if $extend {
     @extend %pager-container-extend;
-  }
-  @else {
+  } @else {
     display: inline;
     margin: 0;
     padding: 0;
@@ -23,8 +22,7 @@ $pager-item-extend: true !default;
 @mixin pager-item($extend: $pager-item-extend) {
   @if $extend {
     @extend %pager-item-extend;
-  }
-  @else {
+  } @else {
     display: inline;
     margin: 0;
     padding: 0.2em 0.5em;
@@ -32,13 +30,13 @@ $pager-item-extend: true !default;
   }
 }
 
-
 //////////////////////////////
 // Pager Mixin Extendable Classes
 //////////////////////////////
 %pager-container-extend {
   @include pager-container(false);
 }
+
 %pager-item-extend {
   @include pager-item(false);
 }
@@ -46,10 +44,10 @@ $pager-item-extend: true !default;
 %pager {
   @extend %pager-container-extend;
 }
+
 %pager-item {
   @extend %pager-item-extend;
 }
-
 
 //////////////////////////////
 // Pager Component
@@ -58,18 +56,23 @@ $pager-item-extend: true !default;
 .pager {
   @extend %pager;
 }
+
 .pager-first {
   @extend %pager-item;
 }
+
 .pager-previous {
   @extend %pager-item;
 }
+
 .pager-item {
   @extend %pager-item;
 }
+
 .pager-next {
   @extend %pager-item;
 }
+
 .pager-last {
   @extend %pager-item;
 }

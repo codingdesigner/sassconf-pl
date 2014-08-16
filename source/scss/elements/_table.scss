@@ -8,18 +8,16 @@
 
 //////////////////////////////
 // table Element Default Variables
-$table-extend:      true !default;
+$table-extend: true !default;
 //////////////////////////////
 
 @mixin table-base($extend: $table-extend) {
   @if not ($extend) {
     //
-  }
-  @else {
+  } @else {
     @extend %table-base;
   }
 }
-
 
 //////////////////////////////
 // table Element Extendable Classes
@@ -28,8 +26,6 @@ $table-extend:      true !default;
 %table-base {
   @include table-base($extend: false);
 }
-
-
 
 //////////////////////////////
 // table Element Styles

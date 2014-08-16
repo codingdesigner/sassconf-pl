@@ -1,30 +1,36 @@
 .rhombus {
   @include transform2d(skewX($rhombus-skew));
 }
+
 .rhombus-reset {
   @include transform2d(skewX($rhombus-skew-reset));
 
 }
+
 .rhombus-left {
   @include transform2d(skewX($rhombus-skew-reset));
 }
+
 .rhombus-left-reset {
   @include transform2d(skewX($rhombus-skew));
 
 }
-
 
 .rhombus-grid-wrapper {
   position: fixed;
   width: 100%;
   top: 0;
   opacity: 0.6;
-  @supports(mix-blend-mode: color-dodge) {
-    opacity: 1;
-    mix-blend-mode: color-dodge;
-    mix-blend-mode: screen;
+  @supports (mix-blend-mode: color-dodge) {
+    opacity:
+  1;
+    mix-blend-mode: color-dodge
+  ;
+    mix-blend-mode: screen
+  ;
   }
 }
+
 .rhombus-grid {
   max-width: 100%;
 }

@@ -29,7 +29,7 @@
     Object.getPrototypeOf = ''.__proto__ === String.prototype ? function (object) {
       return object.__proto__;
     }
-    : function (object) {
+        : function (object) {
       // May break if the constructor has been tampered with
       return object.constructor.prototype;
     };
@@ -140,11 +140,11 @@
   //////////////////////////////
   EQjs.prototype.nodeWrites = function (nodes) {
     var i,
-    length,
-    callback,
-    proto = Object.getPrototypeOf(eqjs),
-    widths = proto.widths,
-    points = proto.points;
+        length,
+        callback,
+        proto = Object.getPrototypeOf(eqjs),
+        widths = proto.widths,
+        points = proto.points;
 
     if (nodes && typeof(nodes) !== 'number') {
       length = nodes.length;
@@ -230,7 +230,9 @@
       });
     }
 
-    return arr.sort(function (a, b) { return a.value - b.value; });
+    return arr.sort(function (a, b) {
+      return a.value - b.value;
+    });
   };
 
   //////////////////////////////

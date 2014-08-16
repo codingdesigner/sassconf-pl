@@ -16,8 +16,7 @@ $button-text-color-default: false !default;
 @mixin button-base($extend: $button-base-extend) {
   @if $extend {
     @extend %button-base-extend;
-  }
-  @else {
+  } @else {
     display: inline-block;
     border-radius: 0.25em;
     border: none;
@@ -35,8 +34,7 @@ $button-text-color-default: false !default;
 @mixin button-size-normal($extend: $button-size-normal-extend) {
   @if $extend {
     @extend %button-size-normal-extend;
-  }
-  @else {
+  } @else {
     padding: 0.2em 0.5em;
     font-size: 0.9em;
     line-height: 1.25;
@@ -46,8 +44,7 @@ $button-text-color-default: false !default;
 @mixin button-size-large($extend: $button-size-large-extend) {
   @if $extend {
     @extend %button-size-large-extend;
-  }
-  @else {
+  } @else {
     padding: 0.5em 0.75em;
     font-size: 1.1em;
     line-height: 1.5;
@@ -61,8 +58,7 @@ $button-text-color-default: false !default;
 
   @if cs-is-dark($button-color) {
     background-color: blend-screen($button-color, adjust-color($button-color, $lightness: $button-adjust * -1));
-  }
-  @else {
+  } @else {
     background-color: blend-multiply($button-color, adjust-color($button-color, $lightness: $button-adjust * -1));
   }
 }
@@ -72,8 +68,7 @@ $button-text-color-default: false !default;
     &:hover {
       background-color: blend-screen($button-color, adjust-color($button-color, $lightness: $button-adjust * -.25));
     }
-  }
-  @else {
+  } @else {
     &:hover {
       background-color: blend-multiply($button-color, adjust-color($button-color, $lightness: $button-adjust * -.25));
     }
@@ -83,32 +78,27 @@ $button-text-color-default: false !default;
 @mixin button-active($button-color: $button-color-default, $button-text-color: $button-text-color-default, $button-adjust: $button-color-adjust) {
   @if cs-is-dark($button-color) {
     &:active {
-        background-color: blend-screen($button-color, adjust-color($button-color, $lightness: $button-adjust * 1));
-      }
-  }
-  @else {
+      background-color: blend-screen($button-color, adjust-color($button-color, $lightness: $button-adjust * 1));
+    }
+  } @else {
     &:active {
-        background-color: blend-multiply($button-color, adjust-color($button-color, $lightness: $button-adjust * 1));
-      }
+      background-color: blend-multiply($button-color, adjust-color($button-color, $lightness: $button-adjust * 1));
+    }
   }
 }
 
-
-@mixin button-colors($button-color: $button-color-default, $button-text-color: $button-text-color-default, $button-adjust: $button-color-adjust,  $extend: $button-colors-extend) {
+@mixin button-colors($button-color: $button-color-default, $button-text-color: $button-text-color-default, $button-adjust: $button-color-adjust, $extend: $button-colors-extend) {
   @if ($button-color != $button-color-default) or ($button-text-color != $button-text-color-default) {
     $extend: false;
   }
   @if $extend {
     @extend %button-colors-extend;
-  }
-  @else {
+  } @else {
     @include button-background($button-color, $button-text-color, $button-adjust);
     @include button-hover($button-color, $button-text-color, $button-adjust);
     @include button-active($button-color, $button-text-color, $button-adjust);
   }
 }
-
-
 
 //////////////////////////////
 // Button Component Extendable Classes
@@ -116,6 +106,7 @@ $button-text-color-default: false !default;
 %button-base-extend {
   @include button-base(false);
 }
+
 %button-size-normal-extend {
   @include button-size-normal(false);
 }
@@ -127,27 +118,30 @@ $button-text-color-default: false !default;
 %button-colors-extend {
   @include button-colors($extend: false);
 }
+
 %button {
   @include button-base(true);
   @include button-size-normal(true);
   @include button-colors($color--gray, $extend: true);
 }
+
 %button-warning {
   @extend %warning;
   @include button-hover($cs-status-warning);
   @include button-active($cs-status-warning);
 }
+
 %button-big {
   @include button-base(true);
   @include button-size-large(true);
   @include button-colors(nth($quadrary-tints, 6), $extend: true);
 }
+
 %button-cta {
   @include button-base(true);
   @include button-size-normal(true);
   @include button-colors($button-color: nth($primary-shades, 4));
 }
-
 
 //////////////////////////////
 // Button Component

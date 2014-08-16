@@ -9,11 +9,12 @@ body.manhattan {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .header {
-//  &:hover {
-    .photo-wrapper {
-      -webkit-filter: blur(5px) contrast(150%) saturate(150%);
-//    }
+  //  &:hover {
+  .photo-wrapper {
+    -webkit-filter: blur(5px) contrast(150%) saturate(150%);
+    //    }
   }
 }
 

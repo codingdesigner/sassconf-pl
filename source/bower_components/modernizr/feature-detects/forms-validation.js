@@ -4,15 +4,15 @@
 //    - Modernizr.inputtypes.numer && Modernizr.formvalidation (browser supports rangeOverflow, typeMismatch etc. for type=number)
 //    - Modernizr.input.required && Modernizr.formvalidation (browser supports valueMissing)
 //
-(function(document, Modernizr){
+(function (document, Modernizr) {
 
 
   Modernizr.formvalidationapi = false;
   Modernizr.formvalidationmessage = false;
 
-  Modernizr.addTest('formvalidation', function() {
+  Modernizr.addTest('formvalidation', function () {
     var form = document.createElement('form');
-    if ( !('checkValidity' in form) || !('addEventListener' in form) ) {
+    if (!('checkValidity' in form) || !('addEventListener' in form)) {
       return false;
     }
     if ('reportValidity' in form) {
@@ -21,12 +21,12 @@
     var invalidFired = false;
     var input;
 
-    Modernizr.formvalidationapi =  true;
+    Modernizr.formvalidationapi = true;
 
     // Prevent form from being submitted
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
       //Opera does not validate form, if submit is prevented
-      if ( !window.opera ) {
+      if (!window.opera) {
         e.preventDefault();
       }
       e.stopPropagation();
@@ -37,13 +37,13 @@
     //older opera browsers need a name attribute
     form.innerHTML = '<input name="modTest" required><button></button>';
 
-    Modernizr.testStyles('#modernizr form{position:absolute;top:-99999em}', function( node ) {
+    Modernizr.testStyles('#modernizr form{position:absolute;top:-99999em}', function (node) {
       node.appendChild(form);
 
       input = form.getElementsByTagName('input')[0];
 
       // Record whether "invalid" event is fired
-      input.addEventListener('invalid', function(e) {
+      input.addEventListener('invalid', function (e) {
         invalidFired = true;
         e.preventDefault();
         e.stopPropagation();
