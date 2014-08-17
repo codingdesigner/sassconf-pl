@@ -31,9 +31,7 @@
   <!-- endbower -->
 
   <!--[if lt IE 9]>
-  <script src="/                                            "></script>
-  <script src="/                                            "></script>
-  <script src="/                                           "></script>
+  <script src="/bower_components/html5shiv/dist/html5shiv.js"></script>
   <![endif]-->
 
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
@@ -51,7 +49,7 @@
   <!-- End Pattern Lab -->
 
 </head>
-<body class="">
+<body class="" id="skrollr-body">
 		
 		<!-- View All Patterns in a Pattern Sub-Type -->
 		<div class="sg-main" role="main">
@@ -228,7 +226,7 @@
 							<div class="body scratch-header">
   <header class="header">
     <div class="photo-wrapper"></div>
-    <div class="rhombus-grid-wrapper layer" data-depth="0.2">
+    <div class="rhombus-grid-wrapper layer" data-0="opacity: 1; top: 0px" data-_photo="opacity: 0; top: -100px">
       <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
         <defs>
           <path id="rhombuses" d="M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z"></path>
@@ -241,7 +239,7 @@
         </g>
       </svg>
     </div>
-    <div class="logo-nav layer" data-depth="0.5">
+    <div class="logo-nav layer">
       <a href="#" class="logo-lockup">
         <div class="rhombus-left">
           <div class="rhombus-left-reset">Sass Conf</div>
@@ -264,6 +262,10 @@
   </header>
 </div>
 
+
+<!--data-_photorow="top: 0%;" data-_photo="top: -40%;"-->
+<!--// data-100="top: 0%; opacity: 1;" data-800="top: -55%; opacity: 0;-->
+<!--// data-0="top: 0%; opacity: 1;" data-1200="top: -55%; opacity: 0;"-->
 <!--<div class="content-scratch-wrapper">
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -299,7 +301,7 @@
 										&lt;div class=&quot;body scratch-header&quot;&gt;
   &lt;header class=&quot;header&quot;&gt;
     &lt;div class=&quot;photo-wrapper&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;rhombus-grid-wrapper layer&quot; data-depth=&quot;0.2&quot;&gt;
+    &lt;div class=&quot;rhombus-grid-wrapper layer&quot; data-0=&quot;opacity: 1; top: 0px&quot; data-_photo=&quot;opacity: 0; top: -100px&quot;&gt;
       &lt;svg class=&quot;rhombus-grid&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 1000 420&quot; enable-background=&quot;new 0 0 1000 420&quot; xml:space=&quot;preserve&quot; preserveAspectRatio=&quot;xMinYMin meet&quot;&gt;
         &lt;defs&gt;
           &lt;path id=&quot;rhombuses&quot; d=&quot;M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z&quot;&gt;&lt;/path&gt;
@@ -312,7 +314,7 @@
         &lt;/g&gt;
       &lt;/svg&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;logo-nav layer&quot; data-depth=&quot;0.5&quot;&gt;
+    &lt;div class=&quot;logo-nav layer&quot;&gt;
       &lt;a href=&quot;#&quot; class=&quot;logo-lockup&quot;&gt;
         &lt;div class=&quot;rhombus-left&quot;&gt;
           &lt;div class=&quot;rhombus-left-reset&quot;&gt;Sass Conf&lt;/div&gt;
@@ -335,6 +337,10 @@
   &lt;/header&gt;
 &lt;/div&gt;
 
+
+&lt;!--data-_photorow=&quot;top: 0%;&quot; data-_photo=&quot;top: -40%;&quot;--&gt;
+&lt;!--// data-100=&quot;top: 0%; opacity: 1;&quot; data-800=&quot;top: -55%; opacity: 0;--&gt;
+&lt;!--// data-0=&quot;top: 0%; opacity: 1;&quot; data-1200=&quot;top: -55%; opacity: 0;&quot;--&gt;
 &lt;!--&lt;div class=&quot;content-scratch-wrapper&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
