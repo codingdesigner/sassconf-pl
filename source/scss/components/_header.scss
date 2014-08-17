@@ -13,8 +13,7 @@ body.manhattan {
 .header {
   //  &:hover {
   .photo-wrapper {
-    -webkit-filter: blur(5px) contrast(150%) saturate(150%);
-    //    }
+    @include filter(contrast(150%) saturate(150%));
   }
 }
 
@@ -33,7 +32,10 @@ $bp--logo-very-small: max-width 380px;
   // }
   .logo-nav {
     text-align: center;
-    position: fixed;
+//    position: fixed;
+    @include breakpoint($bp--logo-small) {
+      top: 7rem;
+    }
   }
   .logo-lockup {
     background: {
@@ -85,7 +87,7 @@ $bp--logo-very-small: max-width 380px;
       @include transform2d(translateX(-50%) skewX(10deg));
       @include breakpoint($bp--logo-small) {
         text-align: left;
-        padding-left: 80px;
+        padding-left: 160px;
       }
       @include breakpoint($bp--logo-med) {
         width: 50%;
@@ -116,7 +118,7 @@ $bp--logo-very-small: max-width 380px;
     }
     @include breakpoint($bp--logo-small) {
       text-align: left;
-      padding-left: 80px;
+      padding-left: 160px;
     }
     @include breakpoint($bp--logo-med) {
       font-size: 2em;

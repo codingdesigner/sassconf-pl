@@ -22,12 +22,12 @@
   top: 0;
   opacity: 0.6;
   @supports (mix-blend-mode: color-dodge) {
-    opacity:
-  1;
-    mix-blend-mode: color-dodge
-  ;
-    mix-blend-mode: screen
-  ;
+    opacity: 1;
+    mix-blend-mode: color-dodge;
+    mix-blend-mode: screen;
+  }
+  @include breakpoint($bp--logo-small) {
+    display: none;
   }
 }
 
