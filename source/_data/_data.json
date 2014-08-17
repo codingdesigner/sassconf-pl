@@ -3,7 +3,7 @@
   "currentYear": "2014",
   "htmlClass": "sassconf-2014",
   "bodyClass": "",
-  "base_path": "../../",
+  "base_path": "/public/",
   "colors": [
     "ff9000",
     "3bc2ed",
