@@ -20,15 +20,16 @@ $button-text-color-default: $cs-button-text-color-default !default;
     @extend %link-unset-background-extend;
     display: inline-block;
     border-radius: 0.25em;
-    border: none;
+    border: 1px solid $color--secondary;
     font: {
-      family: $font-display;
+      family: $font-slab;
       weight: normal;
+      style: italic;
     }
     text: {
-      transform: uppercase;
       decoration: none;
     }
+    white-space: nowrap;
   }
 }
 
@@ -37,7 +38,7 @@ $button-text-color-default: $cs-button-text-color-default !default;
     @extend %button-size-normal-extend;
   } @else {
     padding: 0.2em 0.5em;
-    font-size: 0.9em;
+    font-size: ms(1);
     line-height: 1.25;
   }
 }
@@ -47,7 +48,7 @@ $button-text-color-default: $cs-button-text-color-default !default;
     @extend %button-size-large-extend;
   } @else {
     padding: 0.5em 0.75em;
-    font-size: 1.1em;
+    font-size: ms(2);
     line-height: 1.5;
   }
 }
@@ -129,17 +130,18 @@ $button-text-color-default: $cs-button-text-color-default !default;
   @include button-colors($extend: true);
 }
 
+%button-big {
+  @include button-base(true);
+  @include button-size-large(true);
+  @include button-colors($extend: true);
+}
+
 %button-warning {
   @extend %warning;
   @include button-hover($cs-status-warning);
   @include button-active($cs-status-warning);
 }
 
-%button-big {
-  @include button-base(true);
-  @include button-size-large(true);
-  @include button-colors(nth($quadrary-tints, 6), $extend: true);
-}
 
 %button-cta {
   @include button-base(true);
@@ -165,4 +167,8 @@ $button-text-color-default: $cs-button-text-color-default !default;
 
 .btn {
   @extend %button;
+}
+
+.btn--big {
+  @extend %button-big;
 }
