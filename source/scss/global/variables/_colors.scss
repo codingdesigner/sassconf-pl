@@ -105,6 +105,8 @@ $cs-link-background-bkg: $cs-background;
 $cs-text-dark: $color--black;
 $cs-text-light: $color--white;
 $cs-text: $cs-text-dark;
+$contrasted-dark-default: $cs-text-dark;
+$contrasted-light-default: $cs-text-light;
 
 //////////////////////////////
 // Border Colors
@@ -122,7 +124,8 @@ $cs-status-error: nth($primary-tints, 5);
 // Component defaults
 //////////////////////////////
 // Buttons
-$cs-button-color-default: $color--gray;
+$cs-button-color-default: $color--primary;
+$cs-button-text-color-default: $color--white;
 //////////////////////////////
 // Messages
 $cs-message-text-color-default: nth($secondary-tints, 3);

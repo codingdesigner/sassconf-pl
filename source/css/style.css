@@ -190,19 +190,19 @@ html {
   overflow-x: hidden;
 }
 
-a:not(.button) {
+a:not(.btn) {
   color: #7acbcb;
 }
-a:not(.button):visited {
+a:not(.btn):visited {
   color: #7acbcb;
 }
-a:not(.button):focus {
+a:not(.btn):focus {
   color: #789fa4;
 }
-a:not(.button):hover {
+a:not(.btn):hover {
   color: #789fa4;
 }
-a:not(.button):active {
+a:not(.btn):active {
   color: #789fa4;
 }
 
@@ -249,24 +249,24 @@ a:active {
   background-image: linear-gradient(to top, #7acbcb 1px, #f1f9f9 2px);
 }
 
-.logo-lockup.dark, .logo-lockup {
+button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .call-to-action, .logo-lockup.dark, .logo-lockup {
   text-decoration: none;
   text-shadow: none;
   background-image: none;
 }
-.logo-lockup:visited {
+button:visited, input[type='submit']:visited, input[type='reset']:visited, input[type='button']:visited, .btn:visited, .big-button:visited, .call-to-action:visited, .logo-lockup:visited {
   text-shadow: none;
   background-image: none;
 }
-.logo-lockup:focus {
+button:focus, input[type='submit']:focus, input[type='reset']:focus, input[type='button']:focus, .btn:focus, .big-button:focus, .call-to-action:focus, .logo-lockup:focus {
   text-shadow: none;
   background-image: none;
 }
-.logo-lockup:hover {
+button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .btn:hover, .big-button:hover, .call-to-action:hover, .logo-lockup:hover {
   text-shadow: none;
   background-image: none;
 }
-.logo-lockup:active {
+button:active, input[type='submit']:active, input[type='reset']:active, input[type='button']:active, .btn:active, .big-button:active, .call-to-action:active, .logo-lockup:active {
   text-shadow: none;
   background-image: none;
 }
@@ -331,17 +331,17 @@ th {
   width: auto;
 }
 
-button, input[type='submit'], input[type='reset'], input[type='button'], .big-button, .call-to-action {
+button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .call-to-action {
   display: inline-block;
   border-radius: 0.25em;
   border: none;
-  font-family: sans-serif;
+  font-family: "Landmark Inline A", "Landmark Inline B";
   font-weight: normal;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-button, input[type='submit'], input[type='reset'], input[type='button'], .call-to-action {
+button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .call-to-action {
   padding: 0.2em 0.5em;
   font-size: 0.9em;
   line-height: 1.25;
@@ -353,15 +353,15 @@ button, input[type='submit'], input[type='reset'], input[type='button'], .call-t
   line-height: 1.5;
 }
 
-button, input[type='submit'], input[type='reset'], input[type='button'] {
+button, input[type='submit'], input[type='reset'], input[type='button'], .btn {
   color: white;
-  background-color: #acacac;
+  background-color: #d3639e;
 }
-button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover {
-  background-color: #bebebe;
+button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .btn:hover {
+  background-color: #a91e5a;
 }
-button:active, input[type='submit']:active, input[type='reset']:active, input[type='button']:active {
-  background-color: #dddddd;
+button:active, input[type='submit']:active, input[type='reset']:active, input[type='button']:active, .btn:active {
+  background-color: #c04580;
 }
 
 .big-button.warning:hover {
@@ -372,8 +372,8 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
 }
 
 .big-button {
-  color: #0c0c0c;
-  background-color: #abc3c3;
+  color: white;
+  background-color: #f1f5f5;
 }
 .big-button:hover {
   background-color: #d5e0e0;
