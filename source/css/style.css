@@ -249,24 +249,25 @@ a:active {
   background-image: linear-gradient(to top, #7acbcb 1px, #f1f9f9 2px);
 }
 
-button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .btn--big, .call-to-action, .logo-lockup.dark, .logo-lockup {
+button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .btn--big, .btn--light, .btn--disabled,
+.btn[disabled], .btn--text, .call-to-action, .logo-lockup.dark, .logo-lockup {
   text-decoration: none;
   text-shadow: none;
   background-image: none;
 }
-button:visited, input[type='submit']:visited, input[type='reset']:visited, input[type='button']:visited, .btn:visited, .big-button:visited, .btn--big:visited, .call-to-action:visited, .logo-lockup:visited {
+button:visited, input[type='submit']:visited, input[type='reset']:visited, input[type='button']:visited, .btn:visited, .big-button:visited, .btn--big:visited, .btn--light:visited, .btn--disabled:visited, .btn--text:visited, .call-to-action:visited, .logo-lockup:visited {
   text-shadow: none;
   background-image: none;
 }
-button:focus, input[type='submit']:focus, input[type='reset']:focus, input[type='button']:focus, .btn:focus, .big-button:focus, .btn--big:focus, .call-to-action:focus, .logo-lockup:focus {
+button:focus, input[type='submit']:focus, input[type='reset']:focus, input[type='button']:focus, .btn:focus, .big-button:focus, .btn--big:focus, .btn--light:focus, .btn--disabled:focus, .btn--text:focus, .call-to-action:focus, .logo-lockup:focus {
   text-shadow: none;
   background-image: none;
 }
-button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .btn:hover, .big-button:hover, .btn--big:hover, .call-to-action:hover, .logo-lockup:hover {
+button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .btn:hover, .big-button:hover, .btn--big:hover, .btn--light:hover, .btn--disabled:hover, .btn--text:hover, .call-to-action:hover, .logo-lockup:hover {
   text-shadow: none;
   background-image: none;
 }
-button:active, input[type='submit']:active, input[type='reset']:active, input[type='button']:active, .btn:active, .big-button:active, .btn--big:active, .call-to-action:active, .logo-lockup:active {
+button:active, input[type='submit']:active, input[type='reset']:active, input[type='button']:active, .btn:active, .big-button:active, .btn--big:active, .btn--light:active, .btn--disabled:active, .btn--text:active, .call-to-action:active, .logo-lockup:active {
   text-shadow: none;
   background-image: none;
 }
@@ -331,10 +332,10 @@ th {
   width: auto;
 }
 
-button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .btn--big, .call-to-action {
+button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .btn--big, .btn--light, .btn--disabled,
+.btn[disabled], .btn--text, .call-to-action {
   display: inline-block;
   border-radius: 0.25em;
-  border: 1px solid #933b6a;
   font-family: "Archer SSm A", "Archer SSm B", serif, serif;
   font-weight: normal;
   font-style: italic;
@@ -357,6 +358,7 @@ button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .
 button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .btn--big {
   color: white;
   background-color: #d3639e;
+  border: 1px solid #a91e5a;
 }
 button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .btn:hover, .big-button:hover, .btn--big:hover {
   background-color: #a91e5a;
@@ -372,15 +374,47 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
   background-color: #f4ebf0;
 }
 
+.btn--light {
+  color: white;
+  background-color: #e9b1ce;
+  border: 1px solid #cf6c9c;
+}
+.btn--light:hover {
+  background-color: #cf6c9c;
+}
+.btn--light:active {
+  background-color: #e9b1ce;
+}
+
+.btn--disabled,
+.btn[disabled] {
+  color: #c99db4;
+  background-color: #6e2c4f;
+  border: 1px solid #270614;
+}
+.btn--disabled:hover,
+.btn[disabled]:hover {
+  background-color: #a24b7d;
+}
+.btn--disabled:active,
+.btn[disabled]:active {
+  background-color: #d569a9;
+}
+
 .call-to-action {
   color: white;
   background-color: #341827;
+  border: 1px solid #070103;
 }
 .call-to-action:hover {
   background-color: #50273d;
 }
 .call-to-action:active {
   background-color: #954b74;
+}
+
+.btn--full {
+  width: 100%;
 }
 
 body.manhattan {

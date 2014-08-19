@@ -20,7 +20,6 @@ $button-text-color-default: $cs-button-text-color-default !default;
     @extend %link-unset-background-extend;
     display: inline-block;
     border-radius: 0.25em;
-    border: 1px solid $color--secondary;
     font: {
       family: $font-slab;
       weight: normal;
@@ -65,6 +64,7 @@ $button-text-color-default: $cs-button-text-color-default !default;
 
 @mixin button-background($button-color: $button-color-default, $button-text-color: $button-text-color-default, $button-adjust: $button-color-adjust) {
   background-color: $button-color;
+  border: 1px solid blend-multiply($button-color, adjust-color($button-color, $lightness: $button-adjust * -.25));
 }
 
 @mixin button-hover($button-color: $button-color-default, $button-text-color: $button-text-color-default, $button-adjust: $button-color-adjust) {
@@ -142,6 +142,20 @@ $button-text-color-default: $cs-button-text-color-default !default;
   @include button-active($cs-status-warning);
 }
 
+%button-light {
+  @include button-base(true);
+  @include button-colors(nth($primary-tints, 3));
+}
+
+%button-disabled {
+  @include button-base(true);
+  @include button-colors(nth($secondary-shades, 2), nth($secondary-tints, 3));
+}
+
+%button-text {
+  @include button-base(true);
+}
+
 
 %button-cta {
   @include button-base(true);
@@ -171,4 +185,21 @@ $button-text-color-default: $cs-button-text-color-default !default;
 
 .btn--big {
   @extend %button-big;
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.btn--light {
+  @extend %button-light;
+}
+
+.btn--disabled,
+.btn[disabled] {
+  @extend %button-disabled;
+}
+
+.btn--text {
+  @extend %button-text;
 }
