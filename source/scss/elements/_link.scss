@@ -29,7 +29,7 @@ $unset-background-links-extend: true;
   @if $extend {
     @extend %link-colors-extend;
   } @else {
-    &:not(.button) {
+    &:not(.btn) {
       @include link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus);
     }
   }

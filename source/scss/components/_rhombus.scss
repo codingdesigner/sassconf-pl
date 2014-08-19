@@ -17,13 +17,14 @@
 }
 
 .rhombus-grid-wrapper {
-  position: fixed;
   width: 100%;
   top: 0;
   opacity: 0.6;
+  .manhattan & {
+    position: fixed;
+  }
   @supports (mix-blend-mode: color-dodge) {
     opacity: 1;
-    mix-blend-mode: color-dodge;
     mix-blend-mode: screen;
   }
   @include breakpoint($bp--logo-small) {

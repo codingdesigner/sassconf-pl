@@ -1,5 +1,25 @@
-<header class="header">
-  {{> atoms-logo }}
-  {{> molecules-primary-nav }}
-  {{> molecules-search }}
-</header>
+<div class="body scratch-header">
+  <header class="header">
+    <div class="photo-wrapper"></div>
+    <div class="rhombus-grid-wrapper layer" data-0="opacity: 1; top: 0px" data-_photo="opacity: 0; top: -100px">
+      {{> atoms-rhombus-grid }}
+    </div>
+    <div class="logo-nav layer">
+      {{> atoms-logo-rhombus }}
+      <h2 class="rhombus">
+        <div class="rhombus-reset">October 2-4, 2014</div>
+      </h2>
+      <!-- <nav class="m-main-nav">
+        <label class="menu-button"><input type="checkbox">
+          <a href="/">Home</a>
+          <a href="/speakers">Speakers</a>
+          <a href="/#buy-now">Get tickets</a>
+          <a href="/venue">Venue</a>
+          <a href="/code-of-conduct">Code of Conduct</a>
+          <div class="button">Menu</div>
+        </label>
+      </nav> -->
+    </div>
+  </header>
+</div>
+

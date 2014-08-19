@@ -1,1 +1,11 @@
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
+{{^ type-input }}
+  {{^ type-button }}
+    &lt;a class=&quot;btn {{ extra-classes }}&quot; href=&quot;{{ url }}&quot;{{#disabled}} disabled{{/disabled}}&gt;{{ atoms.button.text }}&lt;/a&gt;
+  {{/type-button}}
+{{/ type-input }}
+{{# type-input }}
+  &lt;input type=&quot;submit&quot; class=&quot;btn {{ extra-classes }}&quot; value=&quot;{{ atoms.button.text }}&quot;{{#disabled}} disabled{{/disabled}}/&gt;
+{{/ type-input }}
+{{# type-button }}
+  &lt;button class=&quot;btn {{ extra-classes }}&quot;{{#disabled}} disabled{{/disabled}}&gt;{{ atoms.button.text }}&lt;/button&gt;
+{{/ type-button }}

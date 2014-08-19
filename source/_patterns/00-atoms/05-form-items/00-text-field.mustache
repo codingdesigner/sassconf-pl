@@ -1,0 +1,4 @@
+<div class="form-item form-type-textfield{{#atoms.text_field.required}} form-type-textfield--required{{/atoms.text_field.required}}{{#atoms.text_field.error}} form-type-textfield--error{{/atoms.text_field.error}}">
+  {{#atoms.text_field.show_label}}<label>{{ atoms.text_field.label }} {{#atoms.text_field.required}}<span class="required">*</span>{{/atoms.text_field.required}}</label>{{/atoms.text_field.show_label}}
+  <input type="{{atoms.text_field.type}}" value="{{ atoms.text_field.value }}" placeholder="{{ atoms.text_field.placeholder }}" class="form-text {{ atoms.text_field.extra_classes }}">
+</div>

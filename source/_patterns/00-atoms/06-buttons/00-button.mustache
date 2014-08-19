@@ -1,1 +1,11 @@
-<p><a href="#" class="button">Button</a></p>
+{{^ type-input }}
+  {{^ type-button }}
+    <a class="btn {{ extra-classes }}" href="{{ url }}"{{#disabled}} disabled{{/disabled}}>{{ atoms.button.text }}</a>
+  {{/type-button}}
+{{/ type-input }}
+{{# type-input }}
+  <input type="submit" class="btn {{ extra-classes }}" value="{{ atoms.button.text }}"{{#disabled}} disabled{{/disabled}}/>
+{{/ type-input }}
+{{# type-button }}
+  <button class="btn {{ extra-classes }}"{{#disabled}} disabled{{/disabled}}>{{ atoms.button.text }}</button>
+{{/ type-button }}

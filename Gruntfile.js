@@ -228,21 +228,21 @@ module.exports = function (grunt) {
     },
 
     pattern_lab_component_builder: {
-      colors: {
-        options: {
-          'regex': "^\\$color--.*",
-          'allow_var_values': false
-        },
-        src: 'source/scss/global/variables/_colors.scss',
-        dest: 'source/_patterns/00-atoms/01-global/00-colors.json'
-      },
-      fonts: {
-        options: {
-          'regex': "^\\$type.*"
-        },
-        src: "source/scss/global/variables/_type-sizes.scss",
-        dest: "source/_patterns/00-atoms/02-text/02-type-sizes.json"
-      },
+      //colors: {
+      //  options: {
+      //    'regex': "^\\$color--.*",
+      //    'allow_var_values': false
+      //  },
+      //  src: 'source/scss/global/variables/_colors.scss',
+      //  dest: 'source/_patterns/00-atoms/01-global/00-colors.json'
+      //},
+      //fonts: {
+      //  options: {
+      //    'regex': "^\\$type.*"
+      //  },
+      //  src: "source/scss/global/variables/_type-sizes.scss",
+      //  dest: "source/_patterns/00-atoms/02-text/02-type-sizes.json"
+      //},
       breakpoints: {
         options: {
           // default is to find all sass vars

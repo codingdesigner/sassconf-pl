@@ -49,35 +49,47 @@
   <!-- End Pattern Lab -->
 
 </head>
-<body class="" id="skrollr-body">
-<header class="header">
-  <a href="#" class="logo-lockup">
-    <div class="rhombus-left">
-      <div class="rhombus-left-reset">Sass Conf</div>
+<body class="manhattan" id="skrollr-body">
+<div class="body scratch-header">
+  <header class="header">
+    <div class="photo-wrapper"></div>
+    <div class="rhombus-grid-wrapper layer" data-0="opacity: 1; top: 0px" data-_photo="opacity: 0; top: -100px">
+      <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+        <defs>
+          <path id="rhombuses" d="M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z"></path>
+        </defs>
+        <clipPath id="nyc-image">
+          <use xlink:href="#rhombuses" overflow="visible"></use>
+        </clipPath>
+        <g clip-path="url(#nyc-image)">
+          <image overflow="visible" enable-background="new" width="1000" height="420" xlink:href="../../images/manhattan-zeldman-1800x756.jpg"></image>
+        </g>
+      </svg>
     </div>
-  </a>
-  <nav class="m-main-nav">
-    <label class="menu-button"><input type="checkbox">
-      <a href="#">Home</a>
-      <a href="#">Speakers</a>
-      <a href="#">Get tickets</a>
-      <a href="#">Venue</a>
-      <a href="#">Code of Conduct</a>
+    <div class="logo-nav layer">
+      <a href="#" class="logo-lockup logo-rhombus">
+        <div class="rhombus-left">
+          <div class="rhombus-left-reset">Sass Conf</div>
+        </div>
+      </a>
+      <h2 class="rhombus">
+        <div class="rhombus-reset">October 2-4, 2014</div>
+      </h2>
+      <!-- <nav class="m-main-nav">
+        <label class="menu-button"><input type="checkbox">
+          <a href="/">Home</a>
+          <a href="/speakers">Speakers</a>
+          <a href="/#buy-now">Get tickets</a>
+          <a href="/venue">Venue</a>
+          <a href="/code-of-conduct">Code of Conduct</a>
+          <div class="button">Menu</div>
+        </label>
+      </nav> -->
+    </div>
+  </header>
+</div>
 
-      <div class="button">Menu</div>
-    </label>
-  </nav>
-  <form action="#" method="post" class="inline-form search-form">
-    <fieldset>
-      <legend class="is-vishidden">Search</legend>
-      <label for="search-field" class="is-vishidden">Search</label>
-      <input type="search" placeholder="Search" id="search-field" class="search-field"/>
-      <button class="search-submit">
-        <span class="icon-search" aria-hidden="true"></span>
-        <span class="is-vishidden">Search</span>
-      </button>
-    </fieldset>
-  </form></header><script src="../../js/global.js"></script>
+<script src="../../js/global.js"></script>
 <script src="../../js/jquery.lettering-0.6.1.min.js"></script>
 <script src="../../js/jquery.parallax.min.js"></script>
 <script src="../../js/widowtamer-min.js"></script>
@@ -89,8 +101,8 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-header";
-		var lineage        = [{"lineagePattern":"atoms-logo","lineagePath":"..\/..\/patterns\/00-atoms-04-images-00-logo\/00-atoms-04-images-00-logo.html"},{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/01-molecules-02-navigation-00-primary-nav\/01-molecules-02-navigation-00-primary-nav.html"},{"lineagePattern":"molecules-search","lineagePath":"..\/..\/patterns\/01-molecules-00-forms-00-search\/01-molecules-00-forms-00-search.html"}];
-		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-01-homepage\/03-templates-01-homepage.html"}];
+		var lineage        = [{"lineagePattern":"atoms-rhombus-grid","lineagePath":"..\/..\/patterns\/00-atoms-04-images-rhombus-grid\/00-atoms-04-images-rhombus-grid.html"},{"lineagePattern":"atoms-logo-rhombus","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-logo-rhombus\/00-atoms-04-images-02-logo-rhombus.html"}];
+		var lineageR       = [{"lineagePattern":"templates-style-tile","lineagePath":"..\/..\/patterns\/03-templates-00-style-tile\/03-templates-00-style-tile.html"},{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-01-homepage\/03-templates-01-homepage.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

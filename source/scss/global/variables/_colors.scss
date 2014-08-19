@@ -83,7 +83,7 @@ $color--white-shades: shade-stack($color--gray);
 // Background Colors
 //////////////////////////////
 $cs-background: $color--white;
-$cs-background: nth($tertiary-tints, 5);
+$cs-background: nth($tertiary-tints, 6);
 $cs-border-color: $color--black;
 
 // link colors
@@ -92,10 +92,10 @@ $cs-link-hover: $color--quadrary;
 $cs-link-active: $color--quadrary;
 $cs-link-visited: $color--tertiary;
 $cs-link-focus: $color--quadrary;
-$cs-link-background-normal: $color--quadrary;
+$cs-link-background-normal: $color--primary;
 $cs-link-background-hover: $color--tertiary;
 $cs-link-background-active: $color--tertiary;
-$cs-link-background-visited: $color--quadrary;
+$cs-link-background-visited: $color--primary;
 $cs-link-background-focus: $color--tertiary;
 $cs-link-background-bkg: $cs-background;
 
@@ -105,6 +105,8 @@ $cs-link-background-bkg: $cs-background;
 $cs-text-dark: $color--black;
 $cs-text-light: $color--white;
 $cs-text: $cs-text-dark;
+$contrasted-dark-default: $cs-text-dark;
+$contrasted-light-default: $cs-text-light;
 
 //////////////////////////////
 // Border Colors
@@ -122,7 +124,8 @@ $cs-status-error: nth($primary-tints, 5);
 // Component defaults
 //////////////////////////////
 // Buttons
-$cs-button-color-default: $color--gray;
+$cs-button-color-default: $color--primary;
+$cs-button-text-color-default: $color--white;
 //////////////////////////////
 // Messages
 $cs-message-text-color-default: nth($secondary-tints, 3);
