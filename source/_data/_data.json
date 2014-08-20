@@ -4,6 +4,7 @@
   "htmlClass": "sassconf-2014",
   "bodyClass": "",
   "base_path": "../../",
+  "speaker_img_path": "../../images/speakers/",
   "colors": [
     "ff9000",
     "3bc2ed",
