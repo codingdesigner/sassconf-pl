@@ -33,11 +33,11 @@
 
 .session {
   margin-bottom: 2rem;
+  clear: both;
 }
 
 .speaker-image {
   @extend %rhombus;
-  //  @include transform(skewX(-10deg) translateX(1em));
   margin-left: 2rem;
   overflow: hidden;
   width: 240px;
@@ -49,10 +49,10 @@
   z-index: 1;
   margin-top: 0.5rem;
   &:nth-of-type(2n+2) {
-    @include transform(skewX(10deg) translateX(1em));
+    @extend %rhombus-left;
     img {
-      @include transform(skewX(-10deg) translateX(-30px) translateY(-30px));
-      margin-left: 0;
+      @extend %rhombus-left-reset;
+      margin-left: -2rem;
     }
   }
   img {
@@ -61,7 +61,59 @@
     height: 300px;
     margin-left: -2rem;
     @extend %rhombus-reset;
-    //  @include transform(skewX(10deg) translateX(-30px) translateY(-30px));
+  }
+}
+
+.description {
+  max-width: 40em;
+  @include breakpoint(40em) {
+    font-size: 1em;
+  }
+  h2 {
+    font-family: $font-body;
+    font-size: 1em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: $color--tertiary;
+    margin-top: 1.5em;
+  }
+  ul {
+    padding-left: 1em;
+  }
+  li {
+    padding: 0.25em 0;
+    margin: 0;
+  }
+}
+.section__details {
+  overflow: hidden;
+  @include breakpoint(780px) {
+    // margin-left: 15em;
+    float: right;
+    width: calc(100% - 20rem);
+  }
+}
+.people {
+  @include breakpoint(650px) {
+    float: right;
+//    width: calc(100% - 20rem);
+  }
+}
+.description {
+  @include breakpoint(650px) {
+    clear: both;
+  }
+}
+@include breakpoint(650px) {
+  .images {
+    float: left;
+    width: 20rem;
+  }
+}
+@include breakpoint(780px) {
+  .images {
+    float: left;
+    width: 20rem;
   }
 }
 

@@ -723,14 +723,14 @@ body.manhattan {
   transform: skewX(10deg);
 }
 
-.rhombus-left {
+.rhombus-left, .speaker-image:nth-of-type(2n+2) {
   -moz-transform: skewX(10deg);
   -ms-transform: skewX(10deg);
   -webkit-transform: skewX(10deg);
   transform: skewX(10deg);
 }
 
-.rhombus-left-reset {
+.rhombus-left-reset, .speaker-image:nth-of-type(2n+2) img {
   -moz-transform: skewX(-10deg);
   -ms-transform: skewX(-10deg);
   -webkit-transform: skewX(-10deg);
@@ -781,6 +781,7 @@ body.manhattan {
 
 .session {
   margin-bottom: 2rem;
+  clear: both;
 }
 
 .speaker-image {
@@ -797,18 +798,8 @@ body.manhattan {
   z-index: 1;
   margin-top: 0.5rem;
 }
-.speaker-image:nth-of-type(2n+2) {
-  -moz-transform: skewX(10deg) translateX(1em);
-  -ms-transform: skewX(10deg) translateX(1em);
-  -webkit-transform: skewX(10deg) translateX(1em);
-  transform: skewX(10deg) translateX(1em);
-}
 .speaker-image:nth-of-type(2n+2) img {
-  -moz-transform: skewX(-10deg) translateX(-30px) translateY(-30px);
-  -ms-transform: skewX(-10deg) translateX(-30px) translateY(-30px);
-  -webkit-transform: skewX(-10deg) translateX(-30px) translateY(-30px);
-  transform: skewX(-10deg) translateX(-30px) translateY(-30px);
-  margin-left: 0;
+  margin-left: -2rem;
 }
 .speaker-image img {
   width: 300px;
@@ -817,6 +808,64 @@ body.manhattan {
   margin-left: -2rem;
 }
 
+.description {
+  max-width: 40em;
+}
+@media (min-width: 40em) {
+  .description {
+    font-size: 1em;
+  }
+}
+.description h2 {
+  font-family: "Archer SSm A", "Archer SSm B", serif, serif;
+  font-size: 1em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #7acbcb;
+  margin-top: 1.5em;
+}
+.description ul {
+  padding-left: 1em;
+}
+.description li {
+  padding: 0.25em 0;
+  margin: 0;
+}
+
+.section__details {
+  overflow: hidden;
+}
+@media (min-width: 48.75em) {
+  .section__details {
+    float: right;
+    width: calc(100% - 20rem);
+  }
+}
+
+@media (min-width: 40.625em) {
+  .people {
+    float: right;
+  }
+}
+
+@media (min-width: 40.625em) {
+  .description {
+    clear: both;
+  }
+}
+
+@media (min-width: 40.625em) {
+  .images {
+    float: left;
+    width: 20rem;
+  }
+}
+@media (min-width: 48.75em) {
+  .images {
+    float: left;
+    width: 20rem;
+  }
+}
 .sg-swatch.color--black {
   background-color: #0c0c0c;
 }
@@ -1164,6 +1213,7 @@ body.manhattan {
 
 .section-title {
   color: #7acbcb;
+  clear: both;
 }
 
 #content {
