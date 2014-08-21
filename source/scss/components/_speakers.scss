@@ -1,4 +1,11 @@
-//$schedule-sessions: 14;
+$bp--sessions-wrap: 650px;
+$bp--sessions-2col: 780px;
+
+.speaker--section {
+  @include clearfix();
+  clear: both;
+  margin-bottom: 2rem;
+}
 
 .title {
   @extend %h3;
@@ -64,257 +71,33 @@
   }
 }
 
-.description {
-  max-width: 40em;
-  @include breakpoint(40em) {
-    font-size: 1em;
-  }
-  h2 {
-    font-family: $font-body;
-    font-size: 1em;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: $color--tertiary;
-    margin-top: 1.5em;
-  }
-  ul {
-    padding-left: 1em;
-  }
-  li {
-    padding: 0.25em 0;
-    margin: 0;
-  }
-}
 .section__details {
-  overflow: hidden;
-  @include breakpoint(780px) {
-    // margin-left: 15em;
+  @include breakpoint($bp--sessions-2col) {
     float: right;
     width: calc(100% - 20rem);
+    clear: right;
   }
 }
 .people {
-  @include breakpoint(650px) {
-    float: right;
-//    width: calc(100% - 20rem);
+  @include breakpoint($bp--sessions-wrap) {
+    margin-left: 20rem;
   }
 }
-.description {
-  @include breakpoint(650px) {
-    clear: both;
-  }
-}
-@include breakpoint(650px) {
-  .images {
+.images {
+  @include breakpoint($bp--sessions-wrap) {
     float: left;
     width: 20rem;
   }
-}
-@include breakpoint(780px) {
-  .images {
+  @include breakpoint($bp--sessions-2col) {
     float: left;
     width: 20rem;
   }
 }
 
-.overview__page-title {
-//  color: $color--secondary;
-//  background: rgba($color--secondary, 0);
-//  text-align: center;
-//  border-bottom: 3px solid rgba($color--secondary, 0.2);
-//  text-shadow: white 0 2px 0px, white -2px 2px 0px, white 2px 2px 0px;
-//  background-image: linear-gradient(to top, $color--secondary 4px , rgba($color--secondary, 0) 3px );
-}
-
-.overview__section-title {
-//  font-family: $font-body;
-//  font-size: 1em;
-//  letter-spacing: .2em;
-//  text-transform: uppercase;
-//  background: rgba($color--quadrary, 0.16);
-//  padding: 0.5em;
-//  display: inline-block;
-//  margin-top: 3em;
-//  margin-bottom: 0;
-//  border-bottom: 1px solid $color--quadrary;
-//  font-weight: bold;
-}
 .included {
-//  font-family: $font-body;
-//  font-size: 1em;
-//  letter-spacing: .2em;
-//  text-transform: uppercase;
-//  color: $color--secondary;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: $color--secondary;
 }
 
-.new_schedule {
-//  &, li, h2, h3 {
-//    list-style: none;
-//    padding: 0;
-//    margin: 0;
-//  }
-//  li {
-//    padding: 1em;
-//    margin: 0 -1em;
-//  }
-//  .day {
-//    background: $color--secondary;
-//    * {
-//      color: white;
-//    }
-//  }
-//  h3 {
-//    font-family: $font-body;
-//    font-size: ms(0);
-//    letter-spacing: .2em;
-//    margin-top: ms(-3);
-//  }
 
-//  .session {
-//    display: table;
-//    width: 100%;
-//    @include pie-clearfix;
-//    .title {
-//      @include transform(skewX(-10deg));
-//      @include backface-visibility(hidden);
-//      background: $color--quadrary;
-//      position: relative;
-//      z-index: 2;
-//      h1 {
-//        @include transform(skewX(10deg));
-//        padding: 0.25em 0.5em;
-//        margin-top: 0;
-//        margin-bottom: 0;
-//      }
-//    }
-//    h1 {
-//      color: white;
-//    }
-//    @for $i from 0 through $schedule-sessions {
-//      &:nth-child(#{$schedule-sessions}n+#{$i + 1}) {
-//        .title {
-//          background: mix($color--secondary, $color--quadrary, 100% / ($schedule-sessions + 1) * ($i * -1 + $schedule-sessions))
-//        }
-//      }
-//    }
-//    h3 {
-//      text-transform: uppercase;
-//      opacity: .8;
-//      margin-top: ms(-1);
-//    }
-//    h3.occupation {
-//      font-size: .8em;
-//    }
-//    $keynote-color: $color--secondary;
-//    $keynote-opacity: .25;
-//    $keynote-size: 1em;
-//    $keynote-year:2014;
-//  }
-//  .images {
-//    position: relative;
-//    @include clearfix;
-//  }
-//  .speaker-image {
-//    @include transform(skewX(-10deg) translateX(1em));
-//    overflow: hidden;
-//    width: 240px;
-//    height: 240px;
-//    box-shadow: rgba(0, 0, 0, 0.33) 0 0 0 0.5em;
-//    @include backface-visibility(hidden);
-//    margin-bottom: 1em;
-//    position: relative;
-//    z-index: 1;
-//    &:nth-of-type(2n+2) {
-//      @include transform(skewX(10deg) translateX(1em));
-//      img {
-//        @include transform(skewX(-10deg) translateX(-30px) translateY(-30px));
-//      }
-//    }
-//    img {
-//      width: 300px;
-//      height: 300px;
-//      @include transform(skewX(10deg) translateX(-30px) translateY(-30px));
-//    }
-//  }
-//  .panel {
-//    .speaker-image {
-//      width: 120px;
-//      height: 120px;
-//      @include transform(skewX(-10deg));
-//      img {
-//        width: 150px;
-//        height: 150px;
-//        @include transform(skewX(10deg) translateX(-15px) translateY(-15px));
-//      }
-//      &:nth-of-type(2n+2) {
-//        @include transform(skewX(10deg));
-//        img {
-//          @include transform(skewX(-10deg) translateX(-15px) translateY(-15px));
-//        }
-//      }
-//    }
-//    .pair {
-//      float: left;
-//      &:nth-of-type(2) {
-//        margin-left: 1em;
-//        .speaker-image {
-//          &:nth-of-type(1) {
-//            @include transform(skewX(10deg));
-//            img {
-//              @include transform(skewX(-10deg) translateX(-15px) translateY(-15px));
-//            }
-//          }
-//          &:nth-of-type(2) {
-//            @include transform(skewX(-10deg));
-//            img {
-//              @include transform(skewX(10deg) translateX(-15px) translateY(-15px));
-//            }
-//          }
-//        }
-//      }
-//    }
-//  }
-//  .person {
-//    margin-bottom: 0.5em;
-//    &:nth-of-type(1n+2) {
-//      margin-top: 0.5em;
-//      border-top: 1px solid rgba($color--secondary, 0.5);
-//    }
-//
-//  }
-//  .description {
-//    max-width: 40em;
-//    @include breakpoint(40em) {
-//      font-size: 1em;
-//    }
-//    h2 {
-//      font-family: $font-body;
-//      font-size: 1em;
-//      letter-spacing: .2em;
-//      text-transform: uppercase;
-//      color: $color--tertiary;
-//      margin-top: 1.5em;
-//    }
-//    ul {
-//      padding-left: 1em;
-//    }
-//    li {
-//      padding: 0.25em 0;
-//      margin: 0;
-//    }
-//  }
-//  .section__details {
-//    overflow: hidden;
-//    @include breakpoint(780px) {
-//      // margin-left: 15em;
-//      float: right;
-//      width: calc(100% - 15em);
-//    }
-//  }
-//  @include breakpoint(780px) {
-//    .images {
-//      float: left;
-//      width: 15em;
-//    }
-//  }
-}

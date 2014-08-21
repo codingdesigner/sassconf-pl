@@ -761,6 +761,16 @@ body.manhattan {
   max-width: 100%;
 }
 
+.speaker--section {
+  clear: both;
+  margin-bottom: 2rem;
+}
+.speaker--section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .title {
   background-color: #d3639e;
   color: white;
@@ -808,49 +818,17 @@ body.manhattan {
   margin-left: -2rem;
 }
 
-.description {
-  max-width: 40em;
-}
-@media (min-width: 40em) {
-  .description {
-    font-size: 1em;
-  }
-}
-.description h2 {
-  font-family: "Archer SSm A", "Archer SSm B", serif, serif;
-  font-size: 1em;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: #7acbcb;
-  margin-top: 1.5em;
-}
-.description ul {
-  padding-left: 1em;
-}
-.description li {
-  padding: 0.25em 0;
-  margin: 0;
-}
-
-.section__details {
-  overflow: hidden;
-}
 @media (min-width: 48.75em) {
   .section__details {
     float: right;
     width: calc(100% - 20rem);
+    clear: right;
   }
 }
 
 @media (min-width: 40.625em) {
   .people {
-    float: right;
-  }
-}
-
-@media (min-width: 40.625em) {
-  .description {
-    clear: both;
+    margin-left: 20rem;
   }
 }
 
@@ -866,6 +844,13 @@ body.manhattan {
     width: 20rem;
   }
 }
+
+.included {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #933b6a;
+}
+
 .sg-swatch.color--black {
   background-color: #0c0c0c;
 }
