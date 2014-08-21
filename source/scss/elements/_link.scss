@@ -39,20 +39,21 @@ $unset-background-links-extend: true;
   @if $extend {
     @extend %link-background-extend;
   } @else {
+    $bkg-gradient: transparent;
     text-decoration: none;
     @include text-shadow($bkg -1px 1px 0, $bkg 0 1px 0, $bkg 1px 1px 0);
-    @include background-image(linear-gradient(to top, $link-background-normal $link-background-size, $bkg ($link-background-size + 1)));
+    @include background-image(linear-gradient(to top, $link-background-normal $link-background-size, $bkg-gradient ($link-background-size + 1)));
     &:visited {
-      @include background-image(linear-gradient(to top, $link-background-visited $link-background-size, $bkg ($link-background-size + 1)));
+      @include background-image(linear-gradient(to top, $link-background-visited $link-background-size, $bkg-gradient ($link-background-size + 1)));
     }
     &:focus {
-      @include background-image(linear-gradient(to top, $link-background-focus $link-background-size, $bkg ($link-background-size + 1)));
+      @include background-image(linear-gradient(to top, $link-background-focus $link-background-size, $bkg-gradient ($link-background-size + 1)));
     }
     &:hover {
-      @include background-image(linear-gradient(to top, $link-background-hover $link-background-size, $bkg ($link-background-size + 1)));
+      @include background-image(linear-gradient(to top, $link-background-hover $link-background-size, $bkg-gradient ($link-background-size + 1)));
     }
     &:active {
-      @include background-image(linear-gradient(to top, $link-background-active $link-background-size, $bkg ($link-background-size + 1)));
+      @include background-image(linear-gradient(to top, $link-background-active $link-background-size, $bkg-gradient ($link-background-size + 1)));
     }
   }
 }

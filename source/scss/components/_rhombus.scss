@@ -17,6 +17,9 @@
 
 .rhombus {
   @extend %rhombus;
+  .rhombus-reset {
+    @extend %rhombus-reset;
+  }
 }
 
 .rhombus-reset {
@@ -26,6 +29,9 @@
 
 .rhombus-left {
   @extend %rhombus-left;
+  .rhombus-reset {
+    @extend %rhombus-left-reset
+  }
 }
 
 .rhombus-left-reset {
