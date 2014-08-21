@@ -1,0 +1,16 @@
+{
+  "keynotes": [
+    {
+      "session-title": "Title",
+      "speakers": [
+        {
+          "speaker-image": "tabatkins.jpg",
+          "alt": "Side portrait of Tab Atkins Jr.",
+          "name": "Tab Atkins Jr",
+          "occupation": "Spec Hacker for Google"
+        }
+      ],
+      "session-description": "description"
+    }
+  ]
+}

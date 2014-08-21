@@ -1,19 +1,35 @@
-.rhombus {
+%rhombus {
   @include transform2d(skewX($rhombus-skew));
 }
 
-.rhombus-reset {
+%rhombus-reset {
   @include transform2d(skewX($rhombus-skew-reset));
+
+}
+
+%rhombus-left {
+  @include transform2d(skewX($rhombus-skew-reset));
+}
+
+%rhombus-left-reset {
+  @include transform2d(skewX($rhombus-skew));
+}
+
+.rhombus {
+  @extend %rhombus;
+}
+
+.rhombus-reset {
+  @extend %rhombus-reset;
 
 }
 
 .rhombus-left {
-  @include transform2d(skewX($rhombus-skew-reset));
+  @extend %rhombus-left;
 }
 
 .rhombus-left-reset {
-  @include transform2d(skewX($rhombus-skew));
-
+  @extend %rhombus-left-reset
 }
 
 .rhombus-grid-wrapper {

@@ -11,6 +11,10 @@
     {
       "name": "$hidpi",
       "value": "min-resolution 2dppx"
+    },
+    {
+      "name": "$bp--background-gradient",
+      "value": "500px"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{{#panels}}
+  <article class="session panel">
+    {{#session-title}}
+      <div class="title">
+        <h1>{{session-title}}</h1>
+      </div>
+    {{/session-title}}
+    <div class="images">
+      {{#speakers}}
+        <div class="speaker-image"><img src="{{speaker_img_path}}{{speaker-image}}" alt="{{alt}}"></div>
+      {{/speakers}}
+    </div>
+    <div class="people">
+      {{#speakers}}
+        <div class="person">
+          <h3 class="speaker">{{name}}</h3>
+          <h3 class="occupation">{{occupation}}</h3>
+        </div>
+      {{/speakers}}
+    </div>
+    {{#session-description}}
+      <div class="section__details base--STYLED">
+        <div class="description">{{{session-description}}}</div>
+      </div>
+    {{/session-description}}
+  </article>
+{{/panels}}

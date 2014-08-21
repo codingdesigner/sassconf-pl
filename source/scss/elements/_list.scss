@@ -5,3 +5,14 @@ ol {
     margin-left: 1em;
   }
 }
+
+.base--STYLED {
+  ul {
+    list-style-type: circle;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    li {
+      margin-left: 1em;
+    }
+  }
+}

@@ -2,6 +2,18 @@
 // SCRATCH STYLES - REMEMBER TO REFACTOR!
 ///////////////////////////////////////////
 
+.page-title {
+  @extend %h1;
+  text-align: center;
+}
 
+.section-title {
+  @extend %h4;
+  color: $color--tertiary;
+//  text-align: center;
+  clear: both;
+}
 
-
+#content {
+  padding: 0 3vw;
+}

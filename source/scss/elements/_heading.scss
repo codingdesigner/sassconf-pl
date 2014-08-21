@@ -23,6 +23,17 @@ $heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1) !default;
   }
 }
 
+@mixin heading-display($extend: $heading-base-extend) {
+  @if $extend {
+    @extend %heading-base-extend;
+  } @else {
+    font: {
+      family: $font-display;
+      weight: normal;
+    }
+  }
+}
+
 @mixin heading-size($size, $line-height: false) {
   font-size: $size;
   @if $line-height {
@@ -37,9 +48,12 @@ $heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1) !default;
 %headings-extend {
   @include heading-base(false);
 }
+%headings-display-extend {
+  @include heading-display(false);
+}
 
 %h1 {
-  @extend %headings-extend;
+  @extend %headings-display-extend;
   @include heading-size(nth($heading-sizes, 1), nth($heading-line-heights, 1));
   margin-bottom: base-line-calc(1, nth($heading-sizes, 1));
   // @include breakpoint($bp-small-type) {

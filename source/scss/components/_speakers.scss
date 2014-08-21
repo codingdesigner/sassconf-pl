@@ -1,0 +1,130 @@
+$bp--sessions-wrap: 650px;
+$bp--sessions-2col: 780px;
+
+.included {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: $color--secondary;
+}
+
+.speaker--section {
+  @include clearfix();
+  clear: both;
+  margin-bottom: 2rem;
+}
+
+.session {
+  margin-bottom: 2rem;
+  clear: both;
+}
+
+.title {
+  @extend %h3;
+  @extend %rhombus;
+  background-color: $color--primary;
+  color: $color--white;
+  padding: 0.2em 0.5em;
+  max-width: 80%;
+  margin-left: 0.5em;
+  margin-bottom: 0.5rem;
+//  $cs-title-multiply: blend-multiply($color--primary, adjust-color($color--primary, $lightness: -10%));
+//  $cs-title-transparent: rgba($cs-title-multiply, 0.1);
+//  @include background-image(repeating-linear-gradient(80deg, transparent, transparent 6vw, $cs-title-transparent 6vw, $cs-title-transparent 12vw, transparent 12vw));
+//  @include breakpoint($bp--background-gradient) {
+//    @include background-image(repeating-linear-gradient(80deg, transparent, transparent 3vw, $cs-title-transparent 3vw, $cs-title-transparent 6vw, transparent 6vw));
+//  }
+  h1 {
+    @extend %rhombus-reset;
+  }
+}
+
+.images {
+  @include breakpoint($bp--sessions-wrap) {
+    float: left;
+    width: 20rem;
+  }
+  @include breakpoint($bp--sessions-2col) {
+    float: left;
+    width: 20rem;
+  }
+}
+
+.speaker-image {
+  @extend %rhombus;
+  margin-left: 2rem;
+  overflow: hidden;
+  width: 240px;
+  height: 240px;
+  box-shadow: rgba($color--tertiary, 0.33) 0 0 0 0.5rem;
+  @include backface-visibility(hidden);
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  margin-top: 0.5rem;
+  &:nth-of-type(2n+2) {
+    @extend %rhombus-left;
+    img {
+      @extend %rhombus-left-reset;
+      margin-left: -2rem;
+    }
+  }
+  img {
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+    margin-left: -2rem;
+    @extend %rhombus-reset;
+  }
+  .panel & {
+    width: 120px;
+    height: 120px;
+    img {
+      width: 150px;
+      height: 150px;
+      margin-left: -1rem;
+    }
+    &:nth-of-type(2n+2) {
+      margin-top: calc(-120px - 1rem);
+      margin-left: calc(120px + 1rem);
+    }
+    &:nth-of-type(4n+3) {
+      @extend %rhombus-left;
+      img {
+        @extend %rhombus-left-reset;
+        margin-left: -2rem;
+      }
+    }
+    &:nth-of-type(4n+4) {
+      @extend %rhombus;
+      img {
+        @extend %rhombus-reset;
+      }
+    }
+  }
+}
+
+.people {
+  @include breakpoint($bp--sessions-wrap) {
+    margin-left: 20rem;
+  }
+}
+
+.speaker {
+  @extend %h4;
+  color: $color--primary;
+}
+
+.occupation {
+  @extend %uppercase;
+  border-bottom: 1px dashed $color--tertiary;
+  margin-bottom: 0.5em;
+}
+
+.section__details {
+  @include breakpoint($bp--sessions-2col) {
+    float: right;
+    width: calc(100% - 20rem);
+    clear: right;
+  }
+}
+
