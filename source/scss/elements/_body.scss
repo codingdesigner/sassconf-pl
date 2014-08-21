@@ -26,6 +26,10 @@ $body-extend: true !default;
     font-family: $font;
     color: $color;
     background: $background;
+    @include background-image(repeating-linear-gradient(90deg, transparent, transparent 6vw, rgba($cs-background-multiply, 0.1) 6vw, rgba($cs-background-multiply, 0.1) 12vw, transparent 12vw));
+    @include breakpoint($bp--background-gradient) {
+      @include background-image(repeating-linear-gradient(90deg, transparent, transparent 3vw, rgba($cs-background-multiply, 0.1) 3vw, rgba($cs-background-multiply, 0.1) 6vw, transparent 6vw));
+    }
     margin: 0;
     overflow-x: hidden;
     @if $ligatures {

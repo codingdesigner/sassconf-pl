@@ -84,6 +84,7 @@ $color--white-shades: shade-stack($color--gray);
 //////////////////////////////
 $cs-background: $color--white;
 $cs-background: nth($tertiary-tints, 6);
+$cs-background-multiply: blend-multiply($cs-background, adjust-color($cs-background, $lightness: -10%));
 $cs-border-color: $color--black;
 
 // link colors
