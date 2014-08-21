@@ -1,0 +1,58 @@
+{
+  "panels": [
+    {
+      "session-title": "A Panel",
+      "speakers": [
+        {
+          "speaker-image": "elyseholladay_14.jpg",
+          "alt": "Portrait of Elyse Holladay",
+          "name": "Elyse Holladay",
+          "occupation": "Developer/Designer, MakerSquare"
+        },
+        {
+          "speaker-image": "jinabolton_14.jpg",
+          "alt": "Portrait of Jina Bolton",
+          "name": "Jina Bolton",
+          "occupation": "Senior Product Designer, Salesforce UX"
+        },
+        {
+          "speaker-image": "masonwendell-14.jpg",
+          "alt": "Portrait of Mason Wendell",
+          "name": "Mason Wendell",
+          "occupation": "Senior Developer/Designer, Phase2"
+        },
+        {
+          "speaker-image": "adamonishi.jpg",
+          "alt": "Portrait of Adam Onishi",
+          "name": "Adam Onishi",
+          "occupation": "Senior Front End Developer, Architect"
+        },
+        {
+          "speaker-image": "elyseholladay_14.jpg",
+          "alt": "Portrait of Elyse Holladay",
+          "name": "Elyse Holladay",
+          "occupation": "Developer/Designer, MakerSquare"
+        },
+        {
+          "speaker-image": "jinabolton_14.jpg",
+          "alt": "Portrait of Jina Bolton",
+          "name": "Jina Bolton",
+          "occupation": "Senior Product Designer, Salesforce UX"
+        },
+        {
+          "speaker-image": "masonwendell-14.jpg",
+          "alt": "Portrait of Mason Wendell",
+          "name": "Mason Wendell",
+          "occupation": "Senior Developer/Designer, Phase2"
+        },
+        {
+          "speaker-image": "adamonishi.jpg",
+          "alt": "Portrait of Adam Onishi",
+          "name": "Adam Onishi",
+          "occupation": "Senior Front End Developer, Architect"
+        }
+],
+"session-description": "<p>Panel description</p>"
+}
+]
+}

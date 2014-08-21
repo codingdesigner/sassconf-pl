@@ -1,10 +1,21 @@
 $bp--sessions-wrap: 650px;
 $bp--sessions-2col: 780px;
 
+.included {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: $color--secondary;
+}
+
 .speaker--section {
   @include clearfix();
   clear: both;
   margin-bottom: 2rem;
+}
+
+.session {
+  margin-bottom: 2rem;
+  clear: both;
 }
 
 .title {
@@ -27,20 +38,15 @@ $bp--sessions-2col: 780px;
   }
 }
 
-.speaker {
-  @extend %h4;
-  color: $color--primary;
-}
-
-.occupation {
-  @extend %uppercase;
-  border-bottom: 1px dashed $color--tertiary;
-  margin-bottom: 0.5em;
-}
-
-.session {
-  margin-bottom: 2rem;
-  clear: both;
+.images {
+  @include breakpoint($bp--sessions-wrap) {
+    float: left;
+    width: 20rem;
+  }
+  @include breakpoint($bp--sessions-2col) {
+    float: left;
+    width: 20rem;
+  }
 }
 
 .speaker-image {
@@ -69,6 +75,49 @@ $bp--sessions-2col: 780px;
     margin-left: -2rem;
     @extend %rhombus-reset;
   }
+  .panel & {
+    width: 120px;
+    height: 120px;
+    img {
+      width: 150px;
+      height: 150px;
+      margin-left: -1rem;
+    }
+    &:nth-of-type(2n+2) {
+      margin-top: calc(-120px - 1rem);
+      margin-left: calc(120px + 1rem);
+    }
+    &:nth-of-type(4n+3) {
+      @extend %rhombus-left;
+      img {
+        @extend %rhombus-left-reset;
+        margin-left: -2rem;
+      }
+    }
+    &:nth-of-type(4n+4) {
+      @extend %rhombus;
+      img {
+        @extend %rhombus-reset;
+      }
+    }
+  }
+}
+
+.people {
+  @include breakpoint($bp--sessions-wrap) {
+    margin-left: 20rem;
+  }
+}
+
+.speaker {
+  @extend %h4;
+  color: $color--primary;
+}
+
+.occupation {
+  @extend %uppercase;
+  border-bottom: 1px dashed $color--tertiary;
+  margin-bottom: 0.5em;
 }
 
 .section__details {
@@ -78,26 +127,4 @@ $bp--sessions-2col: 780px;
     clear: right;
   }
 }
-.people {
-  @include breakpoint($bp--sessions-wrap) {
-    margin-left: 20rem;
-  }
-}
-.images {
-  @include breakpoint($bp--sessions-wrap) {
-    float: left;
-    width: 20rem;
-  }
-  @include breakpoint($bp--sessions-2col) {
-    float: left;
-    width: 20rem;
-  }
-}
-
-.included {
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: $color--secondary;
-}
-
 
