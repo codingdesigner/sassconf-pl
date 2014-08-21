@@ -1,10 +1,32 @@
 $bp--sessions-wrap: 650px;
 $bp--sessions-2col: 780px;
 
+.speakers {
+  position: relative;
+}
+
+.section-title {
+  @extend %h4;
+  background-color: $color--tertiary;
+  color: $color--white;
+  padding: 0.2em 0.5em;
+  clear: both;
+  display: inline-block;
+  margin-left: 2em;
+  position: relative;
+  z-index: 1;
+}
+
 .included {
   letter-spacing: .2em;
   text-transform: uppercase;
   color: $color--secondary;
+  display: inline-block;
+  margin-left: -1em;
+  background: $color--quintary;
+  color: $color--secondary;
+  padding: 0 0.5em 0 1.5em;
+  white-space: nowrap;
 }
 
 .speaker--section {
@@ -27,12 +49,6 @@ $bp--sessions-2col: 780px;
   max-width: 80%;
   margin-left: 0.5em;
   margin-bottom: 0.5rem;
-//  $cs-title-multiply: blend-multiply($color--primary, adjust-color($color--primary, $lightness: -10%));
-//  $cs-title-transparent: rgba($cs-title-multiply, 0.1);
-//  @include background-image(repeating-linear-gradient(80deg, transparent, transparent 6vw, $cs-title-transparent 6vw, $cs-title-transparent 12vw, transparent 12vw));
-//  @include breakpoint($bp--background-gradient) {
-//    @include background-image(repeating-linear-gradient(80deg, transparent, transparent 3vw, $cs-title-transparent 3vw, $cs-title-transparent 6vw, transparent 6vw));
-//  }
   h1 {
     @extend %rhombus-reset;
   }
