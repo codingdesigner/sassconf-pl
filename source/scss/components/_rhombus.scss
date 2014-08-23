@@ -42,7 +42,7 @@
   width: 100%;
   top: 0;
   opacity: 0.6;
-  .manhattan & {
+  .skrollr & {
     position: fixed;
   }
   @supports (mix-blend-mode: color-dodge) {

@@ -120,6 +120,8 @@ $bp--sessions-2col: 780px;
 }
 
 .people {
+  margin-bottom: 2rem;
+  padding-top: 2rem;
   @include breakpoint($bp--sessions-wrap) {
     margin-left: 20rem;
   }

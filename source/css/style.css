@@ -453,7 +453,7 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
   width: 100%;
 }
 
-body.manhattan {
+body {
   position: relative;
 }
 
@@ -754,7 +754,7 @@ body.manhattan {
   top: 0;
   opacity: 0.6;
 }
-.manhattan .rhombus-grid-wrapper {
+.skrollr .rhombus-grid-wrapper {
   position: fixed;
 }
 @supports (mix-blend-mode: color-dodge) {
@@ -877,6 +877,10 @@ body.manhattan {
   margin-left: -2rem;
 }
 
+.people {
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
 @media (min-width: 40.625em) {
   .people {
     margin-left: 20rem;
@@ -1243,6 +1247,8 @@ body.manhattan {
 }
 .page-title {
   text-align: center;
+  color: #d3639e;
+  border-bottom: 7px double #d3639e;
 }
 
 #content {

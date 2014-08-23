@@ -5,6 +5,8 @@
 .page-title {
   @extend %h1;
   text-align: center;
+  color: $color--primary;
+  border-bottom: 7px double $color--primary;
 }
 
 
