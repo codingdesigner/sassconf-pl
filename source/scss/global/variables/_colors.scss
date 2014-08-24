@@ -55,13 +55,32 @@ $color--tertiary: cs-harmonize($color--tertiary);
 $color--quadrary: cs-harmonize($color--quadrary);
 $color--quintary: cs-harmonize($color--quintary);
 
-// @include cs-test(
+//@include cs-test(
 //   $color--primary
 //   $color--secondary
 //   $color--tertiary
 //   $color--quadrary
 //   $color--quintary
 //   );
+
+@function blend-stack($color, $color2: null, $mode: multiply, $hsl: lightness, $factor: -5%) {
+  @if $color2 == null {
+    $color2: $color;
+  }
+  $list: $color;
+  @for $i from 1 through 6 {
+    @if $hsl == hue {
+      $color2: adjust_color($color2, $hue: $i * $factor);
+    } @else if $hsl == saturation {
+      $color2: adjust_color($color2, $saturation: $i * $factor);
+    } @else if $hsl == lightness {
+      $color2: adjust_color($color2, $lightness: $i * $factor);
+    }
+    $new-color: call(blend-#{$mode}, $color, $color2);
+    $list: append($list, $new-color);
+  }
+  @return $list;
+}
 
 //////////////////////////////
 // Color Scheme Colors
@@ -77,6 +96,8 @@ $quintary-tints: tint-stack($color--quintary);
 $quintary-shades: shade-stack($color--quintary);
 $color--black-tints: tint-stack($color--gray);
 $color--white-shades: shade-stack($color--gray);
+$primary-multiply-stack : blend-stack($color--primary, $factor: -3%);
+$primary-screen-stack   : blend-stack($color--primary, $mode: screen, $factor: 2%);
 //////////////////////////////
 
 //////////////////////////////

@@ -1,0 +1,53 @@
+// FLEXBOX EXTENDABLE MIXINS
+@mixin flex-column($height: 100%, $extend: true) {
+  @if($extend) {
+    @extend %flex-column;
+  }
+  height: $height;
+  @include flexbox(
+    (
+      display: flex,
+      flex-direction: column,
+      justify-content: space-between
+    )
+  );
+}
+@mixin flex-row($width: 100%, $extend: true) {
+  @if($extend) {
+    @extend %flex-row;
+  }
+  width: $width;
+  @include flexbox(
+    (
+      display: flex,
+      flex-direction: rpw,
+      justify-content: space-between,
+      flex-wrap: wrap
+    )
+  );
+}
+@mixin flex-item($flex: auto, $extend: true) {
+  @if $extend && $flex == auto {
+    @extend %flex-auto;
+  } @else if $extend && $flex == 1 {
+    @extend %flex-1;
+  }
+  @include flexbox((flex: $flex));
+}
+
+// FLEXBOX EXTENDABLES
+%flex-column {
+  @include flex-column($extend: false);
+}
+%flex-row {
+  @include flex-row($extend: false);
+}
+%flex-column-auto {
+  @include flex-column(auto, false);
+}
+%flex-auto {
+  @include flex-item(auto, false);
+}
+%flex-1 {
+  @include flex-item(1, false);
+}

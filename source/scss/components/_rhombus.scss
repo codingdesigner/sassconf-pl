@@ -45,7 +45,7 @@
   .skrollr & {
     position: fixed;
   }
-  @supports (mix-blend-mode: color-dodge) {
+  @supports (mix-blend-mode: screen) {
     opacity: 1;
     mix-blend-mode: screen;
   }

@@ -125,3 +125,22 @@
     }
   }
 }
+
+.sg-colors-stack {
+  &.stack-primary--blend {
+    &.tints {
+      @for $i from 1 through 6 {
+        .tint-#{$i} {
+          background-color: nth($primary-screen-stack, $i);
+        }
+      }
+    }
+    &.shades {
+      @for $i from 1 through 6 {
+        .shade-#{$i} {
+          background-color: nth($primary-multiply-stack, $i);
+        }
+      }
+    }
+  }
+}

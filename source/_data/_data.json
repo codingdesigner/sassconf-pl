@@ -109,6 +109,7 @@
     {"label": "color--secondary"},
     {"label": "color--tertiary"},
     {"label": "color--quadrary"},
-    {"label": "color--quintary"}
+    {"label": "color--quintary"},
+    {"label": "primary--blend"}
   ]
 }

@@ -29,7 +29,6 @@ $bp--logo-very-small: max-width 380px;
 
 .header {
   @include intrinsic-ratio(1800/756, 100%);
-  margin-bottom: 15%;
   .logo-nav {
     text-align: center;
     @include breakpoint($bp--logo-small) {
@@ -64,6 +63,47 @@ $bp--logo-very-small: max-width 380px;
       width: 50%;
       line-height: 2;
     }
+  }
+}
+
+.m-main-nav {
+//  outline: 1px solid lightseagreen;
+//  * {
+//    outline: 1px solid palevioletred;
+//  }
+  position: relative;
+  z-index: 100;
+  @extend %font-family-landmark-regular;
+  font-size: ms(2);
+  margin: {
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 15%;
+  }
+  a {
+    @include set-link-colors($color--white, $color--tertiary, $color--tertiary, $color--white, $color--quadrary, $extend: false);
+    @extend %link-unset-background-extend;
+    padding: {
+      left: 0.5rem;
+      right: 0.5rem;
+    }
+    text-align: center;
+    @extend %flex-auto;
+    @extend %rhombus;
+    @for $i from 1 through 6 {
+      &:nth-of-type(#{$i}) {
+        background-color: nth($primary-multiply-stack, $i);
+      }
+    }
+  }
+  .menu-button {
+    @extend %flex-row;
+  }
+  [type="checkbox"] {
+    display: none;
+  }
+  .button {
+    display: none;
   }
 }
 
