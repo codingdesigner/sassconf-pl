@@ -2,11 +2,12 @@
 source 'https://rubygems.org'
 
 # ~> Refers to all versions of the given gem on the current full version number, so it will be able to use any version of Compass Aurora until Compass Aurora 4.x.x. For a specific version of a gem, remove the ~>
-gem 'compass', '~> 1.0.0.rc.1'
+gem 'sass', '~> 3.4'
+gem 'compass', '~> 1.0'
 gem 'oily_png', '~> 1.1.1'
-gem 'singularitygs', '~> 1.2.1'
-gem 'breakpoint', '~> 2.4.2'
-gem 'toolkit', '~> 2.5.0'
+gem 'singularitygs', '~> 1.3'
+gem 'breakpoint', '~> 2.5'
+gem 'toolkit', '~> 2.6'
 gem 'sass-globbing', '~> 1.1.1'
 gem 'terminal-notifier'
 gem 'modular-scale'
