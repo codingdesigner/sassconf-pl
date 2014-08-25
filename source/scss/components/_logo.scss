@@ -107,11 +107,11 @@
   &:before {
     line-height: 1em;
     @include transform2d(translateY(0.125em));
-    @include breakpoint($bp--logo-small) {
+    @include breakpoint($bp--logo-small-down) {
       position: absolute;
       color: white;
       left: 13%;
-      top: 18px;
+//      top: 18px;
     }
   }
   @include breakpoint($bp--logo-med) {
@@ -134,7 +134,7 @@
     width: 80%;
     left: 50%;
     @include transform2d(translateX(-50%) skewX(10deg));
-    @include breakpoint($bp--logo-small) {
+    @include breakpoint($bp--logo-small-down) {
       text-align: left;
       padding-left: 160px;
     }

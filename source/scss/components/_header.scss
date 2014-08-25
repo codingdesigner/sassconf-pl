@@ -24,15 +24,19 @@ body {
 
 $bp--logo-full: 750px;
 $bp--logo-med: 590px;
-$bp--logo-small: max-width 589px;
-$bp--logo-very-small: max-width 380px;
+$bp--logo-small: 381px;
+$bp--logo-small-down: max-width 589px;
+$bp--logo-very-small-down: max-width 380px;
 
 .header {
   @include intrinsic-ratio(1800/756, 100%);
+  height: auto;
+  margin-bottom: 15%;
   .logo-nav {
     text-align: center;
-    @include breakpoint($bp--logo-small) {
-      top: 7rem;
+    @include breakpoint($bp--logo-small-down) {
+      position: relative;
+      top: -8rem;
     }
   }
   h2 {
@@ -40,49 +44,69 @@ $bp--logo-very-small: max-width 380px;
       color: $cs-primary;
     }
     color: $color--white;
-    font: {
-      size: 1.5em;
-      family: $landmark-regular;
-    }
-    line-height: 1.3;
-    line-height: 1.729;
+    font-family: $landmark-regular;
     position: relative;
     width: 80%;
     left: 50%;
     @include transform2d(skewX($rhombus-skew) translateX(-50%));
-    @include breakpoint($bp--logo-very-small) {
-      font-size: 1.1em;
-      line-height: 2.305555556;
+    @include breakpoint($bp--logo-very-small-down) {
+      font-size: ms(1);
+      line-height: 2.05;
     }
     @include breakpoint($bp--logo-small) {
+      font-size: ms(2);
+      line-height: 1.64;
+    }
+    @include breakpoint($bp--logo-small-down) {
       text-align: left;
       padding-left: 160px;
     }
     @include breakpoint($bp--logo-med) {
-      font-size: 2em;
+      font-size: ms(4);
+      line-height: 1.9375;
       width: 50%;
-      line-height: 2;
     }
   }
 }
 
 .m-main-nav {
-//  outline: 1px solid lightseagreen;
-//  * {
-//    outline: 1px solid palevioletred;
-//  }
-  position: relative;
   z-index: 100;
-  @extend %font-family-landmark-regular;
-  font-size: ms(2);
-  margin: {
-    left: 0.5rem;
-    right: 0.5rem;
-    bottom: 15%;
+
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  //    margin-top: -1.5em;
+  //  margin-left: 0.5rem;
+  //  margin-right: 0.5rem;
+  margin-bottom: 15%;
+  //  width: calc(100% - 1rem) !important;
+  //  top: 283px;
+
+  .menu-button {
+    @extend %font-family-landmark-regular;
+    @extend %flex-row;
+    @include breakpoint($bp--logo-very-small-down) {
+      font-size: ms(1);
+      line-height: 2.05;
+      @include flexbox(
+        (
+          flex-direction: column
+        )
+      );
+    }
+    @include breakpoint($bp--logo-small) {
+      font-size: ms(2);
+      line-height: 1.64;
+    }
+    @include breakpoint($bp--logo-med) {
+      font-size: ms(3);
+      line-height: 2;
+    }
+    //  font-size: ms(2);
   }
   a {
     @include set-link-colors($color--white, $color--tertiary, $color--tertiary, $color--white, $color--quadrary, $extend: false);
     @extend %link-unset-background-extend;
+    white-space: nowrap;
     padding: {
       left: 0.5rem;
       right: 0.5rem;
@@ -95,9 +119,18 @@ $bp--logo-very-small: max-width 380px;
         background-color: nth($primary-multiply-stack, $i);
       }
     }
-  }
-  .menu-button {
-    @extend %flex-row;
+    @include breakpoint($bp--logo-very-small-down) {
+      text-align: left;
+      padding-left: 7.75rem;
+    }
+    @include breakpoint($bp--logo-med) {
+      &:first-of-type {
+        padding-left: 1rem;
+      }
+      &:last-of-type {
+        padding-right: 1rem;
+      }
+    }
   }
   [type="checkbox"] {
     display: none;

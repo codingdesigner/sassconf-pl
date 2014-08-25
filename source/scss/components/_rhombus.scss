@@ -49,7 +49,7 @@
     opacity: 1;
     mix-blend-mode: screen;
   }
-  @include breakpoint($bp--logo-small) {
+  @include breakpoint($bp--logo-small-down) {
     display: none;
   }
 }
