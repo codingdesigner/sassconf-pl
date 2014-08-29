@@ -66,11 +66,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .m-main-nav .menu-button {
   width: 100%;
   display: -webkit-flex;
-  -webkit-flex-direction: rpw;
+  -webkit-flex-direction: row;
   -webkit-justify-content: space-between;
   -webkit-flex-wrap: wrap;
   display: flex;
-  flex-direction: rpw;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -104,7 +104,7 @@ em {
   font-family: "Archer SSm A", "Archer SSm B", serif;
 }
 
-.m-main-nav, .font-family-landmark-regular {
+.m-main-nav .menu-button, .font-family-landmark-regular {
   font-family: "Landmark Regular A", "Landmark Regular B";
 }
 
@@ -500,6 +500,8 @@ body {
   height: 0;
   padding-top: 42%;
   width: 100%;
+  height: auto;
+  margin-bottom: 15%;
 }
 .header > * {
   display: block;
@@ -515,16 +517,18 @@ body {
 }
 @media (max-width: 36.8125em) {
   .header .logo-nav {
-    top: 7rem;
+    position: relative;
+  }
+}
+@media (max-width: 36.8125em) {
+  .header .logo-dates {
+    margin-top: -2.5rem;
   }
 }
 .header h2 {
   background-color: #c6538c;
   color: white;
-  font-size: 1.5em;
   font-family: "Landmark Regular A", "Landmark Regular B";
-  line-height: 1.3;
-  line-height: 1.729;
   position: relative;
   width: 80%;
   left: 50%;
@@ -535,8 +539,14 @@ body {
 }
 @media (max-width: 23.75em) {
   .header h2 {
-    font-size: 1.1em;
-    line-height: 2.305555556;
+    font-size: 20px;
+    line-height: 2.05;
+  }
+}
+@media (min-width: 23.8125em) {
+  .header h2 {
+    font-size: 25px;
+    line-height: 1.64;
   }
 }
 @media (max-width: 36.8125em) {
@@ -547,23 +557,44 @@ body {
 }
 @media (min-width: 36.875em) {
   .header h2 {
-    font-size: 2em;
+    font-size: 31.25px;
+    line-height: 1.9375;
     width: 50%;
-    line-height: 2;
   }
 }
 
 .m-main-nav {
-  position: relative;
   z-index: 100;
-  font-size: 25px;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
   margin-bottom: 15%;
 }
+@media (max-width: 23.75em) {
+  .m-main-nav .menu-button {
+    font-size: 20px;
+    line-height: 2.05;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media (min-width: 23.8125em) {
+  .m-main-nav .menu-button {
+    font-size: 25px;
+    line-height: 1.64;
+  }
+}
+@media (min-width: 36.875em) {
+  .m-main-nav .menu-button {
+    position: absolute;
+    width: calc(100% + 1rem);
+    top: 0;
+    padding-top: 42%;
+  }
+}
 .m-main-nav a {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  white-space: nowrap;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   text-align: center;
 }
 .m-main-nav a:not(.btn) {
@@ -599,11 +630,55 @@ body {
 .m-main-nav a:nth-of-type(6) {
   background-color: #340619;
 }
+@media (max-width: 23.75em) {
+  .m-main-nav a {
+    text-align: left;
+    padding-left: 7.75rem;
+    height: 0;
+    -moz-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
+  }
+}
+@media (min-width: 36.875em) {
+  .m-main-nav a:first-of-type {
+    padding-left: 1rem;
+  }
+  .m-main-nav a:last-of-type {
+    padding-right: 1rem;
+  }
+}
 .m-main-nav [type="checkbox"] {
   display: none;
 }
+.m-main-nav [type="checkbox"]:checked ~ a {
+  height: 2.05em;
+}
+.m-main-nav [type="checkbox"]:checked ~ .button {
+  background-color: #340619;
+}
+.m-main-nav [type="checkbox"]:checked ~ .button div:before {
+  content: "Hide ";
+}
 .m-main-nav .button {
   display: none;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+@media (max-width: 23.75em) {
+  .m-main-nav .button {
+    display: block;
+    background-color: #d3639e;
+    color: white;
+    text-align: left;
+    padding-left: 7.75rem;
+  }
+  .m-main-nav .button div:before {
+    content: "Show ";
+  }
 }
 
 .inline-list {
@@ -697,17 +772,16 @@ body {
 }
 .logo-rhombus:before {
   line-height: 1em;
-  -moz-transform: translateY(0.125em);
-  -ms-transform: translateY(0.125em);
-  -webkit-transform: translateY(0.125em);
-  transform: translateY(0.125em);
 }
 @media (max-width: 36.8125em) {
   .logo-rhombus:before {
     position: absolute;
     color: white;
     left: 13%;
-    top: 18px;
+    -moz-transform: translateY(0.5rem);
+    -ms-transform: translateY(0.5rem);
+    -webkit-transform: translateY(0.5rem);
+    transform: translateY(0.5rem);
   }
 }
 @media (min-width: 36.875em) {
@@ -723,7 +797,6 @@ body {
 .logo-rhombus .rhombus-left {
   background: #933b6a;
   line-height: 1.3;
-  margin-top: 0.5em;
   position: relative;
   color: white;
   text-align: center;
@@ -790,7 +863,7 @@ body {
   text-transform: uppercase;
 }
 
-.m-main-nav a, .rhombus, .title, .speaker-image, .panel .speaker-image:nth-of-type(4n+4) {
+.m-main-nav a, .m-main-nav .button, .rhombus, .title, .speaker-image, .panel .speaker-image:nth-of-type(4n+4) {
   -moz-transform: skewX(-10deg);
   -ms-transform: skewX(-10deg);
   -webkit-transform: skewX(-10deg);
