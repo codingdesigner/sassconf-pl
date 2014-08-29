@@ -36,7 +36,11 @@ $bp--logo-very-small-down: max-width 380px;
     text-align: center;
     @include breakpoint($bp--logo-small-down) {
       position: relative;
-      top: -8rem;
+    }
+  }
+  .logo-dates {
+    @include breakpoint($bp--logo-small-down) {
+      margin-top: -2.5rem;
     }
   }
   h2 {
@@ -98,9 +102,15 @@ $bp--logo-very-small-down: max-width 380px;
       line-height: 1.64;
     }
     @include breakpoint($bp--logo-med) {
-      font-size: ms(3);
-      line-height: 2;
+      position: absolute;
+      width: calc(100% + 1rem);
+      top: 0;
+      padding-top: 42%;
     }
+//    @include breakpoint($bp--logo-med) {
+//      font-size: ms(3);
+//      line-height: 2;
+//    }
     //  font-size: ms(2);
   }
   a {
@@ -108,8 +118,8 @@ $bp--logo-very-small-down: max-width 380px;
     @extend %link-unset-background-extend;
     white-space: nowrap;
     padding: {
-      left: 0.5rem;
-      right: 0.5rem;
+      left: 0.75rem;
+      right: 0.75rem;
     }
     text-align: center;
     @extend %flex-auto;

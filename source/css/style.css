@@ -518,7 +518,11 @@ body {
 @media (max-width: 36.8125em) {
   .header .logo-nav {
     position: relative;
-    top: -8rem;
+  }
+}
+@media (max-width: 36.8125em) {
+  .header .logo-dates {
+    margin-top: -2.5rem;
   }
 }
 .header h2 {
@@ -581,14 +585,16 @@ body {
 }
 @media (min-width: 36.875em) {
   .m-main-nav .menu-button {
-    font-size: 25.88854px;
-    line-height: 2;
+    position: absolute;
+    width: calc(100% + 1rem);
+    top: 0;
+    padding-top: 42%;
   }
 }
 .m-main-nav a {
   white-space: nowrap;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   text-align: center;
 }
 .m-main-nav a:not(.btn) {
@@ -761,7 +767,6 @@ body {
 .logo-rhombus .rhombus-left {
   background: #933b6a;
   line-height: 1.3;
-  margin-top: 0.5em;
   position: relative;
   color: white;
   text-align: center;
