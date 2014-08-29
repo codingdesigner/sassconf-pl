@@ -75,16 +75,9 @@ $bp--logo-very-small-down: max-width 380px;
 
 .m-main-nav {
   z-index: 100;
-
   margin-left: -0.5rem;
   margin-right: -0.5rem;
-  //    margin-top: -1.5em;
-  //  margin-left: 0.5rem;
-  //  margin-right: 0.5rem;
   margin-bottom: 15%;
-  //  width: calc(100% - 1rem) !important;
-  //  top: 283px;
-
   .menu-button {
     @extend %font-family-landmark-regular;
     @extend %flex-row;
@@ -107,11 +100,6 @@ $bp--logo-very-small-down: max-width 380px;
       top: 0;
       padding-top: 42%;
     }
-//    @include breakpoint($bp--logo-med) {
-//      font-size: ms(3);
-//      line-height: 2;
-//    }
-    //  font-size: ms(2);
   }
   a {
     @include set-link-colors($color--white, $color--tertiary, $color--tertiary, $color--white, $color--quadrary, $extend: false);
@@ -132,6 +120,8 @@ $bp--logo-very-small-down: max-width 380px;
     @include breakpoint($bp--logo-very-small-down) {
       text-align: left;
       padding-left: 7.75rem;
+      height: 0;
+      @include transition(height 0.3s);
     }
     @include breakpoint($bp--logo-med) {
       &:first-of-type {
@@ -144,9 +134,38 @@ $bp--logo-very-small-down: max-width 380px;
   }
   [type="checkbox"] {
     display: none;
+    &:checked {
+      ~ {
+        a {
+          height: 2.05em;
+        }
+        .button {
+          background-color: nth($primary-multiply-stack, 6);
+          div {
+            &:before {
+              content: "Hide ";
+            }
+          }
+        }
+      }
+    }
   }
   .button {
     display: none;
+    @extend %rhombus;
+    @include transition(background-color 0.3s);
+    @include breakpoint($bp--logo-very-small-down) {
+      display: block;
+      background-color: nth($primary-multiply-stack, 1);
+      color: $color--white;
+      text-align: left;
+      padding-left: 7.75rem;
+      div {
+        &:before {
+          content: "Show ";
+        }
+      }
+    }
   }
 }
 
