@@ -20,7 +20,7 @@
   @include flexbox(
     (
       display: flex,
-      flex-direction: rpw,
+      flex-direction: row,
       justify-content: space-between,
       flex-wrap: wrap
     )
