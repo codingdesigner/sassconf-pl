@@ -5,6 +5,7 @@
   "bodyClass": "",
   "base_path": "../../",
   "speaker_img_path": "../../images/speakers/",
+  "review_img_path": "../../images/reviews/",
   "colors": [
     "ff9000",
     "3bc2ed",
