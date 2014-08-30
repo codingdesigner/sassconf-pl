@@ -1,0 +1,25 @@
+.reviews {
+  @include clearfix();
+}
+
+.review-item {
+  margin-bottom: $base-line-em;
+}
+
+.review-image {
+  @extend %rhombus--image;
+  margin-bottom: 0 !important;
+}
+
+.reviewer {
+  @extend %featured-person--name;
+  background-color: $color--quintary;
+  color: $color--white;
+  padding: 0.125em 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+blockquote {
+  font-size: ms(1);
+}
