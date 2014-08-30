@@ -138,11 +138,20 @@ $bp--sessions-2col: 780px;
   margin-bottom: 0.5em;
 }
 
-.section__details {
+.section--details {
+  @include breakpoint($bp--sessions-wrap) {
+    margin-left: 8em;
+  }
   @include breakpoint($bp--sessions-2col) {
     float: right;
     width: calc(100% - 20rem);
     clear: right;
+    margin-left: 0;
+
   }
+}
+
+.section-details--description {
+  max-width: 30em;
 }
 

@@ -1038,12 +1038,22 @@ body {
   margin-bottom: 0.5em;
 }
 
+@media (min-width: 40.625em) {
+  .section--details {
+    margin-left: 8em;
+  }
+}
 @media (min-width: 48.75em) {
-  .section__details {
+  .section--details {
     float: right;
     width: calc(100% - 20rem);
     clear: right;
+    margin-left: 0;
   }
+}
+
+.section-details--description {
+  max-width: 30em;
 }
 
 .sg-swatch.color--black {
