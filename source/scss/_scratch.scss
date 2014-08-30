@@ -14,3 +14,107 @@
 #content {
   padding: 0 3vw;
 }
+
+%standout-emphasis {
+  color: $color--primary;
+  @extend %font-family-landmark-inline;
+  @include breakpoint($bp--small-type) {
+    font-family: $landmark-regular;
+  }
+}
+%standout-more-emphasis {
+  font-style: italic;
+  color: $color--quintary;
+  color: nth($primary-multiply-stack, 2);
+}
+
+.standout {
+  h1 {
+    @extend %h1;
+    font-family: $font-headline;
+    color: $color--quadrary;
+    .word2 { @extend %standout-emphasis; }
+    .word4 { @extend %standout-emphasis; }
+    .word5 { @extend %standout-emphasis; }
+    .word7 { @extend %standout-emphasis; }
+    .word9 { @extend %standout-emphasis; @extend %standout-more-emphasis; }
+    .word10 { @extend %standout-emphasis; @extend %standout-more-emphasis; }
+    .word17 { @extend %standout-emphasis; }
+    .word18 { @extend %standout-emphasis; }
+    .word19 { @extend %standout-emphasis; }
+    .word20 { @extend %standout-emphasis; }
+  }
+}
+
+.video-embed {
+  @include ir();
+  border: 3px solid $color--tertiary;
+
+}
+
+.intro {
+  @include clearfix();
+  margin-bottom: $base-line-em * 2;
+  @include breakpoint(750px) {
+    @include layout($grid--2) {
+      .sizzle { @include grid-span(1, 2); }
+      .intro-text {
+        @include  grid-span(1, 1);
+      }
+    }
+  }
+}
+
+.overview {
+  @include clearfix();
+  .article-title {
+    @extend %h2;
+    background-color: $color--primary;
+    color: $color--white;
+    padding: 0.125em 0.5em;
+    max-width: 66%;
+  }
+  ul {
+    li {
+      h3 {
+        @extend %h3;
+        color: $color--white;
+          background-color: $color--tertiary;
+          padding: 0.125em 0.5em;
+      }
+      @for $i from 1 through 6 {
+        &:nth-of-type(#{$i}) {
+          h3 {
+            background-color: nth($tertiary-multiply-stack, $i);
+          }
+        }
+      }
+      @include breakpoint($bp--overview-2-col) {
+        @include layout($grid--2) {
+          &:nth-of-type(odd) {
+            @include grid-span(1, 1); clear: both;
+          }
+          &:nth-of-type(even) {
+            @include grid-span(1, 2);
+          }
+        }
+      }
+      @include breakpoint($bp--overview-3-col) {
+        @include layout($grid--4) {
+          &:nth-of-type(4n+1) {
+            @include grid-span(1, 1); clear: both;
+          }
+          &:nth-of-type(4n+2) {
+            @include grid-span(1, 2);
+          }
+          &:nth-of-type(4n+3) {
+            @include grid-span(1, 3);
+          }
+          &:nth-of-type(4n+4) {
+            @include grid-span(1, 4);
+          }
+        }
+      }
+    }
+  }
+}

@@ -111,6 +111,7 @@
     {"label": "color--tertiary"},
     {"label": "color--quadrary"},
     {"label": "color--quintary"},
-    {"label": "primary--blend"}
+    {"label": "primary--blend"},
+    {"label": "tertiary--blend"}
   ]
 }

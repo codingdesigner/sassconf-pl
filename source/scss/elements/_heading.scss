@@ -56,30 +56,31 @@ $heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1) !default;
   @extend %headings-display-extend;
   @include heading-size(nth($heading-sizes, 1), nth($heading-line-heights, 1));
   margin-bottom: base-line-calc(1, nth($heading-sizes, 1));
-  // @include breakpoint($bp-small-type) {
-  //   @include heading-size(nth($heading-sizes-small, 1), nth($heading-line-heights-small, 1));
-  //   margin-bottom: base-line-calc(1, nth($heading-sizes-small, 1));
-  // }
+  @include breakpoint($bp--small-type) {
+    @include heading-size(nth($heading-sizes-small, 1), nth($heading-line-heights-small, 1));
+    margin-bottom: base-line-calc(1, nth($heading-sizes-small, 1));
+    font-family: $landmark-regular;
+  }
 }
 
 %h2 {
   @extend %headings-extend;
   @include heading-size(nth($heading-sizes, 2), nth($heading-line-heights, 2));
   margin-bottom: base-line-calc(1, nth($heading-sizes, 2));
-  // @include breakpoint($bp-small-type) {
-  //   @include heading-size(nth($heading-sizes-small, 2), nth($heading-line-heights-small, 2));
-  //   margin-bottom: base-line-calc(1, nth($heading-sizes-small, 2));
-  // }
+  @include breakpoint($bp--small-type) {
+    @include heading-size(nth($heading-sizes-small, 2), nth($heading-line-heights-small, 2));
+    margin-bottom: base-line-calc(1, nth($heading-sizes-small, 2));
+  }
 }
 
 %h3 {
   @extend %headings-extend;
   @include heading-size(nth($heading-sizes, 3), nth($heading-line-heights, 3));
   margin-bottom: base-line-calc(1, nth($heading-sizes, 3));
-  // @include breakpoint($bp-small-type) {
-  //   @include heading-size(nth($heading-sizes-small, 3), nth($heading-line-heights-small, 3));
-  //   margin-bottom: base-line-calc(1, nth($heading-sizes-small, 3));
-  // }
+  @include breakpoint($bp--small-type) {
+    @include heading-size(nth($heading-sizes-small, 3), nth($heading-line-heights-small, 3));
+    margin-bottom: base-line-calc(1, nth($heading-sizes-small, 3));
+  }
 }
 
 %h4 {

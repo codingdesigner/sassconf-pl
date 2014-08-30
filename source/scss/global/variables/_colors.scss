@@ -98,6 +98,8 @@ $color--black-tints: tint-stack($color--gray);
 $color--white-shades: shade-stack($color--gray);
 $primary-multiply-stack : blend-stack($color--primary, $factor: -3%);
 $primary-screen-stack   : blend-stack($color--primary, $mode: screen, $factor: 2%);
+$tertiary-multiply-stack : blend-stack($color--tertiary, $factor: -3%);
+$tertiary-screen-stack   : blend-stack($color--tertiary, $mode: screen, $factor: 2%);
 //////////////////////////////
 
 //////////////////////////////
@@ -109,16 +111,16 @@ $cs-background-multiply: blend-multiply($cs-background, adjust-color($cs-backgro
 $cs-border-color: $color--black;
 
 // link colors
-$cs-link-normal: $color--tertiary;
-$cs-link-hover: $color--quadrary;
-$cs-link-active: $color--quadrary;
-$cs-link-visited: $color--tertiary;
-$cs-link-focus: $color--quadrary;
+$cs-link-normal: $color--quadrary;
+$cs-link-visited: $color--quadrary;
+$cs-link-hover: $color--tertiary;
+$cs-link-active: $color--tertiary;
+$cs-link-focus: $color--tertiary;
 $cs-link-background-normal: $color--primary;
-$cs-link-background-hover: $color--tertiary;
-$cs-link-background-active: $color--tertiary;
 $cs-link-background-visited: $color--primary;
-$cs-link-background-focus: $color--tertiary;
+$cs-link-background-hover: $color--secondary;
+$cs-link-background-active: $color--secondary;
+$cs-link-background-focus: $color--secondary;
 $cs-link-background-bkg: $cs-background;
 
 //////////////////////////////

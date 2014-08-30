@@ -9,6 +9,26 @@
       "value": "true"
     },
     {
+      "name": "$bp--small-type",
+      "value": "max-width 500px"
+    },
+    {
+      "name": "$bp--overview-2-col",
+      "value": "540px"
+    },
+    {
+      "name": "$bp--overview-3-col",
+      "value": "1010px"
+    },
+    {
+      "name": "$bp--sessions-wrap",
+      "value": "650px"
+    },
+    {
+      "name": "$bp--sessions-2col",
+      "value": "780px"
+    },
+    {
       "name": "$hidpi",
       "value": "min-resolution 2dppx"
     },
