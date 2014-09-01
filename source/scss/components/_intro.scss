@@ -37,7 +37,7 @@
 
 .intro {
   @include clearfix();
-  margin-bottom: $base-line-em * 2;
+  @extend %section-margin;
   @include breakpoint(750px) {
     @include layout($grid--2) {
       .sizzle { @include grid-span(1, 2); }

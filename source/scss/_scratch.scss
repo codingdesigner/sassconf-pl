@@ -2,6 +2,25 @@
 // SCRATCH STYLES - REMEMBER TO REFACTOR!
 ///////////////////////////////////////////
 
+%article-title-base {
+  @extend %h2;
+  background-color: $color--primary;
+  padding: 0.125em 0.5em;
+  max-width: 66%;
+  color: $color--white;
+}
+%article-title {
+  @extend %article-title-base;
+}
+%article-title-alt {
+  @extend %article-title-base;
+  background-color: $color--tertiary;
+  a {
+    @include set-link-colors($link-normal: $color--quintary, $link-hover: $color--white, $link-active: $color--white, $link-visited: $color--quintary, $link-focus: $color--white, $extend: false);
+    @include set-background-links($link-background-normal: $color--white, $link-background-hover: $color--quintary, $link-background-active: $color--quintary, $link-background-visited: $color--white, $link-background-focus: $color--quintary, $link-background-size: $link-background-size-default, $bkg: $color--tertiary, $extend: false)
+  }
+}
+
 .page-title {
   @extend %h1;
   text-align: center;
@@ -14,11 +33,5 @@
 }
 
 .article-title {
-  @extend %h2;
-  background-color: $color--primary;
-  color: $color--white;
-  padding: 0.125em 0.5em;
-  max-width: 66%;
+  @extend %article-title;
 }
-
-

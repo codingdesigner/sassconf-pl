@@ -22,12 +22,6 @@ body {
   }
 }
 
-$bp--logo-full: 750px;
-$bp--logo-med: 590px;
-$bp--logo-small: 381px;
-$bp--logo-small-down: max-width 589px;
-$bp--logo-very-small-down: max-width 380px;
-
 .header {
   @include intrinsic-ratio(1800/756, 100%);
   height: auto;

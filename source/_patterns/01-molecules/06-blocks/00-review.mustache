@@ -1,7 +1,7 @@
 {{#reviews}}
   <div class="review-item">
-    <div class="review-image"><img src="{{review_img_path}}{{review-image}}" alt="{{alt}}"></div>
-    <h3 class="reviewer rhombus"><div class="rhombus-reset">{{ reviewer }}</div></h3>
-    <blockquote>{{{ review }}}</blockquote>
+    <!--<div class="review-image"><img src="{{review_img_path}}{{review-image}}" alt="{{alt}}"></div>-->
+    <h3 class="reviewer rhombus-left"><div class="rhombus-reset">{{ reviewer }}</div></h3>
+    <div class="quote" style="background-image: url({{review_img_path}}{{review-image}})"><blockquote>{{{ review }}}</blockquote></div>
   </div>
 {{/reviews}}

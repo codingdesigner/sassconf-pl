@@ -1,0 +1,4 @@
+.updates {
+  @include clearfix();
+  @extend %section-margin;
+}

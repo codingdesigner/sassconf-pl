@@ -29,6 +29,26 @@
       "value": "780px"
     },
     {
+      "name": "$bp--logo-full",
+      "value": "750px"
+    },
+    {
+      "name": "$bp--logo-med",
+      "value": "590px"
+    },
+    {
+      "name": "$bp--logo-small",
+      "value": "381px"
+    },
+    {
+      "name": "$bp--logo-small-down",
+      "value": "max-width 589px"
+    },
+    {
+      "name": "$bp--logo-very-small-down",
+      "value": "max-width 380px"
+    },
+    {
       "name": "$hidpi",
       "value": "min-resolution 2dppx"
     },
