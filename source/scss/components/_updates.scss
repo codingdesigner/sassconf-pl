@@ -2,3 +2,11 @@
   @include clearfix();
   @extend %section-margin;
 }
+
+[id="mc_embed_signup"] {
+  color: $color--white;
+  padding: 0.5em;
+  background-color: $color--tertiary;
+  text-align: center;
+  max-width: 20em;
+}
