@@ -9,4 +9,18 @@
   background-color: $color--tertiary;
   text-align: center;
   max-width: 20em;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  @include transform2d(none);
+  .rhombus-reset {
+    @include transform2d(none);
+  }
+  @include eq(medium) {
+    margin-left: auto;
+    margin-right: auto;
+    @include transform2d(skewX($rhombus-skew));
+    .rhombus-reset {
+      @include transform2d(skewX($rhombus-skew-reset));
+    }
+  }
 }

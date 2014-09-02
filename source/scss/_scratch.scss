@@ -23,12 +23,12 @@
 %article-title-pop {
   @extend %article-title-base;
   @include background-image(linear-gradient(to right, $color--tertiary, $color--quintary));
-//  background-color: $color--tertiary;
   a {
     @extend %link-unset-background-extend;
     @include set-link-colors($link-normal: $color--primary, $link-hover: $color--white, $link-active: $color--white, $link-visited: $color--primary, $link-focus: $color--white, $extend: false);
     border-bottom: 2px solid $color--white;
     @extend %font-family-landmark-inline;
+    display: inline-block;
   }
 }
 

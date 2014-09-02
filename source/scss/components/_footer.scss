@@ -1,0 +1,63 @@
+$bp--footer-2col: 430px;
+$bp--footer-3col: 500px;
+$bp--footer-4col: 720px;
+
+footer {
+  @include transform(rotate(180deg));
+  .footer-content {
+    @include transform(rotate(-180deg));
+  }
+}
+
+footer {
+  @include background-image(linear-gradient(to bottom, $color--primary, $color--tertiary), image-url("manhattan-zeldman-1800x756.jpg"));
+  background-color: $color--tertiary;
+  color: $color--white;
+  background-blend-mode: multiply, luminosity;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 6em 0.5em 0;
+  .logo-lockup {
+    color: $color--white;
+  }
+  h4 {
+    @extend %h6;
+  }
+  a {
+    @extend %link-footer-extend;
+    &.logo-lockup {
+      @extend %link-unset-background-extend;
+      border-bottom: none;
+    }
+  }
+  ul {
+    margin-bottom: $base-line-em;
+    @include breakpoint($bp--footer-2col) {
+      @include layout($grid--2) {
+        &:nth-of-type(2n+1) { @include grid-span(1, 1); clear: both; }
+        &:nth-of-type(2n+2) { @include grid-span(1, 2); }
+      }
+    }
+    @include breakpoint($bp--footer-3col) {
+      @include layout($grid--3) {
+        &:nth-of-type(3n+1) { @include grid-span(1, 1); clear: both; }
+        &:nth-of-type(3n+2) { @include grid-span(1, 2); }
+        &:nth-of-type(3n+3) { @include grid-span(1, 3); }
+      }
+    }
+    @include breakpoint($bp--footer-4col) {
+      @include layout($grid--4) {
+        &:nth-of-type(4n+1) { @include grid-span(1, 1); clear: both; }
+        &:nth-of-type(4n+2) { @include grid-span(1, 2); }
+        &:nth-of-type(4n+3) { @include grid-span(1, 3); }
+        &:nth-of-type(4n+4) { @include grid-span(1, 4); }
+      }
+    }
+  }
+  p {
+    clear: both;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

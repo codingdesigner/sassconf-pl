@@ -194,7 +194,7 @@ fieldset {
   border-style: dashed;
 }
 
-.base--STYLED h2, .article-title, .sponsors .article-title, .base--STYLED h3, .overview ul li h3, .title, .ticketbud-widget h3, .reviewer, .speaker, .base--STYLED h4, .section-title, .base--STYLED h5, .base--STYLED h6 {
+.base--STYLED h2, .article-title, .sponsors .article-title, .base--STYLED h3, .overview ul li h3, .title, .ticketbud-widget h3, .reviewer, .speaker, .base--STYLED h4, .section-title, .base--STYLED h5, .base--STYLED h6, footer h4 {
   font-family: "Landmark Regular A", "Landmark Regular B";
   font-weight: normal;
 }
@@ -254,7 +254,7 @@ fieldset {
   line-height: 1.04;
 }
 
-.base--STYLED h6 {
+.base--STYLED h6, footer h4 {
   font-size: 1.25em;
   line-height: 1.3;
 }
@@ -329,27 +329,46 @@ a:active {
   background-image: linear-gradient(to top, #933b6a 1px, rgba(0, 0, 0, 0) 2px);
 }
 
-button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .btn--big, .btn--light, .btn--disabled,
-.btn[disabled], .btn--text, .call-to-action, .m-main-nav a, .logo-lockup.dark, .logo-lockup, .ticketbud-widget .btn, .ticketbud-widget a, .sponsors .article-title a {
+footer a, button, input[type='submit'], input[type='reset'], input[type='button'], .btn, .big-button, .btn--big, .btn--light, .btn--disabled,
+.btn[disabled], .btn--text, .call-to-action, footer a.logo-lockup, .m-main-nav a, .logo-lockup.dark, .logo-lockup, .ticketbud-widget .btn, .ticketbud-widget a, .sponsors .article-title a {
   text-decoration: none;
   text-shadow: none;
   background-image: none;
 }
-button:visited, input[type='submit']:visited, input[type='reset']:visited, input[type='button']:visited, .btn:visited, .big-button:visited, .btn--big:visited, .btn--light:visited, .btn--disabled:visited, .btn--text:visited, .call-to-action:visited, .m-main-nav a:visited, .logo-lockup:visited, .ticketbud-widget a:visited, .sponsors .article-title a:visited {
+footer a:visited, button:visited, input[type='submit']:visited, input[type='reset']:visited, input[type='button']:visited, .btn:visited, .big-button:visited, .btn--big:visited, .btn--light:visited, .btn--disabled:visited, .btn--text:visited, .call-to-action:visited, .m-main-nav a:visited, .logo-lockup:visited, .ticketbud-widget a:visited, .sponsors .article-title a:visited {
   text-shadow: none;
   background-image: none;
 }
-button:focus, input[type='submit']:focus, input[type='reset']:focus, input[type='button']:focus, .btn:focus, .big-button:focus, .btn--big:focus, .btn--light:focus, .btn--disabled:focus, .btn--text:focus, .call-to-action:focus, .m-main-nav a:focus, .logo-lockup:focus, .ticketbud-widget a:focus, .sponsors .article-title a:focus {
+footer a:focus, button:focus, input[type='submit']:focus, input[type='reset']:focus, input[type='button']:focus, .btn:focus, .big-button:focus, .btn--big:focus, .btn--light:focus, .btn--disabled:focus, .btn--text:focus, .call-to-action:focus, .m-main-nav a:focus, .logo-lockup:focus, .ticketbud-widget a:focus, .sponsors .article-title a:focus {
   text-shadow: none;
   background-image: none;
 }
-button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .btn:hover, .big-button:hover, .btn--big:hover, .btn--light:hover, .btn--disabled:hover, .btn--text:hover, .call-to-action:hover, .m-main-nav a:hover, .logo-lockup:hover, .ticketbud-widget a:hover, .sponsors .article-title a:hover {
+footer a:hover, button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .btn:hover, .big-button:hover, .btn--big:hover, .btn--light:hover, .btn--disabled:hover, .btn--text:hover, .call-to-action:hover, .m-main-nav a:hover, .logo-lockup:hover, .ticketbud-widget a:hover, .sponsors .article-title a:hover {
   text-shadow: none;
   background-image: none;
 }
-button:active, input[type='submit']:active, input[type='reset']:active, input[type='button']:active, .btn:active, .big-button:active, .btn--big:active, .btn--light:active, .btn--disabled:active, .btn--text:active, .call-to-action:active, .m-main-nav a:active, .logo-lockup:active, .ticketbud-widget a:active, .sponsors .article-title a:active {
+footer a:active, button:active, input[type='submit']:active, input[type='reset']:active, input[type='button']:active, .btn:active, .big-button:active, .btn--big:active, .btn--light:active, .btn--disabled:active, .btn--text:active, .call-to-action:active, .m-main-nav a:active, .logo-lockup:active, .ticketbud-widget a:active, .sponsors .article-title a:active {
   text-shadow: none;
   background-image: none;
+}
+
+footer a {
+  border-bottom: 1px solid white;
+}
+footer a:not(.btn) {
+  color: #ead87f;
+}
+footer a:not(.btn):visited {
+  color: #ead87f;
+}
+footer a:not(.btn):focus {
+  color: #d3639e;
+}
+footer a:not(.btn):hover {
+  color: #d3639e;
+}
+footer a:not(.btn):active {
+  color: #d3639e;
 }
 
 ol {
@@ -586,6 +605,121 @@ button:active, input[type='submit']:active, input[type='reset']:active, input[ty
   width: 100%;
 }
 
+footer {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+footer .footer-content {
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+footer {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QzNjM5ZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdhY2JjYiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('../images/manhattan-zeldman-1800x756.jpg');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d3639e), color-stop(100%, #7acbcb)), url('../images/manhattan-zeldman-1800x756.jpg');
+  background-image: -moz-linear-gradient(top, #d3639e, #7acbcb), url('../images/manhattan-zeldman-1800x756.jpg');
+  background-image: -webkit-linear-gradient(top, #d3639e, #7acbcb), url('../images/manhattan-zeldman-1800x756.jpg');
+  background-image: linear-gradient(to bottom, #d3639e, #7acbcb), url('../images/manhattan-zeldman-1800x756.jpg');
+  background-color: #7acbcb;
+  color: white;
+  background-blend-mode: multiply, luminosity;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 6em 0.5em 0;
+}
+footer .logo-lockup {
+  color: white;
+}
+footer a.logo-lockup {
+  border-bottom: none;
+}
+footer ul {
+  margin-bottom: 1.625em;
+}
+@media (min-width: 26.875em) {
+  footer ul:nth-of-type(2n+1) {
+    width: 47.61905%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+  footer ul:nth-of-type(2n+2) {
+    width: 47.61905%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 31.25em) {
+  footer ul:nth-of-type(3n+1) {
+    width: 31.25%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+  footer ul:nth-of-type(3n+2) {
+    width: 31.25%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.375%;
+    clear: none;
+  }
+  footer ul:nth-of-type(3n+3) {
+    width: 31.25%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 45em) {
+  footer ul:nth-of-type(4n+1) {
+    width: 23.25581%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+  footer ul:nth-of-type(4n+2) {
+    width: 23.25581%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.5814%;
+    clear: none;
+  }
+  footer ul:nth-of-type(4n+3) {
+    width: 23.25581%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.16279%;
+    clear: none;
+  }
+  footer ul:nth-of-type(4n+4) {
+    width: 23.25581%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+footer p {
+  clear: both;
+}
+footer p:last-child {
+  margin-bottom: 0;
+}
+
 body {
   position: relative;
 }
@@ -815,6 +949,7 @@ body {
 .standout h1 {
   font-family: "Landmark Regular A", "Landmark Regular B";
   color: #789fa4;
+  margin-bottom: 2em;
 }
 
 .video-embed {
@@ -1371,6 +1506,32 @@ body {
   background-color: #7acbcb;
   text-align: center;
   max-width: 20em;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+[id="mc_embed_signup"] .rhombus-reset {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+[id="mc_embed_signup"][data-eq-state="medium"] {
+  margin-left: auto;
+  margin-right: auto;
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+[id="mc_embed_signup"][data-eq-state="medium"] .rhombus-reset {
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  -webkit-transform: skewX(10deg);
+  transform: skewX(10deg);
 }
 
 .sg-swatch.color--black {
@@ -1805,6 +1966,7 @@ body {
 }
 .sponsors .article-title a {
   border-bottom: 2px solid white;
+  display: inline-block;
 }
 .sponsors .article-title a:not(.btn) {
   color: #d3639e;

@@ -16,6 +16,7 @@
     @extend %h1;
     font-family: $font-headline;
     color: $color--quadrary;
+    margin-bottom: 2em;
     .word2 { @extend %standout-emphasis; }
     .word4 { @extend %standout-emphasis; }
     .word5 { @extend %standout-emphasis; }
