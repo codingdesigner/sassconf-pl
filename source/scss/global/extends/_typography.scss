@@ -80,3 +80,11 @@
 %measure-to-columns {
   @include column-width(18em);
 }
+
+%featured-person--name {
+  @extend %h4;
+  color: $color--primary;
+}
+
+
+

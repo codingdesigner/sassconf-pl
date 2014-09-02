@@ -1,0 +1,23 @@
+.on-sale {
+  @extend %section-margin;
+}
+
+.ticketbud-widget {
+  #events.external {
+    font-family: $font-body !important;
+  }
+  h3 {
+    @extend %h3;
+  }
+  .btn {
+    @include button-base($extend: false, $important: true);
+    @include button-size-normal($extend: false, $important: true);
+    @include button-colors($extend: false, $important: true);
+  }
+  a {
+    @extend %link-unset-background-extend;
+  }
+  .ticket-terms {
+    margin-top: $base-line-em;
+  }
+}

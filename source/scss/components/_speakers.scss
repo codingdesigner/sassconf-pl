@@ -1,6 +1,3 @@
-$bp--sessions-wrap: 650px;
-$bp--sessions-2col: 780px;
-
 .speakers {
   position: relative;
 }
@@ -66,31 +63,7 @@ $bp--sessions-2col: 780px;
 }
 
 .speaker-image {
-  @extend %rhombus;
-  margin-left: 2rem;
-  overflow: hidden;
-  width: 240px;
-  height: 240px;
-  box-shadow: rgba($color--tertiary, 0.33) 0 0 0 0.5rem;
-  @include backface-visibility(hidden);
-  margin-bottom: 1em;
-  position: relative;
-  z-index: 1;
-  margin-top: 0.5rem;
-  &:nth-of-type(2n+2) {
-    @extend %rhombus-left;
-    img {
-      @extend %rhombus-left-reset;
-      margin-left: -2rem;
-    }
-  }
-  img {
-    width: 300px;
-    max-width: 300px;
-    height: 300px;
-    margin-left: -2rem;
-    @extend %rhombus-reset;
-  }
+  @extend %rhombus--image;
   .panel & {
     width: 120px;
     height: 120px;
@@ -128,8 +101,7 @@ $bp--sessions-2col: 780px;
 }
 
 .speaker {
-  @extend %h4;
-  color: $color--primary;
+  @extend %featured-person--name;
 }
 
 .occupation {
@@ -138,11 +110,20 @@ $bp--sessions-2col: 780px;
   margin-bottom: 0.5em;
 }
 
-.section__details {
+.section--details {
+  @include breakpoint($bp--sessions-wrap) {
+    margin-left: 8em;
+  }
   @include breakpoint($bp--sessions-2col) {
     float: right;
     width: calc(100% - 20rem);
     clear: right;
+    margin-left: 0;
+
   }
+}
+
+.section-details--description {
+  max-width: 30em;
 }
 

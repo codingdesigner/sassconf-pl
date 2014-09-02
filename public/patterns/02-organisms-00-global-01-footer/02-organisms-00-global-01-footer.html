@@ -51,47 +51,55 @@
 </head>
 <body class="" id="skrollr-body">
 <footer>
-  <ul>
-    <h4>Core team</h4>
-    <li><a href="https://twitter.com/itsmisscs">Claudina Sarahe</a></li>
-    <li><a href="https://twitter.com/Snugug">Sam Richard</a></li>
-  </ul>
-  <ul>
-    <h4>Volunteer team</h4>
-    <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
-    <li><a href="https://twitter.com/bkjames">Robert James</a></li>
-    <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
-    <li><a href="www.linkedin.com/in/lissaaguilar">Lissa Aguilar</a></li>
-  </ul>
-  <ul>
-    <h4>Design team</h4>
-    <li><a href="https://twitter.com/scottkellum">Scott Kellum</a></li>
-    <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
-    <li><a href="https://twitter.com/copasetickid">Rushaine McBean</a></li>
-    <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
-  </ul>
-  <ul>
-    <h4>Stay in touch</h4>
-    <li><a href="https://twitter.com/sassconf">@SassConf</a></li>
-    <li><a href="mailto:info@Sassconf.com">info@Sassconf.com</a></li>
-  </ul>
+  <div class="footer-content">
+    <div class="logo-lockup"></div>
 
-  <p>&copy; 2014 SassConf 2014. All rights reserved. Find an error or want to add something? Pull requests
-    are welcome over on <a href="https://github.com/scottkellum/sassconfdesign" title="SassConf Design repo">GitHub</a>.
-    Kindly refer to our <a href="/styleguide">styleguide</a>.</p>
+    <ul>
+      <h4>Core team</h4>
+      <li><a href="https://twitter.com/itsmisscs">Claudina Sarahe</a></li>
+      <li><a href="https://twitter.com/Snugug">Sam Richard</a></li>
+    </ul>
+    <ul>
+      <h4>Volunteer team</h4>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/bkjames">Robert James</a></li>
+      <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
+      <li><a href="www.linkedin.com/in/lissaaguilar">Lissa Aguilar</a></li>
+    </ul>
+    <ul>
+      <h4>Design team</h4>
+      <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/scottkellum">Scott Kellum</a></li>
+      <li><a href="https://twitter.com/copasetickid">Rushaine McBean</a></li>
+    </ul>
+    <ul>
+      <h4>Stay in touch</h4>
+      <li><a href="https://twitter.com/sassconf">@SassConf</a></li>
+      <li><a href="mailto:info@Sassconf.com">info@Sassconf.com</a></li>
+    </ul>
 
-  <p>
-    SassConf is dedicated to a
-    <a href="/code-of-conduct/">harassment-free</a>
-    and enjoyable conference experience for everyone.
-    <a href="pages/refund-policy">Refund policy</a>.
-  </p>
+    <p>&copy; 2014 SassConf 2014. All rights reserved. Find an error or want to add something? Pull requests
+      are welcome over on <a href="https://github.com/scottkellum/sassconfdesign"
+                             title="SassConf Design repo">GitHub</a>.
+      Kindly refer to our <a href="/styleguide">styleguide</a>.</p>
 
+    <p>Header and footer <a
+        href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by
+      Jeffery Zeldman</a>.</p>
+
+    <p>
+      SassConf is dedicated to a
+      <a href="/code-of-conduct/">harassment-free</a>
+      and enjoyable conference experience for everyone.
+      <a href="pages/refund-policy">Refund policy</a>.
+    </p>
+  </div>
 </footer>
-<script src="../../js/global.js"></script>
-<script src="../../js/jquery.lettering-0.6.1.min.js"></script>
-<script src="../../js/jquery.parallax.min.js"></script>
+<!--<script src="../../js/global.js"></script>-->
+<!--<script src="../../js/jquery.parallax.min.js"></script>-->
 <script src="../../js/widowtamer-min.js"></script>
+<script src="../../bower_components/letteringjs/jquery.lettering.js"></script>
 <script src="../../js/main.js"></script>
 
 
@@ -100,8 +108,8 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-footer";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-01-homepage\/03-templates-01-homepage.html"}];
+		var lineage        = [{"lineagePattern":"atoms-logo-notext","lineagePath":"..\/..\/patterns\/00-atoms-04-images-00-logo-notext\/00-atoms-04-images-00-logo-notext.html"}];
+		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-01-homepage\/03-templates-01-homepage.html"},{"lineagePattern":"templates-speakers","lineagePath":"..\/..\/patterns\/03-templates-02-speakers\/03-templates-02-speakers.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

@@ -105,6 +105,12 @@ $unset-background-links-extend: true;
   @extend %link-background-extend;
 }
 
+%link-footer-extend {
+  @include set-link-colors($link-normal: $color--quintary, $link-hover: $color--primary, $link-active: $color--primary, $link-visited: $color--quintary, $link-focus: $color--primary, $extend: false);
+  @extend %link-unset-background-extend;
+  border-bottom: 1px solid $color--white;
+}
+
 //////////////////////////////
 // Link Element Styles
 //////////////////////////////

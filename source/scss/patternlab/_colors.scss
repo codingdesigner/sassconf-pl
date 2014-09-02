@@ -144,3 +144,22 @@
     }
   }
 }
+
+.sg-colors-stack {
+  &.stack-tertiary--blend {
+    &.tints {
+      @for $i from 1 through 6 {
+        .tint-#{$i} {
+          background-color: nth($tertiary-screen-stack, $i);
+        }
+      }
+    }
+    &.shades {
+      @for $i from 1 through 6 {
+        .shade-#{$i} {
+          background-color: nth($tertiary-multiply-stack, $i);
+        }
+      }
+    }
+  }
+}

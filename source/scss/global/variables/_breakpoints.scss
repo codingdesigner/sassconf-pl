@@ -12,6 +12,17 @@ $breakpoint-no-query-fallbacks: true;
 $breakpoint-to-ems: true;
 // Breakpoint will convert all media queries to use EMs rather than PX
 
+$bp--small-type: max-width 500px;
+$bp--overview-2-col: 540px;
+$bp--overview-3-col: 1010px;
+$bp--sessions-wrap: 650px;
+$bp--sessions-2col: 780px;
+$bp--logo-full: 750px;
+$bp--logo-med: 590px;
+$bp--logo-small: 381px;
+$bp--logo-small-down: max-width 589px;
+$bp--logo-very-small-down: max-width 380px;
+
 // // sign posts
 // $width-small   : 480px;
 // $width-medium  : 640px;
