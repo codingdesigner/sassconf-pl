@@ -52,26 +52,29 @@
 <body class="" id="skrollr-body">
 <section class="intro">
   <div class="sizzle" id="sizzle">
+    <div class="video-embed">
     <iframe
         src="//player.vimeo.com/video/90602247?title=0&amp;byline=0&amp;portrait=0&amp;color=ff006a&amp;autoplay=0&amp;loop=1"
         frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    </div>
   </div>
+  <div class="intro-text">
+    <p>We are a group of awesomely talented and creative front-end developers,
+      designers, and web enthusiasts coming together for three days of
+      talks, workshops, and panels on the best CSS preprocessor
+      — <strong>Sass</strong> — in electric
+      <a href="/pages/nyc-primer">New York City</a>.</p>
 
-  <p>We are a group of awesomely talented and creative front-end developers,
-    designers, and web enthusiasts coming together for three days of
-    talks, workshops, and panels on the best CSS preprocessor
-    — <strong>Sass</strong> — in electric
-    <a href="/pages/nyc-primer">New York City</a>.</p>
-
-  <p>We may not have created the web, but we work passionately to advance it
-    and make better tools for front-end developers and designers so we can
-    build and style more awesome sites for all.
-  </p>
+    <p>We may not have created the web, but we work passionately to advance it
+      and make better tools for front-end developers and designers so we can
+      build and style more awesome sites for all.
+    </p>
+  </div>
 </section>
-<script src="../../js/global.js"></script>
-<script src="../../js/jquery.lettering-0.6.1.min.js"></script>
-<script src="../../js/jquery.parallax.min.js"></script>
+<!--<script src="../../js/global.js"></script>-->
+<!--<script src="../../js/jquery.parallax.min.js"></script>-->
 <script src="../../js/widowtamer-min.js"></script>
+<script src="../../bower_components/letteringjs/jquery.lettering.js"></script>
 <script src="../../js/main.js"></script>
 
 
@@ -80,8 +83,8 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-site-intro";
-		var lineage        = [];
-		var lineageR       = [];
+		var lineage        = [{"lineagePattern":"molecules-sizzle","lineagePath":"..\/..\/patterns\/01-molecules-05-media-00-sizzle\/01-molecules-05-media-00-sizzle.html"}];
+		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-01-homepage\/03-templates-01-homepage.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

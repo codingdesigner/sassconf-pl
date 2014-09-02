@@ -51,14 +51,16 @@
 </head>
 <body class="" id="skrollr-body">
 <div class="sizzle" id="sizzle">
+  <div class="video-embed">
   <iframe
       src="//player.vimeo.com/video/90602247?title=0&amp;byline=0&amp;portrait=0&amp;color=ff006a&amp;autoplay=0&amp;loop=1"
       frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
 </div>
-<script src="../../js/global.js"></script>
-<script src="../../js/jquery.lettering-0.6.1.min.js"></script>
-<script src="../../js/jquery.parallax.min.js"></script>
+<!--<script src="../../js/global.js"></script>-->
+<!--<script src="../../js/jquery.parallax.min.js"></script>-->
 <script src="../../js/widowtamer-min.js"></script>
+<script src="../../bower_components/letteringjs/jquery.lettering.js"></script>
 <script src="../../js/main.js"></script>
 
 
@@ -68,7 +70,7 @@
 		// handle injection of items from PHP
 		var patternPartial = "molecules-sizzle";
 		var lineage        = [];
-		var lineageR       = [];
+		var lineageR       = [{"lineagePattern":"organisms-site-intro","lineagePath":"..\/..\/patterns\/02-organisms-02-promos-00-site-intro\/02-organisms-02-promos-00-site-intro.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
