@@ -69,8 +69,7 @@
 .rhombus-grid-wrapper {
   width: 100%;
   top: 0;
-  opacity: 0.6;
-  .skrollr & {
+  .manhattan & {
     position: fixed;
   }
   @supports (mix-blend-mode: screen) {

@@ -1,6 +1,5 @@
 {
-  "bodyClass": "speakers",
-  "bodyClass": "manhattan",
+  "bodyClass": "speakers manhattan",
   "keynotes": [
     {
       "speakers": [

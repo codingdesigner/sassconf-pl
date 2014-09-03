@@ -32,7 +32,6 @@
   }
 }
 
-
 .page-title {
   @extend %h1;
   text-align: center;
@@ -41,7 +40,11 @@
 }
 
 #content {
+  @extend %body-background;
   padding: 0 3vw;
+  position: relative;
+  z-index: 200;
+  padding-bottom: $base-line-em * 2;
 }
 
 .article-title {

@@ -11,21 +11,8 @@ body {
 }
 
 .header {
-  .photo-wrapper {
-    @include filter(contrast(150%) saturate(150%));
-    @include single-transition();
-  }
-  &:hover {
-    .photo-wrapper {
-      @include filter(contrast(175%) saturate(175%));
-    }
-  }
-}
-
-.header {
   @include intrinsic-ratio(1800/756, 100%);
   height: auto;
-  margin-bottom: 15%;
   .logo-nav {
     text-align: center;
     @include breakpoint($bp--logo-small-down) {
@@ -66,101 +53,4 @@ body {
     }
   }
 }
-
-.m-main-nav {
-  z-index: 100;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-  margin-bottom: 15%;
-  .menu-button {
-    @extend %font-family-landmark-regular;
-    @extend %flex-row;
-    @include breakpoint($bp--logo-very-small-down) {
-      font-size: ms(1);
-      line-height: 2.05;
-      @include flexbox(
-        (
-          flex-direction: column
-        )
-      );
-    }
-    @include breakpoint($bp--logo-small) {
-      font-size: ms(2);
-      line-height: 1.64;
-    }
-    @include breakpoint($bp--logo-med) {
-      position: absolute;
-      width: calc(100% + 1rem);
-      top: 0;
-      padding-top: 42%;
-    }
-  }
-  a {
-    @include set-link-colors($color--white, $color--tertiary, $color--tertiary, $color--white, $color--quadrary, $extend: false);
-    @extend %link-unset-background-extend;
-    white-space: nowrap;
-    padding: {
-      left: 0.75rem;
-      right: 0.75rem;
-    }
-    text-align: center;
-    @extend %flex-auto;
-    @extend %rhombus;
-    @for $i from 1 through 6 {
-      &:nth-of-type(#{$i}) {
-        background-color: nth($primary-multiply-stack, $i);
-      }
-    }
-    @include breakpoint($bp--logo-very-small-down) {
-      text-align: left;
-      padding-left: 7.75rem;
-      height: 0;
-      @include transition(height 0.3s);
-    }
-    @include breakpoint($bp--logo-med) {
-      &:first-of-type {
-        padding-left: 1rem;
-      }
-      &:last-of-type {
-        padding-right: 1rem;
-      }
-    }
-  }
-  [type="checkbox"] {
-    display: none;
-    &:checked {
-      ~ {
-        a {
-          height: 2.05em;
-        }
-        .button {
-          background-color: nth($primary-multiply-stack, 6);
-          div {
-            &:before {
-              content: "Hide ";
-            }
-          }
-        }
-      }
-    }
-  }
-  .button {
-    display: none;
-    @extend %rhombus;
-    @include transition(background-color 0.3s);
-    @include breakpoint($bp--logo-very-small-down) {
-      display: block;
-      background-color: nth($primary-multiply-stack, 1);
-      color: $color--white;
-      text-align: left;
-      padding-left: 7.75rem;
-      div {
-        &:before {
-          content: "Show ";
-        }
-      }
-    }
-  }
-}
-
 

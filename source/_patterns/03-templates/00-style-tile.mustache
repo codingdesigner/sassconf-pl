@@ -1,26 +1,23 @@
-<div class="style-tile">
-  {{> organisms-header }}
+{{> organisms-header }}
+<div id="content">
+  {{> molecules-primary-nav }}
+  <main id="st-main" role="main">
+    {{> atoms-headings}}
+    {{> atoms-modular-scale}}
+    {{> organisms-article-body}}
+  </main>
 
-  <div id="content">
-    <main id="st-main" role="main">
-      {{> atoms-headings}}
-      {{> atoms-modular-scale}}
-      {{> organisms-article-body}}
-    </main>
+  <aside class="st-colors">
+    {{> atoms-colors}}
+  </aside>
 
-    <aside class="st-colors">
-      {{> atoms-colors}}
-    </aside>
+  <aside class="st-images">
 
-    <aside class="st-images">
+  </aside>
 
-    </aside>
+  <aside class="st-fonts">
+    {{> atoms-fonts}}
+  </aside>
 
-    <aside class="st-fonts">
-      {{> atoms-fonts}}
-    </aside>
-
-    <footer class="st-adjectives"></footer>
-
-  </div>
+  <footer class="st-adjectives"></footer>
 </div>

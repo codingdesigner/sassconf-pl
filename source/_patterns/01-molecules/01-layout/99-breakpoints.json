@@ -49,6 +49,22 @@
       "value": "max-width 380px"
     },
     {
+      "name": "$bp--footer-1col",
+      "value": "max-width 429px"
+    },
+    {
+      "name": "$bp--footer-2col",
+      "value": "430px"
+    },
+    {
+      "name": "$bp--footer-3col",
+      "value": "500px"
+    },
+    {
+      "name": "$bp--footer-4col",
+      "value": "720px"
+    },
+    {
       "name": "$hidpi",
       "value": "min-resolution 2dppx"
     },
