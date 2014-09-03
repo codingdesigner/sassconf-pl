@@ -198,7 +198,7 @@ fieldset {
   border-style: dashed;
 }
 
-.base--STYLED h2, .venue h2, .article-title, .sponsors .article-title, .base--STYLED h3, .overview ul li h3, .title, .ticketbud-widget h3, .venue h3, .reviewer, .speaker, .base--STYLED h4, .section-title, .venue h4, .base--STYLED h5, .base--STYLED h6, footer h4 {
+.base--STYLED h2, .article-title, .sponsors .article-title, .base--STYLED h3, .overview ul li h3, .title, .ticketbud-widget h3, .reviewer, .speaker, .base--STYLED h4, .section-title, .base--STYLED h5, .base--STYLED h6, footer h4 {
   font-family: "Landmark Regular A", "Landmark Regular B";
   font-weight: normal;
 }
@@ -222,33 +222,33 @@ fieldset {
   }
 }
 
-.base--STYLED h2, .venue h2, .article-title, .sponsors .article-title {
+.base--STYLED h2, .article-title, .sponsors .article-title {
   font-size: 2.44141em;
   line-height: 0.9984;
   margin-bottom: 0.6656em;
 }
 @media (max-width: 31.25em) {
-  .base--STYLED h2, .venue h2, .article-title, .sponsors .article-title {
+  .base--STYLED h2, .article-title, .sponsors .article-title {
     font-size: 1.5625em;
     line-height: 1.3;
     margin-bottom: 1.04em;
   }
 }
 
-.base--STYLED h3, .overview ul li h3, .title, .ticketbud-widget h3, .venue h3 {
+.base--STYLED h3, .overview ul li h3, .title, .ticketbud-widget h3 {
   font-size: 1.95313em;
   line-height: 1.04;
   margin-bottom: 0.832em;
 }
 @media (max-width: 31.25em) {
-  .base--STYLED h3, .overview ul li h3, .title, .ticketbud-widget h3, .venue h3 {
+  .base--STYLED h3, .overview ul li h3, .title, .ticketbud-widget h3 {
     font-size: 1.25em;
     line-height: 1.3;
     margin-bottom: 1.3em;
   }
 }
 
-.reviewer, .speaker, .base--STYLED h4, .section-title, .venue h4 {
+.reviewer, .speaker, .base--STYLED h4, .section-title {
   font-size: 1.61803em;
   line-height: 1.00431;
 }
