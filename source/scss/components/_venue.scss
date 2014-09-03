@@ -1,0 +1,16 @@
+.venue {
+  h2 {
+    @extend %h2;
+  }
+  h3 {
+    @extend %h3;
+  }
+  h4 {
+    @extend %h4;
+  }
+}
+
+.venue-map {
+  @include ir();
+  @extend %section-margin;
+}
