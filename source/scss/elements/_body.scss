@@ -21,17 +21,25 @@ $body-enable-ligatures: true !default;
 $body-extend: true !default;
 //////////////////////////////
 
-@mixin body-base($font: $body-font-stack, $color: $body-text-color, $background: $body-background-color, $ligatures: $body-enable-ligatures, $extend: $body-extend) {
+@mixin body-background($background: $body-background-color, $extend: $body-extend) {
   @if not ($extend) {
-    font-family: $font;
-    color: $color;
-    background: $background;
+    background-color: $background;
     $stripe: 10vw;
     @include background-image(repeating-linear-gradient(90deg, transparent, transparent $stripe, rgba($cs-background-multiply, 0.1) $stripe, rgba($cs-background-multiply, 0.1) $stripe * 2, transparent $stripe * 2));
     @include breakpoint($bp--background-gradient) {
       @include background-image(repeating-linear-gradient(80deg, transparent, transparent $stripe, rgba($cs-background-multiply, 0.1) $stripe, rgba($cs-background-multiply, 0.1) $stripe * 2, transparent $stripe * 2), linear-gradient(0deg, transparent 50%, rgba($cs-background-multiply, 0.1) 50%));
       background-size: 100% 100%, $stripe * 2 $stripe * 2;
     }
+  } @else {
+    @extend %body-background;
+  }
+}
+
+@mixin body-base($font: $body-font-stack, $color: $body-text-color, $background: $body-background-color, $ligatures: $body-enable-ligatures, $extend: $body-extend) {
+  @if not ($extend) {
+    font-family: $font;
+    color: $color;
+    background-color: $background;
     margin: 0;
     overflow-x: hidden;
     @if $ligatures {
@@ -48,6 +56,10 @@ $body-extend: true !default;
 
 %body-base {
   @include body-base($extend: false);
+}
+
+%body-background {
+  @include body-background($extend: false);
 }
 
 //////////////////////////////

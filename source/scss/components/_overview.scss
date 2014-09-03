@@ -1,5 +1,6 @@
 .overview {
   @include clearfix();
+  @extend %section-margin;
   ul {
     li {
       h3 {
