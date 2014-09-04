@@ -24,9 +24,11 @@
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
 
   <!-- bower:js -->
-  <script src="../../bower_components/modernizr/modernizr.js"></script>
-  <script src="../../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../../bower_components/eq.js/dist/eq.min.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/eq.js/dist/eq.min.js"></script>
+  <script src="/bower_components/moment/moment.js"></script>
+  <script src="/bower_components/twix/bin/twix.js"></script>
   <!-- endbower -->
 
   <!--[if lt IE 9]>
@@ -58,33 +60,131 @@
 					<div id="organisms-schedule" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-sections-00-schedule/02-organisms-03-sections-00-schedule.html" class="patternLink" data-patternpartial="organisms-schedule">Schedule</a></h2>
 						<div class="sg-pattern-body">
-							<ul class="schedule keynote">
-
-  <li class="session keynote">
-    <img src="/lib/img/speakers/tabatkins.jpg" alt="Side portrait of Tab Atkins Jr.">
-
-    <h3 class="speaker">Tab Atkins Jr</h3>
-
-    <h3 class="occupation">Spec Hacker for Google</h3>
-  </li>
-
-</ul>
+							<div class="schedule-page">
+  <h1 class="page-title">2014 Schedule</h1>
+    <h2 class="schedule-date rhombus">
+      <div class="rhombus-reset">Friday</div>
+    </h2>
+    <table class="schedule">
+      <thead>
+      <tr>
+        <th class="schedule--time">Time</th>
+        <th class="schedule--title">Title</th>
+        <th class="schedule--speaker">Speaker</th>
+        <th class="schedule--room">Room</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr class="slot-1" data-start="9/4/2014 2:42 AM" data-end="9/4/2014 3:30 AM">
+          <td data-th="Time" class="schedule--time">10-11am</td>
+          <td data-th="Title" class="schedule--title">A Session Title</td>
+          <td data-th="Speaker" class="schedule--speaker">Alec Guiness</td>
+          <td data-th="Room" class="schedule--room">Room 1</td>
+        </tr>
+        <tr class="slot-1" data-start="9/4/2014 2:42 AM" data-end="9/4/2014 3:30 AM">
+          <td data-th="Time" class="schedule--time">10-11am</td>
+          <td data-th="Title" class="schedule--title">Another Session Title</td>
+          <td data-th="Speaker" class="schedule--speaker">Mark Hamill</td>
+          <td data-th="Room" class="schedule--room">Room 2</td>
+        </tr>
+        <tr class="slot-2" data-start="10/1/2014 11:00 AM" data-end="10/1/2014 12:00 PM">
+          <td data-th="Time" class="schedule--time">11am-12pm</td>
+          <td data-th="Title" class="schedule--title">The Session Before Lunch</td>
+          <td data-th="Speaker" class="schedule--speaker">Carrie Fisher</td>
+          <td data-th="Room" class="schedule--room">Room 1</td>
+        </tr>
+        <tr class="slot-2" data-start="10/1/2014 11:00 AM" data-end="10/1/2014 12:00 PM">
+          <td data-th="Time" class="schedule--time">11am-12pm</td>
+          <td data-th="Title" class="schedule--title">the other session before lunch</td>
+          <td data-th="Speaker" class="schedule--speaker">Anthony Daniels</td>
+          <td data-th="Room" class="schedule--room">Room 2</td>
+        </tr>
+        <tr class="slot-3" data-start="10/1/2014 12:00 PM" data-end="10/1/2014 1:00 PM">
+          <td data-th="Time" class="schedule--time">12-1pm</td>
+          <td data-th="Title" class="schedule--title">Lunch</td>
+          <td data-th="Speaker" class="schedule--speaker"></td>
+          <td data-th="Room" class="schedule--room">Main Hall</td>
+        </tr>
+        <tr class="slot-4" data-start="10/1/2014 1:00 PM" data-end="10/1/2014 2:00 PM">
+          <td data-th="Time" class="schedule--time">1-2pm</td>
+          <td data-th="Title" class="schedule--title">The Session After Lunch</td>
+          <td data-th="Speaker" class="schedule--speaker">Harrison Ford</td>
+          <td data-th="Room" class="schedule--room">Room 1</td>
+        </tr>
+        <tr class="slot-4" data-start="10/1/2014 1:00 PM" data-end="10/1/2014 2:00 PM">
+          <td data-th="Time" class="schedule--time">1-2pm</td>
+          <td data-th="Title" class="schedule--title">The Session After Lunch</td>
+          <td data-th="Speaker" class="schedule--speaker">Kenny Baker</td>
+          <td data-th="Room" class="schedule--room">Room 2</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
 
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;ul class=&quot;schedule keynote&quot;&gt;
-
-  &lt;li class=&quot;session keynote&quot;&gt;
-    &lt;img src=&quot;/lib/img/speakers/tabatkins.jpg&quot; alt=&quot;Side portrait of Tab Atkins Jr.&quot;&gt;
-
-    &lt;h3 class=&quot;speaker&quot;&gt;Tab Atkins Jr&lt;/h3&gt;
-
-    &lt;h3 class=&quot;occupation&quot;&gt;Spec Hacker for Google&lt;/h3&gt;
-  &lt;/li&gt;
-
-&lt;/ul&gt;
+										&lt;div class=&quot;schedule-page&quot;&gt;
+  &lt;h1 class=&quot;page-title&quot;&gt;2014 Schedule&lt;/h1&gt;
+    &lt;h2 class=&quot;schedule-date rhombus&quot;&gt;
+      &lt;div class=&quot;rhombus-reset&quot;&gt;Friday&lt;/div&gt;
+    &lt;/h2&gt;
+    &lt;table class=&quot;schedule&quot;&gt;
+      &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;schedule--time&quot;&gt;Time&lt;/th&gt;
+        &lt;th class=&quot;schedule--title&quot;&gt;Title&lt;/th&gt;
+        &lt;th class=&quot;schedule--speaker&quot;&gt;Speaker&lt;/th&gt;
+        &lt;th class=&quot;schedule--room&quot;&gt;Room&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr class=&quot;slot-1&quot; data-start=&quot;9/4/2014 2:42 AM&quot; data-end=&quot;9/4/2014 3:30 AM&quot;&gt;
+          &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;10-11am&lt;/td&gt;
+          &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;A Session Title&lt;/td&gt;
+          &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;Alec Guiness&lt;/td&gt;
+          &lt;td data-th=&quot;Room&quot; class=&quot;schedule--room&quot;&gt;Room 1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;slot-1&quot; data-start=&quot;9/4/2014 2:42 AM&quot; data-end=&quot;9/4/2014 3:30 AM&quot;&gt;
+          &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;10-11am&lt;/td&gt;
+          &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;Another Session Title&lt;/td&gt;
+          &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;Mark Hamill&lt;/td&gt;
+          &lt;td data-th=&quot;Room&quot; class=&quot;schedule--room&quot;&gt;Room 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;slot-2&quot; data-start=&quot;10/1/2014 11:00 AM&quot; data-end=&quot;10/1/2014 12:00 PM&quot;&gt;
+          &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;11am-12pm&lt;/td&gt;
+          &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;The Session Before Lunch&lt;/td&gt;
+          &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;Carrie Fisher&lt;/td&gt;
+          &lt;td data-th=&quot;Room&quot; class=&quot;schedule--room&quot;&gt;Room 1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;slot-2&quot; data-start=&quot;10/1/2014 11:00 AM&quot; data-end=&quot;10/1/2014 12:00 PM&quot;&gt;
+          &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;11am-12pm&lt;/td&gt;
+          &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;the other session before lunch&lt;/td&gt;
+          &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;Anthony Daniels&lt;/td&gt;
+          &lt;td data-th=&quot;Room&quot; class=&quot;schedule--room&quot;&gt;Room 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;slot-3&quot; data-start=&quot;10/1/2014 12:00 PM&quot; data-end=&quot;10/1/2014 1:00 PM&quot;&gt;
+          &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;12-1pm&lt;/td&gt;
+          &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;Lunch&lt;/td&gt;
+          &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;&lt;/td&gt;
+          &lt;td data-th=&quot;Room&quot; class=&quot;schedule--room&quot;&gt;Main Hall&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;slot-4&quot; data-start=&quot;10/1/2014 1:00 PM&quot; data-end=&quot;10/1/2014 2:00 PM&quot;&gt;
+          &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;1-2pm&lt;/td&gt;
+          &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;The Session After Lunch&lt;/td&gt;
+          &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;Harrison Ford&lt;/td&gt;
+          &lt;td data-th=&quot;Room&quot; class=&quot;schedule--room&quot;&gt;Room 1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;slot-4&quot; data-start=&quot;10/1/2014 1:00 PM&quot; data-end=&quot;10/1/2014 2:00 PM&quot;&gt;
+          &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;1-2pm&lt;/td&gt;
+          &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;The Session After Lunch&lt;/td&gt;
+          &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;Kenny Baker&lt;/td&gt;
+          &lt;td data-th=&quot;Room&quot; class=&quot;schedule--room&quot;&gt;Room 2&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
 
 									</code>
 								</pre>
