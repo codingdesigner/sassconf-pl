@@ -102,11 +102,11 @@ code {
   text-transform: uppercase;
 }
 
-strong, b, .schedule td:before, .schedule td.schedule--title {
+strong, b, .schedule th, .schedule td:before, .schedule td.schedule--title {
   font-weight: bold;
 }
 
-em, .schedule td:before {
+em, .schedule th, .schedule td:before {
   font-style: italic;
 }
 
@@ -1353,10 +1353,8 @@ body {
     display: table-header-group;
   }
 }
-@media (min-width: 31.25em) {
-  .schedule th {
-    padding: 0 0.5em;
-  }
+.schedule th {
+  padding: 0 0.5em;
 }
 .schedule tr {
   padding: 1em 0.5em;

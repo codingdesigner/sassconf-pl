@@ -12,9 +12,9 @@ $bp--schedule-table: 500px;
     }
   }
   th {
-    @include breakpoint($bp--schedule-table) {
-      padding: 0 0.5em;
-    }
+    @extend %bold;
+    @extend %italic;
+    padding: 0 0.5em;
   }
   tr {
     padding: 1em 0.5em;
