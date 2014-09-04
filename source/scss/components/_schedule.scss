@@ -20,8 +20,23 @@ $bp--schedule-table: 500px;
     padding: 1em 0.5em;
     display: block;
     @for $i from 1 through 6 {
+      $background-color: nth($primary-multiply-stack, $i);
+      $border-color: adjust-color($background-color, $lightness: -5%);
       &.slot-#{$i} {
-        background-color: nth($primary-multiply-stack, $i);
+        background-color: $background-color;
+        border-bottom: 1px solid $border-color;
+        @include breakpoint($bp--schedule-table) {
+          & {
+            border: none;
+          }
+          td {
+            border: {
+              width: 0 1px;
+              style: solid;
+              color: $border-color;
+            }
+          }
+        }
       }
     }
     @include breakpoint($bp--schedule-table) {
@@ -29,6 +44,20 @@ $bp--schedule-table: 500px;
     }
     &.current {
       background-color: $color--tertiary;
+      $border-color: adjust-color($color--tertiary, $lightness: -5%);
+      border-bottom: 1px solid $border-color;
+      @include breakpoint($bp--schedule-table) {
+        & {
+          border: none;
+        }
+        td {
+          border: {
+            width: 0 1px;
+            style: solid;
+            color: $border-color;
+          }
+        }
+      }
       &:before {
         color: $color--white;
       }

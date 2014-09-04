@@ -17,6 +17,6 @@ $(document).ready(function () {
     });
   }
   currentSchedule();
-  var currentScheduleInterval = window.setInterval(currentSchedule, 1000 * 30);
+  var currentScheduleInterval = window.setInterval(currentSchedule, 1000);
   //////////////////
 });

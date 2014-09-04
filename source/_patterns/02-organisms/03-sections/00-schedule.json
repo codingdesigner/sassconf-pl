@@ -5,8 +5,8 @@
       "sessions": [
         {
           "slot": "slot-1",
-          "start": "9/4/2014 2:42 AM",
-          "end": "9/4/2014 3:30 AM",
+          "start": "10/1/2014 10:00 AM",
+          "end": "10/1/2014 11:00 AM",
           "time": "10-11am",
           "title": "A Session Title",
           "speaker": "Alec Guiness",
@@ -14,8 +14,8 @@
         },
         {
           "slot": "slot-1",
-          "start": "9/4/2014 2:42 AM",
-          "end": "9/4/2014 3:30 AM",
+          "start": "10/1/2014 10:00 AM",
+          "end": "10/1/2014 11:00 AM",
           "time": "10-11am",
           "title": "Another Session Title",
           "speaker": "Mark Hamill",
