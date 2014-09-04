@@ -1,11 +1,28 @@
-&lt;ul class=&quot;schedule keynote&quot;&gt;
-
-  &lt;li class=&quot;session keynote&quot;&gt;
-    &lt;img src=&quot;/lib/img/speakers/tabatkins.jpg&quot; alt=&quot;Side portrait of Tab Atkins Jr.&quot;&gt;
-
-    &lt;h3 class=&quot;speaker&quot;&gt;Tab Atkins Jr&lt;/h3&gt;
-
-    &lt;h3 class=&quot;occupation&quot;&gt;Spec Hacker for Google&lt;/h3&gt;
-  &lt;/li&gt;
-
-&lt;/ul&gt;
+&lt;div class=&quot;schedule-page&quot;&gt;
+  &lt;h1 class=&quot;page-title&quot;&gt;2014 Schedule&lt;/h1&gt;
+  {{#days}}
+    &lt;h2 class=&quot;schedule-date rhombus&quot;&gt;
+      &lt;div class=&quot;rhombus-reset&quot;&gt;{{date}}&lt;/div&gt;
+    &lt;/h2&gt;
+    &lt;table class=&quot;schedule&quot;&gt;
+      &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;schedule--time&quot;&gt;Time&lt;/th&gt;
+        &lt;th class=&quot;schedule--title&quot;&gt;Title&lt;/th&gt;
+        &lt;th class=&quot;schedule--speaker&quot;&gt;Speaker&lt;/th&gt;
+        &lt;th class=&quot;schedule--room&quot;&gt;Room&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+      {{#sessions }}
+        &lt;tr class=&quot;{{slot}}&quot; data-start=&quot;{{start}}&quot; data-end=&quot;{{end}}&quot;&gt;
+          &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;{{time}}&lt;/td&gt;
+          &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;{{title}}&lt;/td&gt;
+          &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;{{speaker}}&lt;/td&gt;
+          &lt;td data-th=&quot;Room&quot; class=&quot;schedule--room&quot;&gt;{{room}}&lt;/td&gt;
+        &lt;/tr&gt;
+      {{/sessions}}
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  {{/days}}
+&lt;/div&gt;

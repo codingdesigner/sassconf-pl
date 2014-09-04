@@ -1,0 +1,88 @@
+.schedule-date {
+  @extend %article-title-alt;
+}
+
+$bp--schedule-table: 500px;
+.schedule {
+  thead {
+    display: none;
+    color: $color--secondary;
+    @include breakpoint($bp--schedule-table) {
+      display: table-header-group;
+    }
+  }
+  th {
+    @extend %bold;
+    @extend %italic;
+    padding: 0 0.5em;
+  }
+  tr {
+    padding: 1em 0.5em;
+    display: block;
+    @for $i from 1 through 6 {
+      &.slot-#{$i} {
+        background-color: nth($primary-multiply-stack, $i);
+      }
+    }
+    @include breakpoint($bp--schedule-table) {
+      display: table-row;
+    }
+    &.current {
+      background-color: $color--tertiary;
+      &:before {
+        color: $color--white;
+      }
+      td {
+        &:before {
+          color: nth($tertiary-multiply-stack, 3);
+        }
+      }
+      .schedule--time {
+        &:before {
+          content: "Now! ";
+          color: nth($tertiary-multiply-stack, 5);
+        }
+      }
+      .schedule--title {
+        @include breakpoint($bp--schedule-table) {
+          &:before {
+            content: "Now! ";
+            display: inline-block;
+            color: nth($tertiary-multiply-stack, 5);
+            font-weight: bold;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+  td {
+    position: relative;
+    color: $color--white;
+    @include flexbox(
+      (
+        display: flex,
+        flex-direction: row,
+        justify-content: flex-start
+      )
+    );
+    @include breakpoint($bp--schedule-table) {
+      display: table-cell;
+      padding: 1em 0.5em;
+    }
+    &:before {
+      content: attr(data-th);
+      @extend %bold;
+      margin-right: 0.5em;
+      flex-basis: 5em;
+      @extend %italic;
+      color: nth($primary-screen-stack, 5);
+      @include breakpoint($bp--schedule-table) {
+        display: none;
+      }
+    }
+    &.schedule--title {
+      @extend %bold;
+    }
+  }
+}

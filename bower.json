@@ -6,6 +6,8 @@
     "jquery": "~1.11.1",
     "modernizr": "latest",
     "eq.js": "~1.4.1",
+    "moment": "latest",
+    "twix": "latest",
     "letteringjs": "latest"
   }
 }
