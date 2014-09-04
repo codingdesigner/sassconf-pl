@@ -7,7 +7,7 @@ $(document).ready(function () {
   //////////////////
   // MOMENT.JS
   function currentSchedule() {
-    $('table.schedule tbody tr').each(function() {
+    $('.schedule--live tbody tr').each(function() {
       var t = moment($(this).attr("data-start")).twix($(this).attr("data-end"));
       if (t.isCurrent() == true) {
         $(this).addClass("current");
@@ -17,6 +17,6 @@ $(document).ready(function () {
     });
   }
   currentSchedule();
-  var currentScheduleInterval = window.setInterval(currentSchedule, 1000 * 30);
+  var currentScheduleInterval = window.setInterval(currentSchedule, 1000);
   //////////////////
 });

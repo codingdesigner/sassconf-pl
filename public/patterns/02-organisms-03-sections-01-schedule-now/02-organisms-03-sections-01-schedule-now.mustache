@@ -4,7 +4,7 @@
     &lt;h2 class=&quot;schedule-date rhombus&quot;&gt;
       &lt;div class=&quot;rhombus-reset&quot;&gt;{{date}}&lt;/div&gt;
     &lt;/h2&gt;
-    &lt;table class=&quot;schedule schedule--live&quot;&gt;
+    &lt;table class=&quot;schedule&quot;&gt;
       &lt;thead&gt;
       &lt;tr&gt;
         &lt;th class=&quot;schedule--time&quot;&gt;Time&lt;/th&gt;
@@ -15,7 +15,7 @@
       &lt;/thead&gt;
       &lt;tbody&gt;
       {{#sessions }}
-        &lt;tr class=&quot;{{slot}}&quot; data-start=&quot;{{start}}&quot; data-end=&quot;{{end}}&quot;&gt;
+        &lt;tr class=&quot;{{slot}} {{current}}&quot; data-start=&quot;{{start}}&quot; data-end=&quot;{{end}}&quot;&gt;
           &lt;td data-th=&quot;Time&quot; class=&quot;schedule--time&quot;&gt;{{time}}&lt;/td&gt;
           &lt;td data-th=&quot;Title&quot; class=&quot;schedule--title&quot;&gt;{{title}}&lt;/td&gt;
           &lt;td data-th=&quot;Speaker&quot; class=&quot;schedule--speaker&quot;&gt;{{speaker}}&lt;/td&gt;

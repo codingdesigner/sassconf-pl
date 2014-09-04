@@ -1362,21 +1362,87 @@ body {
 }
 .schedule tr.slot-1 {
   background-color: #d3639e;
+  border-bottom: 1px solid #cd4f92;
+}
+@media (min-width: 31.25em) {
+  .schedule tr.slot-1 {
+    border: none;
+  }
+  .schedule tr.slot-1 td {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #cd4f92;
+  }
 }
 .schedule tr.slot-2 {
   background-color: #ac215d;
+  border-bottom: 1px solid #971d51;
+}
+@media (min-width: 31.25em) {
+  .schedule tr.slot-2 {
+    border: none;
+  }
+  .schedule tr.slot-2 td {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #971d51;
+  }
 }
 .schedule tr.slot-3 {
   background-color: #a61854;
+  border-bottom: 1px solid #901549;
+}
+@media (min-width: 31.25em) {
+  .schedule tr.slot-3 {
+    border: none;
+  }
+  .schedule tr.slot-3 td {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #901549;
+  }
 }
 .schedule tr.slot-4 {
   background-color: #8c1245;
+  border-bottom: 1px solid #750f3a;
+}
+@media (min-width: 31.25em) {
+  .schedule tr.slot-4 {
+    border: none;
+  }
+  .schedule tr.slot-4 td {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #750f3a;
+  }
 }
 .schedule tr.slot-5 {
   background-color: #640d32;
+  border-bottom: 1px solid #4d0a27;
+}
+@media (min-width: 31.25em) {
+  .schedule tr.slot-5 {
+    border: none;
+  }
+  .schedule tr.slot-5 td {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #4d0a27;
+  }
 }
 .schedule tr.slot-6 {
   background-color: #340619;
+  border-bottom: 1px solid #1d030e;
+}
+@media (min-width: 31.25em) {
+  .schedule tr.slot-6 {
+    border: none;
+  }
+  .schedule tr.slot-6 td {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #1d030e;
+  }
 }
 @media (min-width: 31.25em) {
   .schedule tr {
@@ -1385,6 +1451,17 @@ body {
 }
 .schedule tr.current {
   background-color: #7acbcb;
+  border-bottom: 1px solid #68c4c4;
+}
+@media (min-width: 31.25em) {
+  .schedule tr.current {
+    border: none;
+  }
+  .schedule tr.current td {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #68c4c4;
+  }
 }
 .schedule tr.current:before {
   color: white;
