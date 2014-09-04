@@ -1383,6 +1383,28 @@ body {
     display: table-row;
   }
 }
+.schedule tr.current {
+  background-color: #7acbcb;
+}
+.schedule tr.current:before {
+  color: white;
+}
+.schedule tr.current td:before {
+  color: #2a9797;
+}
+.schedule tr.current .schedule--time:before {
+  content: "Now! ";
+  color: #166262;
+}
+@media (min-width: 31.25em) {
+  .schedule tr.current .schedule--title:before {
+    content: "Now! ";
+    display: inline-block;
+    color: #166262;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
 .schedule td {
   position: relative;
   color: white;

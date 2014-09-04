@@ -27,6 +27,34 @@ $bp--schedule-table: 500px;
     @include breakpoint($bp--schedule-table) {
       display: table-row;
     }
+    &.current {
+      background-color: $color--tertiary;
+      &:before {
+        color: $color--white;
+      }
+      td {
+        &:before {
+          color: nth($tertiary-multiply-stack, 3);
+        }
+      }
+      .schedule--time {
+        &:before {
+          content: "Now! ";
+          color: nth($tertiary-multiply-stack, 5);
+        }
+      }
+      .schedule--title {
+        @include breakpoint($bp--schedule-table) {
+          &:before {
+            content: "Now! ";
+            display: inline-block;
+            color: nth($tertiary-multiply-stack, 5);
+            font-weight: bold;
+            font-style: italic;
+          }
+        }
+      }
+    }
   }
   td {
     position: relative;

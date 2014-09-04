@@ -15,7 +15,7 @@
       </thead>
       <tbody>
       {{#sessions }}
-        <tr class="{{slot}}">
+        <tr class="{{slot}}" data-start="{{start}}" data-end="{{end}}">
           <td data-th="Time" class="schedule--time">{{time}}</td>
           <td data-th="Title" class="schedule--title">{{title}}</td>
           <td data-th="Speaker" class="schedule--speaker">{{speaker}}</td>
