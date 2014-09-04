@@ -1,0 +1,60 @@
+.schedule-date {
+  @extend %article-title-alt;
+}
+
+$bp--schedule-table: 500px;
+.schedule {
+  thead {
+    display: none;
+    color: $color--secondary;
+    @include breakpoint($bp--schedule-table) {
+      display: table-header-group;
+    }
+  }
+  th {
+    @include breakpoint($bp--schedule-table) {
+      padding: 0 0.5em;
+    }
+  }
+  tr {
+    padding: 1em 0.5em;
+    display: block;
+    @for $i from 1 through 6 {
+      &.slot-#{$i} {
+        background-color: nth($primary-multiply-stack, $i);
+      }
+    }
+    @include breakpoint($bp--schedule-table) {
+      display: table-row;
+    }
+  }
+  td {
+    position: relative;
+    color: $color--white;
+    @include flexbox(
+      (
+        display: flex,
+        flex-direction: row,
+        justify-content: flex-start
+      )
+    );
+    @include breakpoint($bp--schedule-table) {
+      display: table-cell;
+      padding: 1em 0.5em;
+    }
+    &:before {
+      content: attr(data-th);
+      @extend %bold;
+      margin-right: 0.5em;
+      flex-basis: 5em;
+      @extend %italic;
+      color: nth($primary-screen-stack, 5);
+      @include breakpoint($bp--schedule-table) {
+        display: none;
+      }
+    }
+    &.schedule--title {
+      @extend %bold;
+    }
+  }
+}
