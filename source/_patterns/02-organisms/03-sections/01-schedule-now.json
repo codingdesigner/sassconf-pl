@@ -1,0 +1,74 @@
+{
+  "days": [
+    {
+      "date": "Friday",
+      "sessions": [
+        {
+          "slot": "slot-1",
+          "start": "10/1/2014 10:00 AM",
+          "end": "10/1/2014 11:00 AM",
+          "time": "10-11am",
+          "title": "A Session Title",
+          "speaker": "Alec Guiness",
+          "room": "Room 1"
+        },
+        {
+          "slot": "slot-1",
+          "start": "10/1/2014 10:00 AM",
+          "end": "10/1/2014 11:00 AM",
+          "time": "10-11am",
+          "title": "Another Session Title",
+          "speaker": "Mark Hamill",
+          "room": "Room 2"
+        },
+        {
+          "current": "current",
+          "slot": "slot-2",
+          "start": "10/1/2014 11:00 AM",
+          "end": "10/1/2014 12:00 PM",
+          "time": "11am-12pm",
+          "title": "The Session Before Lunch",
+          "speaker": "Carrie Fisher",
+          "room": "Room 1"
+        },
+        {
+          "current": "current",
+          "slot": "slot-2",
+          "start": "10/1/2014 11:00 AM",
+          "end": "10/1/2014 12:00 PM",
+          "time": "11am-12pm",
+          "title": "the other session before lunch",
+          "speaker": "Anthony Daniels",
+          "room": "Room 2"
+        },
+        {
+          "slot": "slot-3",
+          "start": "10/1/2014 12:00 PM",
+          "end": "10/1/2014 1:00 PM",
+          "time": "12-1pm",
+          "title": "Lunch",
+          "speaker": "",
+          "room": "Main Hall"
+        },
+        {
+          "slot": "slot-4",
+          "start": "10/1/2014 1:00 PM",
+          "end": "10/1/2014 2:00 PM",
+          "time": "1-2pm",
+          "title": "The Session After Lunch",
+          "speaker": "Harrison Ford",
+          "room": "Room 1"
+        },
+        {
+          "slot": "slot-4",
+          "start": "10/1/2014 1:00 PM",
+          "end": "10/1/2014 2:00 PM",
+          "time": "1-2pm",
+          "title": "The Session After Lunch",
+          "speaker": "Kenny Baker",
+          "room": "Room 2"
+        }
+      ]
+    }
+  ]
+}
