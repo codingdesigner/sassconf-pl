@@ -14,7 +14,7 @@ node_modules
 .idea
 
 # Ignore the build directory
-/build
+# /build
 
 # Ignore bundler config
 /.bundle
