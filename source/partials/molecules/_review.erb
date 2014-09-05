@@ -1,0 +1,6 @@
+<% data.reviews.reviews.each do |r| %>
+  <div class="review-item">
+    <h3 class="reviewer rhombus-left"><div class="rhombus-reset"><%= r.reviewer %></div></h3>
+    <div class="quote" style="background-image: url(images/reviews/<%= r.review_image%>)"><blockquote><%= r.review %></blockquote></div>
+  </div>
+<% end %>

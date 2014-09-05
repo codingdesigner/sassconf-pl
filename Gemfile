@@ -1,17 +1,14 @@
-# Pull gems from RubyGems
-source 'https://rubygems.org'
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source 'http://rubygems.org'
 
-# ~> Refers to all versions of the given gem on the current full version number, so it will be able to use any version of Compass Aurora until Compass Aurora 4.x.x. For a specific version of a gem, remove the ~>
-gem 'sass', '~> 3.4'
-gem 'compass', '~> 1.0'
-gem 'oily_png', '~> 1.1.1'
-gem 'singularitygs', '~> 1.3'
-gem 'breakpoint', '~> 2.5'
-gem 'toolkit', '~> 2.6'
-gem 'sass-globbing', '~> 1.1.1'
-gem 'terminal-notifier'
-gem 'modular-scale'
-gem 'color-schemer'
-gem 'compass-normalize', '~>1.4.3'
+gem "middleman", "~>3.3.5"
 
-# Now that you're using Bundler, you need to run `bundle exec compass watch` instead of simply `compass watch`.
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
+
+# For faster file watcher updates on Windows:
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+
+# Windows does not come with time zone data
+gem "tzinfo-data", platforms: [:mswin, :mingw]

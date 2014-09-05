@@ -6,8 +6,15 @@
 # Generated files #
 ###################
 *.sass-cache/
+*.cache
 
 # Node #
 ###################
 node_modules
 .idea
+
+# Ignore the build directory
+/build
+
+# Ignore bundler config
+/.bundle
