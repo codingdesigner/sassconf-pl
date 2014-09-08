@@ -24,7 +24,7 @@
         {
           "slot": "slot-3",
           "start": "10/2/2014 9:00 AM",
-          "end": "10/2/2014 9:$5 AM",
+          "end": "10/2/2014 9:45 AM",
           "time": "9-9:45am",
           "title": "Keeping Your Sass Squeaky Clean",
           "speaker": "Adam Onishi",
@@ -103,7 +103,89 @@
           "room": ""
         }
       ]
+    },
+    {
+      "date": "Friday October 3rd",
+      "sessions": [
+        {
+          "slot": "slot-1",
+          "start": "10/3/2014 9:00 AM",
+          "end": "10/3/2014 1:00 PM",
+          "time": "9am-1pm",
+          "title": "Choose your own Refactoring Adventure!",
+          "speaker": "Elyse Holladay, Jina Bolton",
+          "room": ""
+        },
+        {
+          "slot": "slot-1",
+          "start": "10/3/2014 9:00 AM",
+          "end": "10/3/2014 1:00 PM",
+          "time": "9am-1pm",
+          "title": "Introduction into UX Regression Testing",
+          "speaker": "Kevin Lampling",
+          "room": ""
+        },
+        {
+          "slot": "slot-2",
+          "start": "10/3/2014 1:00 PM",
+          "end": "10/3/2014 3:00 PM",
+          "time": "1-3pm",
+          "title": "Lunch",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-3",
+          "start": "10/3/2014 3:00 PM",
+          "end": "10/3/2014 7:00 PM",
+          "time": "3-7pm",
+          "title": "Expanding Your Sass Arsenal",
+          "speaker": "Anthony DiSpezio",
+          "room": ""
+        },
+        {
+          "slot": "slot-3",
+          "start": "10/3/2014 3:00 PM",
+          "end": "10/3/2014 7:00 PM",
+          "time": "3-7pm",
+          "title": "Optimising the Critical Rendering Path",
+          "speaker": "Patrick Hamann",
+          "room": ""
+        }
+      ]
+    },
+    {
+      "date": "Saturday October 4th",
+      "sessions": [
+        {
+          "slot": "slot-1",
+          "start": "10/4/2014 11:00 AM",
+          "end": "10/4/2014 6:00 PM",
+          "time": "11am-6pm",
+          "title": "Unconference",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-1",
+          "start": "10/4/2014 11:00 AM",
+          "end": "10/4/2014 6:00 PM",
+          "time": "11am-6pm",
+          "title": "IBM Hackathon",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-2",
+          "start": "10/4/2014 2:00 PM",
+          "end": "10/4/2014 3:00 PM",
+          "time": "2-3pm",
+          "title": "Largescale Roundtable",
+          "speaker": "",
+          "room": ""
+        }
+      ]
     }
-  ]
 
+  ]
 }
