@@ -1,0 +1,191 @@
+{
+  "days": [
+    {
+      "date": "Thursday October 2nd",
+      "sessions": [
+        {
+          "slot": "slot-1",
+          "start": "10/2/2014 8:00 AM",
+          "end": "10/2/2014 8:45 AM",
+          "time": "8-8:45am",
+          "title": "Check In",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-2",
+          "start": "10/2/2014 8:45 AM",
+          "end": "10/2/2014 9:00 AM",
+          "time": "8:45-9am",
+          "title": "Introduction",
+          "speaker": "Claudina Sarahe, Sam Richard",
+          "room": ""
+        },
+        {
+          "slot": "slot-3",
+          "start": "10/2/2014 9:00 AM",
+          "end": "10/2/2014 9:45 AM",
+          "time": "9-9:45am",
+          "title": "Keeping Your Sass Squeaky Clean",
+          "speaker": "Adam Onishi",
+          "room": ""
+        },
+        {
+          "slot": "slot-4",
+          "start": "10/2/2014 10:00 AM",
+          "end": "10/2/2014 10:45 AM",
+          "time": "10-10:45am",
+          "title": "Building an Artful Web",
+          "speaker": "Smith Schwartz",
+          "room": ""
+        },
+        {
+          "slot": "slot-5",
+          "start": "10/2/2014 11:00 PM",
+          "end": "10/2/2014 11:45 AM",
+          "time": "11-11:45am",
+          "title": "Keynote",
+          "speaker": "Tab Atkins",
+          "room": ""
+        },
+        {
+          "slot": "slot-6",
+          "start": "10/21/2014 12:00 PM",
+          "end": "10/2/2014 1:30 PM",
+          "time": "12-1:30pm",
+          "title": "Lunch",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-7",
+          "start": "10/2/2014 1:45 PM",
+          "end": "10/2/2014 2:30 PM",
+          "time": "1:45-2:30pm",
+          "title": "Lightning Talks",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-8",
+          "start": "10/2/2014 2:45 PM",
+          "end": "10/2/2014 3:30 PM",
+          "time": "2:45-3:30pm",
+          "title": "Style as a Service: Maintaining Style Across Multiple Websites",
+          "speaker": "Shay Howe",
+          "room": ""
+        },
+        {
+          "slot": "slot-9",
+          "start": "10/2/2014 3:45 PM",
+          "end": "10/2/2014 4:30 PM",
+          "time": "3:45-4:30pm",
+          "title": "Future Tools: Beyond Live Style Guides",
+          "speaker": "Adam Detrick",
+          "room": ""
+        },
+        {
+          "slot": "slot-10",
+          "start": "10/2/2014 4:30 PM",
+          "end": "10/2/2014 5:00 PM",
+          "time": "4:30-5pm",
+          "title": "Break",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-11",
+          "start": "10/2/2014 5:00 PM",
+          "end": "10/2/2014 5:45 PM",
+          "time": "5-5:45pm",
+          "title": "Thinking inside the box inside the box inside the box",
+          "speaker": "Mason Wendell",
+          "room": ""
+        }
+      ]
+    },
+    {
+      "date": "Friday October 3rd",
+      "sessions": [
+        {
+          "slot": "slot-1",
+          "start": "10/3/2014 9:00 AM",
+          "end": "10/3/2014 1:00 PM",
+          "time": "9am-1pm",
+          "title": "Choose your own Refactoring Adventure!",
+          "speaker": "Elyse Holladay, Jina Bolton",
+          "room": ""
+        },
+        {
+          "slot": "slot-1",
+          "start": "10/3/2014 9:00 AM",
+          "end": "10/3/2014 1:00 PM",
+          "time": "9am-1pm",
+          "title": "Introduction into UX Regression Testing",
+          "speaker": "Kevin Lampling",
+          "room": ""
+        },
+        {
+          "slot": "slot-2",
+          "start": "10/3/2014 1:00 PM",
+          "end": "10/3/2014 3:00 PM",
+          "time": "1-3pm",
+          "title": "Lunch",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-3",
+          "start": "10/3/2014 3:00 PM",
+          "end": "10/3/2014 7:00 PM",
+          "time": "3-7pm",
+          "title": "Expanding Your Sass Arsenal",
+          "speaker": "Anthony DiSpezio",
+          "room": ""
+        },
+        {
+          "slot": "slot-3",
+          "start": "10/3/2014 3:00 PM",
+          "end": "10/3/2014 7:00 PM",
+          "time": "3-7pm",
+          "title": "Optimising the Critical Rendering Path",
+          "speaker": "Patrick Hamann",
+          "room": ""
+        }
+      ]
+    },
+    {
+      "date": "Saturday October 4th",
+      "sessions": [
+        {
+          "slot": "slot-1",
+          "start": "10/4/2014 11:00 AM",
+          "end": "10/4/2014 6:00 PM",
+          "time": "11am-6pm",
+          "title": "Unconference",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-1",
+          "start": "10/4/2014 11:00 AM",
+          "end": "10/4/2014 6:00 PM",
+          "time": "11am-6pm",
+          "title": "IBM Hackathon",
+          "speaker": "",
+          "room": ""
+        },
+        {
+          "slot": "slot-2",
+          "start": "10/4/2014 2:00 PM",
+          "end": "10/4/2014 3:00 PM",
+          "time": "2-3pm",
+          "title": "Largescale Roundtable",
+          "speaker": "",
+          "room": ""
+        }
+      ]
+    }
+
+  ]
+}

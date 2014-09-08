@@ -111,23 +111,33 @@ $heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1) !default;
 // Heading Element Styles
 //////////////////////////////
 
-.base--STYLED {
-  h1 {
+h1 {
+  .base--STYLED &, &.base--STYLED {
     @extend %h1;
   }
-  h2 {
+}
+h2 {
+  .base--STYLED &, &.base--STYLED {
     @extend %h2;
   }
-  h3 {
+}
+h3 {
+  .base--STYLED &, &.base--STYLED {
     @extend %h3;
   }
-  h4 {
+}
+h4 {
+  .base--STYLED &, &.base--STYLED {
     @extend %h4;
   }
-  h5 {
+}
+h5 {
+  .base--STYLED &, &.base--STYLED {
     @extend %h5;
   }
-  h6 {
+}
+h6 {
+  .base--STYLED &, &.base--STYLED {
     @extend %h6;
   }
 }

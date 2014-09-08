@@ -1,0 +1,28 @@
+<div class="schedule-page">
+  <h1 class="page-title">2014 Schedule</h1>
+  <% data.schedule.days.each do |d| %>
+    <h2 class="schedule-date rhombus">
+      <div class="rhombus-reset"><%= d.date %></div>
+    </h2>
+    <table class="schedule schedule--live">
+      <thead>
+      <tr>
+        <th class="schedule--time">Time</th>
+        <th class="schedule--title">Title</th>
+        <th class="schedule--speaker">Speaker</th>
+        <th class="schedule--room">Room</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% d.sessions.each do |s| %>
+        <tr class="<%= s.slot %>" data-start="<%= s.start %>" data-end="<%= s.end %>">
+          <td data-th="Time" class="schedule--time"><%= s.time %></td>
+          <td data-th="Title" class="schedule--title"><%= s.title %></td>
+          <td data-th="Speaker" class="schedule--speaker"><%= s.speaker %></td>
+          <td data-th="Room" class="schedule--room"><%= s.room %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</div>

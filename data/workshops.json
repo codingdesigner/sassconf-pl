@@ -1,0 +1,58 @@
+{
+  "workshops": [
+    {
+      "session_title": "Expanding your Sass Arsenal",
+      "speakers": [
+        {
+          "speaker_image": "anthonydispezio.jpg",
+          "alt": "Portrait of Anthony DiSpezio",
+          "name": "Anthony DiSpezio",
+          "occupation": "Content Engineer, Inkling"
+        }
+      ],
+      "session_description": "<p>Are you a Sass beginner eager to increase your experience? In this workshop we’ll take an in-depth look at some powerful features to help you write smarter Sass and cleaner CSS.</p> <h4>Topics we’ll be covering in this workshop:</h4> <ul> <li>Extends and Mixins In-Depth</li> <li>Maps and Loops</li> <li>Functions FTW</li> <li>Bulletproofing with Warnings</li> <li>Media Query Techniques</li> </ul> <p>Please bring a laptop, a great attitude, and a sense of humor!</p>"
+    },
+    {
+      "session_title": "Optimising the Critical Rendering Path",
+      "speakers": [
+        {
+          "speaker_image": "patrickhamann.jpg",
+          "alt": "Portrait of Patrick Hamann",
+          "name": "Patrick Hamann",
+          "occupation": "Senior Software Engineer, The Guardian"
+        }
+      ],
+      "session_description": "<h4>Who is it for?</h4> <p>This workshop is for any designer or developer wanting to improve the speed of their websites and have a greater understanding of the browsers internals.</p> <p> </p> <h4>What you'll learn</h4> <p>Over the 4 hours you will learn what are the common performance bottlenecks in the browser from networking to painting and learn how to best optimise at each stage of the critical path to create fast, jank free websites.</p> <h4>What this workshop will cover</h4> <ul> <li>Why performance matters</li> <li>Networking</li> <li>Render tree construction</li> <li>Measuring performance using browser developer tools</li> <li>Hardware acceleration</li> <li>Optimising CSS</li> <li>Optimising load time</li> <li>Optimising paint</li> <li>Practice on working examples</li> <li>Testing and monitoring</li> <li>Tips, tricks and best practices</li> <li>The future</li> </ul> <h4>Requirements</h4> <ul> <li>Please bring your laptop with the following installed:</li> <li>Latest Chrome browser</li> <li>Node.js</li> <li>Grunt</li> </ul>"
+    },
+    {
+      "session_title": "Introduction into UX Regression Testing",
+      "speakers": [
+        {
+          "speaker_image": "kevinlamping.jpg",
+          "alt": "Portrait of Kevin Lamping",
+          "name": "Kevin Lamping",
+          "occupation": "Front-end Engineer, Rackspace"
+        }
+      ],
+      "session_description": "<p>Test-Driven Development has grown in popularity among the community in the past few years, but we're still lacking the proper tools to provide automation behind our CSS.</p> <p>How do you know a change you made to one small section on a page doesn't break a large section on another page of your site, especially when you support hundreds of devices? </p><p>This workshop will walk through a few of the tools available to help out. We'll set up the software together, then run them against real-life scenarios to show where each succeeds and where they individually fall short. </p> <p>By the end of the workshop, attendees will have a solid understanding of what options are available and know how to add a regression test suite to any project they're currently working on.</p>"
+    },
+    {
+      "session_title": "Choose your own Refactoring Adventure!",
+      "speakers": [
+        {
+          "speaker_image": "elyseholladay_14.jpg",
+          "alt": "Portrait of Elyse Holladay",
+          "name": "Elyse Holladay",
+          "occupation": "Developer/Designer, MakerSquare"
+        },
+        {
+          "speaker_image": "jinabolton_14.jpg",
+          "alt": "Portrait of Jina Bolton",
+          "name": "Jina Bolton",
+          "occupation": "Senior Product Designer, Salesforce UX"
+        }
+      ],
+      "session_description": "<p>Whether you’ve been using Sass for a while or are still trying to figure out how to abandon plain CSS, refactoring a large project can be a daunting task. We all know it’s too hard to refactor everything for months and launch it all at once, so how do you begin a multi-step refactoring process?</p> <p>In this four-hour workshop, Jina and Elyse will walk you through the basics of refactoring using Sass. You’ll receive guidelines for how to refactor for clarity, maintainability, efficiency, and DRY code, and learn how to test your changes. They’ll cover ways to break down a refactor into manageable chunks, help you understand how to modularize your CSS, and organize messy code into documented, style-guide ready files. Everyone will leave with a customized game plan of steps, tools, and guidelines to refactor their project—not a sample app—so bring your project code with you.</p> <h4>Refactoring topics to be covered may include:</h4> <ul> <li>overview of ways to use Sass (CodeKit, Rails, libsass, nodesass, etc.)</li> <li>creating color and typography variables</li> <li>breaking out and importing files</li> <li>determining CSS/UI modules, where they live in your app, and how to organize them</li> <li>namespacing for style safety</li> <li>commenting and in-CSS documentation</li> <li>creating living style guides</li> <li>naming conventions and refactoring classes/IDs</li> <li>testing for changes</li> </ul>"
+    }
+  ]
+}

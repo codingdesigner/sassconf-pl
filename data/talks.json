@@ -1,0 +1,64 @@
+{
+  "talks": [
+    {
+      "session_title": "Future Tools: Beyond Live Style Guides",
+      "speakers": [
+        {
+          "speaker_image": "adamdetrick.jpg",
+          "alt": "Portrait of Adam Detrick",
+          "name": "Adam Detrick",
+          "occupation": "UI Design Architect, Meetup"
+        }
+      ],
+      "session_description": "<p>Live style guides are widely accepted as a best practice in building user interfaces, but they don't always live up to their promise in practice. Meetup is a company with over 12 years of accumulated code, and we've been making a transition from ad-hoc UI to a more modern approach. We've learned a great deal about what works and what doesn't when trying to implement a custom CSS foundation and other design-driven tools.</p><p>In this talk, I'll be going beyond the basic idea of a live style guide, demonstrating tools and techniques that can help design ideas thrive. Fully automated documentation, package management, cross-platform color management, authoring best practices, and the <a href=http://martinfowler.com/bliki/StranglerApplication.html'>strangler pattern</a> will be covered. This talk avoids diving deeply into advanced features of Sass, focusing instead on novel approaches to the process of building user interface. Let's get ready to use and create the front end development tools of the future! </p><p>All software referenced in this talk will be open source under the MIT License and available on github.</p>"
+    },
+    {
+      "session_title": "Thinking inside the box inside the box inside the box",
+      "speakers": [
+        {
+          "speaker_image": "masonwendell-14.jpg",
+          "alt": "Portrait of Mason Wendell",
+          "name": "Mason Wendell",
+          "occupation": "Senior Developer/Designer, Phase2"
+        }
+      ],
+      "session_description": "<p>Great design, like jazz, needs both harmony and discord skillfully executed in just the right places. On the web, many of our projects are playing sour notes. Let&#8217;s get in tune. </p><p>Even in the age or Responsive Web Design, many sites are designed from the outside in. Whether the page is defined in Photoshop or, let&#8217;s hope, in-browser, many design projects slide out of tune when they get to the second or third page. Components are inconsistent, page and layout dimensions vary, font sizes shift. These details add up. Living style guides have been proposed to address this problem, the trouble is they&#8217;re often extracted from the finished project. </p><p>Let&#8217;s design the style guide first. Start from inside out with the most common aspects of a design language. Instead of envisioning individual pages, work to create a cohesive family of components and layouts that can be assembled into any page. By leveraging a tools that help us create the elements of out design language and visualize them in various contexts, we can make components, layouts, and even working pages that snap together beautifully. It&#8217;s the new blank paper. </p><p>This session will focus on the principles and benefits of this approach and use real-world examples from client work and personal projects. There will be some technical examples that will range from intermediate to advanced Sass and Responsive Web Design. This will include Sass partials, extends, mixins, and Compass extensions like Breakpoint and Singularity Grid System.</p>"
+    },
+    {
+      "session_title": "Keeping Your Sass Squeaky Clean",
+      "speakers": [
+        {
+          "speaker_image": "adamonishi.jpg",
+          "alt": "Portrait of Adam Onishi",
+          "name": "Adam Onishi",
+          "occupation": "Senior Front End Developer, Architect"
+        }
+      ],
+      "session_description": "<p>In this talk, I will take a look at all the features Sass and Compass put at your disposal, showing you how they can be used in real-world situations with a case study from the new Persil.co.uk website. From making complex responsive front end builds more manageable, working with custom IE style sheets, all the way through to improving the consistency amongst a team of developers. All of this formed part of the work that went into the new Persil website. In the last few years we’ve become quite accustomed to increasing our productivity with preprocessors like Sass or LESS. But how many of us take it much further than using a few variables, nesting our selectors, and using partials. Sass brings much more functionality to the table, including loops, conditionals, functions, and mixins. Now bring Compass into the mix and you have an even more powerful combination with added functions and built-in mixins. I'll show you how you can start cleaning up your own Sass with these advanced techniques that we've been using in the Persil project.</p>"
+    },
+    {
+      "session_title": "Style as a Service: Maintaining Style Across Multiple Websites",
+      "speakers": [
+        {
+          "speaker_image": "shayhowe.jpg",
+          "alt": "Portrait of Shay Howe",
+          "name": "Shay Howe",
+          "occupation": "Director of Product, Belly"
+        }
+      ],
+      "session_description": "<p>We often build multiple websites and applications that share the same styles across multiple code bases (style guides/pattern libraries). Maintaining these styles becomes quite a task, and causes increasing frustration overtime. Fortunately it doesn’t have to be this way. Within this talk we’ll cover a service-oriented architecture approach to sharing Sass styles across multiple code bases. Geared towards designers and front-end developers, we’ll discuss at how to best structure and write style sheets for reuse and how to properly package them to be used within different development environments. Consistency shouldn’t take a back seat to maintainability, and this talk covers how to have the best of both worlds.</p>"
+    },
+    {
+      "session_title": "Building an Artful Web",
+      "speakers": [
+        {
+          "speaker_image": "smithschwartz.jpg",
+          "alt": "Portrait of Smith Schwartz",
+          "name": "Smith Schwartz",
+          "occupation": "Interaction Designer, Say Media"
+        }
+      ],
+      "session_description": "<p>Having recently made the transition from the world of art museums to the world of front-end development and design, I’ve learned that these two disciplines have more in common than one might think at first glance. There’s lots of talk in our industry about craftsmanship, but I believe we also need to strive to build a more artful web. We’ll start with a behind-the-scenes look at museums, art in the digital era, authenticity and fear, the temporal nature of what we do, and learn a bit of art history along the way.</p>"
+    }
+  ]
+}

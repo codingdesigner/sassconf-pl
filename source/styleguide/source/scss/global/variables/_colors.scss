@@ -63,12 +63,12 @@ $color--quintary: cs-harmonize($color--quintary);
 //   $color--quintary
 //   );
 
-@function blend-stack($color, $color2: null, $mode: multiply, $hsl: lightness, $factor: -5%) {
+@function blend-stack($color, $color2: null, $mode: multiply, $hsl: lightness, $factor: -5%, $iterations: 6) {
   @if $color2 == null {
     $color2: $color;
   }
-  $list: $color;
-  @for $i from 1 through 6 {
+  $list: ();
+  @for $i from 1 through $iterations {
     @if $hsl == hue {
       $color2: adjust_color($color2, $hue: $i * $factor);
     } @else if $hsl == saturation {
