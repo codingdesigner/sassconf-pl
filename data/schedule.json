@@ -101,6 +101,15 @@
           "title": "Thinking inside the box inside the box inside the box",
           "speaker": "Mason Wendell",
           "room": ""
+        },
+        {
+          "slot": "slot-12",
+          "start": "10/2/2014 6:00 PM",
+          "end": "10/2/2014 7:00 PM",
+          "time": "6-7pm",
+          "title": "Q/A",
+          "speaker": "",
+          "room": ""
         }
       ]
     },

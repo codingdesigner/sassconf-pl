@@ -1518,6 +1518,10 @@ body {
     border-color: #971d51;
   }
 }
+.schedule tr.slot-12 {
+  background-color: #7d1f3e;
+  border-bottom: 1px solid #7b1b3d;
+}
 @media (min-width: 31.25em) {
   .schedule tr {
     display: table-row;
