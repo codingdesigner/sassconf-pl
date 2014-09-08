@@ -63,6 +63,26 @@ $bp--schedule-table: 500px;
         }
       }
     }
+    @for $i from 2 through 6 {
+      $background-color: nth($primary-multiply-stack, $i);
+      $border-color: adjust-color($background-color, $lightness: -5%);
+      &.slot-#{10+$i} {
+        background-color: $background-color;
+        border-bottom: 1px solid $border-color;
+        @include breakpoint($bp--schedule-table) {
+          & {
+            border: none;
+          }
+          td {
+            border: {
+              width: 0 1px;
+              style: solid;
+              color: $border-color;
+            }
+          }
+        }
+      }
+    }
     @include breakpoint($bp--schedule-table) {
       display: table-row;
     }
