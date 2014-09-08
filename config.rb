@@ -51,7 +51,7 @@ set :css_dir, 'styleguide/public/css'
 
 set :js_dir, 'javascripts'
 
-set :images_dir, 'images'
+set :images_dir, 'styleguide/public/images'
 
 activate :directory_indexes
 
