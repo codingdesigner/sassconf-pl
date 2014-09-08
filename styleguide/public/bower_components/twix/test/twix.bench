@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="images/ico/favicon.ico">
 
   <!-- Stylesheets -->
-  <link href="../../../../../stylesheets/style.css" rel="stylesheet" type="text/css" />
+  <link href="../../../css/style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
 
   <!-- Stylesheets -->
@@ -64,11 +64,12 @@
 <div id="content">
   <nav class="m-main-nav">
   <label class="menu-button"><input type="checkbox">
-    <a href="/"><div class="rhombus-reset">Home</div></a>
-    <a href="/"><div class="rhombus-reset">Speakers</div></a>
-    <a href="/"><div class="rhombus-reset">Get tickets</div></a>
-    <a href="/"><div class="rhombus-reset">Venue</div></a>
-    <a href="/"><div class="rhombus-reset">Code of Conduct</div></a>
+    <a href="index"><div class="rhombus-reset">Home</div></a>
+    <a href="speakers"><div class="rhombus-reset">Speakers</div></a>
+    <a href="index.html#buy-now"><div class="rhombus-reset">Get Tickets</div></a>
+    <a href="venue"><div class="rhombus-reset">Venue</div></a>
+    <a href="schedule"><div class="rhombus-reset">Schedule</div></a>
+    <a href="code-of-conduct"><div class="rhombus-reset">Code of Conduct</div></a>
     <div class="button"><div class="rhombus-reset">Menu</div></div>
   </label>
 </nav>
@@ -148,7 +149,7 @@
     <p>&copy; 2014 SassConf. All rights reserved. Find an error or want to add something? Pull requests
       are welcome over on <a href="https://github.com/scottkellum/sassconfdesign"
                              title="SassConf Design repo">GitHub</a>.
-      Kindly refer to our <a href="/styleguide/public">styleguide</a>.</p>
+      Kindly refer to our <a href="styleguide/public">styleguide</a>.</p>
 
     <p>Manhattan <a
         href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by
@@ -156,9 +157,9 @@
 
     <p>
       SassConf is dedicated to a
-      <a href="/code-of-conduct/">harassment-free</a>
+      <a href="code-of-conduct">harassment-free</a>
       and enjoyable conference experience for everyone.
-      <a href="pages/refund-policy">Refund policy</a>.
+      <a href="refund-policy">Refund policy</a>.
     </p>
   </div>
 </footer>

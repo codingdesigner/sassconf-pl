@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>SassConf</title>
+  <meta charset="UTF-8">
+
+  <!-- Mobile  Meta -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
+
+  <!-- Stylesheets -->
+  <script src="../../../../../javascripts/bower_components/modernizr/modernizr.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/jquery/dist/jquery.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/eq.js/dist/eq.min.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/moment/moment.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/twix/bin/twix.js" type="text/javascript"></script>
+
+
+  <!--[if lt IE 9]>
+  <script src="../../../../../javascripts/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+  <![endif]-->
+
+</head>
+<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_skrollr styleguide_public_bower_components_skrollr_HISTORY styleguide_public_bower_components_skrollr_HISTORY_index">
+<header class="header">
+  <div class="photo-wrapper"></div>
+  <div class="rhombus-grid-wrapper layer">
+    <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+  <defs>
+    <path id="rhombuses" d="M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z"></path>
+  </defs>
+  <clipPath id="nyc-image">
+    <use xlink:href="#rhombuses" overflow="visible"></use>
+  </clipPath>
+  <g clip-path="url(#nyc-image)">
+    <image overflow="visible" enable-background="new" width="1000" height="420" xlink:href="images/manhattan-zeldman-1800x756.jpg"></image>
+  </g>
+</svg>
+
+  </div>
+  <div class="logo-nav layer">
+    <div class="logo-dates">
+      <a href="/" class="logo-lockup logo-rhombus">
+  <div class="rhombus-left">
+    <div class="rhombus-left-reset">Sass Conf</div>
+  </div>
+</a>
+
+      <h2 class="rhombus">
+        <div class="rhombus-reset">October 2-4, 2014</div>
+      </h2>
+    </div>
+  </div>
+</header>
+
+
+<div id="content">
+  <nav class="m-main-nav">
+  <label class="menu-button"><input type="checkbox">
+    <a href="index"><div class="rhombus-reset">Home</div></a>
+    <a href="speakers"><div class="rhombus-reset">Speakers</div></a>
+    <a href="/styleguide/public/bower_components/skrollr/#buy-now"><div class="rhombus-reset">Get Tickets</div></a>
+    <a href="venue"><div class="rhombus-reset">Venue</div></a>
+    <a href="schedule"><div class="rhombus-reset">Schedule</div></a>
+    <a href="code-of-conduct"><div class="rhombus-reset">Code of Conduct</div></a>
+    <div class="button"><div class="rhombus-reset">Menu</div></div>
+  </label>
+</nav>
+
+  <h2 id="section">0.6.26 (2014-06-08)</h2>
+
+<ul>
+  <li>Fixed easing functions not working when animating attributes (#533)</li>
+</ul>
+
+<h2 id="section-1">0.6.25 (2014-05-22)</h2>
+
+<ul>
+  <li>CommonJS (#519).</li>
+</ul>
+
+<h2 id="section-2">0.6.24 (2014-04-25)</h2>
+
+<ul>
+  <li>Fixed some issue with forceHeight (#347).</li>
+  <li>Fixed a regression caused by #486 breaking IE 8 (#494).</li>
+  <li>Added support for animating attributes (#204).</li>
+</ul>
+
+<h2 id="section-3">0.6.23 (2014-04-18)</h2>
+
+<p><strong>note</strong>: This particular version is broken in IE!</p>
+
+<ul>
+  <li>Experimental support for emitting events when the scrolling passes a keyframe (check out the docs for <code>keyframe</code> option/event).</li>
+  <li>When using <code>refresh</code>, make sure elements which do not longer have keyframes get properly cleaned up (#486).</li>
+  <li>Fixed <code>refresh</code> not accepting <code>NodeList</code>s (#435).</li>
+  <li>Expose the status of mobile mode as <code>isMobile()</code> function (#488).</li>
+</ul>
+
+<h2 id="section-4">0.6.22 (2014-02-21)</h2>
+
+<ul>
+  <li>Experimental AMD support (#409). Please read the documentation about it.</li>
+</ul>
+
+<h2 id="section-5">0.6.21 (2014-01-06)</h2>
+
+<ul>
+  <li>Disabled mobile mode on Windows Phone, since it's not needed there (#408).</li>
+</ul>
+
+<h2 id="section-6">0.6.20 (2014-01-03)</h2>
+
+<ul>
+  <li>Fixed broken percentage constants.</li>
+</ul>
+
+<h2 id="section-7">0.6.19 (2014-01-02)</h2>
+
+<ul>
+  <li>Constants can now be defined as functions or percentage offsets (#148, #404).</li>
+</ul>
+
+<p><strong>breaking</strong>: When using a constant of value <code>100</code> together with percentage offsets like <code>data-_foo-75p</code>,
+the value was implicitly handled as percentage value <code>100p</code>. Starting with this version you need to explcitly use <code>100p</code> if you want percentage constants.
+On the plus side, you can now mix an absolute constant with a percentage keyframe or a percentage constant with an absolute keyframe.</p>
+
+<h2 id="section-8">0.6.18 (2013-12-18)</h2>
+
+<ul>
+  <li>Fixed scrolling on input elements (#397).</li>
+</ul>
+
+<h2 id="section-9">0.6.17 (2013-10-19)</h2>
+
+<ul>
+  <li>Fixed keyboard not appearing on some mobile browsers when an input was focused (#349).</li>
+</ul>
+
+<h2 id="section-10">0.6.16 (2013-10-18)</h2>
+
+<ul>
+  <li>Fixed <code>z-index:auto;</code> not working because it was always coerced to an integer (#351).</li>
+</ul>
+
+<h2 id="section-11">0.6.15 (2013-10-03)</h2>
+
+<ul>
+  <li>Fixed clicking on links (and other elements) on mobile (#263, #303, #338).</li>
+  <li>Added <code>getMaxScrollTop</code> method (#238).</li>
+</ul>
+
+<h2 id="section-12">0.6.14 (2013-10-03)</h2>
+
+<ul>
+  <li>Fixed the <code>direction</code> parameter that's passed to the render events (#339).</li>
+</ul>
+
+<h2 id="section-13">0.6.13 (2013-09-29)</h2>
+
+<ul>
+  <li>Added support for percentage offsets (#185).</li>
+</ul>
+
+<h2 id="section-14">0.6.12 (2013-09-17)</h2>
+
+<ul>
+  <li>Added <code>destroy</code> method (#109).</li>
+</ul>
+
+<h2 id="section-15">0.6.11 (2013-08-13)</h2>
+
+<ul>
+  <li>Made the mobile deceleration configurable and lowered the default (#222, #229).</li>
+</ul>
+
+<h2 id="section-16">0.6.10 (2013-07-30)</h2>
+
+<ul>
+  <li>Fixed bug which caused IE to perform an endless loop (#271).</li>
+</ul>
+
+<h2 id="section-17">0.6.9 (2013-07-01)</h2>
+
+<ul>
+  <li>Improved overall performance for mobile (#249).</li>
+</ul>
+
+<h2 id="section-18">0.6.8 (2013-06-17)</h2>
+
+<ul>
+  <li>Added a new option <code>smoothScrollingDuration</code>.</li>
+</ul>
+
+<h2 id="section-19">0.6.7 (2013-06-17)</h2>
+
+<ul>
+  <li>Changed the default value of <code>edgeStrategy</code> from <code>ease</code> to <code>set</code>. There are too many cases where <code>ease</code> was not wanted and unexpected.</li>
+</ul>
+
+<h2 id="section-20">0.6.6 (2013-06-05)</h2>
+
+<ul>
+  <li>Fixed IE plugin not working. This was caused by assigning <code>skrollr.setStyle</code> to a local variable inside the skrollr core. Since the IE plugin monkey-patches the skrollr.setStyle function, the core didn't notice the change (#199 comment 18986949).</li>
+</ul>
+
+<h2 id="section-21">0.6.5 (2013-05-22)</h2>
+
+<ul>
+  <li>Fixed crash in IE &lt; 9 because the detected prefix was <code>null</code> (#220).</li>
+</ul>
+
+<h2 id="section-22">0.6.4 (2013-05-21)</h2>
+
+<ul>
+  <li>Fixed that some elements got the <code>skrollable-before</code> <strong>and</strong> <code>skrollable-after</code> class at the same time.</li>
+</ul>
+
+<h2 id="section-23">0.6.3 (2013-05-19)</h2>
+
+<ul>
+  <li>When resizing the browser, the scroll position was reset to 0 (#217)</li>
+</ul>
+
+<h2 id="section-24">0.6.2 (2013-05-18)</h2>
+
+<ul>
+  <li>When resizing the browser, <code>forceHeight</code> was colliding with the already forced height (#216).</li>
+</ul>
+
+<h2 id="section-25">0.6.1 (2013-05-18)</h2>
+
+<ul>
+  <li>Allow numbers inside of easing function names (#152).</li>
+</ul>
+
+<h2 id="section-26">0.6.0 (2013-05-18)</h2>
+
+<p><strong>Expect things to break when coming from 0.5! Read through the changelog. Migration is not hard.</strong></p>
+
+<ul>
+  <li><strong>[breaking]</strong> There's no more <code>skrollr.mobile.js</code> file. You only need <code>skrollr.js</code>. You no longer need to conditionally include <code>skrollr.mobile.js</code>.</li>
+  <li>You can configure how skrollr detects mobile browsers using the <code>mobileCheck</code> option (check out the documentation).</li>
+  <li><strong>[possibly breaking]</strong> The meaning of the <code>#skrollr-body</code> element changed. Put all static elements inside of it and all absolute/fixed elements outside. It doesn't need to be the first child of the body anymore.</li>
+  <li><strong>[breaking]</strong> The <code>rendered</code> and <code>unrendered</code> classes where renamed because they were confusing and wrong. They're now called <code>skrollable-before</code> and <code>skrollable-after</code>, because that's their meaning (the element with these classes is before/after the first/last keyframe).
+    <ul>
+      <li>Added a new class <code>skrollable-between</code>, because symmetry. That's why.</li>
+    </ul>
+  </li>
+  <li>Easing functions are now applied when exactly at a keyframe (#132).</li>
+  <li><strong>[possibly breaking]</strong> The behavior changed for the case when the scroll position is before/after the first/last keyframe (I'm just gonna use "before first" from now on, because "after last" is analog). In 0.5 the behavior was not exactly specified and buggy (see item above regarding #132). Skrollr was applying the styles of the first keyframe to the element for all scroll position that were before the first keyframe. E.g. when <code>data-100="top:200px;"</code> was the first keyframe, the element had <code>top:200px;</code> at all scroll positions before (all from <code>0</code> to <code>99</code>). From now on you can specify the behavior you want (see <code>edgeStrategy</code> option for details, set it to <code>set</code> for old behavior). <strong>Note: 0.6.7 and up use <code>set</code> as default.</strong></li>
+</ul>
+
+<h2 id="section-27">0.5.14</h2>
+
+<ul>
+  <li>Add a <code>skrollr-mobile</code> class to the html element when the mobile script is included.</li>
+</ul>
+
+<h2 id="section-28">0.5.13 (2013-02-08)</h2>
+
+<ul>
+  <li>
+    <h1 id="use-a-cross-browser-approach-for-getting-the-body-scroll-height">131: Use a cross browser approach for getting the body scroll-height.</h1>
+  </li>
+  <li>
+    <h1 id="use-the-maximum-of-document-height-or-the-max-keyframe-for-edge-cases-where-absolute-keyframes-are-used-in-a-relative-mode-like-document-and-data-end-was-calculated-wrong">133: Use the maximum of document height or the max keyframe for edge cases where absolute keyframes are used in a relative-mode-like document and <code>data-end</code> was calculated wrong.</h1>
+  </li>
+</ul>
+
+<h2 id="section-29">0.5.12 (2013-02-08)</h2>
+
+<ul>
+  <li>
+    <h1 id="fixed-prefix-detection-in-safari">121: Fixed prefix detection in Safari.</h1>
+  </li>
+</ul>
+
+<h2 id="section-30">0.5.11 (2013-01-18)</h2>
+
+<ul>
+  <li>
+    <h1 id="when-calling-refresh-force-rerendering-even-if-the-scrollbar-didnt-move">126: When calling refresh(), force rerendering, even if the scrollbar didn't move.</h1>
+  </li>
+</ul>
+
+<h2 id="section-31">0.5.10</h2>
+
+<ul>
+  <li>
+    <h1 id="fixed-the-most-annoying-bug-on-mobile-there-was-a-large-blank-space-at-the-bottom-of-the-page">104: Fixed the most annoying bug on mobile. There was a large blank space at the bottom of the page.</h1>
+  </li>
+</ul>
+
+<h2 id="section-32">0.5.9</h2>
+
+<ul>
+  <li>
+    <h1 id="fixed-broken-prefix-detection-was-broken-all-the-time-but-worked-before-firefox-18">118: Fixed broken prefix detection. Was broken all the time, but worked before Firefox 18.</h1>
+  </li>
+</ul>
+
+<h2 id="section-33">0.5.8 (2013-01-12)</h2>
+
+<ul>
+  <li>
+    <h1 id="svg-support-was-broken-for-relative-mode">116 + #117: SVG support was broken for relative mode.</h1>
+  </li>
+</ul>
+
+<h2 id="section-34">0.5.7</h2>
+
+<ul>
+  <li>
+    <h1 id="skrollr-no-longer-depends-on-being-added-to-the-bottom-of-the-document">103: skrollr no longer depends on being added to the bottom of the document.</h1>
+  </li>
+</ul>
+
+<h2 id="section-35">0.5.6</h2>
+
+<ul>
+  <li>
+    <h1 id="fixed-inconsistent-behaviour-for-adding-rendered-and-unrendered-class-on-page-load">105: Fixed inconsistent behaviour for adding <code>rendered</code> and <code>unrendered</code> class on page load</h1>
+  </li>
+</ul>
+
+<h2 id="section-36">0.5.5</h2>
+
+<ul>
+  <li>
+    <h1 id="fixed-relative-mode-not-working-correctly-in-ie--9-due-to-crippled-getboundingclientrect">100: Fixed relative-mode not working correctly in IE &lt; 9 due to crippled getBoundingClientRect</h1>
+  </li>
+</ul>
+
+<h2 id="section-37">0.5.4 (2012-11-18)</h2>
+
+<ul>
+  <li>
+    <h1 id="when-resizing-the-browser-window-the-calculation-of-relative-mode-was-wrong-when-the-elements-vertical-position-was-changed-before">80: When resizing the browser window the calculation of relative mode was wrong when the element's vertical position was changed before.</h1>
+  </li>
+</ul>
+
+<h2 id="section-38">0.5.3</h2>
+
+<ul>
+  <li>
+    <h1 id="make-ie-7-support-a-light-version-of-data-anchor-target-by-mapping-queryselector-to-getelementbyid">66: Make IE 7 support a light version of <code>data-anchor-target</code> by mapping <code>querySelector</code> to <code>getElementById</code>.</h1>
+  </li>
+</ul>
+
+<h2 id="section-39">0.5.2</h2>
+
+<ul>
+  <li>
+    <h1 id="fixed-that-new-parser-didnt-allowed-omitting-the-last-semicolon-in-a-keyframe-property-list">78: Fixed that new parser didn't allowed omitting the last semicolon in a keyframe property list.</h1>
+  </li>
+</ul>
+
+<h2 id="section-40">0.5.1 (2012-10-29)</h2>
+
+<ul>
+  <li>Fixed <code>setScrollTop</code> and <code>animateTo</code> not working because iScroll uses negative offset.</li>
+</ul>
+
+<h2 id="section-41">0.5.0 (2012-10-09)</h2>
+
+<ul>
+  <li><em>breaking</em> the <code>plugin</code> api has been removed (the IE plugin has been updated to a new, hidden api).</li>
+  <li>Full mobile support using iscroll.</li>
+  <li>
+    <h1 id="fixed-parser-to-not-mess-up-colons-inside-urls">73: Fixed parser to not mess up colons inside URLs</h1>
+  </li>
+  <li>
+    <h1 id="fixed-parser-to-not-treat-single-periods-as-decimal-numbers">74: Fixed parser to not treat single periods as decimal numbers</h1>
+  </li>
+  <li>
+    <h1 id="fixed-dummy-element-overlaping-the-content-even-though-it-should-be-unobtrusive">76: Fixed dummy element overlaping the content, even though it should be unobtrusive</h1>
+  </li>
+</ul>
+
+<h2 id="section-42">0.4.13</h2>
+
+<ul>
+  <li>
+    <h1 id="forceheight-now-handles-relative-mode-like-a-boss">58: <code>forceHeight</code> now handles relative mode like a boss.</h1>
+  </li>
+  <li>
+    <h1 id="make-scale-option-only-affect-absolute-mode">59: Make <code>scale</code> option only affect absolute mode.</h1>
+  </li>
+</ul>
+
+<h2 id="section-43">0.4.12</h2>
+
+<ul>
+  <li>
+    <h1 id="setting-float-property-using-javascript-didnt-work-across-browser-now-using-stylefloat-and-cssfloat-properties">64: Setting <code>float</code> property using JavaScript didn't work across browser. Now using <code>styleFloat</code> and <code>cssFloat</code> properties.</h1>
+  </li>
+</ul>
+
+<h2 id="section-44">0.4.11 (2012-09-17)</h2>
+
+<ul>
+  <li>The <code>scale</code> option does not affect <code>constants</code>.</li>
+</ul>
+
+<h2 id="section-45">0.4.10</h2>
+
+<ul>
+  <li>Allow smooth scrolling on element level using <code>data-smooth-scrolling</code></li>
+</ul>
+
+<h2 id="section-46">0.4.9</h2>
+
+<ul>
+  <li>Added experimental smooth scrolling (no more CSS transitions. WORKS IN IE.).</li>
+</ul>
+
+<h2 id="section-47">0.4.8</h2>
+
+<ul>
+  <li>Added <code>stopAnimateTo</code> method.</li>
+</ul>
+
+<h2 id="section-48">0.4.7</h2>
+
+<ul>
+  <li>Updated the requestAnimationFrame polyfill for smoother animations</li>
+  <li>Updated the way requestAnimationFrame is used for even smoother animations</li>
+</ul>
+
+<h2 id="section-49">0.4.6</h2>
+
+<ul>
+  <li>New method <code>relativeToAbsolute</code> which was formerly private</li>
+  <li>New method <code>isAnimatingTo</code> to check if an animation caused by <code>animateTo</code> is running</li>
+  <li>Added <code>sqrt</code> easing function</li>
+</ul>
+
+<h2 id="section-50">0.4.5</h2>
+
+<ul>
+  <li>Experimental mobile support using https://github.com/zynga/scroller</li>
+</ul>
+
+<h2 id="section-51">0.4.4</h2>
+
+<ul>
+  <li>A <code>skrollr</code> class is added to the HTML element and a <code>no-skrollr</code> class is removed when <code>init</code> is called. Useful for fallback styling.</li>
+</ul>
+
+<h2 id="section-52">0.4.3 (2012-08-02)</h2>
+
+<ul>
+  <li>Added new feature "constants".</li>
+</ul>
+
+<h2 id="section-53">0.4.2 (2012-07-26)</h2>
+
+<ul>
+  <li>Added new feature "anchor-target" which allows elements to react to other elements leaving/entering the viewport.</li>
+</ul>
+
+<h2 id="section-54">0.4.1 (2012-07-25)</h2>
+
+<ul>
+  <li>Fixed a bug which broke skrollr in IE caused by wrong regular expression behavior</li>
+</ul>
+
+<h2 id="section-55">0.4.0 (2012-07-22)</h2>
+
+<ul>
+  <li><em>breaking</em> the <code>data-end-[offset]</code> syntax changed. It's now <code>data-[offset]-end</code>.</li>
+  <li>Fixed a bug where white spaces between style declarations were not ignored.</li>
+  <li>Added support for anchors. Animations can now be specified relative to the elements position within the viewport.</li>
+  <li>Added support for SVG elements.</li>
+  <li>Added new method <code>refresh()</code>.</li>
+</ul>
+
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="logo-lockup"></div>
+
+
+    <ul>
+      <h4>Core team</h4>
+      <li><a href="https://twitter.com/itsmisscs">Claudina Sarahe</a></li>
+      <li><a href="https://twitter.com/Snugug">Sam Richard</a></li>
+    </ul>
+    <ul>
+      <h4>Volunteer team</h4>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/bkjames">Robert James</a></li>
+      <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
+      <li><a href="www.linkedin.com/in/lissaaguilar">Lissa Aguilar</a></li>
+    </ul>
+    <ul>
+      <h4>Design team</h4>
+      <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/scottkellum">Scott Kellum</a></li>
+      <li><a href="https://twitter.com/copasetickid">Rushaine McBean</a></li>
+    </ul>
+    <ul>
+      <h4>Stay in touch</h4>
+      <li><a href="https://twitter.com/sassconf">@SassConf</a></li>
+      <li><a href="mailto:info@Sassconf.com">info@Sassconf.com</a></li>
+    </ul>
+
+    <p>&copy; 2014 SassConf. All rights reserved. Find an error or want to add something? Pull requests
+      are welcome over on <a href="https://github.com/scottkellum/sassconfdesign"
+                             title="SassConf Design repo">GitHub</a>.
+      Kindly refer to our <a href="styleguide/public">styleguide</a>.</p>
+
+    <p>Manhattan <a
+        href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by
+      Jeffery Zeldman</a>.</p>
+
+    <p>
+      SassConf is dedicated to a
+      <a href="code-of-conduct">harassment-free</a>
+      and enjoyable conference experience for everyone.
+      <a href="refund-policy">Refund policy</a>.
+    </p>
+  </div>
+</footer>
+
+
+<script src="../../../../../javascripts/widowtamer-min.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/letteringjs/jquery.lettering.js" type="text/javascript"></script><script src="../../../../../javascripts/main.js" type="text/javascript"></script>
+
+</body>
+</html>
