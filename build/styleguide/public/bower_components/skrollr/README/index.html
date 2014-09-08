@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>SassConf</title>
+  <meta charset="UTF-8">
+
+  <!-- Mobile  Meta -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
+
+  <!-- Stylesheets -->
+  <script src="../../../../../javascripts/bower_components/modernizr/modernizr.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/jquery/dist/jquery.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/eq.js/dist/eq.min.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/moment/moment.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/twix/bin/twix.js" type="text/javascript"></script>
+
+
+  <!--[if lt IE 9]>
+  <script src="../../../../../javascripts/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+  <![endif]-->
+
+</head>
+<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_skrollr styleguide_public_bower_components_skrollr_README styleguide_public_bower_components_skrollr_README_index">
+<header class="header">
+  <div class="photo-wrapper"></div>
+  <div class="rhombus-grid-wrapper layer">
+    <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+  <defs>
+    <path id="rhombuses" d="M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z"></path>
+  </defs>
+  <clipPath id="nyc-image">
+    <use xlink:href="#rhombuses" overflow="visible"></use>
+  </clipPath>
+  <g clip-path="url(#nyc-image)">
+    <image overflow="visible" enable-background="new" width="1000" height="420" xlink:href="images/manhattan-zeldman-1800x756.jpg"></image>
+  </g>
+</svg>
+
+  </div>
+  <div class="logo-nav layer">
+    <div class="logo-dates">
+      <a href="/" class="logo-lockup logo-rhombus">
+  <div class="rhombus-left">
+    <div class="rhombus-left-reset">Sass Conf</div>
+  </div>
+</a>
+
+      <h2 class="rhombus">
+        <div class="rhombus-reset">October 2-4, 2014</div>
+      </h2>
+    </div>
+  </div>
+</header>
+
+
+<div id="content">
+  <nav class="m-main-nav">
+  <label class="menu-button"><input type="checkbox">
+    <a href="index"><div class="rhombus-reset">Home</div></a>
+    <a href="speakers"><div class="rhombus-reset">Speakers</div></a>
+    <a href="/styleguide/public/bower_components/skrollr/#buy-now"><div class="rhombus-reset">Get Tickets</div></a>
+    <a href="venue"><div class="rhombus-reset">Venue</div></a>
+    <a href="schedule"><div class="rhombus-reset">Schedule</div></a>
+    <a href="code-of-conduct"><div class="rhombus-reset">Code of Conduct</div></a>
+    <div class="button"><div class="rhombus-reset">Menu</div></div>
+  </label>
+</nav>
+
+  <p><a href="http://travis-ci.org/Prinzhorn/skrollr"><img alt="Build Status" src="https://secure.travis-ci.org/Prinzhorn/skrollr.png" /></a></p>
+
+<h1 id="skrollr-0626">skrollr 0.6.26</h1>
+
+<p>Stand-alone <strong>parallax scrolling</strong> JavaScript library for <strong>mobile (Android, iOS, etc.) and desktop</strong> in about 12k minified.</p>
+
+<p>Designer friendly. No JavaScript skills needed. Just plain CSS and HTML.</p>
+
+<p><em>Actually, skrollr is much more than "just" <strong>parallax scrolling</strong>. It's a full-fledged scrolling animation library. In fact, you can use it and still have no parallax scrolling at all. But I wanted to sound hip and use some buzz-words. By the way, skrollr leverages HTML5 and CSS3 ;-)</em></p>
+
+<h1 id="resources">Resources</h1>
+
+<h2 id="plugins">Plugins</h2>
+
+<h3 id="official">Official</h3>
+
+<ul>
+  <li><a href="https://github.com/Prinzhorn/skrollr-menu">skrollr-menu</a> - Hash navigation</li>
+  <li><a href="https://github.com/Prinzhorn/skrollr-ie">skrollr-ie</a> - IE &lt; 9 CSS fixes</li>
+  <li><a href="https://github.com/Prinzhorn/skrollr-stylesheets">skrollr-stylesheets</a> - Keyframes inside CSS files</li>
+</ul>
+
+<h3 id="third-party">Third party</h3>
+
+<ul>
+  <li><a href="https://github.com/FezVrasta/skrollr-colors">skrollr-colors</a> - Mix and match hex, rgb and hsl colors.</li>
+</ul>
+
+<h2 id="in-the-wild">In the wild</h2>
+
+<p>Check out the <a href="https://github.com/Prinzhorn/skrollr/wiki/In-the-wild">wiki page</a> for websites using skrollr and feel free to add your own website :). You can also shamelessly add yourself to the list <a href="https://github.com/Prinzhorn/skrollr/wiki/Agencies-and-freelancers">here</a> if you are offering paid skrollr support.</p>
+
+<h2 id="further-resources-tutorials-etc">Further resources (tutorials etc.)</h2>
+
+<p>Moved to the <a href="https://github.com/Prinzhorn/skrollr/wiki/Resources">wiki</a>.</p>
+
+<h1 id="documentation">Documentation</h1>
+
+<p>First of all: look at the <a href="https://github.com/Prinzhorn/skrollr/tree/master/examples">examples and read the source ;-)</a>. This might give you a feeling of how stuff works and you can see how some patterns can be implemented.</p>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>skrollr allows you to animate any CSS property of any element depending on the horizontal scrollbar position. All you need to do is define key frames for each element at certain points in top scroll offset.</p>
+
+<p>Other libraries require you to write JavaScript in order to define your animations. This introduces two main problems:</p>
+
+<ul>
+  <li>Animation and element are not at one place. In order to find out if any animations are defined for a given element, you have to scroll through many (sometimes thousands) of lines of JavaScript.</li>
+  <li>You have to learn a new syntax which is often very verbose and limited at the same time.</li>
+</ul>
+
+<p>With skrollr, you put the definition of your key frames right where they belong (to the element) using a syntax you already know (plain CSS).</p>
+
+<p>If you would rather have the keyframes inside a separate file, take a look at <a href="https://github.com/Prinzhorn/skrollr-stylesheets">skrollr-stylesheets</a>.</p>
+
+<h2 id="lets-get-serious">Let's get serious</h2>
+
+<p>First of all you want to include the <code>skrollr.min.js</code> file at the bottom of your document (right before the closing <code>&lt;/body&gt;</code>) and then call <code>skrollr.init()</code>. Or you can place it inside the <code>&lt;head&gt;</code> if you want to, but make sure to call <code>init()</code> once the document has been loaded (e.g. jQuery's <code>ready</code> event or even <code>window.onload</code>).</p>
+
+<p><code>html
+	&lt;script type="text/javascript" src="skrollr.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript"&gt;
+	var s = skrollr.init();
+	&lt;/script&gt;
+&lt;/body&gt;
+</code></p>
+
+<p>If you are using require.js to structure your project, you can use skrollr as a module as well.</p>
+
+<p><code>javascript
+require(['skrollr'], function(skrollr){
+	var s = skrollr.init();
+});
+</code></p>
+
+<p>If you're familiar with CSS, you already know the <code>style</code> attribute. In order to create an animation you would need several, at least two, of them. That's what skrollr does. You use the HTML5 <code>data-</code> attributes to define multiple sets of styles (we call each of them <strong>keyframe</strong>) and skrollr interpolates between them.</p>
+
+<h4 id="lets-change-the-background-color-of-a-div-starting-at-00f-when-the-scrollbar-is-at-the-top-and-ending-with-f00-when-the-user-scrolled-500-pixels-down">Let's change the background-color of a <code>div</code> starting at <code>#00f</code> when the scrollbar is at the top and ending with <code>#f00</code> when the user scrolled 500 pixels down</h4>
+
+<p><code>html
+&lt;div data-0="background-color:rgb(0,0,255);" data-500="background-color:rgb(255,0,0);"&gt;WOOOT&lt;/div&gt;
+</code>
+<a href="http://prinzhorn.github.io/skrollr/examples/docu/1.html">View in browser</a></p>
+
+<h5 id="lessons-learned">Lessons learned</h5>
+
+<ul>
+  <li>Skrollr ensures that you can actually scroll down 500 pixels or more, even if there's not enough content. You can suppress this by using the <code>forceHeight</code> option.</li>
+  <li>You can't use <code>#00f</code> or <code>#0000ff</code>. You need to use <code>rgb</code> or <code>hsl</code> and explicitly decide which color space you want because they result in different animations (HSL is much cooler most of the time). Don't worry, the IE plugin teaches IE &lt; 9 to display <code>rgb</code> and <code>hsl</code> correctly.</li>
+</ul>
+
+<h4 id="now-lets-do-a-barrel-roll-at-the-same-time">Now let's do a barrel roll at the same time</h4>
+
+<p><code>html
+&lt;div data-0="background-color:rgb(0,0,255);transform:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform:rotate(360deg);"&gt;WOOOT&lt;/div&gt;
+</code>
+<a href="http://prinzhorn.github.io/skrollr/examples/docu/2.html">View in browser</a></p>
+
+<h5 id="lessons-learned-1">Lessons learned</h5>
+
+<ul>
+  <li>Skrollr handles all these nasty CSS prefixes for you. Just -moz-relax and get yourself a cup of -webkit-coffee.</li>
+</ul>
+
+<h4 id="now-let-the-rotation-bounce-like-it-were-a-hip-hop-video">Now let the rotation bounce like it were a hip-hop video</h4>
+
+<p><code>html
+&lt;div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);"&gt;WOOOT&lt;/div&gt;
+</code>
+<a href="http://prinzhorn.github.io/skrollr/examples/docu/3.html">View in browser</a></p>
+
+<h4 id="lessons-learned-2">Lessons learned</h4>
+
+<ul>
+  <li>Skrollr allows non-linear animations. The so called <em>easing functions</em> can be used per-property by putting them in square brackets behind the property. There's a built-in list of easing functions (see below in the <a href="#javascript">JavaScript</a> section) and you can use your own functions by using the <code>easings</code> options.</li>
+</ul>
+
+<p>Now you may have noticed that using <code>500</code> as a keyframe position is kind of random and the look depends on your browser size.</p>
+
+<h4 id="lets-have-the-animation-end-when-the-top-of-the-element-reaches-the-top-of-the-viewport-element-leaves-the-viewport">Let's have the animation end when the top of the element reaches the top of the viewport (element leaves the viewport)</h4>
+
+<p><code>html
+&lt;div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-top="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);"&gt;WOOOT&lt;/div&gt;
+</code>
+<a href="http://prinzhorn.github.io/skrollr/examples/docu/4.html">View in browser</a></p>
+
+<h5 id="lessons-learned-3">Lessons learned</h5>
+
+<ul>
+  <li>Skrollr keyframes can either be <a href="#absolute-mode-or-document-mode">absolute</a> or <a href="#relative-mode-or-viewport-mode">relative</a>.</li>
+</ul>
+
+<p>That's the end of this short intro. The following sections will explain some more things in detail.</p>
+
+<p>If you're not a fan of <code>data-attributes</code> or if you're planning a big website where you want a better and more flexible structure, take a look at <a href="https://github.com/Prinzhorn/skrollr-stylesheets">skrollr-stylesheets</a>.</p>
+
+<h2 id="mobile-support">Mobile support</h2>
+<p>Starting with version 0.5.0 skrollr officially supports mobile browsers including Android and iOS. Furthermore, mobile support has been rewritten from scratch for skrollr 0.6.0.</p>
+
+<h3 id="the-problem-with-mobile-and-the-solution">The Problem with mobile and the solution</h3>
+
+<p>(If you're not interested in the details, just scroll down a bit to see what you need to do for mobile support.)</p>
+
+<p>Some words on why this is an important milestone and why others failed: Mobile browsers try to save battery wherever they can. That's why mobile browsers delay the execution of JavaScript while you are scrolling. iOS in particular does this very aggressively and completely stops JavaScript. In short, that's the reason why many scrolling libraries either don't work on mobile devices or they come with their own scrollbar which is a usability nightmare on desktop. It was an important requirement while I developed skrollr that I don't force you to scroll the way I want it. skrollr on desktop uses a native scrollbar and you can scroll the way you want to (keyboard, mouse, etc.).</p>
+
+<p>You just told me it doesn't work on mobile, but why does it? The answer is simple. When using skrollr on mobile you don't actually scroll. When detecting a mobile browser, skrollr disables native scrolling and instead listens for touch events and moves the content (more specific the <code>#skrollr-body</code> element) using CSS transforms.</p>
+
+<h3 id="what-you-need-in-order-to-support-mobile-browsers">What you need in order to support mobile browsers</h3>
+
+<p>Starting with skrollr 0.6.0 there's just one thing you need to do: Include an element on your page with the id <code>skrollr-body</code>. That's the element we move in order to fake scrolling. The only case where you don't need a <code>#skrollr-body</code> is when using <code>position:fixed</code> exclusively. In fact, the skrollr website doesn't include a <code>#skrollr-body</code> element. If you need both fixed and non-fixed (i.e. static) elements, put the static ones inside the <code>#skrollr-body</code> element.</p>
+
+<p>Or to put it differently: On mobile the <code>skrollr-body</code> element is moved using CSS transforms. You can't have <code>position:fixed</code> or <code>background-attachment:fixed</code> inside elements which use CSS transforms as per CSS spec (http://meyerweb.com/eric/thoughts/2011/09/12/un-fixing-fixed-elements-with-css-transforms/). That's why those elements need to be <strong>outside</strong> of the <code>skrollr-body</code> element.</p>
+
+<h2 id="amd">AMD</h2>
+
+<p>Starting with <code>0.6.22</code> there's experimental AMD support. Please note that only skrollr core has AMD support so far. We will update the plugins in the future.</p>
+
+<p><code>js
+require(['skrollr'], function(skrollr){
+	skrollr.init();
+});
+</code></p>
+
+<h2 id="absolute-vs-relative-mode">Absolute vs relative mode</h2>
+
+<p>Being only able to define key frames in absolute values is simply insufficient for some cases. For example, if you don't know exactly where an element will be in the document. That's why there are two modes for key frames, namely <code>absolute</code> and <code>relative</code> mode.</p>
+
+<h3 id="absolute-mode-or-document-mode">absolute mode (or document mode)</h3>
+
+<p>The key frames are defined as absolute values describing how much the <strong>document</strong> has been scrolled down.</p>
+
+<p>The syntax is <code>data-[offset]-[anchor]</code>, where <code>offset</code> can be any integer (0 is default) and <code>anchor</code> can be either <code>start</code> (default) or <code>end</code>. Either <code>offset</code> or <code>anchor</code> can be omitted in some situations. Here are some examples of key frames and their meaning.</p>
+
+<ul>
+  <li><code>data-0</code> = <code>data-start</code> = <code>data-0-start</code>: When the scroll top is 0.</li>
+  <li><code>data-100</code> = <code>data-100-start</code>: When the scroll top is 100.</li>
+  <li><code>data--100</code> = <code>data--100-start</code>: When the scroll top is -100 (sounds like nonsense, but keep in mind that interpolation will be relative to this point).</li>
+  <li><code>data-end</code> = <code>data-0-end</code>: When offset is 0, but counting from the bottom of the document instead of from the top. In short: when you reach the bottom of the page.</li>
+  <li><code>data-100-end</code>: 100px before we reach the bottom.</li>
+  <li><code>data--100-end</code>: 100px after we reach the bottom (again, it's up to you whether you need it).</li>
+</ul>
+
+<h3 id="relative-mode-or-viewport-mode">relative mode (or viewport mode)</h3>
+
+<p>Instead of defining key frames relative to the <strong>document</strong> (i.e. absolute), we are able to define them depending on the position of any element in relation to the <strong>viewport</strong>.</p>
+
+<p>The syntax is <code>data-[offset]-(viewport-anchor)-[element-anchor]</code>, where <code>offset</code> can again be any integer and defaults to 0. Both <code>viewport-anchor</code> (mandatory) and <code>element-anchor</code> (optional) can be one of <code>top</code>, <code>center</code> or <code>bottom</code>. If <code>element-anchor</code> is omitted, the value of <code>viewport-anchor</code> will be taken (just like with background-position). Here are some examples of key frames and their meaning.</p>
+
+<ul>
+  <li><code>data-top</code> = <code>data-0-top</code> = <code>data-top-top</code> = <code>data-0-top-top</code>: When the element's top is aligned with the top of the viewport.</li>
+  <li><code>data-100-top</code> = <code>data-100-top-top</code>: When the element's top is 100px above the top of the viewport.</li>
+  <li><code>data--100-top</code> = <code>data--100-top-top</code>: When the element's top is 100px below the top of the viewport.</li>
+  <li><code>data-top-bottom </code>= <code>data-0-top-bottom</code>: When the bottom of the element is at the top of the viewport (it's just not visible).</li>
+  <li><code>data-center-center</code> = <code>data-0-center-center</code>: When the element is at the center of the viewport.</li>
+  <li><code>data-bottom-center</code> = <code>data-0-bottom-center</code>: When the element's center is at the bottom of the viewport, thus the upper half of the element is visible.</li>
+</ul>
+
+<p>By default the element is the element where the key frames are defined on (self), but can be any element on the page. You can optionally specify which element you want by using the <code>data-anchor-target</code> and any CSS selector. The first element on the page matching the selector will be used. <code>data-anchor-target</code> requires IE 8 or greater.</p>
+
+<p>Examples: <code>data-anchor-target="#foo"</code> or <code>data-anchor-target=".bar:not(.bacon) ~ span &gt; a[href]"</code></p>
+
+<p><strong>Note</strong>: If you need to support IE 7, then you may only use IDs as <code>anchor-target</code>s, i.e. <code>#foo</code>. The IE plugin maps <code>querySelector</code> to <code>getElementById</code>.</p>
+
+<p>Here's an infographic for better understanding of anchors (click to open PDF):</p>
+
+<p><a href="https://raw.github.com/Prinzhorn/skrollr/master/guide/anchor-position-guide.pdf"><img alt="Anchors Guide" src="https://raw.github.com/Prinzhorn/skrollr/master/guide/anchor-position-guide.png" /></a></p>
+
+<p><strong>Important</strong>: All those values will be calculated up-front and transformed to <code>absolute</code> mode. So if either the element's box height changes (height, padding, border) or the elements position within the document, you probably need to call <code>refresh()</code> (see documentation in JavaScript section below). <strong>Window resizing is handled by skrollr.</strong></p>
+
+<h2 id="percentage-offsets">Percentage offsets</h2>
+
+<p>All offsets shown above are given in absolute pixel values, e.g. <code>data-300</code> for <code>300px</code> from the top or <code>data-13-top-bottom</code> for a <code>13px</code> offset to the <code>top-bottom</code> anchor. As of skrollr <code>0.6.13</code> you can also have offsets as percentages of the viewport by appending a <code>p</code> to the number. For example <code>data-75p</code> for when you scrolled down <code>75%</code> of the viewport or <code>data-10p-center</code> to have a <code>10%</code> offset from the <code>center</code> anchor.</p>
+
+<h2 id="hash-navigation">Hash navigation</h2>
+
+<p>Check out the <a href="https://github.com/Prinzhorn/skrollr-menu">skrollr-menu</a> plugin.</p>
+
+<h2 id="working-with-constants">Working with constants</h2>
+
+<p>I was lying to you. The syntax for absolute mode is not <code>data-[offset]-[anchor]</code> and for relative mode it's not <code>data-[offset]-(viewport-anchor)-[element-anchor]</code>. In both cases, <code>offset</code> can be preceded by a constant which can be passed to the <code>ìnit</code> method. The name of the constant needs to be preceded with an underscore.</p>
+
+<p>Example:</p>
+
+<p><code>js
+skrollr.init({
+	constants: {
+		foobar: 1337
+	}
+});
+</code></p>
+
+<p>```html
+&lt;div data-_foobar="left:0%;" data-_foobar--100="left:50%;" data-_foobar-100="left:100%;"&gt;&lt;/div&gt;</p>
+
+<!--Equal to-->
+
+<div data-1337="left:0%;" data-1237="left:50%;" data-1437="left:100%;"></div>
+<p>```</p>
+
+<p>Valid characters for a constant are <code>[a-z0-9_]</code>.</p>
+
+<h2 id="dynamic-constants">Dynamic constants</h2>
+
+<p>Starting with skrollr <code>0.6.19</code> the word "constants" doesn't quite fit anymore, but who cares.</p>
+
+<p>You can now use functions and percentages as constants. They are automatically evaluated when the window is resized or if you call <code>refresh</code>.</p>
+
+<p><code>js
+skrollr.init({
+	constants: {
+		foo: function() {
+			//Note: you can access the skrollr instance with `this` for things like `this.relativeToAbsolute`
+			return Math.random() * 100;//trolololol
+		},
+		vh: '100p'
+	}
+});
+</code></p>
+
+<h2 id="css-classes">CSS classes</h2>
+
+<p>skrollr will add a <code>skrollr</code> class to the <code>HTML</code> element when calling <code>init</code> and will remove a <code>no-skrollr</code> class if present. Additionally, it will add a <code>skrollr-desktop</code> or <code>skrollr-mobile</code> class depending on which it detects. This allows fallback CSS rules to create a good user experience on unsupported devices or when JavaScript or skrollr are disabled.</p>
+
+<p>All elements under skrollr's control (elements with appropriate data-attributes) will get the <code>skrollable</code> class. In addition, we add either the <code>skrollable-before</code>, <code>skrollable-between</code> <strong>or</strong> <code>skrollable-after</code> class, depending on whether the current scroll position is before, between or after the first/last (smallest/largest) keyframe of an element.</p>
+
+<h2 id="animating-attributes">Animating attributes</h2>
+
+<p>Starting with skrollr 0.6.24 you can also animate attribute and not just style properties. This is especially a big thing because in the SVG world many properties are implemented as attributes and not in CSS. Animating an attribute couldn't be simplier, just prefix the property with an <code>@</code> symbol!</p>
+
+<p><code>html
+&lt;polygon
+	points='426,720   -200,720   -200,0   955,0'
+	data-0="@points:426,720   -200,720   -200,0   955,0"
+	data-500="@points:380,720   -200,720   -200,0   1302,0"&gt;
+&lt;/polygon&gt;
+</code></p>
+
+<p>Note: as always, skrollr doesn't do any magic. It doesn't understand what a polygon or points are. It's only interpolating numbers, that's it. So make sure you have the same number of numbers in your keyframes (8 in this case).</p>
+
+<h2 id="filling-missing-values">Filling missing values</h2>
+
+<p>Imagine the following animation</p>
+
+<p><code>html
+&lt;div data-100="left:0%;" data-200="top:0%;" data-300="left:50%;" data-400="top:50%;"&gt;&lt;/div&gt;
+</code></p>
+
+<p>One could expect <code>left</code> to have a value of <code>25%</code> at keyframe <code>200</code>. That is <strong>not</strong> the case. By design, skrollr only interpolates values between key frames which are direct <strong>neighbors</strong>. What actually happens is that skrollr internally fills out all holes once from left and then from right. So the above is equivalent to</p>
+
+<p><code>html
+&lt;div data-100="left:0%;top:0%;" data-200="left:0%;top:0%;" data-300="left:50%;top:0%;" data-400="left:50%;top:50%;"&gt;&lt;/div&gt;
+</code></p>
+
+<h2 id="preventing-interpolation">Preventing interpolation</h2>
+
+<p>The reason why skrollr is so lightweight and powerful is because it literally interpolates <strong>every</strong> number it can find. If you want to prevent some side effect, you can suppress interpolation for a specific value by prepending an exclamation point.</p>
+
+<p>Example:
+```html
+<!-- This will get your image url f***** up because there's no "kitten1.4561799.jpg" and the like -->
+&lt;div data-0="background-image:url(kitten1.jpg);" data-100="background-image:url(kitten2.jpg)"&gt;&lt;/div&gt;</p>
+
+<!-- Better -->
+<div data-0="background-image:!url(kitten1.jpg);" data-100="background-image:!url(kitten2.jpg)"></div>
+<p>```</p>
+
+<p><strong>Note:</strong> The values for both keyframes (if they contain a number) need to be prefixed if you want to avoid skrollr throwing an exception at you!</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>There are some limitations of skrollr you should be aware of.</p>
+
+<ul>
+  <li>All numeric values have to have the same unit, even <code>0</code> needs a unit. It's not possible to animate from <code>5%</code> to <code>100px</code>. skrollr won't complain, but results are undefined.</li>
+  <li>Animations between values which are composed of multiple numeric values like <code>margin:0 0 0 0;</code> are only possible for the same number of values. <code>margin:0px 0px 0px 0px;</code> to <code>margin:0px 100px 50px 3px;</code> is fine, but not <code>margin:10px;</code> to <code>margin:5px 10px;</code>.</li>
+  <li>Animations between CSS transforms only work when they use the same functions in same order. From <code>rotate(0deg) scale(1)</code> to <code>rotate(1000deg) scale(5)</code> is fine.</li>
+  <li>Color animations don't support named values like "red" or hex values like "#ff0000". Instead, you have to use <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code> and <code>hsla()</code>. Don't worry, there's a skrollr plugin for IE &lt; 9 to support <code>hsl()</code> (without "a"!) and to fall rgba back to rgb.</li>
+  <li>Color animations only work for same color functions. <code>hsl()</code> to <code>hsl()</code> or <code>hsla()</code> is fine, but not <code>rgb()</code> to <code>hsl()</code>. Which makes sense, because animating from the same colors in rgb space and in hsl space results in different animations (hsl gives you the nice rainbow stuff).</li>
+</ul>
+
+<p>But feel free to send in a pull request to fix any of them. Just keep in mind that keeping skrollr as lightweight as possible has high priority.</p>
+
+<h1 id="javascript">JavaScript</h1>
+
+<p>On the JavaScript part there's not much to do (you can, if you want to!). So if you only know CSS and HTML, perfect.</p>
+
+<h2 id="skrollrinitoptions">skrollr.init([options])</h2>
+
+<p>All there is to do is to call <code>skrollr.init([options]);</code> which returns an instance of the singleton skrollr class. Subsequent calls to <code>init()</code> will just return the same skrollr instance again.</p>
+
+<p>Possible options for <code>init()</code> are</p>
+
+<h3 id="smoothscrollingtrue">smoothScrolling=true</h3>
+
+<p>Smooth scrolling smoothens your animations. When you scroll down 50 pixels, the animations will transition instead of jumping to the new position.</p>
+
+<p>The global setting can be overridden per element by setting <code>data-smooth-scrolling</code> to <code>on</code> or <code>off</code>.</p>
+
+<h3 id="smoothscrollingduration200">smoothScrollingDuration=200</h3>
+
+<p>The number of milliseconds the animations run after the scroll position changed the last time.</p>
+
+<h3 id="constants">constants={}</h3>
+
+<p>An object containing integers as values. The keys can contain <code>[a-z0-9_]</code>. They <em>do not</em> need a leading underscore.</p>
+
+<p>Example: <code>data-_myconst-200</code> and <code>skrollr.init({constants: {myconst: 300}})</code> result in <code>data-500</code>.</p>
+
+<h3 id="scale1">scale=1</h3>
+
+<p>By default, skrollr uses the largest key frame and makes document height + viewport height this high, thus the max possible scroll top offset. If your animation runs too fast or too slow, just adjust the scale value.</p>
+
+<p><code>scale</code> only affects keyframes in absolute mode.</p>
+
+<p>When <code>forceHeight</code> is set to false, <code>scale</code> is ignored.</p>
+
+<p><code>scale</code> affects <code>constants</code> as well.</p>
+
+<p><code>scale</code> does only affect key frames in absolute mode, e.g. <code>data-500</code> but not <code>data-top</code>.</p>
+
+<h3 id="forceheighttrue">forceHeight=true</h3>
+
+<p><code>true</code>: Make sure the document is high enough that all key frames fit inside. Example: You use <code>data-1000</code>, but the content only makes the document 500px high. skrollr will ensure that you can scroll down the whole 1000px. Or if you use relative mode, e.g. <code>data-top-bottom</code>, skrollr will make sure the bottom of the element can actually reach the top of the viewport.</p>
+
+<p><code>false</code>: Don't manipulate the document and just keep the natural scrollbar.</p>
+
+<h3 id="mobilecheckfunction-">mobileCheck=function() {…}</h3>
+
+<p>This option allows you to pass a function to skrollr overwriting the check for mobile devices. The function should return <code>true</code> when mobile scrolling should be used and <code>false</code> if not.</p>
+
+<p>The default looks like this</p>
+
+<p><code>js
+function() {
+	return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+}
+</code></p>
+
+<h3 id="mobiledeceleration0004">mobileDeceleration=0.004</h3>
+
+<p>The amount of deceleration for momentum scrolling on mobile devices. This options tells skrollr how fast or slow you want the scrolling to stop after the user lifted his finger.</p>
+
+<p>Set it to <code>1</code> to disable momentum scrolling.</p>
+
+<h3 id="edgestrategyset">edgeStrategy='set'</h3>
+
+<p>This option specifies how to handle animations when the scroll position is outside the range on the keyframes (i.e. before the first or after the last keyframe).</p>
+
+<p>One of three options are possible</p>
+
+<ul>
+  <li><code>set</code> <em>(default)</em>: When before/after the first/last keyframe, apply the styles of the first/last keyframe to the element.</li>
+  <li><code>ease</code>: Same as set, but the values will be transformed using the given easing function.</li>
+  <li><code>reset</code>: When before/after the first/last keyframe, apply the styles which the element had before skrollr did anything. This means resetting the class attribute as well as removing all styles which have been applied to the <code>style</code> property. This means the element won't have any <code>skrollable-*</code> CSS classes.</li>
+</ul>
+
+<p>Example:</p>
+
+<p>Given the following element with two keyframes</p>
+
+<p><code>html
+&lt;div data-1000="left:0%;top:0%;" data-2000="left:50%;top:100%;" style="left:-100%;" class="section"&gt;&lt;/div&gt;
+</code></p>
+
+<p>and the following easing function which always returns <code>0.5</code> (I know it's pointless, but it's just an example. A real world example would be an easing function that represents a curve and starts somewhere between <code>0</code> and <code>1</code>, but not at <code>1</code>)</p>
+
+<p><code>js
+function(p) {
+	return 0.5;
+}
+</code></p>
+
+<p>and imagine the scrollbar is at <code>237</code>, which is below the first keyframe which is at <code>1000</code>.</p>
+
+<ul>
+  <li><code>set</code> will result in <code>&lt;div style="left:0%;top:0%;" class="section skrollable skrollable-before"&gt;&lt;/div&gt;</code> which is plain <code>data-1000</code>.</li>
+  <li><code>ease</code> will result in <code>&lt;div style="left:25%;top:50%;" class="section skrollable skrollable-before"&gt;&lt;/div&gt;</code> which is <code>0.5 * data-1000</code>.</li>
+  <li><code>reset</code> will result in <code>&lt;div style="left:-100%;" class="section"&gt;&lt;/div&gt;</code> which is what the element originally had. Note how <code>top</code> is missing.</li>
+</ul>
+
+<h3 id="beforerender">beforerender</h3>
+
+<p>A listener function that gets called each time right before we render everything. The function will be passed as an object with the following properties:</p>
+
+<p><code>js
+{
+	curTop: 10, //the current scroll top offset
+	lastTop: 0, //the top value of last time
+	maxTop: 100, //the max value you can scroll to. curTop/maxTop will give you the current progress.
+	direction: 'down' //either up or down
+}
+</code></p>
+
+<p>Returning <code>false</code> will prevent rendering.</p>
+
+<h3 id="render">render</h3>
+
+<p>A listener function that gets called right after we finished rendering everything. The function will be passed with the same parameters as <code>beforerender</code>.</p>
+
+<p>Example</p>
+
+<p><code>js
+skrollr.init({
+	render: function(data) {
+		//Log the current scroll position.
+		console.log(data.curTop);
+	}
+});
+</code></p>
+
+<h3 id="keyframe">keyframe</h3>
+
+<p><strong>Experimental</strong></p>
+
+<p>In order to receive <code>keyframe</code> events from an element, add the <code>data-emit-events</code> attribute to the element. The keyframe function will be called with three arguments</p>
+
+<ol>
+  <li>The <code>element</code> that passed the keyframe.</li>
+  <li>The <code>name</code> of the keyframe, camel-cased (see example).</li>
+  <li>The <code>direction</code> the user is scrolling.</li>
+</ol>
+
+<p>Example:</p>
+
+<p><code>html
+&lt;div
+	data-500="..."
+	data-top-bottom="..."
+	data-_offset-center="..."
+	data-emit-events
+&gt;
+	Some content
+&lt;/div&gt;
+</code></p>
+
+<p><code>js
+skrollr.init({
+	keyframe: function(element, name, direction) {
+		//name will be one of data500, dataTopBottom, data_offsetCenter
+	}
+});
+</code></p>
+
+<p>Note: this is experimental, expect the API to change! Originally I wanted to emit the events right on the element, so you could do this</p>
+
+<p><code>js
+//Wouldn't this be nice?
+document.querySelector('#foo').addEventListener('skrollr.dataTopBottom.up', function() {
+	//#foo just passed the data-top-bottom keyframe while scrolling up
+}, false)
+</code></p>
+
+<p>but IE.</p>
+
+<h3 id="easing">easing</h3>
+
+<p>An object defining new easing functions or overwriting existing ones. Easing functions get just one argument, which is a value between 0 and 1 (the percentage of how much of the animation is done). The function should return a value between 0 and 1 as well, but for some easings a value less than 0 or greater than 1 is just fine.</p>
+
+<p>An easing function basically transforms the timeline for an animation. When the animation should be 50% done, you can transform it to be 90% done or whatever your function does.</p>
+
+<p>Example:</p>
+
+<p><code>js
+skrollr.init({
+	easing: {
+		//This easing will sure drive you crazy
+		wtf: Math.random,
+		inverted: function(p) {
+			return 1 - p;
+		}
+	}
+});
+</code></p>
+
+<p>You can now use the easing functions like any other.</p>
+
+<p>skrollr ships with some built in functions:</p>
+
+<ul>
+  <li>linear: The default. Doesn't need to be specified.</li>
+  <li>quadratic: To the power of two. So 50% looks like 25%.</li>
+  <li>cubic: To the power of three. So 50% looks like 12.5%</li>
+  <li>begin/end: They always return 0 or 1 respectively. No animation.</li>
+  <li>swing: Slow at the beginning and accelerates at the end. So 25% -&gt; 14.6%, 50% -&gt; 50%, 75% -&gt; 85.3%</li>
+  <li>sqrt: Square root. Starts fast, slows down at the end.</li>
+  <li>outCubic</li>
+  <li>bounce: Bounces like a ball. See https://www.desmos.com/calculator/tbr20s8vd2 for a graphical representation.</li>
+</ul>
+
+<h2 id="skrollrget">skrollr.get()</h2>
+
+<p>Returns the skrollr instance if <code>init()</code> has been called before or <code>undefined</code>.</p>
+
+<h2 id="public-api">Public API</h2>
+
+<p>Calling <code>init()</code> returns an instance of skrollr which exposes a public api.</p>
+
+<h3 id="refreshelements">refresh([elements])</h3>
+
+<p>Reparses all given <code>elements</code>. You can pass a single element or an array-like element (Array, NodeList or jQuery object)</p>
+
+<p>Useful when</p>
+
+<ul>
+  <li>Elements in <code>relative</code> mode change and need to be updated.</li>
+  <li>Data-attributes are manipulated dynamically.</li>
+  <li>New elements are added to the DOM and should be controlled by skrollr.</li>
+</ul>
+
+<p>When no <code>elements</code> are given, all elements in the document will be parsed again. In fact, when calling <code>skrollr.init()</code> skrollr uses <code>refresh()</code> without parameters internally.</p>
+
+<p>Time consuming operations, should not be called on every rendering.</p>
+
+<h3 id="relativetoabsoluteelement-viewportanchor-elementanchor">relativeToAbsolute(element, viewportAnchor, elementAnchor)</h3>
+
+<p>Returns an integer which represents the absolute scroll position which correlates to the relative anchor.</p>
+
+<p><code>element</code> must be a DOM element.</p>
+
+<p><code>viewportAnchor</code> and <code>elementAnchor</code> must be one of <code>top</code>, <code>center</code> or <code>bottom</code></p>
+
+<p>Example:</p>
+
+<p>```js
+var offset = s.relativeToAbsolute(document.getElementById('foo'), 'top', 'bottom');</p>
+
+<p>//offset contains the scroll position at which #foo's bottom is at the top of the viewport.
+//If you now use setScrollTop(offset) or animateTo(offset) #foo's bottom will be perfectly aligned with the top of the viewport. Yay.
+```</p>
+
+<h3 id="getscrolltop">getScrollTop()</h3>
+
+<p>Returns the current scroll offset in pixels. Normalizes different browser quirks and handles mobile scrolling.</p>
+
+<h3 id="getmaxscrolltop">getMaxScrollTop()</h3>
+
+<p>Returns the number of pixels that can be scrolled down in total. If <code>forceHeight</code> is true, that's usually the largest keyframe. Otherwise it's the height of the document minus the viewport height.</p>
+
+<h3 id="setscrolltoptop-force--false">setScrollTop(top[, force = false])</h3>
+
+<p>Sets the top offset using <code>window.scrollTo(0, top)</code> on desktop or updating the internal state in case of mobile scrolling.</p>
+
+<p>When <code>force</code> is set to <code>true</code>, skrollr will jump to the new position without any kind of transition. By default, the global <code>smoothScrolling</code> setting applies.</p>
+
+<h3 id="ismobile">isMobile()</h3>
+
+<p>Returns if skrollr runs in mobile mode (see also <code>mobileCheck</code> option).</p>
+
+<h3 id="animatetotop-options">animateTo(top[, options])</h3>
+
+<p>Animates the scroll position from current position to <code>top</code>. Possible <code>options</code> are</p>
+
+<h4 id="duration">duration</h4>
+
+<p>How long the animation should run in milliseconds. The default is <code>1000</code> or one second.</p>
+
+<h4 id="easing-1">easing</h4>
+
+<p>The name of an easing function. The same functions can be used as for property animations. Default is <code>linear</code> .</p>
+
+<h4 id="done">done</h4>
+
+<p>A function to be called after the animation finished. When you pass a <code>top</code> value, which is the same as the current, then the function will be called immediately. The function gets a boolean argument <code>interrupted</code> which indicates if the animation was interrupted by <code>stopAnimateTo</code> or finished to the end.</p>
+
+<h3 id="stopanimateto">stopAnimateTo()</h3>
+
+<p>Stops the animation and calls the <code>done</code> callback passing <code>true</code> as <code>interrupted</code> arguments.</p>
+
+<h3 id="isanimatingto">isAnimatingTo()</h3>
+
+<p>Returns if an animation caused by animateTo is running.</p>
+
+<h3 id="onname-fn">on(name, fn)</h3>
+
+<p>Set a listener function for one of the events described in the options section (beforerender, render, keyframe). Only one listener can be attached at a given time. This method overwrites the current listener, if any.</p>
+
+<h3 id="offname">off(name)</h3>
+
+<p>Removes the listener for the given event.</p>
+
+<h3 id="destroy">destroy()</h3>
+
+<p>Destroys skrollr. All <code>class</code> and <code>style</code> attributes will be set to the values they had before.</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<p>See <a href="https://github.com/Prinzhorn/skrollr/blob/master/HISTORY.md">HISTORY.md</a>.</p>
+
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="logo-lockup"></div>
+
+
+    <ul>
+      <h4>Core team</h4>
+      <li><a href="https://twitter.com/itsmisscs">Claudina Sarahe</a></li>
+      <li><a href="https://twitter.com/Snugug">Sam Richard</a></li>
+    </ul>
+    <ul>
+      <h4>Volunteer team</h4>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/bkjames">Robert James</a></li>
+      <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
+      <li><a href="www.linkedin.com/in/lissaaguilar">Lissa Aguilar</a></li>
+    </ul>
+    <ul>
+      <h4>Design team</h4>
+      <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/scottkellum">Scott Kellum</a></li>
+      <li><a href="https://twitter.com/copasetickid">Rushaine McBean</a></li>
+    </ul>
+    <ul>
+      <h4>Stay in touch</h4>
+      <li><a href="https://twitter.com/sassconf">@SassConf</a></li>
+      <li><a href="mailto:info@Sassconf.com">info@Sassconf.com</a></li>
+    </ul>
+
+    <p>&copy; 2014 SassConf. All rights reserved. Find an error or want to add something? Pull requests
+      are welcome over on <a href="https://github.com/scottkellum/sassconfdesign"
+                             title="SassConf Design repo">GitHub</a>.
+      Kindly refer to our <a href="styleguide/public">styleguide</a>.</p>
+
+    <p>Manhattan <a
+        href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by
+      Jeffery Zeldman</a>.</p>
+
+    <p>
+      SassConf is dedicated to a
+      <a href="code-of-conduct">harassment-free</a>
+      and enjoyable conference experience for everyone.
+      <a href="refund-policy">Refund policy</a>.
+    </p>
+  </div>
+</footer>
+
+
+<script src="../../../../../javascripts/widowtamer-min.js" type="text/javascript"></script><script src="../../../../../javascripts/bower_components/letteringjs/jquery.lettering.js" type="text/javascript"></script><script src="../../../../../javascripts/main.js" type="text/javascript"></script>
+
+</body>
+</html>
