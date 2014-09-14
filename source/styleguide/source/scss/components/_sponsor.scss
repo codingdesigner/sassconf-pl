@@ -1,5 +1,68 @@
+.media-partners {
+  text-align: center;
+
+  p {
+    max-width: 40em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+
 .sponsors {
+  text-align: center;
+
+  p {
+    max-width: 40em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tier {
+    margin-bottom: 3em;
+    &:empty {
+      display: none;
+    }
+
+    a {
+      opacity: .66;
+      background-image: none;
+      @include filter(grayscale(100%));
+      @include transition(all .5s);
+      &:hover {
+        opacity: 1;
+        @include filter(grayscale(0%));
+      }
+    }
+  }
+
+  .xl img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 5%;
+  }
+
+  .l img {
+    width: 60%;
+    max-width: 250px;
+    margin: 0 5%;
+  }
+
+  .m img {
+    width: 50%;
+    max-width: 200px;
+    margin: 0 5%;
+  }
+
+  .s img {
+    width: 40%;
+    max-width: 100px;
+    margin: 0 5%;
+  }
+
   .article-title {
     @extend %article-title-pop;
   }
 }
+

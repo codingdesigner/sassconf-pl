@@ -1770,6 +1770,65 @@ body {
   max-width: 30em;
 }
 
+.media-partners {
+  text-align: center;
+}
+.media-partners p {
+  max-width: 40em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sponsors {
+  text-align: center;
+}
+.sponsors p {
+  max-width: 40em;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sponsors .tier {
+  margin-bottom: 3em;
+}
+.sponsors .tier:empty {
+  display: none;
+}
+.sponsors .tier a {
+  opacity: .66;
+  background-image: none;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.sponsors .tier a:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.sponsors .xl img {
+  width: 80%;
+  max-width: 300px;
+  margin: 0 5%;
+}
+.sponsors .l img {
+  width: 60%;
+  max-width: 250px;
+  margin: 0 5%;
+}
+.sponsors .m img {
+  width: 50%;
+  max-width: 200px;
+  margin: 0 5%;
+}
+.sponsors .s img {
+  width: 40%;
+  max-width: 100px;
+  margin: 0 5%;
+}
+
 .ticketbud-widget #events.external {
   font-family: "Archer SSm A", "Archer SSm B", serif, serif !important;
 }
