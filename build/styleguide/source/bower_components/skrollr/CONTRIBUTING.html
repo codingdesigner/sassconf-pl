@@ -28,7 +28,7 @@
   <![endif]-->
 
 </head>
-<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_twix styleguide_public_bower_components_twix_test styleguide_public_bower_components_twix_test_twix">
+<body class="manhattan styleguide styleguide_source styleguide_source_bower_components styleguide_source_bower_components_skrollr styleguide_source_bower_components_skrollr_CONTRIBUTING">
 <header class="header">
   <div class="photo-wrapper"></div>
   <div class="rhombus-grid-wrapper layer">
@@ -74,46 +74,19 @@
   </label>
 </nav>
 
-  (function() {
-  var Benchmark, Twix, moment, momentInRange, momentOutsideRange, range;
+  <h1 id="questions-belong-to-stackoverflow">Questions belong to StackOverflow</h1>
 
-  Benchmark = require('benchmark');
+<p>GitHub is for issues and feature requests. Anything else belongs to <a href="http://stackoverflow.com/questions/ask?tags=skrollr">StackOverflow</a>.</p>
 
-  moment = require("moment");
+<h1 id="pull-requests">Pull requests</h1>
 
-  Twix = require("../../bin/twix");
+<p>Will be ignored if the Travis build fails. Install grunt and run <code>grunt jshint qunit</code> locally before submitting pull requests.</p>
 
-  range = moment.twix("2013-07-11", "2013-07-13", true);
+<p>Do not include build files in your pull request (e.g. <code>skrollr.min.js</code>).</p>
 
-  momentInRange = moment("2013-07-12");
+<p>Do not change the version number in your pull request.</p>
 
-  momentOutsideRange = moment("2013-07-14");
-
-  new Benchmark.Suite("Twix").add('#contains (non-moment)', function() {
-    return range.contains("2013-07-12");
-  }).add('#contains (moment)', function() {
-    return range.contains(momentInRange);
-  }).add('#overlaps', function() {
-    return range.contains(range);
-  }).add('#engulfs', function() {
-    return range.contains(range);
-  }).add('#length', function() {
-    return range.length();
-  }).add('#count', function() {
-    return range.count("days");
-  }).add('#countInner', function() {
-    return range.countInner("days");
-  }).add('#isEmpty', function() {
-    return range.isEmpty();
-  }).add('#isValid', function() {
-    return range.isValid();
-  }).on('cycle', function(event) {
-    return console.log(String(event.target));
-  }).run({
-    async: true
-  });
-
-}).call(this);
+<p>Do not try to fix multiple issues or add multiple features with a single pull request. A pull request should only do one thing.</p>
 
 </div>
 <footer>

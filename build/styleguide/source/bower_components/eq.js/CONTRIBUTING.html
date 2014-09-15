@@ -28,7 +28,7 @@
   <![endif]-->
 
 </head>
-<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_twix styleguide_public_bower_components_twix_test styleguide_public_bower_components_twix_test_twix">
+<body class="manhattan styleguide styleguide_source styleguide_source_bower_components styleguide_source_bower_components_eq">
 <header class="header">
   <div class="photo-wrapper"></div>
   <div class="rhombus-grid-wrapper layer">
@@ -74,46 +74,22 @@
   </label>
 </nav>
 
-  (function() {
-  var Benchmark, Twix, moment, momentInRange, momentOutsideRange, range;
+  <h1 id="contributing-to-eqjs">Contributing to eq.js</h1>
 
-  Benchmark = require('benchmark');
+<p>We love contributors! Yes we do! If you would like to contribute to eq.js, please follow the following guidelines:</p>
 
-  moment = require("moment");
+<ul>
+  <li><strong>DO NOT ISSUE A PULL REQUEST WITHOUT RELATED ISSUE!!</strong> All pull requests must reference an issue in the issue queue and will only be looked at after discussion about that issue has taken place. Any pull request created that does not reference an issue will be closed.</li>
+  <li>Each individual feature you would like add, or bug you would like to squash, should be an individual pull request. Each pull request should be from an individual feature branch to either the latest stable or development branch. <strong>The current <em>stable</em> branch is 1.x.x. The current <em>development</em> branch is 1.x.x</strong>. Contributions that are not in the form of a pull request will not be considered. If your pull request does not apply cleanly we will ask you to fix that before we will look into pulling it in. We may ask you to update or make changes to the code you've submitted, please don't take this the wrong way. If a pull request smells (such as if a large amount of code is all within a single commit, or the coding standards aren't in line with core <code>eq.js</code>) we may ask you to rewrite your commit.</li>
+  <li>Follow all coding standards as defined in the current code base. Any code that does not follow the existing coding standards will be asked to be re-written to follow said standards.</li>
+  <li><code>eq.js</code> is very specifically <em>not</em> a jQuery/Zepto/Other Framework plugin! Any issues opened related to turning this entirely into a jQuery/Zepto/Other Framework plugin or making the core require jQuery/Zepto/Other Framework will not be considered. It's JavaScript people! Just JavaScript!</li>
+  <li>We are actively trying to keep <code>eq.js</code> as small and as fast as possible. Any PR that significantly increases size or decreases speed will be scrutinized heavily against the benchmark speed of the provided <code>index.html</code>.</li>
+</ul>
 
-  Twix = require("../../bin/twix");
+<h2 id="development">Development</h2>
 
-  range = moment.twix("2013-07-11", "2013-07-13", true);
+<p>Read the damn <a href="https://github.com/Snugug/eq.js/blob/1.x.x/Gruntfile.js">Gruntfile</a>! Either <code>grunt server</code> to work on the project, or <code>grunt build</code> to build the dist versions.</p>
 
-  momentInRange = moment("2013-07-12");
-
-  momentOutsideRange = moment("2013-07-14");
-
-  new Benchmark.Suite("Twix").add('#contains (non-moment)', function() {
-    return range.contains("2013-07-12");
-  }).add('#contains (moment)', function() {
-    return range.contains(momentInRange);
-  }).add('#overlaps', function() {
-    return range.contains(range);
-  }).add('#engulfs', function() {
-    return range.contains(range);
-  }).add('#length', function() {
-    return range.length();
-  }).add('#count', function() {
-    return range.count("days");
-  }).add('#countInner', function() {
-    return range.countInner("days");
-  }).add('#isEmpty', function() {
-    return range.isEmpty();
-  }).add('#isValid', function() {
-    return range.isValid();
-  }).on('cycle', function(event) {
-    return console.log(String(event.target));
-  }).run({
-    async: true
-  });
-
-}).call(this);
 
 </div>
 <footer>

@@ -28,7 +28,7 @@
   <![endif]-->
 
 </head>
-<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_twix styleguide_public_bower_components_twix_test styleguide_public_bower_components_twix_test_twix">
+<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_moment styleguide_public_bower_components_moment_README">
 <header class="header">
   <div class="photo-wrapper"></div>
   <div class="rhombus-grid-wrapper layer">
@@ -74,46 +74,45 @@
   </label>
 </nav>
 
-  (function() {
-  var Benchmark, Twix, moment, momentInRange, momentOutsideRange, range;
+  <p><a href="https://npmjs.org/package/moment"><img alt="NPM version" src="http://img.shields.io/npm/v/moment.svg?style=flat" /></a> <a href="https://npmjs.org/package/moment"><img alt="NPM downloads" src="http://img.shields.io/npm/dm/moment.svg?style=flat" /></a> <a href="/styleguide/public/bower_components/moment/LICENSE"><img alt="MIT License" src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" /></a> <a href="http://travis-ci.org/moment/moment"><img alt="Build Status" src="http://img.shields.io/travis/moment/moment/develop.svg?style=flat" /></a></p>
 
-  Benchmark = require('benchmark');
+<p>A lightweight javascript date library for parsing, validating, manipulating, and formatting dates.</p>
 
-  moment = require("moment");
+<h2 id="documentationhttpmomentjscomdocs"><a href="http://momentjs.com/docs/">Documentation</a></h2>
 
-  Twix = require("../../bin/twix");
+<h2 id="upgrading-to-200">Upgrading to 2.0.0</h2>
 
-  range = moment.twix("2013-07-11", "2013-07-13", true);
+<p>There are a number of small backwards incompatible changes with version 2.0.0. <a href="https://gist.github.com/timrwood/e72f2eef320ed9e37c51#backwards-incompatible-changes">See the full descriptions here</a></p>
 
-  momentInRange = moment("2013-07-12");
+<ul>
+  <li>
+    <p>Changed language ordinal method to return the number + ordinal instead of just the ordinal.</p>
+  </li>
+  <li>
+    <p>Changed two digit year parsing cutoff to match strptime.</p>
+  </li>
+  <li>
+    <p>Removed <code>moment#sod</code> and <code>moment#eod</code> in favor of <code>moment#startOf</code> and <code>moment#endOf</code>.</p>
+  </li>
+  <li>
+    <p>Removed <code>moment.humanizeDuration()</code> in favor of <code>moment.duration().humanize()</code>.</p>
+  </li>
+  <li>
+    <p>Removed the lang data objects from the top level namespace.</p>
+  </li>
+  <li>
+    <p>Duplicate <code>Date</code> passed to <code>moment()</code> instead of referencing it.</p>
+  </li>
+</ul>
 
-  momentOutsideRange = moment("2013-07-14");
+<h2 id="changelogchangelogmd"><a href="CHANGELOG.md">Changelog</a></h2>
 
-  new Benchmark.Suite("Twix").add('#contains (non-moment)', function() {
-    return range.contains("2013-07-12");
-  }).add('#contains (moment)', function() {
-    return range.contains(momentInRange);
-  }).add('#overlaps', function() {
-    return range.contains(range);
-  }).add('#engulfs', function() {
-    return range.contains(range);
-  }).add('#length', function() {
-    return range.length();
-  }).add('#count', function() {
-    return range.count("days");
-  }).add('#countInner', function() {
-    return range.countInner("days");
-  }).add('#isEmpty', function() {
-    return range.isEmpty();
-  }).add('#isValid', function() {
-    return range.isValid();
-  }).on('cycle', function(event) {
-    return console.log(String(event.target));
-  }).run({
-    async: true
-  });
+<h2 id="contributingcontributingmd"><a href="CONTRIBUTING.md">Contributing</a></h2>
 
-}).call(this);
+<h2 id="license">License</h2>
+
+<p>Moment.js is freely distributable under the terms of the <a href="/styleguide/public/bower_components/moment/LICENSE">MIT license</a>.</p>
+
 
 </div>
 <footer>

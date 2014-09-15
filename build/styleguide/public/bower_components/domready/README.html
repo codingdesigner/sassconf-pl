@@ -28,7 +28,7 @@
   <![endif]-->
 
 </head>
-<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_twix styleguide_public_bower_components_twix_test styleguide_public_bower_components_twix_test_twix">
+<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_domready styleguide_public_bower_components_domready_README">
 <header class="header">
   <div class="photo-wrapper"></div>
   <div class="rhombus-grid-wrapper layer">
@@ -74,46 +74,68 @@
   </label>
 </nav>
 
-  (function() {
-  var Benchmark, Twix, moment, momentInRange, momentOutsideRange, range;
+  <h2 id="domready">domReady</h2>
 
-  Benchmark = require('benchmark');
+<p>It's easy. Works like this:</p>
 
-  moment = require("moment");
+<p><code>js
+domready(function () {
+  // dom is loaded!
+})
+</code></p>
 
-  Twix = require("../../bin/twix");
+<hr />
+<p>## Deprecation Notice</p>
 
-  range = moment.twix("2013-07-11", "2013-07-13", true);
+<p>Compatibility with <code>IE6</code>, <code>IE7</code>, and <code>IE8</code> has been fully dropped. If your application requires this level of support, please use the <a href="https://github.com/ded/domready/tree/v0.3.0"><code>0.3.0</code></a> release.</p>
 
-  momentInRange = moment("2013-07-12");
+<hr />
 
-  momentOutsideRange = moment("2013-07-14");
+<h3 id="browser-support">Browser support</h3>
 
-  new Benchmark.Suite("Twix").add('#contains (non-moment)', function() {
-    return range.contains("2013-07-12");
-  }).add('#contains (moment)', function() {
-    return range.contains(momentInRange);
-  }).add('#overlaps', function() {
-    return range.contains(range);
-  }).add('#engulfs', function() {
-    return range.contains(range);
-  }).add('#length', function() {
-    return range.length();
-  }).add('#count', function() {
-    return range.count("days");
-  }).add('#countInner', function() {
-    return range.countInner("days");
-  }).add('#isEmpty', function() {
-    return range.isEmpty();
-  }).add('#isValid', function() {
-    return range.isValid();
-  }).on('cycle', function(event) {
-    return console.log(String(event.target));
-  }).run({
-    async: true
-  });
+<ul>
+  <li>IE9+</li>
+  <li>Firefox 4+</li>
+  <li>Safari 3+</li>
+  <li>Chrome *</li>
+  <li>Opera *</li>
+</ul>
 
-}).call(this);
+<h3 id="building">Building</h3>
+
+<p><code>sh
+npm install
+make
+open tests/test.html
+</code></p>
+
+<h3 id="including-with-ender">Including with Ender</h3>
+
+<p>Don't already have <a href="http://enderjs.com">Ender</a>? Install it like this:</p>
+
+<p><code>sh
+npm install ender -g
+</code></p>
+
+<p>Include domready in your package:</p>
+
+<p><code>sh
+ender add domready
+</code></p>
+
+<p>Then use it like this</p>
+
+<p>``` js
+require('domready')(function () {
+  $('body').html('&lt;p&gt;boosh&lt;/p&gt;')
+})</p>
+
+<p>// or</p>
+
+<p>$(document).ready(function () {
+  $('body').html('&lt;p&gt;boosh&lt;/p&gt;')
+})
+```</p>
 
 </div>
 <footer>

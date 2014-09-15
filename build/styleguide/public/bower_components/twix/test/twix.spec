@@ -1876,7 +1876,7 @@
     <p>&copy; 2014 SassConf. All rights reserved. Find an error or want to add something? Pull requests
       are welcome over on <a href="https://github.com/codingdesigner/sassconf-pl"
                              title="SassConf Design repo">GitHub</a>.
-      Kindly refer to our <a href="/styleguide/public">styleguide</a>.</p>
+      Kindly refer to our <a href="/styleguide/public/">styleguide</a>.</p>
 
     <p>Manhattan <a
         href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by

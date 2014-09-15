@@ -20,15 +20,15 @@
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
 
   <!-- Stylesheets -->
-  <script src="/javascripts/bower_components/modernizr/modernizr.js" type="text/javascript"></script><script src="/javascripts/bower_components/jquery/dist/jquery.js" type="text/javascript"></script><script src="/javascripts/bower_components/eq.js/dist/eq.min.js" type="text/javascript"></script><script src="/javascripts/bower_components/moment/moment.js" type="text/javascript"></script><script src="/javascripts/bower_components/twix/bin/twix.js" type="text/javascript"></script>
+  <script src="/styleguide/source/bower_components/modernizr/modernizr.js" type="text/javascript"></script><script src="/styleguide/source/bower_components/jquery/dist/jquery.js" type="text/javascript"></script><script src="/styleguide/source/bower_components/eq.js/dist/eq.min.js" type="text/javascript"></script><script src="/styleguide/source/bower_components/moment/moment.js" type="text/javascript"></script><script src="/styleguide/source/bower_components/twix/bin/twix.js" type="text/javascript"></script>
 
 
   <!--[if lt IE 9]>
-  <script src="/javascripts/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+  <script src="/styleguide/source/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
   <![endif]-->
 
 </head>
-<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_twix styleguide_public_bower_components_twix_test styleguide_public_bower_components_twix_test_twix">
+<body class="manhattan styleguide styleguide_source styleguide_source_README">
 <header class="header">
   <div class="photo-wrapper"></div>
   <div class="rhombus-grid-wrapper layer">
@@ -74,46 +74,7 @@
   </label>
 </nav>
 
-  (function() {
-  var Benchmark, Twix, moment, momentInRange, momentOutsideRange, range;
-
-  Benchmark = require('benchmark');
-
-  moment = require("moment");
-
-  Twix = require("../../bin/twix");
-
-  range = moment.twix("2013-07-11", "2013-07-13", true);
-
-  momentInRange = moment("2013-07-12");
-
-  momentOutsideRange = moment("2013-07-14");
-
-  new Benchmark.Suite("Twix").add('#contains (non-moment)', function() {
-    return range.contains("2013-07-12");
-  }).add('#contains (moment)', function() {
-    return range.contains(momentInRange);
-  }).add('#overlaps', function() {
-    return range.contains(range);
-  }).add('#engulfs', function() {
-    return range.contains(range);
-  }).add('#length', function() {
-    return range.length();
-  }).add('#count', function() {
-    return range.count("days");
-  }).add('#countInner', function() {
-    return range.countInner("days");
-  }).add('#isEmpty', function() {
-    return range.isEmpty();
-  }).add('#isValid', function() {
-    return range.isValid();
-  }).on('cycle', function(event) {
-    return console.log(String(event.target));
-  }).run({
-    async: true
-  });
-
-}).call(this);
+  
 
 </div>
 <footer>
@@ -165,7 +126,7 @@
 </footer>
 
 
-<script src="/javascripts/widowtamer-min.js" type="text/javascript"></script><script src="/javascripts/bower_components/letteringjs/jquery.lettering.js" type="text/javascript"></script><script src="/javascripts/main.js" type="text/javascript"></script>
+<script src="/javascripts/widowtamer-min.js" type="text/javascript"></script><script src="/styleguide/source/bower_components/letteringjs/jquery.lettering.js" type="text/javascript"></script><script src="/javascripts/main.js" type="text/javascript"></script>
 
 </body>
 </html>

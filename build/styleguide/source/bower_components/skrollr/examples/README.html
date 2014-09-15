@@ -28,7 +28,7 @@
   <![endif]-->
 
 </head>
-<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_twix styleguide_public_bower_components_twix_test styleguide_public_bower_components_twix_test_twix">
+<body class="manhattan styleguide styleguide_source styleguide_source_bower_components styleguide_source_bower_components_skrollr styleguide_source_bower_components_skrollr_examples styleguide_source_bower_components_skrollr_examples_README">
 <header class="header">
   <div class="photo-wrapper"></div>
   <div class="rhombus-grid-wrapper layer">
@@ -74,46 +74,20 @@
   </label>
 </nav>
 
-  (function() {
-  var Benchmark, Twix, moment, momentInRange, momentOutsideRange, range;
+  <h2 id="examples">Examples</h2>
 
-  Benchmark = require('benchmark');
+<p>Showcasing the awesomeness of skrollr.</p>
 
-  moment = require("moment");
-
-  Twix = require("../../bin/twix");
-
-  range = moment.twix("2013-07-11", "2013-07-13", true);
-
-  momentInRange = moment("2013-07-12");
-
-  momentOutsideRange = moment("2013-07-14");
-
-  new Benchmark.Suite("Twix").add('#contains (non-moment)', function() {
-    return range.contains("2013-07-12");
-  }).add('#contains (moment)', function() {
-    return range.contains(momentInRange);
-  }).add('#overlaps', function() {
-    return range.contains(range);
-  }).add('#engulfs', function() {
-    return range.contains(range);
-  }).add('#length', function() {
-    return range.length();
-  }).add('#count', function() {
-    return range.count("days");
-  }).add('#countInner', function() {
-    return range.countInner("days");
-  }).add('#isEmpty', function() {
-    return range.isEmpty();
-  }).add('#isValid', function() {
-    return range.isValid();
-  }).on('cycle', function(event) {
-    return console.log(String(event.target));
-  }).run({
-    async: true
-  });
-
-}).call(this);
+<ul>
+  <li><a href="http://prinzhorn.github.io/skrollr/">The "main" example</a></li>
+  <li><a href="http://prinzhorn.github.io/skrollr/examples/anchors.html">Demonstrating different anchors</a></li>
+  <li><a href="http://prinzhorn.github.io/skrollr/examples/anchor_target.html">Demonstrating data-anchor-target</a></li>
+  <li><a href="http://prinzhorn.github.io/skrollr/examples/pausing.html">Pausing the scrolling for a moment to do other animations</a></li>
+  <li><a href="http://prinzhorn.github.io/skrollr/examples/path.html">Drawing a SVG path</a></li>
+  <li><a href="http://prinzhorn.github.io/skrollr/examples/circular_motion.html">Using two custom easing functions to create a circular motion</a></li>
+  <li><a href="http://prinzhorn.github.io/skrollr/examples/bg_constant_speed_less.html">Parallax background with constant speed</a></li>
+  <li><a href="http://prinzhorn.github.io/skrollr/examples/gradientsmotherfucker.html">gradientsmotherfucker</a></li>
+</ul>
 
 </div>
 <footer>

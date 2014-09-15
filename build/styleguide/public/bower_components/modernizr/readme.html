@@ -28,7 +28,7 @@
   <![endif]-->
 
 </head>
-<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_twix styleguide_public_bower_components_twix_test styleguide_public_bower_components_twix_test_twix">
+<body class="manhattan styleguide styleguide_public styleguide_public_bower_components styleguide_public_bower_components_modernizr styleguide_public_bower_components_modernizr_readme">
 <header class="header">
   <div class="photo-wrapper"></div>
   <div class="rhombus-grid-wrapper layer">
@@ -74,46 +74,32 @@
   </label>
 </nav>
 
-  (function() {
-  var Benchmark, Twix, moment, momentInRange, momentOutsideRange, range;
+  <h1 id="modernizr-build-statushttpssecuretravis-ciorgmodernizrmodernizrpngbranchmasterhttptravis-ciorgmodernizrmodernizr">Modernizr <a href="http://travis-ci.org/Modernizr/Modernizr"><img alt="Build Status" src="https://secure.travis-ci.org/Modernizr/Modernizr.png?branch=master" /></a></h1>
 
-  Benchmark = require('benchmark');
+<h3 id="a-javascript-library-allowing-you-to-use-css3--html5-while-maintaining-control-over-unsupported-browsers">a JavaScript library allowing you to use CSS3 &amp; HTML5 while maintaining control over unsupported browsers</h3>
 
-  moment = require("moment");
+<p>Modernizr tests which native CSS3 and HTML5 features are available in
+the current UA and makes the results available to you in two ways:
+as properties on a global <code>Modernizr</code> object, and as classes on the
+<code>&lt;html&gt;</code> element. This information allows you to progressively enhance
+your pages with a granular level of control over the experience.</p>
 
-  Twix = require("../../bin/twix");
+<p>Modernizr has an optional (<em>not included</em>) conditional resource loader
+called <code>Modernizr.load()</code>, based on Yepnope.js (<a href="http://yepnopejs.com/">yepnopejs.com</a>).
+To get a build that includes <code>Modernizr.load()</code>, as well as choosing
+which tests to include, go to <a href="http://www.modernizr.com/download/">www.modernizr.com/download/</a></p>
 
-  range = moment.twix("2013-07-11", "2013-07-13", true);
+<p><a href="http://www.modernizr.com/docs/">Full documentation on modernizr.com/docs/</a></p>
 
-  momentInRange = moment("2013-07-12");
+<hr />
 
-  momentOutsideRange = moment("2013-07-14");
+<p>Modernizr is dual-licensed under the <a href="http://www.modernizr.com/license/">BSD and MIT licenses</a>.</p>
 
-  new Benchmark.Suite("Twix").add('#contains (non-moment)', function() {
-    return range.contains("2013-07-12");
-  }).add('#contains (moment)', function() {
-    return range.contains(momentInRange);
-  }).add('#overlaps', function() {
-    return range.contains(range);
-  }).add('#engulfs', function() {
-    return range.contains(range);
-  }).add('#length', function() {
-    return range.length();
-  }).add('#count', function() {
-    return range.count("days");
-  }).add('#countInner', function() {
-    return range.countInner("days");
-  }).add('#isEmpty', function() {
-    return range.isEmpty();
-  }).add('#isValid', function() {
-    return range.isValid();
-  }).on('cycle', function(event) {
-    return console.log(String(event.target));
-  }).run({
-    async: true
-  });
+<p><a href="http://www.modernizr.com/">modernizr.com</a></p>
 
-}).call(this);
+<h4 id="try-it-out">Try it out:</h4>
+
+<p>Run the test suite: <a href="http://modernizr.github.com/Modernizr/test/">http://modernizr.github.com/Modernizr/test/</a></p>
 
 </div>
 <footer>
