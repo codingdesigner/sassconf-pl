@@ -54,6 +54,8 @@ set :js_dir, 'javascripts'
 set :images_dir, 'styleguide/public/images'
 
 activate :directory_indexes
+page "/styleguide/**/*", :directory_index => false
+
 
 # Build-specific configuration
 configure :build do
