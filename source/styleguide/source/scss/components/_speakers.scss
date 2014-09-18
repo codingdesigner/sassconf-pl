@@ -62,6 +62,18 @@
   }
 }
 
+.speaker-images {
+  &#{-1} {
+    shape-outside: polygon(0px 0px, 320px 0px, 263px 263px, 0px 264px);
+  }
+  &#{-2} {
+    shape-outside: polygon(0px 0px, 320px 0px, 264px 251px, 320px 520px, 0px 520px);
+  }
+  &#{-8} {
+    shape-outside: polygon(0px 0px, 254px -10px, 290px 132px, 266px 260px, 286px 429px, 266px 547px, 0px 552px);
+  }
+}
+
 .speaker-image {
   @extend %rhombus--image;
   .panel & {
@@ -95,9 +107,9 @@
 .people {
   margin-bottom: 2rem;
   padding-top: 2rem;
-  @include breakpoint($bp--sessions-wrap) {
-    margin-left: 20rem;
-  }
+//  @include breakpoint($bp--sessions-wrap) {
+//    margin-left: 20rem;
+//  }
 }
 
 .speaker {
@@ -108,18 +120,15 @@
   @extend %uppercase;
   border-bottom: 1px dashed $color--tertiary;
   margin-bottom: 0.5em;
+  @include breakpoint($bp--sessions-wrap) {
+//    margin-left: 20rem;
+    margin-left: 10rem;
+  }
 }
 
 .section--details {
   @include breakpoint($bp--sessions-wrap) {
     margin-left: 8em;
-  }
-  @include breakpoint($bp--sessions-2col) {
-    float: right;
-    width: calc(100% - 20rem);
-    clear: right;
-    margin-left: 0;
-
   }
 }
 

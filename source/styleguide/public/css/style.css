@@ -1718,6 +1718,16 @@ body {
   }
 }
 
+.speaker-images-1 {
+  shape-outside: polygon(0px 0px, 320px 0px, 263px 263px, 0px 264px);
+}
+.speaker-images-2 {
+  shape-outside: polygon(0px 0px, 320px 0px, 264px 251px, 320px 520px, 0px 520px);
+}
+.speaker-images-8 {
+  shape-outside: polygon(0px 0px, 254px -10px, 290px 132px, 266px 260px, 286px 429px, 266px 547px, 0px 552px);
+}
+
 .panel .speaker-image {
   width: 120px;
   height: 120px;
@@ -1739,28 +1749,20 @@ body {
   margin-bottom: 2rem;
   padding-top: 2rem;
 }
-@media (min-width: 40.625em) {
-  .people {
-    margin-left: 20rem;
-  }
-}
 
 .occupation {
   border-bottom: 1px dashed #7acbcb;
   margin-bottom: 0.5em;
 }
+@media (min-width: 40.625em) {
+  .occupation {
+    margin-left: 10rem;
+  }
+}
 
 @media (min-width: 40.625em) {
   .section--details {
     margin-left: 8em;
-  }
-}
-@media (min-width: 48.75em) {
-  .section--details {
-    float: right;
-    width: calc(100% - 20rem);
-    clear: right;
-    margin-left: 0;
   }
 }
 
