@@ -51,8 +51,9 @@
           "name": "Adam Onishi",
           "occupation": "Senior Front End Developer, Architect"
         }
-],
-"session-description": "<p>Panel description</p>"
-}
-]
+      ],
+      "speaker-count": 8,
+      "session-description": "<p>Panel description</p>"
+    }
+  ]
 }
