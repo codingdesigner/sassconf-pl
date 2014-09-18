@@ -11,7 +11,7 @@
         }
       ],
       "speaker_count": 1,
-      "session_description": "<p>Learn how color works in the real world and how you can use this knowledge to inform your designs and improve your development, and how Sass's color functions make doing so easier. We'll cover subtractive vs additive color, print vs. monitor color, differences in how the same color appears when projected on different surfaces, and how artists in physical mediums use colors to hack the human brain.</p>"
+      "session_description": "<p>How color works in the real world, how you can use this knowledge to inform your designs and improve your development, and how Sass's color functions make doing so easier. Covers subtractive vs additive color, print vs. monitor color, differences in how the same color appears when projected on different surfaces, and how artists in physical mediums use colors to hack the human brain.</p>"
     },
     {
       "session_title": "Spreading the Sass Love",
@@ -24,7 +24,7 @@
         }
       ],
       "speaker_count": 1,
-      "session_description": ""
+      "session_description": "<p>We love Sass! But how can share this warm fuzzy feeling and make others love it just as much as we do? Whether you're interested in starting a sass community in your town, convincing coworkers to incorporate it into their workflow, or just getting more involved as a Sassvocate, this talk will show you how.</p>"
     },
     {
       "session_title": "Lead Maintainer for Sass Q &amp; A",

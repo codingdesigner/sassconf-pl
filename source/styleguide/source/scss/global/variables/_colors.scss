@@ -96,7 +96,7 @@ $quintary-tints: tint-stack($color--quintary);
 $quintary-shades: shade-stack($color--quintary);
 $color--black-tints: tint-stack($color--gray);
 $color--white-shades: shade-stack($color--gray);
-$primary-multiply-stack : blend-stack($color--primary, $factor: -3%);
+$primary-multiply-stack : blend-stack($color--primary, $factor: -2%, $iterations: 7);
 $primary-screen-stack   : blend-stack($color--primary, $mode: screen, $factor: 2%);
 $tertiary-multiply-stack : blend-stack($color--tertiary, $factor: -3%);
 $tertiary-screen-stack   : blend-stack($color--tertiary, $mode: screen, $factor: 2%);

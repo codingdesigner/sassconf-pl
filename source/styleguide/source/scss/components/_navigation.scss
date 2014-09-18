@@ -35,7 +35,7 @@
     text-align: center;
     @extend %flex-auto;
     @extend %rhombus;
-    @for $i from 1 through 6 {
+    @for $i from 1 through 7 {
       &:nth-of-type(#{$i}) {
         background-color: nth($primary-multiply-stack, $i);
       }

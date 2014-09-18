@@ -78,7 +78,7 @@
           "start": "10/2/2014 2:00 PM",
           "end": "10/2/2014 2:30 PM",
           "time": "2-2:30pm",
-          "title": "Lead Maintainer for Sass Q &amp; A",
+          "title": "Q &amp; A with the Lead Maintainer for Sass",
           "speaker": "Natalie Weizenbaum",
           "room": ""
         },
@@ -123,8 +123,8 @@
           "start": "10/2/2014 6:00 PM",
           "end": "10/2/2014 7:00 PM",
           "time": "6-7pm",
-          "title": "Q &amp; A",
-          "speaker": "",
+          "title": "Speaker Roundtable",
+          "speaker": "All Speakers",
           "room": ""
         }
       ]

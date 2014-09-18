@@ -1,0 +1,27 @@
+<% data.panels.panels.each do |p| %>
+  <article class="session talk">
+    <% if p.session_title.to_s.strip.length > 0 %>
+    <div class="title">
+      <h1><%= p.session_title %></h1>
+    </div>
+    <% end %>
+    <div class="images speaker-images-<%= p.speaker_count %>">
+      <% p.speakers.each do |s| %>
+      <div class="speaker-image"><img src="/images/speakers/<%= s.speaker_image %>" alt="<%= s.alt %>"></div>
+      <% end %>
+    </div>
+    <div class="people">
+      <% p.speakers.each do |s| %>
+      <div class="person">
+        <h3 class="speaker"><%= s.name %></h3>
+        <h3 class="occupation"><%= s.occupation %></h3>
+      </div>
+      <% end %>
+    </div>
+    <% if p.session_description.to_s.strip.length > 0 %>
+    <div class="section--details base--STYLED">
+      <div class="section-details--description"><%= p.session_description %></div>
+    </div>
+    <% end %>
+  </article>
+<% end %>

@@ -1,0 +1,23 @@
+{
+  "panels": [
+    {
+      "session_title": "Large Scale Sass!",
+      "speakers": [
+        {
+          "speaker_image": "phillapier.jpg",
+          "alt": "Portrait of Phil LaPier",
+          "name": "Phil LaPier",
+          "occupation": "Designer, Thoughtbot"
+        },
+        {
+          "speaker_image": "ghaidazahranm.jpg",
+          "alt": "Portrait of Ghaida Zahranm",
+          "name": "Ghaida Zahranm",
+          "occupation": "Design Lead, Zurb"
+        }
+      ],
+      "speaker_count": 2,
+      "session_description": "<p>We'll discuss the challenges and strategies of developing and maintaining reusable Sass components for use of thousands of users and use cases.</p>"
+    }
+  ]
+}
