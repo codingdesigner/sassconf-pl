@@ -10,10 +10,11 @@
           "occupation": "Getty Images"
         }
       ],
+      "speaker_count": 1,
       "session_description": "<p>Learn how color works in the real world and how you can use this knowledge to inform your designs and improve your development, and how Sass's color functions make doing so easier. We'll cover subtractive vs additive color, print vs. monitor color, differences in how the same color appears when projected on different surfaces, and how artists in physical mediums use colors to hack the human brain.</p>"
     },
     {
-      "session_title": "Accessibility/Community",
+      "session_title": "Spreading the Sass Love",
       "speakers": [
         {
           "speaker_image": "unakravets.jpeg",
@@ -22,6 +23,18 @@
           "occupation": "Front-End Developer, IBM Design"
         }
       ],
+      "speaker_count": 1,
+      "session_description": ""
+    },
+    {
+      "session_title": "Lead Maintainer for Sass Q &amp; A",
+      "speakers": [
+        {
+          "name": "Natalie Weizenbaum",
+          "occupation": "Lead Maintainer for Sass"
+        }
+      ],
+      "speaker_count": 1,
       "session_description": ""
     }
   ]

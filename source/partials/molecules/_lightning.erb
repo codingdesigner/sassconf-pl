@@ -1,26 +1,28 @@
-<% data.lightning.talks.each do |w| %>
+<% data.lightning.talks.each do |t| %>
   <article class="session keynote">
-    <% if w.session_title.to_s.strip.length > 0 %>
+    <% if t.session_title.to_s.strip.length > 0 %>
       <div class="title">
-        <h1><%= w.session_title %></h1>
+        <h1><%= t.session_title %></h1>
       </div>
     <% end %>
-    <div class="images">
-      <% w.speakers.each do |s| %>
-        <div class="speaker-image"><img src="/images/speakers/<%= s.speaker_image %>" alt="<%= s.alt %>"></div>
+    <div class="images speaker-images-<%= t.speaker_count %>">
+      <% t.speakers.each do |s| %>
+        <% if s.speaker_image.to_s.strip.length > 0 %>
+          <div class="speaker-image"><img src="/images/speakers/<%= s.speaker_image %>" alt="<%= s.alt %>"></div>
+        <% end %>
       <% end %>
     </div>
     <div class="people">
-      <% w.speakers.each do |s| %>
+      <% t.speakers.each do |s| %>
         <div class="person">
           <h3 class="speaker"><%= s.name %></h3>
           <h3 class="occupation"><%= s.occupation %></h3>
         </div>
       <% end %>
     </div>
-    <% if w.session_description.to_s.strip.length > 0 %>
+    <% if t.session_description.to_s.strip.length > 0 %>
       <div class="section--details base--STYLED">
-        <div class="section-details--description"><%= w.session_description %></div>
+        <div class="section-details--description"><%= t.session_description %></div>
       </div>
     <% end %>
   </article>

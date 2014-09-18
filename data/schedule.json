@@ -59,15 +59,31 @@
         },
         {
           "slot": "slot-7",
+          "start": "10/2/2014 1:30 PM",
+          "end": "10/2/2014 1:45 PM",
+          "time": "1:30-1:45pm",
+          "title": "Lightning Talk - Spreading the Sass Love",
+          "speaker": "Una Kravets",
+          "room": ""
+        },        {
+          "slot": "slot-8",
           "start": "10/2/2014 1:45 PM",
+          "end": "10/2/2014 2:00 PM",
+          "time": "1:45-2:00pm",
+          "title": "Lightning Talk - Color In The Real World",
+          "speaker": "Katie Kurkoski, ",
+          "room": ""
+        },        {
+          "slot": "slot-9",
+          "start": "10/2/2014 2:00 PM",
           "end": "10/2/2014 2:30 PM",
-          "time": "1:45-2:30pm",
-          "title": "Lightning Talks",
-          "speaker": "Katie Kurkoski, Una Kravets",
+          "time": "2-2:30pm",
+          "title": "Lead Maintainer for Sass Q &amp; A",
+          "speaker": "Natalie Weizenbaum",
           "room": ""
         },
         {
-          "slot": "slot-8",
+          "slot": "slot-10",
           "start": "10/2/2014 2:45 PM",
           "end": "10/2/2014 3:30 PM",
           "time": "2:45-3:30pm",
@@ -76,7 +92,7 @@
           "room": ""
         },
         {
-          "slot": "slot-9",
+          "slot": "slot-11",
           "start": "10/2/2014 3:45 PM",
           "end": "10/2/2014 4:30 PM",
           "time": "3:45-4:30pm",
@@ -85,7 +101,7 @@
           "room": ""
         },
         {
-          "slot": "slot-10",
+          "slot": "slot-12",
           "start": "10/2/2014 4:30 PM",
           "end": "10/2/2014 5:00 PM",
           "time": "4:30-5pm",
@@ -94,7 +110,7 @@
           "room": ""
         },
         {
-          "slot": "slot-11",
+          "slot": "slot-13",
           "start": "10/2/2014 5:00 PM",
           "end": "10/2/2014 5:45 PM",
           "time": "5-5:45pm",
@@ -103,11 +119,11 @@
           "room": ""
         },
         {
-          "slot": "slot-12",
+          "slot": "slot-14",
           "start": "10/2/2014 6:00 PM",
           "end": "10/2/2014 7:00 PM",
           "time": "6-7pm",
-          "title": "Q/A",
+          "title": "Q &amp; A",
           "speaker": "",
           "room": ""
         }
@@ -190,7 +206,7 @@
           "end": "10/4/2014 3:00 PM",
           "time": "2-3pm",
           "title": "Largescale Roundtable",
-          "speaker": "",
+          "speaker": "Phil LaPier (Thoughtbot), Ghaida Zahran (Zurb)",
           "room": ""
         }
       ]
