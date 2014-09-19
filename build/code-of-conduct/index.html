@@ -69,6 +69,7 @@
     <a href="/#buy-now"><div class="rhombus-reset">Get Tickets</div></a>
     <a href="/venue"><div class="rhombus-reset">Venue</div></a>
     <a href="/schedule"><div class="rhombus-reset">Schedule</div></a>
+    <a href="/sponsors"><div class="rhombus-reset">Sponsors</div></a>
     <a href="/code-of-conduct"><div class="rhombus-reset">Code of Conduct</div></a>
     <div class="button"><div class="rhombus-reset">Menu</div></div>
   </label>
