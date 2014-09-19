@@ -30,6 +30,8 @@
       "session_title": "Lead Maintainer for Sass Q &amp; A",
       "speakers": [
         {
+          "speaker_image": "natalieweizenbaum.jpg",
+          "alt": "Portrait of Natalie Weizenbaum",
           "name": "Natalie Weizenbaum",
           "occupation": "Lead Maintainer for Sass"
         }
