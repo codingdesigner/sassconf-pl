@@ -148,9 +148,9 @@
     <ul>
       <h4>Volunteer team</h4>
       <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
-      <li><a href="https://twitter.com/bkjames">Robert James</a></li>
+      <li><a href="https://twitter.com/bkrjames">Robert James</a></li>
       <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
-      <li><a href="www.linkedin.com/in/lissaaguilar">Lissa Aguilar</a></li>
+      <li><a href="http://www.linkedin.com/in/lissaaguilar">Lissa Aguilar</a></li>
     </ul>
     <ul>
       <h4>Design team</h4>
