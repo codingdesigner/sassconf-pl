@@ -1,6 +1,21 @@
 {
   "days": [
     {
+      "date": "Monday September 29th",
+      "sessions": [
+        {
+          "slot": "slot-1",
+          "start": "09/29/2014 7:00 PM",
+          "end": "09/29/2014 9:00 PM",
+          "time": "7-9pm",
+          "title": "#RoadtoSassConf Q&A with SassConf2014 Speakers",
+          "speaker": "Adam Detrick, Patrick Hamann, Smith Schwartz",
+          "room": "XO Group",
+          "link": "http://www.meetup.com/gothamsass/events/209134662/"
+        }
+      ]
+    },
+    {
       "date": "Tuesday September 30th",
       "sessions": [
         {
@@ -8,9 +23,10 @@
           "start": "09/30/2014 7:00 PM",
           "end": "09/30/2014 9:00 PM",
           "time": "7-9pm",
-          "title": "Pre-Conference ",
+          "title": "#RoadtoSassConf Q&A with SassConf2014 Speakers",
           "speaker": "",
-          "room": ""
+          "room": "WeWork SoHo",
+          "link": "http://www.meetup.com/gothamsass/events/209134662/"
         }
       ]
     },
@@ -23,7 +39,7 @@
           "end": "10/1/2014 9:00 PM",
           "time": "7-9pm",
           "title": "Opening Night Fireside Chat with Sass-Lang.com Redesign Team",
-          "speaker": "Jina Bolten, Natalie Weizenbaum",
+          "speaker": "Natalie Weizenbaum, Chris Eppstein, Bermon Painter",
           "room": "Meetup HQ"
         }
       ]
@@ -251,7 +267,7 @@
           "start": "10/4/2014 11:00 AM",
           "end": "10/4/2014 6:00 PM",
           "time": "11:30am-3:30pm",
-          "title": "IBM Hackathon",
+          "title": "IBM Design Thinking Hackathon",
           "speaker": "",
           "room": ""
         },
@@ -260,8 +276,8 @@
           "start": "10/4/2014 2:00 PM",
           "end": "10/4/2014 3:00 PM",
           "time": "3:30-4:30pm",
-          "title": "Largescale Roundtable",
-          "speaker": "Phil LaPier (Thoughtbot), Ghaida Zahran (Zurb)",
+          "title": "Large Scale Sass!",
+          "speaker": "Kyle Fiedler (Thoughtbot), Scott Kellum (Vox), Jackie Balzer (Behance/Adobe)",
           "room": ""
         }
       ]
