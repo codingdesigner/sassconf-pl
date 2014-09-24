@@ -81,6 +81,14 @@ $bp--schedule-table: 500px;
             }
           }
         }
+
+        .schedule--link {
+          @include underline($background-color, #fff);
+
+          &:hover {
+            @include underline(mix($background-color, black, 50%), #fff);            
+          }
+        }
       }
     }
     @include breakpoint($bp--schedule-table) {
