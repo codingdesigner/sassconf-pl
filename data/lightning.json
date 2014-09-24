@@ -11,7 +11,7 @@
         }
       ],
       "speaker_count": 1,
-      "session_description": "<p>How color works in the real world, how you can use this knowledge to inform your designs and improve your development, and how Sass's color functions make doing so easier. Covers subtractive vs additive color, print vs. monitor color, differences in how the same color appears when projected on different surfaces, and how artists in physical mediums use colors to hack the human brain.</p>"
+      "session_description": "<p>How color works in the real world, how you can use this knowledge to inform your designs and improve your development, and how Sass's color functions make doing so easier. Covers subtractive vs additive color, print vs. monitor color, and how artists in physical mediums use colors to hack the human brain.</p>"
     },
     {
       "session_title": "Spreading the Sass Love",
