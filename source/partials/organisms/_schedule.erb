@@ -17,7 +17,13 @@
       <% d.sessions.each do |s| %>
         <tr class="<%= s.slot %>" data-start="<%= s.start %>" data-end="<%= s.end %>">
           <td data-th="Time" class="schedule--time"><%= s.time %></td>
-          <td data-th="Title" class="schedule--title"><%= s.title %></td>
+          <td data-th="Title" class="schedule--title">
+            <% if s.link %>
+              <a class="schedule--link" href="<%= s.link %>"><%= s.title %></a>
+            <% else %>
+              <%= s.title %>
+            <% end %>
+          </td>
           <td data-th="Speaker" class="schedule--speaker"><%= s.speaker %></td>
           <td data-th="Room" class="schedule--room"><%= s.room %></td>
         </tr>
