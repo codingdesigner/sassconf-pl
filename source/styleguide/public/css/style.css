@@ -1857,6 +1857,9 @@ body {
 .speaker-images-2 {
   shape-outside: polygon(0px 0px, 320px 0px, 264px 251px, 320px 520px, 0px 520px);
 }
+.speaker-images-3 {
+  shape-outside: polygon(0px 0px, 316px 5px, 272px 254px, 317px 506px, 267px 776px, 0px 776px);
+}
 .speaker-images-8 {
   shape-outside: polygon(0px 0px, 254px -10px, 290px 132px, 266px 260px, 286px 429px, 266px 547px, 0px 552px);
 }
