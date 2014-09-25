@@ -1,6 +1,20 @@
 {
   "days": [
     {
+      "date": "Monday September 29th",
+      "sessions": [
+        {
+          "slot": "slot-1",
+          "start": "09/29/2014 7:00 PM",
+          "end": "09/29/2014 9:00 PM",
+          "time": "7-9pm",
+          "title": "#RoadToSassConf with SassConf2014 Speakers",
+          "speaker": "Patrick Hamann, Smith Schwartz",
+          "room": "XO Group"
+        }
+      ]
+    },
+    {
       "date": "Tuesday September 30th",
       "sessions": [
         {
@@ -8,9 +22,9 @@
           "start": "09/30/2014 7:00 PM",
           "end": "09/30/2014 9:00 PM",
           "time": "7-9pm",
-          "title": "Pre-Conference ",
-          "speaker": "",
-          "room": ""
+          "title": "#RoadToSassConf with SassConf2014 Speakers",
+          "speaker": "Adam Onishi",
+          "room": "WeWork SoHo"
         }
       ]
     },
@@ -22,8 +36,8 @@
           "start": "10/1/2014 7:00 PM",
           "end": "10/1/2014 9:00 PM",
           "time": "7-9pm",
-          "title": "Opening Night Fireside Chat with Sass-Lang.com Redesign Team",
-          "speaker": "Jina Bolten, Natalie Weizenbaum",
+          "title": "Opening Night Fireside Chat with the Sass Team",
+          "speaker": "Natalie Weizenbaum, Chris Eppstein, Hampton Catlin",
           "room": "Meetup HQ"
         }
       ]
@@ -231,7 +245,7 @@
         {
           "slot": "slot-2",
           "start": "10/4/2014 11:00 AM",
-          "end": "10/4/2014 11:45 AM",
+          "end": "10/4/2014 11:30 AM",
           "time": "11-11:30am",
           "title": "Keynote",
           "speaker": "Chris Eppstein",
@@ -241,27 +255,36 @@
           "slot": "slot-3",
           "start": "10/4/2014 11:00 AM",
           "end": "10/4/2014 6:00 PM",
-          "time": "11:30am-3:30pm",
+          "time": "11:30am-6:00pm",
           "title": "UnConference",
           "speaker": "",
           "room": ""
         },
         {
-          "slot": "slot-3",
-          "start": "10/4/2014 11:00 AM",
-          "end": "10/4/2014 6:00 PM",
+          "slot": "slot-4",
+          "start": "10/4/2014 11:30 AM",
+          "end": "10/4/2014 3:30 PM",
           "time": "11:30am-3:30pm",
-          "title": "IBM Hackathon",
-          "speaker": "",
+          "title": "Design Thinking Workshop",
+          "speaker": "IBM",
           "room": ""
         },
         {
-          "slot": "slot-4",
-          "start": "10/4/2014 2:00 PM",
-          "end": "10/4/2014 3:00 PM",
+          "slot": "slot-5",
+          "start": "10/4/2014 3:30 PM",
+          "end": "10/4/2014 4:30 PM",
           "time": "3:30-4:30pm",
-          "title": "Largescale Roundtable",
-          "speaker": "Phil LaPier (Thoughtbot), Ghaida Zahran (Zurb)",
+          "title": "Large Scale Sass!",
+          "speaker": "Kyle Fiedler (Thoughtbot), Scott Kellum (Vox), Jackie Balzer (Behance/Adobe)",
+          "room": ""
+        },
+        {
+          "slot": "slot-6",
+          "start": "10/4/2014 4:30 PM",
+          "end": "10/4/2014 6:00 PM",
+          "time": "4:30pm-6:00pm",
+          "title": "Design Thinking Workshop",
+          "speaker": "IBM",
           "room": ""
         }
       ]

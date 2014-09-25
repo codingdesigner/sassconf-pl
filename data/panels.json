@@ -4,19 +4,25 @@
       "session_title": "Large Scale Sass!",
       "speakers": [
         {
-          "speaker_image": "phillapier.jpg",
-          "alt": "Portrait of Phil LaPier",
-          "name": "Phil LaPier",
-          "occupation": "Designer, Thoughtbot"
+          "speaker_image": "kylefiedler.jpg",
+          "alt": "Portrait of Kyle Fiedler",
+          "name": "Kyle Fiedler",
+          "occupation": "Managing Director & Designer, Thoughtbot"
         },
         {
-          "speaker_image": "ghaidazahranm.jpg",
-          "alt": "Portrait of Ghaida Zahranm",
-          "name": "Ghaida Zahranm",
-          "occupation": "Design Lead, Zurb"
+          "speaker_image": "scottkellum.jpg",
+          "alt": "Portrait of Scott Kellum",
+          "name": "Scott Kellum",
+          "occupation": "Senior Front-End Designer, Vox"
+        },
+        {
+          "speaker_image": "jackiebalzer.jpg",
+          "alt": "Portrait of Jackie Balzer",
+          "name": "Jackie Balzer",
+          "occupation": "Head of Front End Development,  Behance/Adobe"
         }
       ],
-      "speaker_count": 2,
+      "speaker_count": 3,
       "session_description": "<p>We'll discuss the challenges and strategies of developing and maintaining reusable Sass components for use of thousands of users and use cases.</p>"
     }
   ]
