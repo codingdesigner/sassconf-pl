@@ -1915,9 +1915,32 @@ body {
   margin-left: auto;
 }
 
-.sponsor-detail {
-  margin-bottom: 2rem;
+.sponsor {
   clear: both;
+  margin-bottom: 2rem;
+}
+.sponsor .section-title {
+  margin-left: 0;
+}
+.sponsor-image {
+  max-width: 300px;
+}
+.sponsor-image a {
+  background-image: none;
+}
+.sponsor-description p:last-child {
+  display: inline;
+}
+.sponsor-detail {
+  margin: 1rem 0;
+  clear: both;
+}
+.sponsor-detail .images {
+  max-width: 300px;
+  margin-right: 2rem;
+}
+.sponsor-detail .images a {
+  background-image: none;
 }
 
 .sponsors--footer {
