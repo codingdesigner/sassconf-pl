@@ -1915,32 +1915,43 @@ body {
   margin-left: auto;
 }
 
-.sponsor {
+.sponsor-tier {
   clear: both;
   margin-bottom: 2rem;
 }
-.sponsor .section-title {
+.sponsor-tier .section-title {
   margin-left: 0;
-}
-.sponsor-image {
-  max-width: 300px;
 }
 .sponsor-image a {
   background-image: none;
 }
-.sponsor-description p:last-child {
-  display: inline;
+.sponsor-description {
+  max-width: 40rem;
 }
 .sponsor-detail {
-  margin: 1rem 0;
+  margin: 1rem 0 2em;
   clear: both;
 }
 .sponsor-detail .images {
   max-width: 300px;
-  margin-right: 2rem;
 }
 .sponsor-detail .images a {
   background-image: none;
+}
+.sponsor-detail--support img {
+  width: 40%;
+}
+.sponsor-detail--gold img {
+  width: 100%;
+}
+.sponsor-detail--silver img {
+  width: 80%;
+}
+.sponsor-detail--bronze img {
+  width: 60%;
+}
+.sponsor--support img {
+  width: 40%;
 }
 
 .sponsors--footer {

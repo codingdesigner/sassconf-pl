@@ -2,6 +2,7 @@
   "levels": [
     {
       "level": "Gold",
+      "level_id": "gold",
       "level_subtitle": "Underwriters",
       "level_description": null,
       "donors": [
@@ -17,6 +18,7 @@
     },
     {
       "level": "Silver",
+      "level_id": "silver",
       "level_description": null,
       "donors": [
         {
@@ -39,6 +41,7 @@
     },
     {
       "level": "Bronze",
+      "level_id": "bronze",
       "level_description": null,
       "donors": [
         {
@@ -53,6 +56,7 @@
     },
     {
       "level": "#SassWeek Sponsors",
+      "level_id": "support",
       "level_description":"<p>The #RoadtoSassConf is a series of events free and open to anyone in New York City with SassConf speakers. Co-produed with GothamSass, NYC's Sass Meetup, and local sassy NYC companies.</p>",
       "donors": [
         {
@@ -83,6 +87,7 @@
     },
     {
       "level": "Supporters",
+      "level_id": "support",
       "level_description":"<p>These great companies provide us with giveaways and in-kind support.</p>",
       "donors": [
         {
