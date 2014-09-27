@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#echo "Begin post-merge git hook"
+#echo "Rebuiling compiled files"
+#bundle exec compass compile
+#php core/builder.php --generate --nocache
+
+#echo "Adding built files to the last commit"
+#git add -u
+#git commit --amend --no-edit
