@@ -38,21 +38,19 @@
       ]
     },
     {
-      "level": "Party",
-      "level_subtitle": "Yacht. Karaoke. NYC Harbor.",
+      "level": "Bronze",
       "level_description": null,
       "donors": [
         {
-          "logo": "hoeflerco.png",
-          "alt": "Hoefler & Co. logo",
-          "name": "Hoefler & Co.",
-          "url": "http://www.typography.com/cloud/welcome/",
-          "description": "<p>Hoefler & Co. is behind the public faces of some of the world’s foremost institutions, publications, and brands, in channels from print to web to mobile, and they provide typefaces to designers around the world through their website at typography.com. Their work is part of the permanent collection of the Museum of Modern Art in New York, and Fast Company has named them one of the most innovative design companies in America.</p>",
-          "twitter" : "HoeflerCo"
+          "logo": "salesforce.png",
+          "alt": "SalesForce logo",
+          "name": "SalesForce",
+          "url": "http://salesforce.com",
+          "description": "Salesforce.com is the enterprise cloud computing leader. Our social and mobile cloud technologies -- including our flagship sales and CRM applications -- help companies connect with customers, partners, and employees in entirely new ways.",
+          "twitter" : "Salesforce"
         }
       ]
     },
-
     {
       "level": "#SassWeek Sponsors",
       "level_description":"<p>The #RoadtoSassConf is a series of events free and open to anyone in New York City with SassConf speakers. Co-produed with GothamSass, NYC's Sass Meetup, and local sassy NYC companies.</p>",
