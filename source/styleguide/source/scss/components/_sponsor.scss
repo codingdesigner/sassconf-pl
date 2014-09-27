@@ -9,8 +9,44 @@
 
 }
 
+.sponsor {
+  clear: both;
+  margin-bottom: 2rem;
 
-.sponsors {
+  .section-title {
+    margin-left: 0;
+  }
+
+  &-image {
+   max-width: 300px;
+
+    a {
+      background-image: none;
+    }
+  }
+
+  &-description {
+    p:last-child { display: inline; }
+  }
+
+  &-detail {
+    margin: 1rem 0;
+    clear: both;
+
+    .images {
+      max-width: 300px;
+      margin-right: 2rem;
+
+      a {
+        background-image: none;
+      }
+    }
+  }
+
+}
+
+
+.sponsors--footer {
   text-align: center;
 
   p {

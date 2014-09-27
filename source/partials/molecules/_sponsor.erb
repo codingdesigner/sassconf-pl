@@ -1,0 +1,29 @@
+<% data.sponsors.levels.each do |s| %>
+  <section class="sponsor-tier sponsor--<%= s.level %>">
+    <% if s.level.to_s.strip.length > 0 %>
+      <h2 class="section-title rhombus-left">
+        <div class="rhombus-reset"><%= s.level %></div>
+      </h2>
+    <% end %>
+    <% if s.level_subtitle %>
+      <h3 class="included rhombus-left"><div class="rhombus-reset"><%= s.level_subtitle %></div></h3>
+    <% end %>
+
+    <% if s.level_description %>
+      <div class="sponsor-tier-description"><%= s.level_description %></div>
+    <% end %>
+
+    <% s.donors.each do |d| %>
+    <article class="sponsor-detail">
+      <h2 class="images sponsor-image"><a href="<%= d.url %>"><img src="images/sponsors/<%= d.logo %>"
+      alt="<%= d.alt %>"></a></h2>
+
+      <div class="sponsor-description">
+        <%= d.description %>
+        <% if d.twitter %><a href="https://twitter.com/<=% d.twitter %>">@<%= d.twitter %></a><% end %>
+      </div>
+
+    </article>
+    <% end %>
+  </section>
+<% end %>
