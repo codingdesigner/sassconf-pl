@@ -23,6 +23,11 @@
 
   &-image {
     max-width: 300px;
+
+    [alt="IBM logo"] {
+      max-width: 200px;
+    }
+
     a {
       background-image: none;
     }
@@ -92,6 +97,10 @@
     width: 80%;
     max-width: 300px;
     margin: 0 5%;
+
+    &[alt="IBM logo"] {
+      max-width: 200px;
+    }
   }
 
   .l img {
