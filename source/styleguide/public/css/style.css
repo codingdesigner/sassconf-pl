@@ -1922,6 +1922,9 @@ body {
 .sponsor-tier .section-title {
   margin-left: 0;
 }
+.sponsor-image {
+  max-width: 300px;
+}
 .sponsor-image a {
   background-image: none;
 }
