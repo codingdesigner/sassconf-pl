@@ -95,7 +95,7 @@
           "start": "10/21/2014 12:00 PM",
           "end": "10/2/2014 1:30 PM",
           "time": "12-1:30pm",
-          "title": "Lunch",
+          "title": "Lunch <a href='https://foursquare.com/sassconf/list/food-near-the-venues'>(nearby places)</a>",
           "speaker": "",
           "room": ""
         },
@@ -197,7 +197,7 @@
           "start": "10/3/2014 1:00 PM",
           "end": "10/3/2014 2:30 PM",
           "time": "1-2:30pm",
-          "title": "Lunch",
+          "title": "Lunch <a href='https://foursquare.com/sassconf/list/food-near-the-venues'>(nearby places)</a>",
           "speaker": "",
           "room": "Greenhouse 11th Floor"
         },
@@ -262,28 +262,37 @@
         },
         {
           "slot": "slot-4",
-          "start": "10/4/2014 11:30 AM",
-          "end": "10/4/2014 3:30 PM",
-          "time": "11:30am-3:30pm",
-          "title": "Design Thinking Workshop",
+          "start": "10/4/2014 11:45 AM",
+          "end": "10/4/2014 2:15 PM",
+          "time": "11:45am-2:15pm",
+          "title": "Think Like IBM, Session 1",
           "speaker": "IBM",
           "room": ""
         },
         {
           "slot": "slot-5",
-          "start": "10/4/2014 3:30 PM",
-          "end": "10/4/2014 4:30 PM",
-          "time": "3:30-4:30pm",
-          "title": "Large Scale Sass!",
-          "speaker": "Kyle Fiedler (Thoughtbot), Scott Kellum (Vox), Jackie Balzer (Behance/Adobe)",
+          "start": "10/4/2014 2:15 PM",
+          "end": "10/4/2014 3:30 PM",
+          "time": "2:15pm-3:30pm",
+          "title": "Think Like IBM, Session 2",
+          "speaker": "IBM",
           "room": ""
         },
         {
           "slot": "slot-6",
-          "start": "10/4/2014 4:30 PM",
+          "start": "10/4/2014 3:30 PM",
+          "end": "10/4/2014 4:30 PM",
+          "time": "3:30-4:30pm",
+          "title": "Large Scale Sass!",
+          "speaker": "Kyle Fiedler (Thoughtbot), Scott Kellum (Vox), Jackie Balzer (Behance)",
+          "room": ""
+        },
+        {
+          "slot": "slot-7",
+          "start": "10/4/2014 4:45 PM",
           "end": "10/4/2014 6:00 PM",
-          "time": "4:30pm-6:00pm",
-          "title": "Design Thinking Workshop",
+          "time": "4:45pm-6:00pm",
+          "title": "Think Like IBM, Session 2",
           "speaker": "IBM",
           "room": ""
         }
