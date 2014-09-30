@@ -29,6 +29,9 @@ $bp--schedule-table: 500px;
       &.slot-#{$i} {
         background-color: $background-color;
         border-bottom: 1px solid $border-color;
+        a {
+          text-shadow: -1px -1px 0px $background-color, 0px 1px 0px $background-color, 1px 1px 0px $background-color;
+        }
         @include breakpoint($bp--schedule-table) {
           & {
             border: none;
@@ -86,7 +89,7 @@ $bp--schedule-table: 500px;
           @include underline($background-color, #fff);
 
           &:hover {
-            @include underline(mix($background-color, black, 50%), #fff);            
+            @include underline(mix($background-color, black, 50%), #fff);
           }
         }
       }
