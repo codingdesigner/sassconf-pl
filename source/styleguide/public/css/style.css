@@ -1925,6 +1925,9 @@ body {
 .sponsor-image {
   max-width: 300px;
 }
+.sponsor-image [alt="IBM logo"] {
+  max-width: 200px;
+}
 .sponsor-image a {
   background-image: none;
 }
@@ -1990,6 +1993,9 @@ body {
   width: 80%;
   max-width: 300px;
   margin: 0 5%;
+}
+.sponsors--footer .xl img[alt="IBM logo"] {
+  max-width: 200px;
 }
 .sponsors--footer .l img {
   width: 60%;
