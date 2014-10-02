@@ -113,7 +113,7 @@
           "end": "10/2/2014 2:00 PM",
           "time": "1:45-1:55pm",
           "title": "Lightning Talk - Color In The Real World",
-          "speaker": "Katie Kurkoski, ",
+          "speaker": "Katie Kurkoski",
           "room": ""
         },        {
           "slot": "slot-9",
@@ -188,8 +188,8 @@
           "start": "10/3/2014 9:00 AM",
           "end": "10/3/2014 1:00 PM",
           "time": "9am-1pm",
-          "title": "Introduction into UX Regression Testing",
-          "speaker": "Kevin Lampling",
+          "title": "Introduction into UI Regression Testing",
+          "speaker": "Kevin Lamping",
           "room": "1107/08 11th Fl"
         },
         {
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "date": "Saturday October 4th",
+      "date": "Saturday October 4th @ New Work City",
       "sessions": [
         {
           "slot": "slot-1",
