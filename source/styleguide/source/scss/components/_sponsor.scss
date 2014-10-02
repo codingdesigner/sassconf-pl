@@ -10,15 +10,23 @@
 }
 
 .sponsor {
-  clear: both;
-  margin-bottom: 2rem;
 
-  .section-title {
-    margin-left: 0;
+  &-tier {
+    clear: both;
+    margin-bottom: 2rem;
+
+    .section-title {
+      margin-left: 0;
+    }
   }
 
+
   &-image {
-   max-width: 300px;
+    max-width: 300px;
+
+    [alt="IBM logo"] {
+      max-width: 200px;
+    }
 
     a {
       background-image: none;
@@ -26,23 +34,35 @@
   }
 
   &-description {
-    p:last-child { display: inline; }
+    max-width: 40rem;
   }
 
   &-detail {
-    margin: 1rem 0;
+    margin: 1rem 0 2em;
     clear: both;
 
     .images {
       max-width: 300px;
-      margin-right: 2rem;
 
       a {
         background-image: none;
       }
     }
+
+    &--support img { width: 40%; }
+
+    &--gold img { width: 100%; }
+
+    &--silver img { width: 80%; }
+
+    &--bronze img { width: 60%; }
   }
 
+  &--support {
+    img {
+      width: 40%;
+    }
+  }
 }
 
 
@@ -77,6 +97,10 @@
     width: 80%;
     max-width: 300px;
     margin: 0 5%;
+
+    &[alt="IBM logo"] {
+      max-width: 200px;
+    }
   }
 
   .l img {

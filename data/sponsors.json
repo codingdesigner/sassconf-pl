@@ -2,9 +2,18 @@
   "levels": [
     {
       "level": "Gold",
+      "level_id": "gold",
       "level_subtitle": "Underwriters",
       "level_description": null,
       "donors": [
+       {
+          "logo": "IBM.svg",
+          "alt": "IBM logo",
+          "name": "IBM",
+          "url": "http://ibm.com/design",
+          "description": "<p>In a 1966 memo to all employees, then-IBM Chairman and CEO Thomas J. Watson, Jr. declared, “Good design is good business.” At that point in history, IBM used design to demystify technology when computing was new. Almost half a century later, IBM is using great design to create enterprise-class products that people love to use to get their work done. Scaling modern design across a portfolio of thousands of products that serve clients in more than 170 countries is much more than a two-pizza team challenge—and we like it that way. Oh, and btw ... we’re hiring! Please visit <a href='http://ibm.com/design'>ibm.com/design</a> for more info.</a></p>",
+          "twitter" : "ibmdesign"
+        },
         {
           "logo": "hoeflerco.png",
           "alt": "Hoefler & Co. logo",
@@ -13,10 +22,12 @@
           "description": "<p>Hoefler & Co. is behind the public faces of some of the world’s foremost institutions, publications, and brands, in channels from print to web to mobile, and they provide typefaces to designers around the world through their website at typography.com. Their work is part of the permanent collection of the Museum of Modern Art in New York, and Fast Company has named them one of the most innovative design companies in America.</p>",
           "twitter" : "HoeflerCo"
         }
+
       ]
     },
     {
       "level": "Silver",
+      "level_id": "silver",
       "level_description": null,
       "donors": [
         {
@@ -38,23 +49,23 @@
       ]
     },
     {
-      "level": "Party",
-      "level_subtitle": "Yacht. Karaoke. NYC Harbor.",
+      "level": "Bronze",
+      "level_id": "bronze",
       "level_description": null,
       "donors": [
         {
-          "logo": "hoeflerco.png",
-          "alt": "Hoefler & Co. logo",
-          "name": "Hoefler & Co.",
-          "url": "http://www.typography.com/cloud/welcome/",
-          "description": "<p>Hoefler & Co. is behind the public faces of some of the world’s foremost institutions, publications, and brands, in channels from print to web to mobile, and they provide typefaces to designers around the world through their website at typography.com. Their work is part of the permanent collection of the Museum of Modern Art in New York, and Fast Company has named them one of the most innovative design companies in America.</p>",
-          "twitter" : "HoeflerCo"
+          "logo": "salesforce.jpg",
+          "alt": "SalesForce logo",
+          "name": "SalesForce",
+          "url": "http://salesforce.com",
+          "description": "Salesforce.com is the enterprise cloud computing leader. Our social and mobile cloud technologies -- including our flagship sales and CRM applications -- help companies connect with customers, partners, and employees in entirely new ways.",
+          "twitter" : "Salesforce"
         }
       ]
     },
-
     {
       "level": "#SassWeek Sponsors",
+      "level_id": "support",
       "level_description":"<p>The #RoadtoSassConf is a series of events free and open to anyone in New York City with SassConf speakers. Co-produed with GothamSass, NYC's Sass Meetup, and local sassy NYC companies.</p>",
       "donors": [
         {
@@ -85,6 +96,7 @@
     },
     {
       "level": "Supporters",
+      "level_id": "support",
       "level_description":"<p>These great companies provide us with giveaways and in-kind support.</p>",
       "donors": [
         {

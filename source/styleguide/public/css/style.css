@@ -1039,7 +1039,7 @@ body {
   z-index: 100;
   margin-left: -4vw;
   margin-right: -4vw;
-  margin-bottom: 15%;
+  margin-bottom: 4rem;
 }
 @media (max-width: 23.75em) {
   .m-main-nav {
@@ -1371,6 +1371,9 @@ body {
   background-color: #ac235e;
   border-bottom: 1px solid #971f52;
 }
+.schedule tr.slot-1 a {
+  text-shadow: -1px -1px 0px #ac235e, 0px 1px 0px #ac235e, 1px 1px 0px #ac235e;
+}
 @media (min-width: 31.25em) {
   .schedule tr.slot-1 {
     border: none;
@@ -1384,6 +1387,9 @@ body {
 .schedule tr.slot-2 {
   background-color: #a81d58;
   border-bottom: 1px solid #92194d;
+}
+.schedule tr.slot-2 a {
+  text-shadow: -1px -1px 0px #a81d58, 0px 1px 0px #a81d58, 1px 1px 0px #a81d58;
 }
 @media (min-width: 31.25em) {
   .schedule tr.slot-2 {
@@ -1399,6 +1405,9 @@ body {
   background-color: #a0154f;
   border-bottom: 1px solid #891244;
 }
+.schedule tr.slot-3 a {
+  text-shadow: -1px -1px 0px #a0154f, 0px 1px 0px #a0154f, 1px 1px 0px #a0154f;
+}
 @media (min-width: 31.25em) {
   .schedule tr.slot-3 {
     border: none;
@@ -1412,6 +1421,9 @@ body {
 .schedule tr.slot-4 {
   background-color: #861142;
   border-bottom: 1px solid #6f0e37;
+}
+.schedule tr.slot-4 a {
+  text-shadow: -1px -1px 0px #861142, 0px 1px 0px #861142, 1px 1px 0px #861142;
 }
 @media (min-width: 31.25em) {
   .schedule tr.slot-4 {
@@ -1427,6 +1439,9 @@ body {
   background-color: #640d32;
   border-bottom: 1px solid #4d0a27;
 }
+.schedule tr.slot-5 a {
+  text-shadow: -1px -1px 0px #640d32, 0px 1px 0px #640d32, 1px 1px 0px #640d32;
+}
 @media (min-width: 31.25em) {
   .schedule tr.slot-5 {
     border: none;
@@ -1440,6 +1455,9 @@ body {
 .schedule tr.slot-6 {
   background-color: #3e081e;
   border-bottom: 1px solid #270513;
+}
+.schedule tr.slot-6 a {
+  text-shadow: -1px -1px 0px #3e081e, 0px 1px 0px #3e081e, 1px 1px 0px #3e081e;
 }
 @media (min-width: 31.25em) {
   .schedule tr.slot-6 {
@@ -1864,6 +1882,16 @@ body {
   shape-outside: polygon(0px 0px, 254px -10px, 290px 132px, 266px 260px, 286px 429px, 266px 547px, 0px 552px);
 }
 
+.speaker-images-0 {
+  display: none;
+}
+@media (min-width: 40.625em) {
+  .speaker-images-0 ~ .people .speaker,
+  .speaker-images-0 ~ .people .occupation {
+    margin-left: 8rem;
+  }
+}
+
 .panel .speaker-image {
   width: 120px;
   height: 120px;
@@ -1915,32 +1943,49 @@ body {
   margin-left: auto;
 }
 
-.sponsor {
+.sponsor-tier {
   clear: both;
   margin-bottom: 2rem;
 }
-.sponsor .section-title {
+.sponsor-tier .section-title {
   margin-left: 0;
 }
 .sponsor-image {
   max-width: 300px;
 }
+.sponsor-image [alt="IBM logo"] {
+  max-width: 200px;
+}
 .sponsor-image a {
   background-image: none;
 }
-.sponsor-description p:last-child {
-  display: inline;
+.sponsor-description {
+  max-width: 40rem;
 }
 .sponsor-detail {
-  margin: 1rem 0;
+  margin: 1rem 0 2em;
   clear: both;
 }
 .sponsor-detail .images {
   max-width: 300px;
-  margin-right: 2rem;
 }
 .sponsor-detail .images a {
   background-image: none;
+}
+.sponsor-detail--support img {
+  width: 40%;
+}
+.sponsor-detail--gold img {
+  width: 100%;
+}
+.sponsor-detail--silver img {
+  width: 80%;
+}
+.sponsor-detail--bronze img {
+  width: 60%;
+}
+.sponsor--support img {
+  width: 40%;
 }
 
 .sponsors--footer {
@@ -1976,6 +2021,9 @@ body {
   width: 80%;
   max-width: 300px;
   margin: 0 5%;
+}
+.sponsors--footer .xl img[alt="IBM logo"] {
+  max-width: 200px;
 }
 .sponsors--footer .l img {
   width: 60%;

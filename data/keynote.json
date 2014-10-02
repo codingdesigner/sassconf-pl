@@ -10,6 +10,17 @@
         }
       ],
       "speaker_count": 1
+    },
+    {
+      "speakers": [
+        {
+          "speaker_image": "chriseppstein.jpg",
+          "alt": "Portrait of Chris Eppstein",
+          "name": "Chris Eppstein",
+          "occupation": "Core Contributor to Sass & Senior Engineer at LinkedIn"
+        }
+      ],
+      "speaker_count": 1
     }
   ]
 }

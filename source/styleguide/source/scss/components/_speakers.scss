@@ -77,6 +77,19 @@
   }
 }
 
+.speaker-images-0 {
+  display: none;
+
+  ~ .people {
+    @include breakpoint($bp--sessions-wrap) {
+      .speaker,
+      .occupation {
+        margin-left: 8rem;
+      }
+    }
+  }
+}
+
 .speaker-image {
   @extend %rhombus--image;
   .panel & {

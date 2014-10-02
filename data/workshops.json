@@ -11,7 +11,7 @@
         }
       ],
       "speaker_count": 1,
-      "session_description": "<p>Are you a Sass beginner eager to increase your experience? In this workshop we’ll take an in-depth look at some powerful features to help you write smarter Sass and cleaner CSS.</p> <h4>What you'll learn</h4> <ul> <li>Extends and Mixins In-Depth</li> <li>Maps and Loops</li> <li>Functions FTW</li> <li>Bulletproofing with Warnings</li> <li>Media Query Techniques</li> </ul> <p>Please bring a laptop, a great attitude, and a sense of humor!</p> <h4>Requirements</h4> <p>Laptops are strongly recommended but not required. Those without can follow along. Sass should be installed (and functioning), preferably command line as some UIs ignore Sass warnings."
+      "session_description": "<p>Are you a Sass beginner eager to increase your experience? In this workshop we’ll take an in-depth look at some powerful features to help you write smarter Sass and cleaner CSS.</p> <h4>What you'll learn</h4> <ul> <li>Extends and Mixins In-Depth</li> <li>Maps and Loops</li> <li>Functions FTW</li> <li>Bulletproofing with Warnings</li> <li>Media Query Techniques</li> </ul> <p>Please bring a laptop, a great attitude, and a sense of humor!</p> <h4>Requirements</h4> <p>Laptops are strongly recommended but not required. Those without can follow along. Sass should be installed (and functioning), preferably command line as some UIs ignore Sass warnings.</p>"
     },
     {
       "session_title": "Optimising the Critical Rendering Path",
@@ -57,6 +57,19 @@
       ],
       "speaker_count": 2,
       "session_description": "<p>Whether you’ve been using Sass for a while or are still trying to figure out how to abandon plain CSS, refactoring a large project can be a daunting task. We all know it’s too hard to refactor everything for months and launch it all at once, so how do you begin a multi-step refactoring process?</p> <h4>What you'll learn</h4> <p>In this four-hour workshop, Jina and Elyse will walk you through the basics of refactoring using Sass. You’ll receive guidelines for how to refactor for clarity, maintainability, efficiency, and DRY code, and learn how to test your changes. They’ll cover ways to break down a refactor into manageable chunks, help you understand how to modularize your CSS, and organize messy code into documented, style-guide ready files. Everyone will leave with a customized game plan of steps, tools, and guidelines to refactor their project—not a sample app—so bring your project code with you.</p> <h4>What This Workshop Will Cover</h4> <ul> <li>overview of ways to use Sass (CodeKit, Rails, libsass, nodesass, etc.)</li> <li>creating color and typography variables</li> <li>breaking out and importing files</li> <li>determining CSS/UI modules, where they live in your app, and how to organize them</li> <li>namespacing for style safety</li> <li>commenting and in-CSS documentation</li> <li>creating living style guides</li> <li>naming conventions and refactoring classes/IDs</li> <li>testing for changes</li> </ul><h4>Requirements</h4> <p>Bring your laptop with your personal codebase you want to refactor. If you don’t have a project in mind, that’s fine; you can still get a lot out of it. We’re hoping to have people come up with a game plan for their own projects that need refactoring, rather than a sample project.</p>"
+    },
+    {
+      "session_title": "Think Like IBM",
+      "speakers": [
+        {
+          "speaker_image": "../sponsors/IBM.svg",
+          "alt": "IBM Logo",
+          "name": "IBM",
+          "occupation": "Design Thinking"
+        }
+      ],
+      "speaker_count": 0,
+      "session_description": "<p>IBM cares about solving complex problems that affect millions of people globally. IBM Design will be running 2 workshops throughout Saturday at SassConf where we’ll give you a glimpse into what it’s like to design solutions at IBM that are completely focused on our end users. You’ll not only learn about IBM Design Thinking and about some of our incredibly powerful and disruptive enterprise technologies like Watson - but we’ll give you chance to a design a solution to solve a problem that is important to you (we'll have some prompts available to you as well in case you are stuck). Imagine what you would do with <a href='ibm.com/watson'>IBM Watson</a>. Get ready to rapidly sketch, prototype, and present your ideas in our workshops. Post-it® Notes as well as snacks + drinks will be provided! Sign up at the IBM table during the conference. We’re looking forward to meeting you!</p>"
     }
   ]
 }
