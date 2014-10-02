@@ -1039,7 +1039,7 @@ body {
   z-index: 100;
   margin-left: -4vw;
   margin-right: -4vw;
-  margin-bottom: 15%;
+  margin-bottom: 4rem;
 }
 @media (max-width: 23.75em) {
   .m-main-nav {
