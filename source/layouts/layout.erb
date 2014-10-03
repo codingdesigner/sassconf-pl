@@ -19,13 +19,7 @@
   <%= stylesheet_link_tag "style" %>
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
 
-  <!-- Stylesheets -->
-  <%= javascript_include_tag  "bower_components/modernizr/modernizr.js", "bower_components/jquery/dist/jquery.js", "bower_components/eq.js/dist/eq.min.js", "bower_components/moment/moment.js", "bower_components/twix/bin/twix.js" %>
 
-
-  <!--[if lt IE 9]>
-  <%= javascript_include_tag  "bower_components/html5shiv/dist/html5shiv.js" %>
-  <![endif]-->
 
 </head>
 <body class="manhattan <%= page_classes %>">
@@ -36,6 +30,14 @@
 </div>
 <%= partial "partials/organisms/footer" %>
 
+
+<!-- Stylesheets -->
+<%= javascript_include_tag  "bower_components/modernizr/modernizr.js", "bower_components/jquery/dist/jquery.js", "bower_components/eq.js/dist/eq.min.js", "bower_components/moment/moment.js", "bower_components/twix/bin/twix.js" %>
+
+
+<!--[if lt IE 9]>
+<%= javascript_include_tag  "bower_components/html5shiv/dist/html5shiv.js" %>
+<![endif]-->
 <%= javascript_include_tag  "widowtamer-min", "bower_components/letteringjs/jquery.lettering.js", "main" %>
 
 </body>
