@@ -477,12 +477,6 @@ th {
 .manhattan .rhombus-grid-wrapper {
   position: fixed;
 }
-@supports (mix-blend-mode: screen) {
-  .rhombus-grid-wrapper {
-    opacity: 1;
-    mix-blend-mode: screen;
-  }
-}
 @media (max-width: 36.8125em) {
   .rhombus-grid-wrapper {
     display: none;

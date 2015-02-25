@@ -72,10 +72,10 @@
   .manhattan & {
     position: fixed;
   }
-  @supports (mix-blend-mode: screen) {
-    opacity: 1;
-    mix-blend-mode: screen;
-  }
+//  @supports (mix-blend-mode: screen) {
+//    opacity: 1;
+//    mix-blend-mode: screen;
+//  }
   @include breakpoint($bp--logo-small-down) {
     display: none;
   }
